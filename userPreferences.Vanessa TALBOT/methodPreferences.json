@@ -1,0 +1,461 @@
+{
+	"Sources/TableForms/2/Form2/ObjectMethods/Button.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-03-21T20:37:25.761Z"
+	},
+	"Sources/Forms/Form1/ObjectMethods/Button.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 9,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T20:35:56.780Z"
+	},
+	"Sources/Methods/Method1.4dm": {
+		"startSelection": 6,
+		"endSelection": 6,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T09:31:00.383Z"
+	},
+	"Sources/Methods/dev_generateSkill.4dm": {
+		"startSelection": 67,
+		"endSelection": 67,
+		"firstSelectedLine": 43,
+		"lastSelectedLine": 43,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-30T18:02:54.351Z"
+	},
+	"Sources/Forms/Form2/method.4dm": {
+		"startSelection": 9,
+		"endSelection": 9,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-05-18T12:52:06.398Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/Button.4dm": {
+		"startSelection": 39,
+		"endSelection": 39,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T20:24:17.799Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/Button2.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T17:55:02.431Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenComputeVersion.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 14,
+		"lastSelectedLine": 14,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T21:09:12.103Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenFreezeVersion.4dm": {
+		"startSelection": 14,
+		"endSelection": 14,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T21:18:04.216Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/GeneratePDF.4dm": {
+		"startSelection": 18,
+		"endSelection": 18,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T20:52:48.663Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenComputeVersion1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T19:57:13.579Z"
+	},
+	"Sources/Classes/ReviewEntity.4dm": {
+		"startSelection": 56,
+		"endSelection": 56,
+		"firstSelectedLine": 12,
+		"lastSelectedLine": 12,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-02T19:56:08.719Z"
+	},
+	"Sources/Forms/Form1/ObjectMethods/SaveTemplate.4dm": {
+		"startSelection": 13,
+		"endSelection": 13,
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 2,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-27T08:51:54.270Z"
+	},
+	"Sources/Forms/Form1/method.4dm": {
+		"startSelection": 15,
+		"endSelection": 34,
+		"firstSelectedLine": 10,
+		"lastSelectedLine": 10,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T21:17:31.245Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/Button1.4dm": {
+		"startSelection": 7,
+		"endSelection": 0,
+		"firstSelectedLine": 13,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T20:27:07.744Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenTemplate.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 13,
+		"lastSelectedLine": 13,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T20:24:17.799Z"
+	},
+	"Sources/Forms/Form1/ObjectMethods/SaveTemplate1.4dm": {
+		"startSelection": 16,
+		"endSelection": 16,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-27T16:29:32.285Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenFreezeVersion1.4dm": {
+		"startSelection": 27,
+		"endSelection": 27,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 7,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T20:56:16.565Z"
+	},
+	"Sources/Forms/Form2/ObjectMethods/GenerateFreezeVersion.4dm": {
+		"startSelection": 34,
+		"endSelection": 34,
+		"firstSelectedLine": 13,
+		"lastSelectedLine": 13,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": ""
+	},
+	"Sources/Forms/Home/ObjectMethods/OpenComputeVersion.4dm": {
+		"startSelection": 52,
+		"endSelection": 0,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T21:09:12.103Z"
+	},
+	"Sources/Forms/Home/ObjectMethods/CreateReview.4dm": {
+		"startSelection": 27,
+		"endSelection": 27,
+		"firstSelectedLine": 47,
+		"lastSelectedLine": 47,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-30T18:20:29.261Z"
+	},
+	"Sources/Forms/Home/ObjectMethods/OpenTemplate.4dm": {
+		"startSelection": 0,
+		"endSelection": 7,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 13,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T20:24:17.799Z"
+	},
+	"Sources/Forms/Home/ObjectMethods/Button2.4dm": {
+		"startSelection": 42,
+		"endSelection": 42,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-05-18T12:41:44.813Z"
+	},
+	"Sources/Classes/EmployeeSelection.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-05-18T07:50:00.841Z"
+	},
+	"Sources/Classes/Employee.4dm": {
+		"startSelection": 18,
+		"endSelection": 34,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T11:36:43.418Z"
+	},
+	"Sources/Classes/Identification.4dm": {
+		"startSelection": 2,
+		"endSelection": 2,
+		"firstSelectedLine": 21,
+		"lastSelectedLine": 21,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T08:55:55.332Z"
+	},
+	"Sources/Forms/Home/ObjectMethods/Button.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T09:29:16.247Z"
+	},
+	"Sources/Forms/Home/ObjectMethods/Button1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T11:01:59.898Z"
+	},
+	"Sources/Forms/Home/ObjectMethods/btnCollaborator.4dm": {
+		"startSelection": 26,
+		"endSelection": 0,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 2,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T09:51:45.830Z"
+	},
+	"Sources/Forms/CollaboratorPage/ObjectMethods/List Box.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-05-18T12:44:36.728Z"
+	},
+	"Sources/Forms/ffff/ObjectMethods/OpenComputeVersion1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 7,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-02T19:38:05.202Z"
+	},
+	"Sources/Forms/Review/method.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-02T18:15:51.255Z"
+	},
+	"Sources/Forms/ffff/ObjectMethods/Button.4dm": {
+		"startSelection": 25,
+		"endSelection": 0,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-02T18:14:02.157Z"
+	},
+	"Sources/Forms/ffff/ObjectMethods/GenerateFreezeVersion.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 12,
+		"lastSelectedLine": 20,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-04-26T21:22:34.608Z"
+	},
+	"Sources/Forms/ffff/ObjectMethods/CreateReview.4dm": {
+		"startSelection": 19,
+		"endSelection": 19,
+		"firstSelectedLine": 47,
+		"lastSelectedLine": 47,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T12:20:13.286Z"
+	},
+	"Sources/Forms/ffff/ObjectMethods/OpenComputeVersion.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 12,
+		"lastSelectedLine": 12,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T12:20:02.465Z"
+	},
+	"Sources/Forms/ffff/ObjectMethods/GeneratePDF.4dm": {
+		"startSelection": 32,
+		"endSelection": 32,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-02T19:50:10.118Z"
+	},
+	"Sources/Forms/Home/ObjectMethods/btnManager.4dm": {
+		"startSelection": 21,
+		"endSelection": 0,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T10:51:51.700Z"
+	},
+	"Sources/Forms/Home/ObjectMethods/btnRH.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T11:22:12.291Z"
+	},
+	"Sources/Classes/DataStore.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 2,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T11:16:26.179Z"
+	},
+	"Sources/Forms/Home/method.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 5,
+		"lastSelectedLine": 5,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T09:28:45.467Z"
+	},
+	"Sources/Forms/CollaboratorPage/method.4dm": {
+		"startSelection": 28,
+		"endSelection": 28,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T11:45:33.398Z"
+	},
+	"Sources/Forms/CollaboratorPage/ObjectMethods/OpenComputeVersion1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 7,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T10:32:34.585Z"
+	},
+	"Sources/Forms/ManagerPage/method.4dm": {
+		"startSelection": 28,
+		"endSelection": 28,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T11:46:23.418Z"
+	},
+	"Sources/Forms/HRPage/method.4dm": {
+		"startSelection": 28,
+		"endSelection": 28,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T11:45:14.662Z"
+	},
+	"Sources/Forms/Review/ObjectMethods/Button.4dm": {
+		"startSelection": 5,
+		"endSelection": 5,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T11:59:01.791Z"
+	},
+	"Sources/Forms/CollaboratorPage/ObjectMethods/OpenComputeVersion.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 12,
+		"lastSelectedLine": 12,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T12:19:45.611Z"
+	},
+	"Sources/Forms/ffff/ObjectMethods/OpenFreezeVersion.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T12:20:02.524Z"
+	},
+	"Sources/Forms/ffff/ObjectMethods/OpenTemplate.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 11,
+		"lastSelectedLine": 11,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T12:20:21.251Z"
+	},
+	"Sources/Forms/ffff/ObjectMethods/Button2.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 18,
+		"lastSelectedLine": 18,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T12:20:29.349Z"
+	},
+	"Sources/Forms/ManagerPage/ObjectMethods/OpenComputeVersion.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 12,
+		"lastSelectedLine": 12,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2024-07-27T12:20:37.098Z"
+	}
+}

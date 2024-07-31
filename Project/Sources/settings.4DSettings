@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4">
+	<com.4d>
+		<web>
+			<standalone_server>
+				<qodlystudio enabled="true"/>
+				<configuration publish_at_startup="true"/>
+				<rest launch_at_startup="true"/>
+			</standalone_server>
+		</web>
+		<interface>
+			<user color_scheme="light"/>
+		</interface>
+	</com.4d>
+</preferences>

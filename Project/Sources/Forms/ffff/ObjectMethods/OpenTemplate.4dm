@@ -1,0 +1,14 @@
+var $context : Object:=New object:C1471
+
+If (Form:C1466.CurrentTemplate=Null:C1517)
+	ALERT:C41("Selectionne template.")
+	
+Else 
+	$context.context:=New object:C1471
+	$context.type:="Template"
+	$context.template:=Form:C1466.CurrentTemplate
+	
+	Open form window:C675("WP_Review")
+	DIALOG:C40("WP_Review"; $context)
+	
+End if 

@@ -1,0 +1,308 @@
+{
+	"Sources/TableForms/2/Form2/ObjectMethods/Button.4dm": {
+		"left": 315,
+		"top": 171,
+		"width": 1089,
+		"height": 772
+	},
+	"Sources/Forms/Form1/ObjectMethods/Button.4dm": {
+		"left": 95,
+		"top": 171,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Methods/Method1.4dm": {
+		"left": 371,
+		"top": 215,
+		"width": 1150,
+		"height": 633
+	},
+	"Sources/Methods/dev_generateSkill.4dm": {
+		"left": 371,
+		"top": 174,
+		"width": 965,
+		"height": 777
+	},
+	"Sources/Forms/Form2/method.4dm": {
+		"left": 477,
+		"top": 258,
+		"width": 938,
+		"height": 549
+	},
+	"Sources/Forms/Form2/ObjectMethods/Button.4dm": {
+		"left": 95,
+		"top": 171,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Forms/Form2/ObjectMethods/Button2.4dm": {
+		"left": 370,
+		"top": 241,
+		"width": 1245,
+		"height": 721
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenComputeVersion.4dm": {
+		"left": 127,
+		"top": 147,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenFreezeVersion.4dm": {
+		"left": 127,
+		"top": 147,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Forms/Form2/ObjectMethods/GeneratePDF.4dm": {
+		"left": 127,
+		"top": 147,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenComputeVersion1.4dm": {
+		"left": 127,
+		"top": 147,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Classes/ReviewEntity.4dm": {
+		"left": 665,
+		"top": 310,
+		"width": 967,
+		"height": 722
+	},
+	"Sources/Forms/Form1/ObjectMethods/SaveTemplate.4dm": {
+		"left": 378,
+		"top": 185,
+		"width": 1208,
+		"height": 706
+	},
+	"Sources/Forms/Form1/method.4dm": {
+		"left": 0,
+		"top": 126,
+		"width": 1208,
+		"height": 762
+	},
+	"Sources/Forms/Form2/ObjectMethods/Button1.4dm": {
+		"left": 95,
+		"top": 171,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenTemplate.4dm": {
+		"left": 95,
+		"top": 171,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Forms/Form1/ObjectMethods/SaveTemplate1.4dm": {
+		"left": 0,
+		"top": 154,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Forms/Form2/ObjectMethods/OpenFreezeVersion1.4dm": {
+		"left": 127,
+		"top": 147,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Forms/Form2/ObjectMethods/GenerateFreezeVersion.4dm": {
+		"left": 127,
+		"top": 147,
+		"width": 1208,
+		"height": 734
+	},
+	"Sources/Forms/Home/ObjectMethods/OpenComputeVersion.4dm": {
+		"left": 329,
+		"top": 361,
+		"width": 1208,
+		"height": 650
+	},
+	"Sources/Forms/Home/ObjectMethods/CreateReview.4dm": {
+		"left": 371,
+		"top": 243,
+		"width": 1150,
+		"height": 605
+	},
+	"Sources/Forms/Home/ObjectMethods/OpenTemplate.4dm": {
+		"left": 378,
+		"top": 213,
+		"width": 1208,
+		"height": 678
+	},
+	"Sources/Forms/Home/ObjectMethods/Button2.4dm": {
+		"left": 22,
+		"top": 295,
+		"width": 938,
+		"height": 577
+	},
+	"Sources/Classes/EmployeeSelection.4dm": {
+		"left": 116,
+		"top": 311,
+		"width": 1150,
+		"height": 605
+	},
+	"Sources/Classes/Employee.4dm": {
+		"left": 623,
+		"top": 211,
+		"width": 965,
+		"height": 789
+	},
+	"Sources/Classes/Identification.4dm": {
+		"left": 557,
+		"top": 255,
+		"width": 967,
+		"height": 694
+	},
+	"Sources/Forms/Home/ObjectMethods/Button.4dm": {
+		"left": 641,
+		"top": 242,
+		"width": 967,
+		"height": 694
+	},
+	"Sources/Forms/Home/ObjectMethods/Button1.4dm": {
+		"left": 573,
+		"top": 156,
+		"width": 967,
+		"height": 610
+	},
+	"Sources/Forms/Home/ObjectMethods/btnCollaborator.4dm": {
+		"left": 566,
+		"top": 440,
+		"width": 967,
+		"height": 610
+	},
+	"Sources/Forms/CollaboratorPage/ObjectMethods/List Box.4dm": {
+		"left": 336,
+		"top": 234,
+		"width": 938,
+		"height": 577
+	},
+	"Sources/Forms/ffff/ObjectMethods/OpenComputeVersion1.4dm": {
+		"left": 101,
+		"top": 328,
+		"width": 967,
+		"height": 722
+	},
+	"Sources/Forms/Review/method.4dm": {
+		"left": 405,
+		"top": 181,
+		"width": 1195,
+		"height": 722
+	},
+	"Sources/Forms/ffff/ObjectMethods/Button.4dm": {
+		"left": 101,
+		"top": 328,
+		"width": 967,
+		"height": 722
+	},
+	"Sources/Forms/ffff/ObjectMethods/GenerateFreezeVersion.4dm": {
+		"left": 665,
+		"top": 282,
+		"width": 967,
+		"height": 750
+	},
+	"Sources/Forms/ffff/ObjectMethods/CreateReview.4dm": {
+		"left": 423,
+		"top": 141,
+		"width": 943,
+		"height": 533
+	},
+	"Sources/Forms/ffff/ObjectMethods/OpenComputeVersion.4dm": {
+		"left": 562,
+		"top": 324,
+		"width": 967,
+		"height": 554
+	},
+	"Sources/Forms/ffff/ObjectMethods/GeneratePDF.4dm": {
+		"left": 84,
+		"top": 222,
+		"width": 967,
+		"height": 722
+	},
+	"Sources/Forms/Home/ObjectMethods/btnManager.4dm": {
+		"left": 696,
+		"top": 253,
+		"width": 967,
+		"height": 582
+	},
+	"Sources/Forms/Home/ObjectMethods/btnRH.4dm": {
+		"left": 696,
+		"top": 253,
+		"width": 967,
+		"height": 582
+	},
+	"Sources/Classes/DataStore.4dm": {
+		"left": 623,
+		"top": 411,
+		"width": 943,
+		"height": 589
+	},
+	"Sources/Forms/Home/method.4dm": {
+		"left": 641,
+		"top": 270,
+		"width": 967,
+		"height": 666
+	},
+	"Sources/Forms/CollaboratorPage/method.4dm": {
+		"left": 623,
+		"top": 411,
+		"width": 943,
+		"height": 589
+	},
+	"Sources/Forms/CollaboratorPage/ObjectMethods/OpenComputeVersion1.4dm": {
+		"left": 598,
+		"top": 402,
+		"width": 967,
+		"height": 610
+	},
+	"Sources/Forms/ManagerPage/method.4dm": {
+		"left": 623,
+		"top": 411,
+		"width": 943,
+		"height": 589
+	},
+	"Sources/Forms/HRPage/method.4dm": {
+		"left": 623,
+		"top": 411,
+		"width": 943,
+		"height": 589
+	},
+	"Sources/Forms/Review/ObjectMethods/Button.4dm": {
+		"left": 562,
+		"top": 296,
+		"width": 967,
+		"height": 582
+	},
+	"Sources/Forms/CollaboratorPage/ObjectMethods/OpenComputeVersion.4dm": {
+		"left": 562,
+		"top": 324,
+		"width": 967,
+		"height": 554
+	},
+	"Sources/Forms/ffff/ObjectMethods/OpenFreezeVersion.4dm": {
+		"left": 562,
+		"top": 296,
+		"width": 967,
+		"height": 582
+	},
+	"Sources/Forms/ffff/ObjectMethods/OpenTemplate.4dm": {
+		"left": 444,
+		"top": 181,
+		"width": 967,
+		"height": 722
+	},
+	"Sources/Forms/ffff/ObjectMethods/Button2.4dm": {
+		"left": 444,
+		"top": 181,
+		"width": 967,
+		"height": 722
+	},
+	"Sources/Forms/ManagerPage/ObjectMethods/OpenComputeVersion.4dm": {
+		"left": 444,
+		"top": 181,
+		"width": 967,
+		"height": 722
+	}
+}

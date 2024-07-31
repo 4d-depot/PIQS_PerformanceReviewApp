@@ -1,0 +1,344 @@
+{
+	"tables": {
+		"TrainingStatus": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 1210.4453125,
+				"top": 3.9609375,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"(Table_1)": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 827.44140625,
+				"top": 188.78125,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"Score": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			},
+			"coordinates": {
+				"height": 167.33203125,
+				"width": 120,
+				"top": 455.046875,
+				"left": 609.34375
+			},
+			"displayable_fields_count": 6
+		},
+		"ReviewStatus": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 311.8828125,
+				"top": 431.33203125,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"Departement": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			},
+			"coordinates": {
+				"height": 167.33203125,
+				"width": 140.23046875,
+				"top": 4.04296875,
+				"left": 0
+			},
+			"displayable_fields_count": 6
+		},
+		"Template": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 8.08203125,
+				"top": 436.9140625,
+				"width": 141.671875,
+				"height": 186.1796875
+			},
+			"displayable_fields_count": 6
+		},
+		"Settings": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			},
+			"coordinates": {
+				"height": 181.3828125,
+				"width": 142.69921875,
+				"top": 203.60546875,
+				"left": 0
+			},
+			"displayable_fields_count": 6
+		},
+		"SkillGroup": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 1184.5390625,
+				"top": 496.9140625,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"Skill": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 957.84765625,
+				"top": 490.40234375,
+				"width": 130.28125,
+				"height": 197.67578125
+			},
+			"displayable_fields_count": 7
+		},
+		"Training": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 952.2890625,
+				"top": 1.0546875,
+				"width": 175.34375,
+				"height": 204.6484375
+			},
+			"displayable_fields_count": 7
+		},
+		"(LinkDocumentGoal)": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 665.29296875,
+				"top": 59.13671875,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"Goal": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 958.12890625,
+				"top": 242.93359375,
+				"width": 170.515625,
+				"height": 204.72265625
+			},
+			"displayable_fields_count": 7
+		},
+		"Review": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			},
+			"coordinates": {
+				"height": 377.76171875,
+				"width": 230.43359375,
+				"top": 0.28125,
+				"left": 517.09765625
+			},
+			"displayable_fields_count": 16
+		},
+		"Employee": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			},
+			"coordinates": {
+				"height": 312.703125,
+				"width": 150.60546875,
+				"top": 0,
+				"left": 249.21875
+			},
+			"displayable_fields_count": 12
+		}
+	},
+	"relations": {
+		"8F70B13C9EEC4BABA3E27DE255BB4404": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			}
+		},
+		"431BC46813424851AA553A2029ED0F7C": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			}
+		},
+		"BF587C4703D34C399AD263903A1D7BF9": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			}
+		},
+		"7F1976392A6C44D295890C5EA77D0B70": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			}
+		},
+		"5AE9B19F144640EDAC507B90C054CADB": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			}
+		},
+		"BCD3C009FA284C2D99C49A0BF3213AC7": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			}
+		},
+		"51A46E4DCEEB47DB87B1B7B446CACE15": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			}
+		},
+		"4EBCC2F066004F01B6DB529BE2EFD22A": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			}
+		},
+		"F1B40C3DF44040F686BACC2AEF759A64": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			}
+		},
+		"2E95D698B2DD4289B74E6E0B4E73A85E": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			}
+		},
+		"33993D8067754B0BBB0D92F3BA3AD023": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			}
+		},
+		"172B5848164D4AE181A72C7A0CA9FD65": {
+			"color": {
+				"alpha": 0,
+				"blue": 255,
+				"green": 255,
+				"red": 255
+			}
+		},
+		"B9C6E644CC7C45FD902E8FE7A5635AC1": {
+			"color": {
+				"alpha": 0,
+				"blue": 30,
+				"green": 30,
+				"red": 30
+			}
+		},
+		"A6C2C72379144699A9A7DCBFB4427763": {
+			"color": {
+				"alpha": 0,
+				"blue": 30,
+				"green": 30,
+				"red": 30
+			}
+		},
+		"883619B4918340AD878CEEB5815A8861": {
+			"color": {
+				"alpha": 0,
+				"blue": 30,
+				"green": 30,
+				"red": 30
+			}
+		},
+		"3753A60E980B4384A337ED6A27FBD1A2": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			}
+		}
+	}
+}

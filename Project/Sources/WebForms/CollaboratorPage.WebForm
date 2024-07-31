@@ -1,0 +1,171 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "reviews",
+				"type": "entitysel",
+				"dataclass": "Review",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"8mM12Iikwe"
+			],
+			"linkedNodes": {}
+		},
+		"8mM12Iikwe": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"zTHGqALYSX",
+				"eRuYfFk_h_",
+				"CS8W-hIlcv"
+			],
+			"linkedNodes": {}
+		},
+		"zTHGqALYSX": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [],
+				"events": [],
+				"style": {},
+				"headerHeight": 36,
+				"rowHeight": 30,
+				"datasource": "reviews",
+				"columns": [
+					{
+						"title": "Date",
+						"source": "Date",
+						"width": 150,
+						"sorting": false,
+						"id": "hPURscvoWcXutofsDUUcRS",
+						"format": "",
+						"dataType": "date"
+					}
+				]
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "8mM12Iikwe",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"eRuYfFk_h_": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Fill document",
+				"classNames": [],
+				"events": [],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "8mM12Iikwe",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "vskuDo2Mq1"
+			}
+		},
+		"vskuDo2Mq1": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "eRuYfFk_h_",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"CS8W-hIlcv": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Download PDF",
+				"classNames": [],
+				"events": [],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "8mM12Iikwe",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "BH5JldFncM"
+			}
+		},
+		"BH5JldFncM": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "CS8W-hIlcv",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

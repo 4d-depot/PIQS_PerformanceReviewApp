@@ -1,0 +1,16 @@
+{
+	"forms": {
+		"Form1": {
+			"timeStamp": "2024-03-21T20:27:03Z",
+			"destination": "listScreen"
+		},
+		"Form2": {
+			"timeStamp": "2024-03-21T20:33:40Z",
+			"destination": "detailScreen"
+		},
+		"Form3": {
+			"timeStamp": "2024-03-21T20:28:18Z",
+			"destination": "detailScreen"
+		}
+	}
+}
