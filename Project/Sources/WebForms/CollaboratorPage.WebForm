@@ -3,13 +3,11 @@
 		"v": "1.0",
 		"datasources": [
 			{
-				"id": "reviews",
-				"type": "entitysel",
-				"dataclass": "Review",
-				"namespace": "",
-				"initialValue": "all",
-				"depth": null,
-				"pageSize": 100
+				"id": "employee",
+				"type": "entity",
+				"dataclass": "Employee",
+				"initialValue": "",
+				"depth": null
 			}
 		],
 		"styles": []
@@ -26,7 +24,7 @@
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6"
 			},
-			"displayName": "Webform",
+			"displayName": "Page",
 			"custom": {},
 			"parent": "",
 			"hidden": false,
@@ -67,7 +65,7 @@
 				"style": {},
 				"headerHeight": 36,
 				"rowHeight": 30,
-				"datasource": "reviews",
+				"datasource": "employee.Reviews",
 				"columns": [
 					{
 						"title": "Date",

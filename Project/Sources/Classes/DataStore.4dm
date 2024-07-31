@@ -28,7 +28,7 @@ exposed Function authentify($email : Text; $password : Text) : Text
 			
 			//TODO set privilege
 			
-			return "OK"
+			return "Authentication successfull"
 		Else 
 			return "Authentication failed: wrong password"
 		End if 

@@ -14,8 +14,7 @@
 		"method": {
 			"type": 2,
 			"formName": "Form1",
-			"objectName": "Button",
-			"methodPath": "/SOURCES/Forms/Form1/ObjectMethods/Button.4dm"
+			"objectName": "Button"
 		}
 	},
 	{
@@ -23,8 +22,7 @@
 		"method": {
 			"type": 2,
 			"formName": "Form1",
-			"objectName": "Button",
-			"methodPath": "/SOURCES/Forms/Form1/ObjectMethods/Button.4dm"
+			"objectName": "Button"
 		}
 	},
 	{
@@ -80,6 +78,15 @@
 		"method": {
 			"type": 1,
 			"methodName": "Method1"
+		}
+	},
+	{
+		"line": 3,
+		"method": {
+			"type": 10,
+			"className": "Employee",
+			"functionName": "event restrict",
+			"methodPath": "/SOURCES/Classes/Employee.4dm"
 		}
 	}
 ]

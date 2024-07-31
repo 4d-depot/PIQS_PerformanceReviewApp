@@ -19,7 +19,7 @@
 					"backgroundColor": "transparent"
 				}
 			},
-			"displayName": "Webform",
+			"displayName": "Page",
 			"custom": {},
 			"parent": "",
 			"hidden": false,
@@ -151,7 +151,7 @@
 					"width": 250,
 					"height": "auto"
 				},
-				"imgSrc": "/$shared/assets/images/shutterstock_157078508 copy_687.jpeg"
+				"imgSrc": ""
 			},
 			"displayName": "Image",
 			"custom": {},
@@ -301,7 +301,7 @@
 					"width": 250,
 					"height": "auto"
 				},
-				"imgSrc": "/$shared/assets/images/qodly_gtwHbSnFpwxRp9p1wjtZua.png"
+				"imgSrc": ""
 			},
 			"displayName": "Image",
 			"custom": {},

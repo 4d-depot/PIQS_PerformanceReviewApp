@@ -351,13 +351,13 @@
 		"stamp": "2024-07-27T11:22:12.291Z"
 	},
 	"Sources/Classes/DataStore.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 2,
-		"lastSelectedLine": 2,
+		"startSelection": 25,
+		"endSelection": 25,
+		"firstSelectedLine": 38,
+		"lastSelectedLine": 38,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-07-27T11:16:26.179Z"
+		"stamp": "2024-07-31T09:46:49.615Z"
 	},
 	"Sources/Forms/Home/method.4dm": {
 		"startSelection": 7,
