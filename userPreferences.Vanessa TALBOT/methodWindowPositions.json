@@ -228,14 +228,14 @@
 		"height": 582
 	},
 	"Sources/Forms/Home/ObjectMethods/btnRH.4dm": {
-		"left": 696,
-		"top": 253,
+		"left": 204,
+		"top": 283,
 		"width": 967,
 		"height": 582
 	},
 	"Sources/Classes/DataStore.4dm": {
-		"left": 623,
-		"top": 411,
+		"left": 907,
+		"top": 153,
 		"width": 965,
 		"height": 589
 	},
@@ -304,5 +304,17 @@
 		"top": 181,
 		"width": 967,
 		"height": 722
+	},
+	"Sources/Classes/ReviewSelection.4dm": {
+		"left": 817,
+		"top": 405,
+		"width": 965,
+		"height": 561
+	},
+	"Sources/Classes/Review.4dm": {
+		"left": 817,
+		"top": 405,
+		"width": 965,
+		"height": 561
 	}
 }

@@ -84,9 +84,8 @@
 		"line": 3,
 		"method": {
 			"type": 10,
-			"className": "Employee",
-			"functionName": "event restrict",
-			"methodPath": "/SOURCES/Classes/Employee.4dm"
+			"className": "ReviewSelection",
+			"functionName": "event restrict"
 		}
 	}
 ]

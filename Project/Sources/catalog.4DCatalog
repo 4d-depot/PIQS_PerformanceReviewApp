@@ -212,7 +212,7 @@
 			</field_ref>
 		</related_field>
 	</relation>
-	<relation uuid="4EBCC2F066004F01B6DB529BE2EFD22A" name_Nto1="Link_10" name_1toN="Link_10_return" state="1">
+	<relation uuid="4EBCC2F066004F01B6DB529BE2EFD22A" name_Nto1="Status" name_1toN="Reviews" state="1">
 		<related_field kind="source">
 			<field_ref uuid="C6261F1817544C29AEDAEA27277A0123" name="ID_Status">
 				<table_ref uuid="8EDE47B1B26E4D3E87143D7F95313CA6" name="Review"/>

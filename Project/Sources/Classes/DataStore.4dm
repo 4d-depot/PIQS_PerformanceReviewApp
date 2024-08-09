@@ -1,40 +1,49 @@
 Class extends DataStoreImplementation
 
 exposed Function authentify($email : Text; $password : Text) : Text
-	
+	var $errorLogin : Text:="Login"
+	var $succesLogin : Text:="Home"
 	var $obj : Object
 	var $employee : cs:C1710.Employee
+	
+	If (Session:C1714=Null:C1517)
+		$obj:=Storage:C1525
+	Else 
+		$obj:=Session:C1714.storage
+	End if 
+	
+	If ($obj.Employee=Null:C1517)
+		Use ($obj)
+			$obj.Employee:=New shared object:C1526
+		End use 
+	End if 
+	
+	Use ($obj.Employee)
+		$obj.Employee.authentify:=False:C215
+	End use 
+	
 	$employee:=This:C1470.Employee.query("Email = :1"; $email).first()
 	
 	If ($employee#Null:C1517)
 		If (Verify password hash:C1534($password; $employee.Password))
 			
-			If (Session:C1714=Null:C1517)
-				$obj:=Storage:C1525
-			Else 
-				$obj:=Session:C1714.storage
-			End if 
-			
-			If ($obj.Employee=Null:C1517)
-				Use ($obj)
-					$obj.Employee:=New shared object:C1526
-				End use 
-			End if 
-			
 			Use ($obj.Employee)
 				$obj.Employee.ID:=$employee.ID
 				$obj.Employee.name:=$employee.Firstname+" "+$employee.Lastname
+				$obj.Employee.authentify:=True:C214
 			End use 
 			
-			//TODO set privilege
 			
-			return "Authentication successfull"
+			Web Form:C1735.setMessage("Authentication successfull")
+			return $succesLogin
 		Else 
-			return "Authentication failed: wrong password"
+			Web Form:C1735.setError("Authentication failed: wrong password")
 		End if 
 	Else 
-		return "Authentication failed: wrong user"
+		Web Form:C1735.setError("Authentication failed: wrong user")
 	End if 
+	
+	return $errorLogin
 	
 exposed Function logout()
 	var $obj : Object

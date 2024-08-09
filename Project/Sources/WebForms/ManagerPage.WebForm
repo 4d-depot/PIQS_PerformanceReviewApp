@@ -10,6 +10,15 @@
 				"initialValue": "all",
 				"depth": null,
 				"pageSize": 100
+			},
+			{
+				"id": "theEmployee",
+				"type": "entity",
+				"dataclass": "Employee",
+				"from": "employees",
+				"namespace": "",
+				"initialValue": "first",
+				"depth": null
 			}
 		],
 		"styles": []
@@ -31,6 +40,7 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
+				"ovt6oU7FZB",
 				"1auwpTCNsl"
 			],
 			"linkedNodes": {}
@@ -105,7 +115,8 @@
 						"format": "",
 						"dataType": "string"
 					}
-				]
+				],
+				"currentElement": "theEmployee"
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -184,21 +195,55 @@
 				"style": {},
 				"headerHeight": 36,
 				"rowHeight": 30,
-				"datasource": "employees.Reviews",
+				"datasource": "theEmployee.Reviews",
 				"columns": [
 					{
 						"title": "Date",
-						"source": "",
+						"source": "Date",
 						"format": "",
 						"width": 150,
 						"sorting": false,
-						"id": "oUDdFiYT3QmKCxGizhNVaH"
+						"id": "dVypQ6jCrUXnYo7Zjs6kGP"
 					}
 				]
 			},
 			"displayName": "DataTable",
 			"custom": {},
 			"parent": "fxj6Yn99-A",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ovt6oU7FZB": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"g_EKcMN1QX"
+			],
+			"linkedNodes": {}
+		},
+		"g_EKcMN1QX": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"webform": "Header"
+			},
+			"displayName": "Page Loader",
+			"custom": {},
+			"parent": "ovt6oU7FZB",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

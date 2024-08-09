@@ -1,0 +1,11 @@
+{
+	"app": [
+		{
+			"id": "pageName",
+			"type": "scalar",
+			"namespace": "app",
+			"dataType": "string",
+			"initialValue": "Login"
+		}
+	]
+}

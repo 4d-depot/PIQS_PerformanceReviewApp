@@ -1,0 +1,198 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "employees",
+				"type": "entitysel",
+				"dataclass": "Employee",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "theEmployee",
+				"type": "entity",
+				"dataclass": "Employee",
+				"from": "employees",
+				"namespace": "",
+				"initialValue": "first",
+				"depth": null
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"FypJvnw6Gs",
+				"unYVERUgZt"
+			],
+			"linkedNodes": {}
+		},
+		"FypJvnw6Gs": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"sbtpFVzD2q"
+			],
+			"linkedNodes": {}
+		},
+		"unYVERUgZt": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"NkKx7NmRKJ",
+				"r-_vByZN-n"
+			],
+			"linkedNodes": {}
+		},
+		"NkKx7NmRKJ": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [],
+				"events": [],
+				"style": {},
+				"headerHeight": 36,
+				"rowHeight": 30,
+				"datasource": "employees",
+				"columns": [
+					{
+						"title": "Lastname",
+						"source": "Lastname",
+						"width": 150,
+						"sorting": false,
+						"id": "tbrzzRqdqjprsL7UwBb4hp",
+						"format": "",
+						"dataType": "string"
+					},
+					{
+						"title": "Firstname",
+						"source": "Firstname",
+						"width": 150,
+						"sorting": false,
+						"id": "iCWoS5Z9zX1p1XAEsQy2L8",
+						"format": "",
+						"dataType": "string"
+					},
+					{
+						"title": "",
+						"source": "Departement.Name",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"id": "gbpS2yGRN8K8ZL3BNDXJdP"
+					}
+				],
+				"currentElement": "theEmployee"
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "unYVERUgZt",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"r-_vByZN-n": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [],
+				"events": [],
+				"style": {},
+				"headerHeight": 36,
+				"rowHeight": 30,
+				"datasource": "theEmployee.Reviews",
+				"columns": [
+					{
+						"title": "Date",
+						"source": "Date",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"id": "dVypQ6jCrUXnYo7Zjs6kGP"
+					},
+					{
+						"title": "Score",
+						"source": "ScoreGlobal.Name",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"id": "392fkpJLzkkHrERTGrdtf9"
+					},
+					{
+						"title": "Status",
+						"source": "Status.Name",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"id": "tY1cx5pgos4md1pedAfF53"
+					}
+				]
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "unYVERUgZt",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"sbtpFVzD2q": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"webform": "Header"
+			},
+			"displayName": "Page Loader",
+			"custom": {},
+			"parent": "FypJvnw6Gs",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}
