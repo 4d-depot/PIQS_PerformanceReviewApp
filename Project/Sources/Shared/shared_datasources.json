@@ -6,6 +6,14 @@
 			"namespace": "app",
 			"dataType": "string",
 			"initialValue": "Login"
+		},
+		{
+			"id": "selectedReview",
+			"type": "entity",
+			"dataclass": "Review",
+			"namespace": "app",
+			"initialValue": "",
+			"depth": null
 		}
 	]
 }

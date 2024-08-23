@@ -296,7 +296,7 @@
 			</field_ref>
 		</related_field>
 	</relation>
-	<relation uuid="8F70B13C9EEC4BABA3E27DE255BB4404" name_Nto1="Link_17" name_1toN="Link_17_return" state="1">
+	<relation uuid="8F70B13C9EEC4BABA3E27DE255BB4404" name_Nto1="Status" name_1toN="Link_17_return" state="1">
 		<related_field kind="source">
 			<field_ref uuid="3E3B7E4B5D0444B8A11F04E3DA35AF94" name="ID_TrainingStatus">
 				<table_ref uuid="3B1BA801B13646209CB345DC52D95AE9" name="Training"/>

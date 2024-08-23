@@ -192,7 +192,7 @@
 				"events": [],
 				"deletable": false,
 				"className": "w-full bg-transparent",
-				"type": "text",
+				"type": "password",
 				"moveable": false,
 				"placeholder": "",
 				"readonly": false,
@@ -332,9 +332,8 @@
 					"alignContent": "center",
 					"width": "50%",
 					"alignItems": "center",
-					"justifyContent": "center",
+					"justifyContent": "flex-start",
 					"backgroundColor": "transparent",
-					"gap": "20px",
 					"borderColor": "transparent"
 				}
 			},

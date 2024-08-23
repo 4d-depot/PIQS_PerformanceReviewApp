@@ -271,7 +271,7 @@
 						"onDataChange",
 						"onSelectionChange"
 					],
-					"dataSource": "Form:C1466.review.previousReview.Trainings",
+					"dataSource": "Form:C1466.review.Training",
 					"listboxType": "collection",
 					"rowHeightAutoMin": "1em",
 					"rowHeightAutoMax": "1600em",
@@ -298,9 +298,20 @@
 							"footer": {
 								"name": "Footer13"
 							},
-							"width": 400,
+							"width": 328,
 							"wordwrap": "none",
 							"rowHeightAuto": true
+						},
+						{
+							"header": {
+								"name": "Header15",
+								"text": "Header15"
+							},
+							"name": "Column14",
+							"dataSource": "This:C1470.Status.Name",
+							"footer": {
+								"name": "Footer15"
+							}
 						}
 					]
 				},
@@ -316,7 +327,7 @@
 						"onDataChange",
 						"onSelectionChange"
 					],
-					"dataSource": "Form:C1466.review.Trainings",
+					"dataSource": "Form:C1466.review.plannedTraining",
 					"listboxType": "collection",
 					"rowHeightAutoMin": "1em",
 					"rowHeightAutoMax": "1600em",
@@ -343,9 +354,20 @@
 								"name": "Footer14"
 							},
 							"dataSource": "This:C1470.ExpectedResult",
-							"width": 400,
+							"width": 344,
 							"wordwrap": "normal",
 							"rowHeightAuto": true
+						},
+						{
+							"header": {
+								"name": "Header12",
+								"text": "Header12"
+							},
+							"name": "Column6",
+							"dataSource": "This:C1470.Status.Name",
+							"footer": {
+								"name": "Footer12"
+							}
 						}
 					]
 				},
