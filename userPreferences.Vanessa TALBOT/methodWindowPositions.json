@@ -12,10 +12,10 @@
 		"height": 734
 	},
 	"Sources/Methods/Method1.4dm": {
-		"left": 371,
-		"top": 215,
-		"width": 1150,
-		"height": 633
+		"left": 0,
+		"top": 162,
+		"width": 1225,
+		"height": 1037
 	},
 	"Sources/Methods/dev_generateSkill.4dm": {
 		"left": 371,
@@ -66,10 +66,10 @@
 		"height": 734
 	},
 	"Sources/Classes/ReviewEntity.4dm": {
-		"left": 849,
-		"top": 281,
-		"width": 967,
-		"height": 694
+		"left": 0,
+		"top": 134,
+		"width": 1225,
+		"height": 1065
 	},
 	"Sources/Forms/Form1/ObjectMethods/SaveTemplate.4dm": {
 		"left": 378,
@@ -138,10 +138,10 @@
 		"height": 577
 	},
 	"Sources/Classes/EmployeeSelection.4dm": {
-		"left": 116,
-		"top": 311,
-		"width": 1150,
-		"height": 605
+		"left": 623,
+		"top": 239,
+		"width": 965,
+		"height": 761
 	},
 	"Sources/Classes/Employee.4dm": {
 		"left": 623,
@@ -180,8 +180,8 @@
 		"height": 577
 	},
 	"Sources/Forms/ffff/ObjectMethods/OpenComputeVersion1.4dm": {
-		"left": 101,
-		"top": 328,
+		"left": 1018,
+		"top": 296,
 		"width": 967,
 		"height": 722
 	},
@@ -198,28 +198,28 @@
 		"height": 722
 	},
 	"Sources/Forms/ffff/ObjectMethods/GenerateFreezeVersion.4dm": {
-		"left": 665,
-		"top": 282,
+		"left": 337,
+		"top": 410,
 		"width": 967,
 		"height": 750
 	},
 	"Sources/Forms/ffff/ObjectMethods/CreateReview.4dm": {
-		"left": 423,
-		"top": 141,
-		"width": 943,
-		"height": 533
+		"left": 0,
+		"top": 162,
+		"width": 1225,
+		"height": 1037
 	},
 	"Sources/Forms/ffff/ObjectMethods/OpenComputeVersion.4dm": {
-		"left": 562,
-		"top": 324,
-		"width": 967,
-		"height": 554
+		"left": 818,
+		"top": 248,
+		"width": 1345,
+		"height": 823
 	},
 	"Sources/Forms/ffff/ObjectMethods/GeneratePDF.4dm": {
-		"left": 84,
-		"top": 222,
+		"left": 880,
+		"top": 335,
 		"width": 967,
-		"height": 722
+		"height": 694
 	},
 	"Sources/Forms/Home/ObjectMethods/btnManager.4dm": {
 		"left": 696,
@@ -282,16 +282,16 @@
 		"height": 554
 	},
 	"Sources/Forms/ffff/ObjectMethods/OpenFreezeVersion.4dm": {
-		"left": 562,
-		"top": 296,
+		"left": 302,
+		"top": 351,
 		"width": 967,
 		"height": 582
 	},
 	"Sources/Forms/ffff/ObjectMethods/OpenTemplate.4dm": {
-		"left": 444,
-		"top": 181,
-		"width": 967,
-		"height": 722
+		"left": 818,
+		"top": 248,
+		"width": 1345,
+		"height": 823
 	},
 	"Sources/Forms/ffff/ObjectMethods/Button2.4dm": {
 		"left": 444,
@@ -316,5 +316,23 @@
 		"top": 405,
 		"width": 965,
 		"height": 561
+	},
+	"Sources/Forms/WP_Review/ObjectMethods/Button.4dm": {
+		"left": 364,
+		"top": 215,
+		"width": 967,
+		"height": 694
+	},
+	"Sources/Forms/WP_Review/ObjectMethods/SaveTemplate.4dm": {
+		"left": 364,
+		"top": 215,
+		"width": 967,
+		"height": 694
+	},
+	"Sources/Forms/WP_Review/method.4dm": {
+		"left": 818,
+		"top": 248,
+		"width": 1345,
+		"height": 823
 	}
 }

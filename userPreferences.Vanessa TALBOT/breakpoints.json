@@ -65,22 +65,6 @@
 		}
 	},
 	{
-		"line": 19,
-		"method": {
-			"type": 2,
-			"formName": "ffff",
-			"objectName": "CreateReview",
-			"methodPath": "/SOURCES/Forms/ffff/ObjectMethods/CreateReview.4dm"
-		}
-	},
-	{
-		"line": 5,
-		"method": {
-			"type": 1,
-			"methodName": "Method1"
-		}
-	},
-	{
 		"line": 3,
 		"method": {
 			"type": 10,

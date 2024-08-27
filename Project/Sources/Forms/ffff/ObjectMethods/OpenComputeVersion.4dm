@@ -7,7 +7,7 @@ If (Form:C1466.CurrentReview=Null:C1517)
 Else 
 	
 	$context.type:="Compute"
-	$context.context:=Form:C1466.CurrentReview.createContext()
+	$context.review:=Form:C1466.CurrentReview
 	
 	Open form window:C675("WP_Review")
 	DIALOG:C40("WP_Review"; $context)

@@ -1,5 +1,20 @@
 {
 	"tables": {
+		"GoalStatus": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 1212,
+				"top": 246,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
 		"TrainingStatus": {
 			"color": {
 				"red": 255,
@@ -105,7 +120,7 @@
 			},
 			"displayable_fields_count": 6
 		},
-		"SkillGroup": {
+		"(SkillGroup)": {
 			"color": {
 				"red": 255,
 				"green": 255,
@@ -175,10 +190,10 @@
 			"coordinates": {
 				"left": 958.12890625,
 				"top": 242.93359375,
-				"width": 170.515625,
-				"height": 204.72265625
+				"width": 176.515625,
+				"height": 231.72265625
 			},
-			"displayable_fields_count": 7
+			"displayable_fields_count": 9
 		},
 		"Review": {
 			"color": {
@@ -212,6 +227,14 @@
 		}
 	},
 	"relations": {
+		"0B05A1E40F944B27B271934ADE8EE296": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			}
+		},
 		"8F70B13C9EEC4BABA3E27DE255BB4404": {
 			"color": {
 				"red": 255,
@@ -222,10 +245,10 @@
 		},
 		"431BC46813424851AA553A2029ED0F7C": {
 			"color": {
-				"alpha": 0,
-				"blue": 255,
+				"red": 255,
 				"green": 255,
-				"red": 255
+				"blue": 255,
+				"alpha": 0
 			}
 		},
 		"BF587C4703D34C399AD263903A1D7BF9": {
@@ -293,14 +316,6 @@
 			}
 		},
 		"33993D8067754B0BBB0D92F3BA3AD023": {
-			"color": {
-				"alpha": 0,
-				"blue": 255,
-				"green": 255,
-				"red": 255
-			}
-		},
-		"172B5848164D4AE181A72C7A0CA9FD65": {
 			"color": {
 				"alpha": 0,
 				"blue": 255,

@@ -1,7 +1,6 @@
 
 
-$filePath:=Folder:C1567(fk desktop folder:K87:19).file("Export/entretien.pdf")
-$filePath.create()
-Form:C1466.CurrentReview.generatePDF($filePath.platformPath)
 
-OPEN URL:C673($filePath.platformPath)
+Form:C1466.CurrentReview.generatePDF()
+
+OPEN URL:C673(File:C1566("/RESOURCES/pdf/test.pdf").platformPath)

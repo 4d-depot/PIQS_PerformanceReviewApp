@@ -7,25 +7,23 @@ If (Form:C1466.CurrentReview=Null:C1517)
 Else 
 	
 	// Create review
-	
+	//var $review : cs.ReviewEntity
 	//$review:=ds.Review.new()
-	//$review.ID_Employee:=Form.CurrentReview.ID_Employee
-	//$review.ID_PreviousReview:=Form.CurrentReview.ID
-	//$review.save()
+	//$review.createReview(Form.CurrentEmployee.ID)
+	
+	$review:=ds:C1482.Review.get(16)
 	
 	// Generate skill
 	$obj:=New object:C1471
-	$skillSettings:=ds:C1482.Settings.query("ID = :1"; Form:C1466.CurrentReview.Employee.Departement.ID).first().Skill
+	$skillSettings:=ds:C1482.Settings.query("ID = :1"; Form:C1466.CurrentEmployee.Departement.ID).first().Skill
 	
 	For each ($obj; $skillSettings.skill)
-		$skillGroup:=ds:C1482.SkillGroup.new()
-		$skillGroup.Name:=$obj.group
-		$skillGroup.save()
 		
 		For each ($name; $obj.value)
 			$skill:=ds:C1482.Skill.new()
 			$skill.Name:=$name
-			$skill.ID_SkillGroup:=$skillGroup.ID
+			$skill.Group:=$obj.group
+			$skill.ID_Score:=(Random:C100%4)+1
 			$skill.ID_Review:=$review.ID
 			$skill.save()
 			
@@ -35,16 +33,5 @@ Else
 	
 	
 	
-	
-	// Create context
-	//$context.context:=New object
-	//$context.type:="Compute"
-	//$context.context:=Form.CurrentReview.createContext()
-	
-	//// Copy template
-	//$context.context.review.document:=WP New($template)
-	
-	//Open form window("WP_Review")
-	//DIALOG("WP_Review"; $context)
 	
 End if 

@@ -36,12 +36,13 @@
 				"id": "root"
 			},
 			{
-				"label": "user",
-				"id": "mdrBfxmG4u3EwCemXvL2P4"
+				"label": "start",
+				"id": "bF2zu3smTPc5D6kVFwf7J8"
 			}
 		],
 		"defaultStates": [
-			"u42KLexxpiGp2k3FqSkiw8"
+			"u42KLexxpiGp2k3FqSkiw8",
+			"bF2zu3smTPc5D6kVFwf7J8"
 		]
 	},
 	"components": {
@@ -52,7 +53,24 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Employee",
+						"events": [
+							"oninit"
+						],
+						"id": "3kPFtyRSZoK6GooZSTwUbS",
+						"method": "ds.Employee.loadEmployees",
+						"params": [],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.EmployeeSelection",
+							"datasource": "employees"
+						}
+					}
+				],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6"
 			},
@@ -64,6 +82,7 @@
 				"FypJvnw6Gs",
 				"u5x_Skwr1b",
 				"unYVERUgZt",
+				"1Usd5uv9sh",
 				"RelI-vMC__",
 				"bTiHSHkzDc"
 			],
@@ -197,7 +216,8 @@
 						"sorting": false,
 						"id": "tY1cx5pgos4md1pedAfF53"
 					}
-				]
+				],
+				"currentElement": "app:selectedReview"
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -236,9 +256,9 @@
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"DY4yGYbGXl",
 				"Mo0PmCkwjZ",
-				"kgLzAnkITi"
+				"kgLzAnkITi",
+				"DY4yGYbGXl"
 			],
 			"linkedNodes": {}
 		},
@@ -248,9 +268,26 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Download PDF<br>",
+				"text": "Generate PDF<br>",
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "ReviewEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "kTDSu9AJQXSYA8xAJzaCet",
+						"method": "selectedReview.generatePDF",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					}
+				],
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex"
@@ -290,7 +327,65 @@
 			"props": {
 				"text": "Generate new Review<br>",
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "vZwXLYuoYEfqpurpN9qQdW",
+						"events": [
+							"onclick"
+						],
+						"action": "create",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "ReviewEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "bqyDZKjdDASNwBeKbeYHSQ",
+						"method": "selectedReview.createReview",
+						"params": [
+							{
+								"name": "idEmployee",
+								"type": "Integer",
+								"datasource": "theEmployee.ID",
+								"id": "dBSVQxW2g2KrmEfbNm63h2"
+							}
+						],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						},
+						"feedback": true,
+						"disabled": false
+					},
+					{
+						"type": "simple-action",
+						"id": "q4Rd3DfsadAhhmVBYfuc24",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theEmployee.Reviews",
+							"type": "entitysel",
+							"namespace": "",
+							"from": ""
+						},
+						"feedback": {
+							"enabled": true
+						}
+					}
+				],
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex"
@@ -330,7 +425,24 @@
 			"props": {
 				"text": "Freeze document<br>",
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "ReviewEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "7obqKeBTAYqB7GpsmBNHPz",
+						"method": "selectedReview.generateFreezeDocument",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					}
+				],
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex"
@@ -486,7 +598,13 @@
 				"iterableChild": true
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:bF2zu3smTPc5D6kVFwf7J8": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
@@ -499,7 +617,6 @@
 				"zrWbNq7Dcq",
 				"5BP9KrWxT5",
 				"TpcliLaUqz",
-				"_0MCZIkdeF",
 				"TmGD9fDBqo"
 			],
 			"linkedNodes": {}
@@ -815,7 +932,7 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Create",
+				"text": "Create Collaborator<br>",
 				"classNames": [],
 				"events": [
 					{
@@ -833,6 +950,24 @@
 							"namespace": ""
 						},
 						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "vWcDXr6eQy7FotUd7jd7yX",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"bF2zu3smTPc5D6kVFwf7J8"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -841,12 +976,8 @@
 				}
 			},
 			"displayName": "Button",
-			"custom": {
-				"states:mdrBfxmG4u3EwCemXvL2P4": {
-					"text": "Create<br>"
-				}
-			},
-			"parent": "bTiHSHkzDc",
+			"custom": {},
+			"parent": "1Usd5uv9sh",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -897,6 +1028,24 @@
 							"enabled": true
 						},
 						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "uFiQMRVy7ftLwMy3Szr2Ut",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"bF2zu3smTPc5D6kVFwf7J8"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -1218,6 +1367,84 @@
 			"parent": "Lp-6jkr7of",
 			"hidden": false,
 			"nodes": [],
+			"linkedNodes": {}
+		},
+		"yWWAYU_KnV": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Edit Collaborator<br>",
+				"classNames": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "8NToNTCzwuHvu31qtexKs3",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"bF2zu3smTPc5D6kVFwf7J8"
+							]
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "1Usd5uv9sh",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "q_RXf5FE3I"
+			}
+		},
+		"q_RXf5FE3I": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "yWWAYU_KnV",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"1Usd5uv9sh": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"_0MCZIkdeF",
+				"yWWAYU_KnV"
+			],
 			"linkedNodes": {}
 		}
 	}

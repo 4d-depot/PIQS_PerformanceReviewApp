@@ -2,4 +2,4 @@
 
 
 
-$txt:=Generate password hash:C1533("test")
+//$txt:=Generate password hash("test")

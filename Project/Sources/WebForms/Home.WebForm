@@ -2,7 +2,16 @@
 	"metadata": {
 		"v": "1.0",
 		"datasources": [],
-		"styles": []
+		"styles": [],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			}
+		],
+		"defaultStates": [
+			"sqdXQWLMGfdWrxLZRSXPZz"
+		]
 	},
 	"components": {
 		"ROOT": {
@@ -183,7 +192,8 @@
 								"value": "ManagerPage",
 								"type": "string"
 							}
-						}
+						},
+						"state": {}
 					}
 				],
 				"iconPosition": "hidden",
@@ -289,7 +299,8 @@
 								"value": "CollaboratorPage",
 								"type": "string"
 							}
-						}
+						},
+						"state": {}
 					}
 				],
 				"iconPosition": "hidden",
@@ -425,7 +436,8 @@
 								"value": "HRPage",
 								"type": "string"
 							}
-						}
+						},
+						"state": {}
 					}
 				],
 				"iconPosition": "hidden",

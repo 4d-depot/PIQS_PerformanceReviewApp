@@ -1,17 +1,13 @@
 Class extends DataClass
 
-
-Function event restrict() : cs:C1710.EmployeeSelection
+exposed Function loadEmployees() : cs:C1710.EmployeeSelection
+	
 	var $obj : Object
 	
 	If (Session:C1714=Null:C1517)
 		$obj:=Storage:C1525
 	Else 
 		$obj:=Session:C1714.storage
-	End if 
-	
-	If ($obj.Employee.authentify=False:C215)
-		return This:C1470.all()
 	End if 
 	
 	If ($obj.Employee.role=Null:C1517)
@@ -35,4 +31,3 @@ Function event restrict() : cs:C1710.EmployeeSelection
 			return Null:C1517
 			
 	End case 
-	

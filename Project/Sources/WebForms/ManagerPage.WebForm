@@ -31,7 +31,24 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Employee",
+						"events": [
+							"oninit"
+						],
+						"id": "1AHiQ3xMWavvGoD3W2hH9G",
+						"method": "ds.Employee.loadEmployees",
+						"params": [],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.EmployeeSelection",
+							"datasource": "employees"
+						}
+					}
+				],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6"
 			},
@@ -147,7 +164,8 @@
 			"hidden": false,
 			"nodes": [
 				"XiYibsS4Aq",
-				"o1eGmgXfyK"
+				"T_rc_tjPmn",
+				"SCPuityA3d"
 			],
 			"linkedNodes": {}
 		},
@@ -212,6 +230,22 @@
 						"width": 150,
 						"sorting": false,
 						"id": "dVypQ6jCrUXnYo7Zjs6kGP"
+					},
+					{
+						"title": "Score",
+						"source": "ScoreGlobal.Name",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"id": "3FV2GsKeVT7tYnZviNuS7G"
+					},
+					{
+						"title": "Status",
+						"source": "Status.Name",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"id": "7sNP3mBDs87AtCm89YPPmB"
 					}
 				],
 				"currentElement": "app:selectedReview"
@@ -273,15 +307,32 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"o1eGmgXfyK": {
+		"T_rc_tjPmn": {
 			"type": {
 				"resolvedName": "Button"
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Download PDF<br>",
+				"text": "Freezedoc",
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "ReviewEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "rm712RFxHENkr5KUZZGb8k",
+						"method": "selectedReview.generateFreezeDocument",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					}
+				],
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex"
@@ -293,10 +344,10 @@
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
-				"icon": "kXoHUKxI2F"
+				"icon": "TT17v5ffMG"
 			}
 		},
-		"kXoHUKxI2F": {
+		"TT17v5ffMG": {
 			"type": {
 				"resolvedName": "Icon"
 			},
@@ -308,7 +359,64 @@
 			},
 			"displayName": "Icon",
 			"custom": {},
-			"parent": "o1eGmgXfyK",
+			"parent": "T_rc_tjPmn",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"SCPuityA3d": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Generate PDF",
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "ReviewEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "mDTbAQ6KTpN2A44zgqai7W",
+						"method": "selectedReview.generatePDF",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "u59NlQ1hO9",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "SP9qYj5_VN"
+			}
+		},
+		"SP9qYj5_VN": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "SCPuityA3d",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
