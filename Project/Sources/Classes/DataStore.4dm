@@ -77,7 +77,7 @@ exposed Function getName : Text
 	If (Session:C1714=Null:C1517)
 		return Storage:C1525.Employee.name
 	Else 
-		return Session:C1714.Storage.Employee.name
+		return Session:C1714.storage.Employee.name
 	End if 
 	
 exposed Function getRole : Text
@@ -85,6 +85,6 @@ exposed Function getRole : Text
 	If (Session:C1714=Null:C1517)
 		return Storage:C1525.Employee.role
 	Else 
-		return Session:C1714.Storage.Employee.role
+		return Session:C1714.storage.Employee.role
 	End if 
 	

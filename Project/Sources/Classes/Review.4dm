@@ -1,6 +1,5 @@
 Class extends DataClass
 
-
 Function event restrict() : cs:C1710.ReviewSelection
 	var $obj : Object
 	
@@ -31,5 +30,4 @@ Function event restrict() : cs:C1710.ReviewSelection
 			return Null:C1517
 			
 	End case 
-	
 	

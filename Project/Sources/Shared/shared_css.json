@@ -1,0 +1,68 @@
+{
+	"classes": [
+		{
+			"name": "buttonRed",
+			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #dd3c4c;\n\tbackground-color: #dd3c4c;\n\tcolor: #FFFFFF;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #c32232;\n  background-color: #c32232;\n  color: #FFFFFF;\n}",
+			"parentId": null,
+			"id": "-t06Ra1r0hdDUV4v8RjyT"
+		},
+		{
+			"name": "buttonBlack",
+			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #212529;\n\tbackground-color: #212529;\n\tcolor: #FFFFFF;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #0b0d0e;\n  background-color: #0b0d0e;\n  color: #FFFFFF;\n}",
+			"parentId": null,
+			"id": "VGZsvThawf_hU2xm4q45X"
+		},
+		{
+			"name": "backgroundBlack",
+			"content": "self {\n  background-color: #292e33;\n\tcolor: #ffffff;\n}",
+			"parentId": null,
+			"id": "umNirmsABdmhp5eCja7X8"
+		},
+		{
+			"name": "label",
+			"content": "self {\n   color: #717275;\n}",
+			"parentId": null,
+			"id": "QksB3_uGA9xyqrWMTnS6k"
+		},
+		{
+			"name": "input",
+			"content": "self {\n   border: 1px solid #ced4da;\n}",
+			"parentId": null,
+			"id": "PMO_yDiBMrP0HKYvIFDJb"
+		},
+		{
+			"name": "title",
+			"content": "self {\n   font-size: xx-large;\n}",
+			"parentId": null,
+			"id": "OoXaJgMqGstknauQThs-K"
+		},
+		{
+			"name": "DataTable",
+			"content": "self {\n  border-radius: 4px;\n}\n\nself .header .header-cell {\n  background-color: #4f5963;\n  color: #FFFFFF;\n}\n\nself .row.selected {\n  background-color: #f3bec3;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f8f8;\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "msZvlSfNvg",
+			"id": "npfQuMKJl6Wx3ypKMLgVr"
+		},
+		{
+			"name": "box-shadow",
+			"content": "self {\n  box-shadow : 1px 1px 6px 1px #aaabad;\n\tborder-radius: 4px;\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "cvbwVC_Juv",
+			"id": "zwUeaqVuQ-uci3CyYTQL9"
+		},
+		{
+			"name": "buttonGrey",
+			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #4f5963;\n\tbackground-color: #4f5963;\n\tcolor: #FFFFFF;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #394047;\n  background-color: #394047;\n  color: #FFFFFF;\n}",
+			"parentId": null,
+			"id": "ENkvv-5LP7JIePtisIzFF"
+		},
+		{
+			"name": "qodly-progress",
+			"content": "self {\n   background-color: #f3bec3;\n}",
+			"parentId": null,
+			"id": "Sd9vvO3OHzj2IqivZO096"
+		}
+	]
+}

@@ -42,7 +42,7 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"TIOBMDjm-n",
+				"z6SrFKQFJ7",
 				"mnXBqJsJ_z"
 			],
 			"linkedNodes": {}
@@ -60,7 +60,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "Login",
+								"text": "Welcome !",
 								"bold": false,
 								"italic": false,
 								"underlined": false,
@@ -69,7 +69,10 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"classNames": [
+					"title"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -111,7 +114,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Email:",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -134,7 +140,10 @@
 				"placeholder": "",
 				"readonly": false,
 				"datasource": "username",
-				"dataType": "string"
+				"dataType": "string",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -152,7 +161,7 @@
 				"events": [],
 				"placeholder": "placeholder",
 				"label": "label",
-				"labelPosition": "left",
+				"labelPosition": "top",
 				"iterableChild": true
 			},
 			"displayName": "Text Input",
@@ -174,7 +183,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Password:",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -197,7 +209,10 @@
 				"placeholder": "",
 				"readonly": false,
 				"datasource": "password",
-				"dataType": "string"
+				"dataType": "string",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -215,7 +230,7 @@
 				"events": [],
 				"placeholder": "placeholder",
 				"label": "label",
-				"labelPosition": "left",
+				"labelPosition": "top",
 				"iterableChild": true
 			},
 			"displayName": "Text Input",
@@ -271,7 +286,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Login",
-				"classNames": [],
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
 					{
 						"type": "method",
@@ -300,6 +317,22 @@
 							"name": "result",
 							"type": "Text",
 							"datasource": "app:pageName"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onclick"
+						],
+						"id": "f32pgs3wBs9xDGDhCiWT3H",
+						"method": "ds.getName",
+						"params": [],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Text",
+							"datasource": "app:CollaboratorName"
 						}
 					}
 				],
@@ -334,12 +367,19 @@
 					"alignItems": "center",
 					"justifyContent": "flex-start",
 					"backgroundColor": "transparent",
-					"borderColor": "transparent"
-				}
+					"borderColor": "transparent",
+					"paddingRight": "24px",
+					"paddingBottom": "24px",
+					"paddingTop": "24px",
+					"paddingLeft": "24px"
+				},
+				"classNames": [
+					"box-shadow"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "ROOT",
+			"parent": "z6SrFKQFJ7",
 			"hidden": false,
 			"nodes": [
 				"jtdObV6-k7",
@@ -627,6 +667,29 @@
 			"parent": "SXc_6dE4kf",
 			"hidden": false,
 			"nodes": [],
+			"linkedNodes": {}
+		},
+		"z6SrFKQFJ7": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"TIOBMDjm-n"
+			],
 			"linkedNodes": {}
 		}
 	}

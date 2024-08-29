@@ -67,9 +67,9 @@
 	},
 	"Sources/Classes/ReviewEntity.4dm": {
 		"left": 0,
-		"top": 134,
+		"top": 162,
 		"width": 1225,
-		"height": 1065
+		"height": 882
 	},
 	"Sources/Forms/Form1/ObjectMethods/SaveTemplate.4dm": {
 		"left": 378,

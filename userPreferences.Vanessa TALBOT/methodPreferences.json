@@ -101,11 +101,11 @@
 	"Sources/Classes/ReviewEntity.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 9,
-		"lastSelectedLine": 9,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-08-27T14:01:54.842Z"
+		"stamp": "2024-08-28T15:29:22.018Z"
 	},
 	"Sources/Forms/Form1/ObjectMethods/SaveTemplate.4dm": {
 		"startSelection": 13,
@@ -351,13 +351,13 @@
 		"stamp": "2024-07-27T11:22:12.000Z"
 	},
 	"Sources/Classes/DataStore.4dm": {
-		"startSelection": 56,
-		"endSelection": 56,
-		"firstSelectedLine": 27,
-		"lastSelectedLine": 27,
+		"startSelection": 16,
+		"endSelection": 16,
+		"firstSelectedLine": 79,
+		"lastSelectedLine": 79,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-08-09T11:52:20.610Z"
+		"stamp": "2024-08-28T14:59:22.272Z"
 	},
 	"Sources/Forms/Home/method.4dm": {
 		"startSelection": 7,
@@ -468,13 +468,13 @@
 		"stamp": "2024-08-08T13:25:54.674Z"
 	},
 	"Sources/Classes/Review.4dm": {
-		"startSelection": 65,
-		"endSelection": 65,
-		"firstSelectedLine": 24,
-		"lastSelectedLine": 24,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 32,
+		"lastSelectedLine": 32,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-08-27T12:15:48.395Z"
+		"stamp": "2024-08-28T15:29:50.368Z"
 	},
 	"Sources/Forms/WP_Review/ObjectMethods/Button.4dm": {
 		"startSelection": 0,

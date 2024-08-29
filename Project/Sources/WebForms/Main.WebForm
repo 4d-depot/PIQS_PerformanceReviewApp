@@ -14,7 +14,13 @@
 				"classNames": [],
 				"events": [],
 				"airyMode": false,
-				"className": "bg-white h-full w-full px-6"
+				"className": "bg-white h-full w-full px-6",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
 			},
 			"displayName": "Page",
 			"custom": {},
@@ -32,7 +38,13 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"datasource": "app:pageName"
+				"datasource": "app:pageName",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
 			},
 			"displayName": "Page Loader",
 			"custom": {},

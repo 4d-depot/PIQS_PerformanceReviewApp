@@ -2,7 +2,15 @@
 	"metadata": {
 		"v": "1.0",
 		"datasources": [],
-		"styles": [],
+		"styles": [
+			{
+				"name": "button-role",
+				"content": "self {\nheight: 300px;\nwidth: 400px;\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "GnxVdXVhQ5QJaXVYibE4f"
+			}
+		],
 		"states": [
 			{
 				"label": "Base",
@@ -25,7 +33,11 @@
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
 				"style": {
-					"backgroundColor": "transparent"
+					"backgroundColor": "transparent",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
 				}
 			},
 			"displayName": "Page",
@@ -49,10 +61,16 @@
 				"style": {
 					"display": "flex",
 					"flexDirection": "row",
-					"flexWrap": "nowrap",
-					"alignContent": "flex-start",
+					"flexWrap": "wrap",
+					"alignContent": "center",
 					"alignItems": "center",
-					"justifyContent": "flex-start"
+					"justifyContent": "space-around",
+					"position": "relative",
+					"paddingRight": "40px",
+					"paddingBottom": "40px",
+					"paddingTop": "40px",
+					"paddingLeft": "40px",
+					"gap": "20px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -60,81 +78,10 @@
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"UrLTf46LAf",
-				"LTxv9lVO8I",
-				"zwTTfYmkZz"
-			],
-			"linkedNodes": {}
-		},
-		"LTxv9lVO8I": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"style": {
-					"display": "flex",
-					"flexDirection": "column",
-					"flexWrap": "wrap",
-					"alignContent": "center"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "kUmYJwyTdZ",
-			"hidden": false,
-			"nodes": [
-				"kCNnI40TBi",
-				"ee_uzIQ9Gx"
-			],
-			"linkedNodes": {}
-		},
-		"zwTTfYmkZz": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"style": {
-					"display": "flex",
-					"flexDirection": "column",
-					"flexWrap": "wrap",
-					"alignContent": "center"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "kUmYJwyTdZ",
-			"hidden": false,
-			"nodes": [
-				"hgaeHf9EaC",
+				"mFYOIILShW",
+				"ee_uzIQ9Gx",
 				"QwvxC-9mQS"
 			],
-			"linkedNodes": {}
-		},
-		"kCNnI40TBi": {
-			"type": {
-				"resolvedName": "Image"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"style": {
-					"width": 250,
-					"height": "auto"
-				},
-				"imgSrc": ""
-			},
-			"displayName": "Image",
-			"custom": {},
-			"parent": "LTxv9lVO8I",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"ee_uzIQ9Gx": {
@@ -144,7 +91,11 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Manager",
-				"classNames": [],
+				"classNames": [
+					"button-role",
+					"title",
+					"buttonGrey"
+				],
 				"events": [
 					{
 						"type": "method",
@@ -173,6 +124,26 @@
 					},
 					{
 						"type": "simple-action",
+						"id": "2h9uvuabsVCsmNfadiMxnM",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "role",
+							"from": "",
+							"type": "scalar",
+							"namespace": "app",
+							"dataType": "string",
+							"set": {
+								"value": "Manager",
+								"type": "string"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
 						"id": "x148DmVWt33VQoqaD8YzSB",
 						"events": [
 							"onclick"
@@ -196,14 +167,14 @@
 						"state": {}
 					}
 				],
-				"iconPosition": "hidden",
+				"iconPosition": "top",
 				"style": {
 					"display": "flex"
 				}
 			},
 			"displayName": "Button",
 			"custom": {},
-			"parent": "LTxv9lVO8I",
+			"parent": "kUmYJwyTdZ",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -218,31 +189,11 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-user"
 			},
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "ee_uzIQ9Gx",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"hgaeHf9EaC": {
-			"type": {
-				"resolvedName": "Image"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"style": {
-					"width": 250,
-					"height": "auto"
-				}
-			},
-			"displayName": "Image",
-			"custom": {},
-			"parent": "zwTTfYmkZz",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
@@ -254,7 +205,11 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Collaborator",
-				"classNames": [],
+				"classNames": [
+					"button-role",
+					"title",
+					"buttonBlack"
+				],
 				"events": [
 					{
 						"type": "method",
@@ -268,7 +223,7 @@
 							{
 								"name": "role",
 								"type": "Text",
-								"datasource": "\"Collaborator\"",
+								"datasource": "",
 								"id": "9N6zzXjDNoT6JSZp8iYxHM",
 								"isHardCoded": true,
 								"hardCodedType": "string",
@@ -279,6 +234,29 @@
 						"returns": {
 							"name": "result",
 							"type": "Variable"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "byHgWCeft8B6ZN9BgN6KJW",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "role",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "string",
+							"target": "",
+							"targetNamespace": "",
+							"targetType": "unknown",
+							"set": {
+								"value": "Collaborator",
+								"type": "string"
+							}
 						}
 					},
 					{
@@ -303,14 +281,14 @@
 						"state": {}
 					}
 				],
-				"iconPosition": "hidden",
+				"iconPosition": "top",
 				"style": {
 					"display": "flex"
 				}
 			},
 			"displayName": "Button",
 			"custom": {},
-			"parent": "zwTTfYmkZz",
+			"parent": "kUmYJwyTdZ",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -325,61 +303,11 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-users"
 			},
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "QwvxC-9mQS",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"UrLTf46LAf": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"style": {
-					"display": "flex",
-					"flexDirection": "column",
-					"flexWrap": "wrap",
-					"alignContent": "center",
-					"paddingLeft": "12px",
-					"paddingTop": "12px",
-					"paddingRight": "12px",
-					"paddingBottom": "12px"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "kUmYJwyTdZ",
-			"hidden": false,
-			"nodes": [
-				"epMzgusp4d",
-				"mFYOIILShW"
-			],
-			"linkedNodes": {}
-		},
-		"epMzgusp4d": {
-			"type": {
-				"resolvedName": "Image"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"style": {
-					"width": 250,
-					"height": "auto"
-				},
-				"imgSrc": ""
-			},
-			"displayName": "Image",
-			"custom": {},
-			"parent": "UrLTf46LAf",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
@@ -390,8 +318,12 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "HR",
-				"classNames": [],
+				"text": "Human Resources",
+				"classNames": [
+					"buttonRed",
+					"button-role",
+					"title"
+				],
 				"events": [
 					{
 						"type": "method",
@@ -420,6 +352,29 @@
 					},
 					{
 						"type": "simple-action",
+						"id": "a9YJd4mpzTZUSeUhwL9cEY",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "role",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "string",
+							"target": "",
+							"targetNamespace": "",
+							"targetType": "unknown",
+							"set": {
+								"value": "HR",
+								"type": "string"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
 						"id": "kcUz4HHzyU6WSzsGv1RRYv",
 						"events": [
 							"onclick"
@@ -440,14 +395,14 @@
 						"state": {}
 					}
 				],
-				"iconPosition": "hidden",
+				"iconPosition": "top",
 				"style": {
 					"display": "flex"
 				}
 			},
 			"displayName": "Button",
 			"custom": {},
-			"parent": "UrLTf46LAf",
+			"parent": "kUmYJwyTdZ",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -462,7 +417,7 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-building-user"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -478,14 +433,20 @@
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {},
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"GyOupmjdOY"
+				"OrOn6hURna"
 			],
 			"linkedNodes": {}
 		},
@@ -496,13 +457,50 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"webform": "Header"
+				"webform": "Header",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"position": "relative"
+				},
+				"classNames": []
 			},
 			"displayName": "Page Loader",
 			"custom": {},
-			"parent": "QOqkG7qlD_",
+			"parent": "OrOn6hURna",
 			"hidden": false,
 			"nodes": [],
+			"linkedNodes": {}
+		},
+		"OrOn6hURna": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"classNames": [],
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"position": "sticky",
+					"top": "0px",
+					"left": "0px",
+					"zIndex": "1000"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "QOqkG7qlD_",
+			"hidden": false,
+			"nodes": [
+				"GyOupmjdOY"
+			],
 			"linkedNodes": {}
 		}
 	}

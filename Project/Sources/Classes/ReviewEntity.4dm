@@ -1,8 +1,5 @@
 Class extends Entity
 
-exposed Function load() : cs:C1710.ReviewEntity
-	return ds:C1482.Review.get(3)
-	
 exposed Function createReview($idEmployee : Integer)
 	var $PrevReview : cs:C1710.ReviewEntity
 	
@@ -97,7 +94,9 @@ exposed Function generateFreezeDocument()
 	
 exposed Function generatePDF()
 	
-	$filePath:=File:C1566("/RESOURCES/pdf/test.pdf").platformPath
+	$name:=This:C1470.Employee.Firstname+This:C1470.Employee.Lastname+"_"+String:C10(This:C1470.Date; "Y")
+	
+	$filePath:=File:C1566("/RESOURCES/pdf/"+$name+".pdf").platformPath
 	WP EXPORT DOCUMENT:C1337(This:C1470.DocumentFreeze; $filePath; wk pdf:K81:315)
 	
 	

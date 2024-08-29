@@ -87,16 +87,20 @@
 				"classNames": [],
 				"events": [],
 				"airyMode": false,
-				"className": "bg-white h-full w-full px-6"
+				"className": "bg-white h-full w-full px-6",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
 			},
 			"displayName": "Page",
 			"custom": {},
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"DBTGo6M3L9",
-				"Gm_IHWaOGw",
-				"a28OwD4AVI"
+				"cvbwVC_Juv"
 			],
 			"linkedNodes": {}
 		},
@@ -136,7 +140,7 @@
 			},
 			"displayName": "Tabs",
 			"custom": {},
-			"parent": "ROOT",
+			"parent": "cvbwVC_Juv",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -215,7 +219,8 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"classNames": []
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -246,7 +251,8 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"classNames": []
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -262,7 +268,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"DataTable"
+				],
 				"events": [],
 				"style": {},
 				"headerHeight": 36,
@@ -347,27 +355,6 @@
 			],
 			"linkedNodes": {}
 		},
-		"g8g3od8mcj": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"className": "h-full",
-				"role": "tab",
-				"deletable": true,
-				"iterableChild": true
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "Gm_IHWaOGw",
-			"hidden": false,
-			"nodes": [
-				"isczYvgg5A"
-			],
-			"linkedNodes": {}
-		},
 		"5tJWL8DHIx": {
 			"type": {
 				"resolvedName": "TextInput"
@@ -382,7 +369,7 @@
 			},
 			"displayName": "Text Input",
 			"custom": {},
-			"parent": "isczYvgg5A",
+			"parent": "g8g3od8mcj",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -399,7 +386,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Employee's comment",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -420,7 +410,10 @@
 				"type": "textArea",
 				"datasource": "app:selectedReview.EmployeeComment",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -443,7 +436,7 @@
 			},
 			"displayName": "Text Input",
 			"custom": {},
-			"parent": "isczYvgg5A",
+			"parent": "g8g3od8mcj",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -460,7 +453,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Manager's comment",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -481,7 +477,10 @@
 				"type": "textArea",
 				"datasource": "app:selectedReview.ManagerComment",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -521,7 +520,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Mobility wish",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -542,7 +544,10 @@
 				"type": "textArea",
 				"datasource": "app:selectedReview.MobilityWish",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -582,7 +587,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Mobility motivations",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -603,7 +611,10 @@
 				"type": "textArea",
 				"datasource": "app:selectedReview.MobilityMotivations",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -619,7 +630,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"DataTable"
+				],
 				"events": [],
 				"style": {},
 				"headerHeight": 36,
@@ -729,7 +742,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"DataTable"
+				],
 				"events": [],
 				"style": {},
 				"headerHeight": 36,
@@ -827,7 +842,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"DataTable"
+				],
 				"events": [],
 				"style": {},
 				"headerHeight": 36,
@@ -967,7 +984,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Name",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -989,7 +1009,10 @@
 				"moveable": false,
 				"placeholder": "",
 				"datasource": "itemGoalDo.Name",
-				"disabled": true
+				"disabled": true,
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1029,7 +1052,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Comment",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1050,7 +1076,10 @@
 				"type": "textArea",
 				"moveable": false,
 				"placeholder": "",
-				"datasource": "itemGoalDo.Comment"
+				"datasource": "itemGoalDo.Comment",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1066,7 +1095,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Save",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -1125,7 +1156,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Drop",
-				"classNames": [],
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -1228,7 +1261,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Create",
-				"classNames": [],
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -1284,7 +1319,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Save",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -1343,7 +1380,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Drop",
-				"classNames": [],
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -1446,7 +1485,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Name",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1467,7 +1509,10 @@
 				"type": "textArea",
 				"moveable": false,
 				"placeholder": "",
-				"datasource": "itemGoalTodo.Name"
+				"datasource": "itemGoalTodo.Name",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1507,7 +1552,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "KPI",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1528,7 +1576,10 @@
 				"type": "textArea",
 				"moveable": false,
 				"placeholder": "",
-				"datasource": "itemGoalTodo.PerformanceIndicator"
+				"datasource": "itemGoalTodo.PerformanceIndicator",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1568,7 +1619,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Due Date",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1589,7 +1643,10 @@
 				"type": "textArea",
 				"datasource": "itemGoalTodo.DueDate",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1693,7 +1750,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Save",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -1721,7 +1780,7 @@
 			},
 			"displayName": "Button",
 			"custom": {},
-			"parent": "ROOT",
+			"parent": "FvIigpagkE",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -1819,7 +1878,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Name",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1880,7 +1942,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Professional value",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1939,7 +2004,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Create",
-				"classNames": [],
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -1995,7 +2062,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Save",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -2051,7 +2120,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Drop",
-				"classNames": [],
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -2180,8 +2251,7 @@
 			"hidden": false,
 			"nodes": [
 				"s34lM4ATB3",
-				"HFwOfu-GPm",
-				"w_DD1Wsbna"
+				"HFwOfu-GPm"
 			],
 			"linkedNodes": {}
 		},
@@ -2216,7 +2286,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Name",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -2277,7 +2350,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Expected Result",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -2336,7 +2412,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Create",
-				"classNames": [],
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -2392,7 +2470,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Save",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -2451,7 +2531,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Drop",
-				"classNames": [],
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -2534,7 +2616,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "KPI",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -2556,72 +2641,14 @@
 				"datasource": "itemGoalDo.PerformanceIndicator",
 				"disabled": true,
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
 			"parent": "59qo8HtHbE",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"w_DD1Wsbna": {
-			"type": {
-				"resolvedName": "TextInput"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"placeholder": "placeholder",
-				"label": "label",
-				"labelPosition": "left",
-				"iterableChild": true
-			},
-			"displayName": "Text Input",
-			"custom": {},
-			"parent": "JjBzvRmkBA",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"label": "d7Ig_geFf7",
-				"input": "3pUjzfXBI6"
-			}
-		},
-		"d7Ig_geFf7": {
-			"type": {
-				"resolvedName": "Label"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"moveable": false,
-				"text": "Comment",
-				"deletable": true
-			},
-			"displayName": "Label",
-			"custom": {},
-			"parent": "w_DD1Wsbna",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"3pUjzfXBI6": {
-			"type": {
-				"resolvedName": "Input"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"deletable": false,
-				"className": "w-full bg-transparent",
-				"type": "textArea",
-				"datasource": "itemTrainingTodo.ProfessionalValue",
-				"moveable": false,
-				"placeholder": ""
-			},
-			"displayName": "Input",
-			"custom": {},
-			"parent": "w_DD1Wsbna",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
@@ -2676,7 +2703,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Edit",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [],
 				"iconPosition": "hidden",
 				"style": {
@@ -2716,7 +2745,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Edit",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [],
 				"iconPosition": "hidden",
 				"style": {
@@ -2775,7 +2806,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Edit",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [],
 				"iconPosition": "hidden",
 				"style": {
@@ -2834,7 +2867,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Edit",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [],
 				"iconPosition": "hidden",
 				"style": {
@@ -2889,7 +2924,10 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -2931,7 +2969,8 @@
 				"events": [],
 				"className": "fd-selectbox__container",
 				"isFixedWidth": true,
-				"iterableChild": true
+				"iterableChild": true,
+				"classNames": []
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -3010,7 +3049,10 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -3240,7 +3282,10 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -3260,9 +3305,10 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "ROOT",
+			"parent": "cvbwVC_Juv",
 			"hidden": false,
 			"nodes": [
+				"JqMAjC287Y",
 				"w15JHsHbdz",
 				"YJ1RiIPxNJ",
 				"jJPnlhklZP"
@@ -3291,7 +3337,10 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -3390,25 +3439,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"isczYvgg5A": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "g8g3od8mcj",
-			"hidden": false,
-			"nodes": [
-				"5tJWL8DHIx",
-				"xR4tW2FBm_"
-			],
-			"linkedNodes": {}
-		},
 		"t0CQm-o5fO": {
 			"type": {
 				"resolvedName": "StyleBox"
@@ -3451,7 +3481,10 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -3581,7 +3614,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Date",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -3618,7 +3654,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"DataTable"
+				],
 				"events": [],
 				"style": {},
 				"headerHeight": 36,
@@ -3631,7 +3669,7 @@
 						"source": "Group",
 						"format": "",
 						"width": 150,
-						"sorting": true,
+						"sorting": false,
 						"id": "otTUBKBjV3P9o8mBQSXcQA"
 					},
 					{
@@ -3684,7 +3722,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Edit",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [],
 				"iconPosition": "hidden",
 				"style": {
@@ -3817,7 +3857,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Group",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -3839,7 +3882,10 @@
 				"moveable": false,
 				"placeholder": "",
 				"datasource": "itemSkill.Group",
-				"disabled": true
+				"disabled": true,
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -3879,7 +3925,10 @@
 				"events": [],
 				"moveable": false,
 				"text": "Name",
-				"deletable": true
+				"deletable": true,
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -3901,7 +3950,10 @@
 				"datasource": "itemSkill.Name",
 				"disabled": true,
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"classNames": [
+					"input"
+				]
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -3932,7 +3984,10 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -4060,7 +4115,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Save",
-				"classNames": [],
+				"classNames": [
+					"buttonGrey"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -4119,7 +4176,9 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Drop",
-				"classNames": [],
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -4187,6 +4246,190 @@
 			"nodes": [
 				"4RUDNGUpil"
 			],
+			"linkedNodes": {}
+		},
+		"g8g3od8mcj": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "h-full",
+				"role": "tab",
+				"deletable": true,
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Gm_IHWaOGw",
+			"hidden": false,
+			"nodes": [
+				"5tJWL8DHIx",
+				"xR4tW2FBm_"
+			],
+			"linkedNodes": {}
+		},
+		"cvbwVC_Juv": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "20px",
+					"paddingBottom": "20px",
+					"paddingTop": "20px",
+					"paddingLeft": "20px"
+				},
+				"classNames": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"DBTGo6M3L9",
+				"Gm_IHWaOGw",
+				"FvIigpagkE"
+			],
+			"linkedNodes": {}
+		},
+		"yvK8nqdreq": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Cancel",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "FvIigpagkE",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "XBrGF0Fnca"
+			}
+		},
+		"XBrGF0Fnca": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "yvK8nqdreq",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"FvIigpagkE": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "10px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "cvbwVC_Juv",
+			"hidden": false,
+			"nodes": [
+				"a28OwD4AVI",
+				"yvK8nqdreq"
+			],
+			"linkedNodes": {}
+		},
+		"JqMAjC287Y": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "app:selectedReview.Employee.Firstname",
+								"children": [
+									{
+										"text": "Name",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " "
+							},
+							{
+								"type": "datasource",
+								"datasource": "app:selectedReview.Employee.Lastname",
+								"children": [
+									{
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "Name"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "app:selectedReview.Employee.Firstname,app:selectedReview.Employee.Lastname",
+				"classNames": [
+					"title"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "DBTGo6M3L9",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}
