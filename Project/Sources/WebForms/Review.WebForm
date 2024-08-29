@@ -3308,7 +3308,6 @@
 			"parent": "cvbwVC_Juv",
 			"hidden": false,
 			"nodes": [
-				"JqMAjC287Y",
 				"w15JHsHbdz",
 				"YJ1RiIPxNJ",
 				"jJPnlhklZP"
@@ -4360,76 +4359,6 @@
 				"a28OwD4AVI",
 				"yvK8nqdreq"
 			],
-			"linkedNodes": {}
-		},
-		"JqMAjC287Y": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "app:selectedReview.Employee.Firstname",
-								"children": [
-									{
-										"text": "Name",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"dsType": "string",
-								"format": ""
-							},
-							{
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false,
-								"text": " "
-							},
-							{
-								"type": "datasource",
-								"datasource": "app:selectedReview.Employee.Lastname",
-								"children": [
-									{
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false,
-										"text": "Name"
-									}
-								],
-								"dsType": "string",
-								"format": ""
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "app:selectedReview.Employee.Firstname,app:selectedReview.Employee.Lastname",
-				"classNames": [
-					"title"
-				]
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "DBTGo6M3L9",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		}
 	}

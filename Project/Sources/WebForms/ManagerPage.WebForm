@@ -485,9 +485,44 @@
 			"parent": "ovt6oU7FZB",
 			"hidden": false,
 			"nodes": [
+				"j9pHv4_SSr",
 				"1auwpTCNsl",
 				"PbOsnQjMn7"
 			],
+			"linkedNodes": {}
+		},
+		"j9pHv4_SSr": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Reviews",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"classNames": [
+					"title"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "xV39DPvnOC",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}

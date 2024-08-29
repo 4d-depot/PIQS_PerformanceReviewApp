@@ -266,7 +266,8 @@
 			"parent": "8mM12Iikwe",
 			"hidden": false,
 			"nodes": [
-				"eRuYfFk_h_"
+				"eRuYfFk_h_",
+				"SdgxbRid7s"
 			],
 			"linkedNodes": {}
 		},
@@ -321,6 +322,7 @@
 			"parent": "STR-DS8AME",
 			"hidden": false,
 			"nodes": [
+				"OKUCMcU_uZ",
 				"8mM12Iikwe",
 				"ZbVXLHa0zH"
 			],
@@ -354,6 +356,99 @@
 			"nodes": [
 				"1UWlDIBx9q"
 			],
+			"linkedNodes": {}
+		},
+		"SdgxbRid7s": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Download PDF",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "ReviewEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "mDTbAQ6KTpN2A44zgqai7W",
+						"method": "selectedReview.generatePDF",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "9xBrmbCIhQ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "dx2YVBw_o0"
+			}
+		},
+		"dx2YVBw_o0": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "SdgxbRid7s",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"OKUCMcU_uZ": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Reviews",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"classNames": [
+					"title"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "d9cqmF77IK",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}
