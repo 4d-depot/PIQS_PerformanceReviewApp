@@ -66,10 +66,10 @@
 		"height": 734
 	},
 	"Sources/Classes/ReviewEntity.4dm": {
-		"left": 0,
-		"top": 162,
-		"width": 1225,
-		"height": 882
+		"left": 907,
+		"top": 181,
+		"width": 965,
+		"height": 561
 	},
 	"Sources/Forms/Form1/ObjectMethods/SaveTemplate.4dm": {
 		"left": 378,
@@ -144,10 +144,10 @@
 		"height": 761
 	},
 	"Sources/Classes/Employee.4dm": {
-		"left": 623,
-		"top": 211,
-		"width": 965,
-		"height": 789
+		"left": 0,
+		"top": 134,
+		"width": 1225,
+		"height": 910
 	},
 	"Sources/Classes/Identification.4dm": {
 		"left": 557,
@@ -235,9 +235,9 @@
 	},
 	"Sources/Classes/DataStore.4dm": {
 		"left": 907,
-		"top": 153,
+		"top": 181,
 		"width": 965,
-		"height": 589
+		"height": 561
 	},
 	"Sources/Forms/Home/method.4dm": {
 		"left": 641,
@@ -312,8 +312,8 @@
 		"height": 561
 	},
 	"Sources/Classes/Review.4dm": {
-		"left": 817,
-		"top": 405,
+		"left": 907,
+		"top": 181,
 		"width": 965,
 		"height": 561
 	},

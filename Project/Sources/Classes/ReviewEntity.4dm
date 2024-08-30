@@ -96,8 +96,11 @@ exposed Function generatePDF()
 	
 	$name:=This:C1470.Employee.Firstname+This:C1470.Employee.Lastname+"_"+String:C10(This:C1470.Date; "Y")
 	
-	$filePath:=File:C1566("/RESOURCES/pdf/"+$name+".pdf").platformPath
-	WP EXPORT DOCUMENT:C1337(This:C1470.DocumentFreeze; $filePath; wk pdf:K81:315)
+	$filePath:=File:C1566("/RESOURCES/pdf/"+$name+".pdf")
+	WP EXPORT DOCUMENT:C1337(This:C1470.DocumentFreeze; $filePath.platformPath; wk pdf:K81:315)
+	
+	This:C1470.DocumentPDF:=$filePath.getContent()
+	This:C1470.save()
 	
 	
 	//Mark:- Goals

@@ -18,7 +18,8 @@
 			}
 		],
 		"defaultStates": [
-			"sqdXQWLMGfdWrxLZRSXPZz"
+			"sqdXQWLMGfdWrxLZRSXPZz",
+			"rTiFbJRKdvCKrRRk94HWM1"
 		]
 	},
 	"components": {
@@ -46,7 +47,8 @@
 			"hidden": false,
 			"nodes": [
 				"QOqkG7qlD_",
-				"kUmYJwyTdZ"
+				"kUmYJwyTdZ",
+				"1yKTegsOGx"
 			],
 			"linkedNodes": {}
 		},
@@ -140,7 +142,8 @@
 								"value": "Manager",
 								"type": "string"
 							}
-						}
+						},
+						"state": {}
 					},
 					{
 						"type": "simple-action",
@@ -167,10 +170,10 @@
 						"state": {}
 					}
 				],
-				"iconPosition": "top",
 				"style": {
 					"display": "flex"
-				}
+				},
+				"iconPosition": "top"
 			},
 			"displayName": "Button",
 			"custom": {},
@@ -257,7 +260,8 @@
 								"value": "Collaborator",
 								"type": "string"
 							}
-						}
+						},
+						"state": {}
 					},
 					{
 						"type": "simple-action",
@@ -371,7 +375,8 @@
 								"value": "HR",
 								"type": "string"
 							}
-						}
+						},
+						"state": {}
 					},
 					{
 						"type": "simple-action",
@@ -395,10 +400,10 @@
 						"state": {}
 					}
 				],
-				"iconPosition": "top",
 				"style": {
 					"display": "flex"
-				}
+				},
+				"iconPosition": "top"
 			},
 			"displayName": "Button",
 			"custom": {},
@@ -501,6 +506,22 @@
 			"nodes": [
 				"GyOupmjdOY"
 			],
+			"linkedNodes": {}
+		},
+		"1yKTegsOGx": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}

@@ -30,8 +30,21 @@ exposed Function authentify($email : Text; $password : Text) : Text
 			Use ($obj.Employee)
 				$obj.Employee.ID:=$employee.ID
 				$obj.Employee.name:=$employee.Firstname+" "+$employee.Lastname
+				$obj.Employee.role:=""
 				$obj.Employee.authentify:=True:C214
 			End use 
+			
+			
+			
+			If ($employee.ID_Departement=5)
+				Session:C1714.setPrivileges("hr")
+			Else 
+				If ($employee.Collaborator.length=0)
+					Session:C1714.setPrivileges("collaborator")
+				Else 
+					Session:C1714.setPrivileges("manager")
+				End if 
+			End if 
 			
 			
 			Web Form:C1735.setMessage("Authentication successfull")

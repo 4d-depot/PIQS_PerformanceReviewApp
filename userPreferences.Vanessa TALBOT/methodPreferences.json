@@ -99,13 +99,13 @@
 		"stamp": "2024-04-26T19:57:13.579Z"
 	},
 	"Sources/Classes/ReviewEntity.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 1,
-		"lastSelectedLine": 1,
+		"startSelection": 27,
+		"endSelection": 27,
+		"firstSelectedLine": 101,
+		"lastSelectedLine": 101,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-08-28T15:29:22.018Z"
+		"stamp": "2024-08-30T12:55:11.742Z"
 	},
 	"Sources/Forms/Form1/ObjectMethods/SaveTemplate.4dm": {
 		"startSelection": 13,
@@ -216,13 +216,13 @@
 		"stamp": "2024-08-27T13:20:17.396Z"
 	},
 	"Sources/Classes/Employee.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 1,
-		"lastSelectedLine": 1,
+		"startSelection": 56,
+		"endSelection": 56,
+		"firstSelectedLine": 20,
+		"lastSelectedLine": 20,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-08-27T13:23:03.979Z"
+		"stamp": "2024-08-30T09:08:38.499Z"
 	},
 	"Sources/Classes/Identification.4dm": {
 		"startSelection": 2,
@@ -351,13 +351,13 @@
 		"stamp": "2024-07-27T11:22:12.000Z"
 	},
 	"Sources/Classes/DataStore.4dm": {
-		"startSelection": 16,
-		"endSelection": 16,
-		"firstSelectedLine": 79,
-		"lastSelectedLine": 79,
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 46,
+		"lastSelectedLine": 46,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-08-28T14:59:22.272Z"
+		"stamp": "2024-08-30T10:30:59.026Z"
 	},
 	"Sources/Forms/Home/method.4dm": {
 		"startSelection": 7,
@@ -470,9 +470,11 @@
 	"Sources/Classes/Review.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 32,
-		"lastSelectedLine": 32,
-		"folding": [],
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 2,
+		"folding": [
+			2
+		],
 		"bookmarks": [],
 		"stamp": "2024-08-28T15:29:50.368Z"
 	},

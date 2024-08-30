@@ -1,6 +1,6 @@
 Class extends DataClass
 
-exposed Function loadEmployees() : cs:C1710.EmployeeSelection
+exposed Function loadEmployees($idDepartement : Integer) : cs:C1710.EmployeeSelection
 	
 	var $obj : Object
 	
@@ -17,7 +17,11 @@ exposed Function loadEmployees() : cs:C1710.EmployeeSelection
 	Case of 
 		: ($obj.Employee.role="HR")
 			If (This:C1470.query("ID = :1 and Departement.Name = :2"; $obj.Employee.ID; "HR").first()#Null:C1517)
-				return This:C1470.all()
+				If ($idDepartement>0)
+					return This:C1470.query("ID_Departement = :1"; $idDepartement)
+				Else 
+					return This:C1470.all()
+				End if 
 			End if 
 			return ds:C1482.Employee.newSelection()
 			

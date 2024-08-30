@@ -1,0 +1,164 @@
+{
+	"permissions": {
+		"allowed": [
+			{
+				"applyTo": "Employee",
+				"type": "dataclass",
+				"read": [
+					"guest"
+				],
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "ds",
+				"type": "datastore",
+				"describe": [
+					"guest",
+					"collaborator",
+					"manager",
+					"hr"
+				],
+				"read": [
+					"collaborator",
+					"manager",
+					"hr"
+				],
+				"create": [
+					"collaborator",
+					"manager",
+					"hr"
+				],
+				"update": [
+					"collaborator",
+					"manager",
+					"hr"
+				],
+				"drop": [
+					"collaborator",
+					"manager",
+					"hr"
+				],
+				"execute": [
+					"collaborator",
+					"manager",
+					"hr"
+				]
+			},
+			{
+				"applyTo": "Review",
+				"type": "dataclass",
+				"read": [
+					"collaborator",
+					"manager"
+				],
+				"create": [
+					"collaborator",
+					"manager"
+				],
+				"update": [
+					"collaborator",
+					"manager"
+				],
+				"drop": [
+					"collaborator",
+					"manager"
+				],
+				"describe": [
+					"collaborator",
+					"manager"
+				],
+				"execute": [
+					"collaborator",
+					"manager"
+				]
+			},
+			{
+				"applyTo": "Training",
+				"type": "dataclass",
+				"read": [
+					"collaborator",
+					"manager"
+				],
+				"create": [
+					"collaborator",
+					"manager"
+				],
+				"update": [
+					"collaborator",
+					"manager"
+				],
+				"drop": [
+					"collaborator",
+					"manager"
+				],
+				"describe": [
+					"collaborator",
+					"manager"
+				],
+				"execute": [
+					"collaborator",
+					"manager"
+				]
+			},
+			{
+				"applyTo": "Goal",
+				"type": "dataclass",
+				"read": [
+					"collaborator",
+					"manager"
+				],
+				"create": [
+					"collaborator",
+					"manager"
+				],
+				"update": [
+					"collaborator",
+					"manager"
+				],
+				"drop": [
+					"collaborator",
+					"manager"
+				],
+				"describe": [
+					"collaborator",
+					"manager"
+				],
+				"execute": [
+					"collaborator",
+					"manager"
+				]
+			}
+		]
+	},
+	"privileges": [
+		{
+			"id": "8Ae5YpJfo2UiuheYmMz9rs",
+			"privilege": "collaborator",
+			"includes": []
+		},
+		{
+			"id": "k5sH5CT8ePQFBQqpeaMstX",
+			"privilege": "manager",
+			"includes": [
+				"collaborator"
+			]
+		},
+		{
+			"id": "sA3YF4ynMT8UG76HhHX8LW",
+			"privilege": "hr",
+			"includes": [
+				"manager"
+			]
+		}
+	],
+	"roles": [
+		{
+			"id": "atDf3Qk2NgTQ6y6sbfZyDy",
+			"role": "test",
+			"privileges": []
+		}
+	],
+	"forceLogin": true
+}

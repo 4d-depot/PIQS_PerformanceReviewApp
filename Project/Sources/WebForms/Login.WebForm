@@ -334,6 +334,22 @@
 							"type": "Text",
 							"datasource": "app:CollaboratorName"
 						}
+					},
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onclick"
+						],
+						"id": "1ut7jtp26EB3Qi1mQ9wrau",
+						"method": "ds.getRole",
+						"params": [],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Text",
+							"datasource": "app:role"
+						}
 					}
 				],
 				"iconPosition": "hidden",

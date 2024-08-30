@@ -20,6 +20,14 @@
 			{
 				"label": "start",
 				"id": "p6PCARUnbAu9AoTpQGNacC"
+			},
+			{
+				"label": "pdfView",
+				"id": "daWE6Z1rQ45AUxxNMhc1Vz"
+			},
+			{
+				"label": "editReview",
+				"id": "iWJcBAqBoRsztSEZJkWkos"
 			}
 		],
 		"defaultStates": [
@@ -49,7 +57,8 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"STR-DS8AME"
+				"STR-DS8AME",
+				"d9cqmF77IK"
 			],
 			"linkedNodes": {}
 		},
@@ -71,7 +80,8 @@
 			"hidden": false,
 			"nodes": [
 				"dyynYpkprC",
-				"9xBrmbCIhQ"
+				"9xBrmbCIhQ",
+				"FqGfQt7G4j"
 			],
 			"linkedNodes": {}
 		},
@@ -132,7 +142,7 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Edit<br>",
+				"text": "Edit",
 				"classNames": [
 					"buttonGrey"
 				],
@@ -154,11 +164,30 @@
 								"p6PCARUnbAu9AoTpQGNacC"
 							]
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "17baWn2eV66dCgQjwmupEv",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"iWJcBAqBoRsztSEZJkWkos"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
 				"style": {
-					"display": "flex"
+					"display": "flex",
+					"justifyContent": "center"
 				}
 			},
 			"displayName": "Button",
@@ -207,8 +236,7 @@
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"D-j64JtOHy",
-				"d9cqmF77IK"
+				"D-j64JtOHy"
 			],
 			"linkedNodes": {}
 		},
@@ -259,7 +287,14 @@
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px",
+					"alignItems": "start",
+					"flexWrap": "wrap"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -267,7 +302,9 @@
 			"hidden": false,
 			"nodes": [
 				"eRuYfFk_h_",
-				"SdgxbRid7s"
+				"snBTSaopBY",
+				"weeYqD412F",
+				"oQWR-T0ORf"
 			],
 			"linkedNodes": {}
 		},
@@ -319,7 +356,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "STR-DS8AME",
+			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
 				"OKUCMcU_uZ",
@@ -349,72 +386,20 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:daWE6Z1rQ45AUxxNMhc1Vz": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "d9cqmF77IK",
 			"hidden": false,
 			"nodes": [
+				"yszQyS7fv1",
+				"3kyime3RNE",
 				"1UWlDIBx9q"
 			],
-			"linkedNodes": {}
-		},
-		"SdgxbRid7s": {
-			"type": {
-				"resolvedName": "Button"
-			},
-			"isCanvas": false,
-			"props": {
-				"text": "Download PDF",
-				"classNames": [
-					"buttonGrey"
-				],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "ReviewEntity",
-						"events": [
-							"onclick"
-						],
-						"id": "mDTbAQ6KTpN2A44zgqai7W",
-						"method": "selectedReview.generatePDF",
-						"params": [],
-						"namespace": "app",
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Variable"
-						}
-					}
-				],
-				"iconPosition": "hidden",
-				"style": {
-					"display": "flex"
-				}
-			},
-			"displayName": "Button",
-			"custom": {},
-			"parent": "9xBrmbCIhQ",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"icon": "dx2YVBw_o0"
-			}
-		},
-		"dx2YVBw_o0": {
-			"type": {
-				"resolvedName": "Icon"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"icon": "fa-regular fa-star"
-			},
-			"displayName": "Icon",
-			"custom": {},
-			"parent": "SdgxbRid7s",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"OKUCMcU_uZ": {
@@ -447,6 +432,365 @@
 			"displayName": "Text",
 			"custom": {},
 			"parent": "d9cqmF77IK",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"FqGfQt7G4j": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"height": "800px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:p6PCARUnbAu9AoTpQGNacC": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iWJcBAqBoRsztSEZJkWkos": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "8mM12Iikwe",
+			"hidden": false,
+			"nodes": [
+				"6xS-Ql9fl7"
+			],
+			"linkedNodes": {}
+		},
+		"6xS-Ql9fl7": {
+			"type": {
+				"resolvedName": "PdfViewer"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"datasource": "app:selectedReview.DocumentPDF",
+				"style": {
+					"display": "inline"
+				}
+			},
+			"displayName": "PdfViewer",
+			"custom": {},
+			"parent": "FqGfQt7G4j",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"snBTSaopBY": {
+			"type": {
+				"resolvedName": "Download"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [],
+				"iterableChild": true,
+				"label": "Download PDF",
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex",
+					"justifyContent": "center"
+				},
+				"datasource": "app:selectedReview.DocumentPDF",
+				"currentElement": ""
+			},
+			"displayName": "Download",
+			"custom": {},
+			"parent": "9xBrmbCIhQ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "2NTCNyJVEG"
+			}
+		},
+		"2NTCNyJVEG": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "snBTSaopBY",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"weeYqD412F": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "View PDF",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "q5SPZfSFTigcXoosA6yFE4",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"daWE6Z1rQ45AUxxNMhc1Vz"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "18KJUMdf3wd5T8LM8AswmB",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"p6PCARUnbAu9AoTpQGNacC"
+							]
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:daWE6Z1rQ45AUxxNMhc1Vz": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "9xBrmbCIhQ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "xntGzssBcK"
+			}
+		},
+		"xntGzssBcK": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "weeYqD412F",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"oQWR-T0ORf": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Hide PDF<br>",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "1qh1KYQh7A8G5yfpHBp4oo",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"p6PCARUnbAu9AoTpQGNacC"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "wfv1es3wNKymKEs8LMfwUX",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"daWE6Z1rQ45AUxxNMhc1Vz"
+							]
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:p6PCARUnbAu9AoTpQGNacC": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iWJcBAqBoRsztSEZJkWkos": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "9xBrmbCIhQ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "kDtc-orZSc"
+			}
+		},
+		"kDtc-orZSc": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "oQWR-T0ORf",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"yszQyS7fv1": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Edit Review<br>",
+				"classNames": [],
+				"events": [],
+				"iconPosition": "right",
+				"style": {
+					"display": "flex",
+					"backgroundColor": "transparent",
+					"color": "#000000ff"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "ZbVXLHa0zH",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "jHyGcoCHuN"
+			}
+		},
+		"jHyGcoCHuN": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-chevron-right"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "yszQyS7fv1",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"3kyime3RNE": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Edit Review<br>",
+				"classNames": [],
+				"events": [],
+				"iconPosition": "right",
+				"style": {
+					"display": "flex",
+					"color": "#000000ff",
+					"backgroundColor": "transparent"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "ZbVXLHa0zH",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "0X-eO5gIV8"
+			}
+		},
+		"0X-eO5gIV8": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-chevron-down"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "3kyime3RNE",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

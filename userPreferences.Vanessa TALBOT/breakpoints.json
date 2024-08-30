@@ -71,5 +71,14 @@
 			"className": "ReviewSelection",
 			"functionName": "event restrict"
 		}
+	},
+	{
+		"line": 7,
+		"method": {
+			"type": 10,
+			"className": "ReviewEntity",
+			"functionName": "generatePDF",
+			"methodPath": "/SOURCES/Classes/ReviewEntity.4dm"
+		}
 	}
 ]
