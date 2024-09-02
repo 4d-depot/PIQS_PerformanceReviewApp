@@ -47,12 +47,6 @@
 		<field name="ID_GoalStatus" uuid="9555B12B9F834B3AA2B6F7880FD55F18" type="4" id="8"/>
 		<primary_key field_name="ID" field_uuid="BF8A31C57A274A3081C7C14330239828"/>
 	</table>
-	<table name="(LinkDocumentGoal)" uuid="FE1580B4294E45418A649A3B7843F757" id="4" hide_in_REST="true">
-		<field name="ID" uuid="FB3EC540B4CB40659D30255AE9D53E5C" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="IDGoal" uuid="235DB1E95D1A4D1D87282C54630FB523" type="4" id="2"/>
-		<primary_key field_name="ID" field_uuid="FB3EC540B4CB40659D30255AE9D53E5C"/>
-		<table_extra trashed="true"/>
-	</table>
 	<table name="Training" uuid="3B1BA801B13646209CB345DC52D95AE9" id="5">
 		<field name="ID" uuid="9D21A2E88A314375AECE25C840E0F600" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="Name" uuid="57045FD009264B89B7A63A79F68AD33A" type="10" limiting_length="255" id="2"/>
@@ -71,19 +65,6 @@
 		<field name="Group" uuid="4FA9B21DB2F644FEBA975A1152B3AC86" type="10" limiting_length="255" id="6"/>
 		<primary_key field_name="ID" field_uuid="32A6A7152F9F4D5084CB3859B8484614"/>
 	</table>
-	<table name="(SkillGroup)" uuid="271278EEE03B44DDA846551681D8DE80" id="7" hide_in_REST="true">
-		<field name="ID" uuid="AC4EFA92F4144AFBBA31418DDD115015" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="Name" uuid="D94E7F0AC4DC48738EEF52168A694F2D" type="10" limiting_length="255" id="2"/>
-		<primary_key field_name="ID" field_uuid="AC4EFA92F4144AFBBA31418DDD115015"/>
-		<table_extra trashed="true"/>
-	</table>
-	<table name="Settings" uuid="CE6F31A473FF46F5940875066B6A61AB" id="8">
-		<field name="ID" uuid="EBC079751AE6405680B9F504089749CC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="Skill" uuid="32C637E654AF4F83A15B0621396F73C9" type="21" blob_switch_size="2147483647" id="2"/>
-		<field name="Name" uuid="5AF3DBCE6D04441DB795B1458067825B" type="10" limiting_length="255" id="3"/>
-		<field name="ID_Departement" uuid="EB880809FC7A47EC9867198762F1FD2B" type="4" id="4"/>
-		<primary_key field_name="ID" field_uuid="EBC079751AE6405680B9F504089749CC"/>
-	</table>
 	<table name="Template" uuid="C12AD224E10B4EB39BF5DA3C0B57AD3A" id="9">
 		<field name="ID" uuid="2692F8EE3FD4481E8A0A81998215A11C" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="Template" uuid="70225C0BE31B498A9FE0A74A811375B8" type="21" blob_switch_size="2147483647" id="2"/>
@@ -93,6 +74,8 @@
 	<table name="Departement" uuid="03DDF0A6D9954A14AEE0CB99DEA1D438" id="10">
 		<field name="ID" uuid="CC4DB211CD054FDAAA6DF9DE1D0C52B2" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="Name" uuid="A6468EB3951942019F9E7F07F8CF4768" type="10" limiting_length="255" id="2"/>
+		<field name="ID_Template" uuid="4E54B3BF18C841C492FBAEAE0AC7FA37" type="4" id="3"/>
+		<field name="Skill" uuid="BE3F42C4B54B4B6EBCD24AE6C96CD951" type="21" blob_switch_size="2147483647" id="4"/>
 		<primary_key field_name="ID" field_uuid="CC4DB211CD054FDAAA6DF9DE1D0C52B2"/>
 	</table>
 	<table name="ReviewStatus" uuid="2EEC8EE83104496E8D9472B68BDB9E80" id="11">
@@ -105,14 +88,6 @@
 		<field name="Name" uuid="07B82B626D3D4C8DBA216F03B12B1386" type="10" limiting_length="255" id="2"/>
 		<field name="Code" uuid="35F68B4BA14048EA8A06BB2DDB544D81" type="10" limiting_length="255" id="3"/>
 		<primary_key field_name="ID" field_uuid="3933BF5A995849D8B32B98DBCD6E14E3"/>
-	</table>
-	<table name="(Table_1)" uuid="360AFE07BA204C779BEC0C00A9E8F67A" id="13" hide_in_REST="true">
-		<field name="ID" uuid="C637CB554D00490E979BC7273499BA53" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="ID_Review" uuid="D207F967327649BB93529FEDCBF34EC2" type="10" limiting_length="255" id="2"/>
-		<field name="ID_Training" uuid="2DD5FDA818524129B90894028155E64E" type="10" limiting_length="255" id="3"/>
-		<field name="isCurrnet" uuid="BF40F5EF2E5242488F3A533C08050B28" type="10" limiting_length="255" id="4"/>
-		<primary_key field_name="ID" field_uuid="C637CB554D00490E979BC7273499BA53"/>
-		<table_extra trashed="true"/>
 	</table>
 	<table name="TrainingStatus" uuid="5B470954CDCE46E588CE8C26097439C8" id="14">
 		<field name="ID" uuid="8B9124FE9C0B46309745A1D05E7BF3DB" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
@@ -268,18 +243,6 @@
 			</field_ref>
 		</related_field>
 	</relation>
-	<relation uuid="BF587C4703D34C399AD263903A1D7BF9" name_Nto1="Link_15" name_1toN="Link_15_return" state="1">
-		<related_field kind="source">
-			<field_ref uuid="EB880809FC7A47EC9867198762F1FD2B" name="ID_Departement">
-				<table_ref uuid="CE6F31A473FF46F5940875066B6A61AB" name="Settings"/>
-			</field_ref>
-		</related_field>
-		<related_field kind="destination">
-			<field_ref uuid="CC4DB211CD054FDAAA6DF9DE1D0C52B2" name="ID">
-				<table_ref uuid="03DDF0A6D9954A14AEE0CB99DEA1D438" name="Departement"/>
-			</field_ref>
-		</related_field>
-	</relation>
 	<relation uuid="431BC46813424851AA553A2029ED0F7C" name_Nto1="Score" name_1toN="Skills" state="1">
 		<related_field kind="source">
 			<field_ref uuid="F93EC8DB14C2479B8857E7ECC0A922FD" name="ID_Score">
@@ -316,6 +279,18 @@
 			</field_ref>
 		</related_field>
 	</relation>
+	<relation uuid="E73743A6AEC24D7D8D8FA86AD34810E9" name_Nto1="Template" name_1toN="Departement" state="1">
+		<related_field kind="source">
+			<field_ref uuid="4E54B3BF18C841C492FBAEAE0AC7FA37" name="ID_Template">
+				<table_ref uuid="03DDF0A6D9954A14AEE0CB99DEA1D438" name="Departement"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="2692F8EE3FD4481E8A0A81998215A11C" name="ID">
+				<table_ref uuid="C12AD224E10B4EB39BF5DA3C0B57AD3A" name="Template"/>
+			</field_ref>
+		</related_field>
+	</relation>
 	<index kind="regular" unique_keys="true" uuid="047EA86DE31D47AA9D9AC4B050F6E002" type="7">
 		<field_ref uuid="1522B900750C4C75B278C00213324D42" name="ID">
 			<table_ref uuid="8EDE47B1B26E4D3E87143D7F95313CA6" name="Review"/>
@@ -326,19 +301,9 @@
 			<table_ref uuid="03DDF0A6D9954A14AEE0CB99DEA1D438" name="Departement"/>
 		</field_ref>
 	</index>
-	<index kind="regular" unique_keys="true" uuid="2329E9B62C34465EAD48A4B6C302E724" type="7">
-		<field_ref uuid="FB3EC540B4CB40659D30255AE9D53E5C" name="ID">
-			<table_ref uuid="FE1580B4294E45418A649A3B7843F757" name="(LinkDocumentGoal)"/>
-		</field_ref>
-	</index>
 	<index kind="regular" uuid="2433C7D788D145148178C5C7997A7891" type="7">
 		<field_ref uuid="C2BE3379896D44BD9B7F6AF75F6B6C1E" name="ID_Supervisor">
 			<table_ref uuid="AB5E7E2BB0A2426EBEF70F0B90C89874" name="Employee"/>
-		</field_ref>
-	</index>
-	<index kind="regular" unique_keys="true" uuid="29E7A127AEAA463C8052FBF31AAFB8C7" type="7">
-		<field_ref uuid="AC4EFA92F4144AFBBA31418DDD115015" name="ID">
-			<table_ref uuid="271278EEE03B44DDA846551681D8DE80" name="(SkillGroup)"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" uuid="3339BF2732384EFA8B2036A29EBC18A8" type="7">
@@ -349,16 +314,6 @@
 	<index kind="regular" unique_keys="true" uuid="45AA292D871A474CADC6C231527570BF" type="7">
 		<field_ref uuid="BF8A31C57A274A3081C7C14330239828" name="ID">
 			<table_ref uuid="370930CED73142A8922DE958F2D998D3" name="Goal"/>
-		</field_ref>
-	</index>
-	<index kind="regular" unique_keys="true" uuid="4654E6871D61421DA70AC976039E5D40" type="7">
-		<field_ref uuid="EBC079751AE6405680B9F504089749CC" name="ID">
-			<table_ref uuid="CE6F31A473FF46F5940875066B6A61AB" name="Settings"/>
-		</field_ref>
-	</index>
-	<index kind="regular" unique_keys="true" uuid="59AC4787B8E1404BA1CDCFBB92A00474" type="7">
-		<field_ref uuid="C637CB554D00490E979BC7273499BA53" name="ID">
-			<table_ref uuid="360AFE07BA204C779BEC0C00A9E8F67A" name="(Table_1)"/>
 		</field_ref>
 	</index>
 	<index kind="regular" uuid="64B7B3A8BF364E5B93AE1D526AC6B0E6" type="7">

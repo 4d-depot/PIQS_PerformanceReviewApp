@@ -3,13 +3,6 @@
 		"v": "1.0",
 		"datasources": [
 			{
-				"id": "myReview",
-				"type": "entity",
-				"dataclass": "Review",
-				"initialValue": "",
-				"depth": null
-			},
-			{
 				"id": "itemTraining",
 				"type": "entity",
 				"dataclass": "Training",
@@ -91,12 +84,17 @@
 				"id": "4uDA5Ywo925GjzgLLLuMxk"
 			},
 			{
-				"label": "editItemTraining",
+				"label": "editItemTrainingDo",
 				"id": "7TKw1fUMMyFbY97Hw3PB8M"
+			},
+			{
+				"label": "editItemTrainingTodo",
+				"id": "rc7ghzYUZjRW16mh6KPNGj"
 			}
 		],
 		"defaultStates": [
-			"kyEV7TCPeqEaNVbeZTirS7"
+			"kyEV7TCPeqEaNVbeZTirS7",
+			"taPrcGBqkSd1hTtGn6TaPG"
 		]
 	},
 	"components": {
@@ -1161,6 +1159,24 @@
 								"nGP5N37pAxfGj7nn2Ucny5"
 							]
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "bL6f7SxELYKRDLjaSasFpA",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -1204,7 +1220,14 @@
 				"iterableChild": true
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:rc7ghzYUZjRW16mh6KPNGj": {
+					"style": {
+						"display": "flex",
+						"flexDirection": "column"
+					}
+				}
+			},
 			"parent": "GyMaJJ83oG",
 			"hidden": false,
 			"nodes": [
@@ -1252,19 +1275,22 @@
 				],
 				"events": [
 					{
-						"type": "simple-action",
-						"id": "8bTgs7CgkP2p53k8uhjWpu",
+						"type": "method",
+						"dataclass": "ReviewEntity",
 						"events": [
 							"onclick"
 						],
-						"action": "create",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "itemGoalTodo",
-							"type": "entity",
-							"namespace": ""
+						"id": "xuhexqYDATH8rZ3AnZuy4U",
+						"method": "selectedReview.createGoal",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.GoalEntity",
+							"datasource": "itemGoalTodo"
 						},
-						"state": {}
+						"feedback": true
 					},
 					{
 						"type": "simple-action",
@@ -1347,6 +1373,23 @@
 					},
 					{
 						"type": "simple-action",
+						"id": "cCqHFnXpfQ178Q5Jd2qsXs",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						}
+					},
+					{
+						"type": "simple-action",
 						"id": "se5Sgr6j5frLZYumZTHJnV",
 						"events": [
 							"onclick"
@@ -1360,6 +1403,24 @@
 							"action": "delete",
 							"states": [
 								"nd1AYH6fNk1WUPqTsmzuYP"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "3FjppkWYyUNguq34E5DnE6",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
 							]
 						}
 					}
@@ -1426,6 +1487,23 @@
 					},
 					{
 						"type": "simple-action",
+						"id": "rtDKTYU5SJ254zxLTULiJD",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						}
+					},
+					{
+						"type": "simple-action",
 						"id": "a7MrtzArgDmv1rtXcd6pPV",
 						"events": [
 							"onclick"
@@ -1439,6 +1517,24 @@
 							"action": "delete",
 							"states": [
 								"nd1AYH6fNk1WUPqTsmzuYP"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "e7HsekES5fpUcCD4duyPxn",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
 							]
 						}
 					}
@@ -1744,6 +1840,11 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:rc7ghzYUZjRW16mh6KPNGj": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "5NFV-KXRx9",
@@ -1830,6 +1931,16 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:7TKw1fUMMyFbY97Hw3PB8M": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:rc7ghzYUZjRW16mh6KPNGj": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "-CsN3WT15y",
@@ -1860,9 +1971,9 @@
 						"action": "save",
 						"actionType": "datasource",
 						"datasource": {
-							"name": "myReview",
+							"name": "selectedReview",
 							"type": "entity",
-							"namespace": ""
+							"namespace": "app"
 						},
 						"feedback": {
 							"enabled": true
@@ -1930,6 +2041,11 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:rc7ghzYUZjRW16mh6KPNGj": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "TL9IhEQNTx",
@@ -1950,7 +2066,14 @@
 				"iterableChild": true
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:rc7ghzYUZjRW16mh6KPNGj": {
+					"style": {
+						"display": "flex",
+						"flexDirection": "column"
+					}
+				}
+			},
 			"parent": "grhzEyyGv1",
 			"hidden": false,
 			"nodes": [
@@ -2125,19 +2248,68 @@
 				],
 				"events": [
 					{
-						"type": "simple-action",
-						"id": "b5FEgzDtoUe8XPKJxYUt6r",
+						"type": "method",
+						"dataclass": "ReviewEntity",
 						"events": [
 							"onclick"
 						],
-						"action": "create",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "itemTraining",
-							"type": "entity",
-							"namespace": ""
+						"id": "asVDnonSwidFMC2wU6WxS1",
+						"method": "selectedReview.createTraining",
+						"params": [
+							{
+								"name": "idStatus",
+								"type": "Integer",
+								"datasource": "",
+								"id": "jEkqtgmfhEjQazta187xuU",
+								"isHardCoded": true,
+								"hardCodedType": "number",
+								"hardCodedValue": "4"
+							}
+						],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "training",
+							"type": "cs.TrainingEntity",
+							"datasource": "itemTraining"
 						},
-						"state": {}
+						"feedback": false
+					},
+					{
+						"type": "simple-action",
+						"id": "czJesVuHm2PmHdNPEEi7Qc",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "eSG7BDert7vP4Jc9daafNu",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"7TKw1fUMMyFbY97Hw3PB8M"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -2199,6 +2371,23 @@
 					},
 					{
 						"type": "simple-action",
+						"id": "vN1EjGEWXBDcoG3HmGoYtE",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						}
+					},
+					{
+						"type": "simple-action",
 						"id": "v9JpsCbVeKpaBuFS1NTTHP",
 						"events": [
 							"onclick"
@@ -2212,6 +2401,24 @@
 							"action": "delete",
 							"states": [
 								"7TKw1fUMMyFbY97Hw3PB8M"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "usuM42TeHxVEqZqpU9fXrm",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
 							]
 						}
 					}
@@ -2275,6 +2482,23 @@
 					},
 					{
 						"type": "simple-action",
+						"id": "7NrYkvnZzrJimWv3QLQA9y",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						}
+					},
+					{
+						"type": "simple-action",
 						"id": "6UKDR4mdSQ5QbwLhUp5GU8",
 						"events": [
 							"onclick"
@@ -2288,6 +2512,24 @@
 							"action": "delete",
 							"states": [
 								"7TKw1fUMMyFbY97Hw3PB8M"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "cmjk5stL3rJ8XbTyAL8e8y",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
 							]
 						}
 					}
@@ -2391,6 +2633,11 @@
 					}
 				},
 				"states:taPrcGBqkSd1hTtGn6TaPG": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:7TKw1fUMMyFbY97Hw3PB8M": {
 					"style": {
 						"display": "none"
 					}
@@ -2587,19 +2834,68 @@
 				],
 				"events": [
 					{
-						"type": "simple-action",
-						"id": "4zt3c7t2TNTycbTT7viwLw",
+						"type": "method",
+						"dataclass": "ReviewEntity",
 						"events": [
 							"onclick"
 						],
-						"action": "create",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "itemTraining",
-							"type": "entity",
-							"namespace": ""
+						"id": "qdrJYgRZWZntDJnxJu5cAr",
+						"method": "selectedReview.createTraining",
+						"params": [
+							{
+								"name": "idStatus",
+								"type": "Integer",
+								"datasource": "",
+								"id": "jEkqtgmfhEjQazta187xuU",
+								"isHardCoded": true,
+								"hardCodedType": "number",
+								"hardCodedValue": "1"
+							}
+						],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "training",
+							"type": "cs.TrainingEntity",
+							"datasource": "itemTrainingTodo"
 						},
-						"state": {}
+						"feedback": false
+					},
+					{
+						"type": "simple-action",
+						"id": "rDzjHkwDuWoi2CLoL4zgAr",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"rc7ghzYUZjRW16mh6KPNGj"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "79YSGGzL3p8jA3EmAo8Fxj",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -2658,9 +2954,62 @@
 							"namespace": ""
 						},
 						"feedback": {
-							"enabled": true
+							"enabled": false
 						},
 						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "b6CXmvX7EX5E86PSZ4reL9",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": false
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "5jSa8gEXbkA13k5VuyCeAi",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rc7ghzYUZjRW16mh6KPNGj"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "b5WJBzW5bmjsR4dNHZ5PRf",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -2722,6 +3071,59 @@
 							"enabled": true
 						},
 						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "2W4ufypji3hPtg1LpaDvkq",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "tEou8mApFMhYFFEQvnf47w",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rc7ghzYUZjRW16mh6KPNGj"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "1nbfpt7YeCEUyzExnPAFkJ",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -2847,7 +3249,19 @@
 				},
 				"states:7TKw1fUMMyFbY97Hw3PB8M": {
 					"style": {
+						"display": "flex",
+						"flexDirection": "column"
+					}
+				},
+				"states:nd1AYH6fNk1WUPqTsmzuYP": {
+					"style": {
 						"display": "none"
+					}
+				},
+				"states:rc7ghzYUZjRW16mh6KPNGj": {
+					"style": {
+						"display": "flex",
+						"flexDirection": "column"
 					}
 				}
 			},
@@ -2880,6 +3294,11 @@
 					}
 				},
 				"states:nd1AYH6fNk1WUPqTsmzuYP": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:nGP5N37pAxfGj7nn2Ucny5": {
 					"style": {
 						"display": "none"
 					}
@@ -2919,6 +3338,24 @@
 							"action": "add",
 							"states": [
 								"nGP5N37pAxfGj7nn2Ucny5"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "df7gydndxF7C6SBiAXTk3a",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
 							]
 						}
 					}
@@ -3030,7 +3467,18 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:7TKw1fUMMyFbY97Hw3PB8M": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:rc7ghzYUZjRW16mh6KPNGj": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "TL9IhEQNTx",
 			"hidden": false,
 			"nodes": [
@@ -3065,6 +3513,24 @@
 							"action": "add",
 							"states": [
 								"7TKw1fUMMyFbY97Hw3PB8M"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "8d1bZkSUUGWPQW7Xfdxi1m",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
 							]
 						}
 					}
@@ -3115,7 +3581,18 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:7TKw1fUMMyFbY97Hw3PB8M": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:rc7ghzYUZjRW16mh6KPNGj": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "by86WarlvF",
 			"hidden": false,
 			"nodes": [
@@ -3134,7 +3611,44 @@
 				"classNames": [
 					"buttonGrey"
 				],
-				"events": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "9FzvURPn3ba8UupbkinE3K",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"rc7ghzYUZjRW16mh6KPNGj"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "1MjzXUUtZznz843osbencj",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
+							]
+						}
+					}
+				],
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex"
@@ -3447,7 +3961,11 @@
 				"events": [],
 				"className": "fd-selectbox__container",
 				"isFixedWidth": true,
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"justifyContent": "flex-start",
+					"alignItems": "center"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -3572,7 +4090,7 @@
 			"parent": "cvbwVC_Juv",
 			"hidden": false,
 			"nodes": [
-				"w15JHsHbdz",
+				"mtJ-_vQgx5",
 				"YJ1RiIPxNJ",
 				"jJPnlhklZP"
 			],
@@ -3644,11 +4162,17 @@
 				"events": [],
 				"className": "fd-selectbox__container",
 				"isFixedWidth": true,
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"paddingTop": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingLeft": "0px"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 48
+				"contentHeight": 24
 			},
 			"parent": "jJPnlhklZP",
 			"hidden": false,
@@ -3860,7 +4384,7 @@
 			},
 			"displayName": "Text Input",
 			"custom": {},
-			"parent": "DBTGo6M3L9",
+			"parent": "mtJ-_vQgx5",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -3901,7 +4425,9 @@
 				"type": "date",
 				"datasource": "app:selectedReview.Date",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"format": "Date abbreviated",
+				"dataType": "date"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -3967,11 +4493,20 @@
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {
 				"states:4uDA5Ywo925GjzgLLLuMxk": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:nGP5N37pAxfGj7nn2Ucny5": {
 					"style": {
 						"display": "none"
 					}
@@ -4099,6 +4634,16 @@
 					}
 				},
 				"states:taPrcGBqkSd1hTtGn6TaPG": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:7TKw1fUMMyFbY97Hw3PB8M": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:rc7ghzYUZjRW16mh6KPNGj": {
 					"style": {
 						"display": "none"
 					}
@@ -4655,6 +5200,24 @@
 								"nGP5N37pAxfGj7nn2Ucny5"
 							]
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "6DNkwiwhrrtZFQuqH2pZkx",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -4714,6 +5277,25 @@
 							"action": "delete",
 							"states": [
 								"nd1AYH6fNk1WUPqTsmzuYP"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "4azk5TK9gAMhxMbF1ArAWg",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": "",
+							"from": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
 							]
 						}
 					}
@@ -4877,6 +5459,24 @@
 								"7TKw1fUMMyFbY97Hw3PB8M"
 							]
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "v3uwJMBBvKyhgAG5LYMQXd",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -4920,7 +5520,44 @@
 				"classNames": [
 					"buttonGrey"
 				],
-				"events": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "uvEjM8y6dFGbD1EXwdvCeE",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rc7ghzYUZjRW16mh6KPNGj"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "9Rwub6KEp6BU9ZVBS7xqgV",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"taPrcGBqkSd1hTtGn6TaPG"
+							]
+						}
+					}
+				],
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex"
@@ -4948,6 +5585,166 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "XVMLc__KPS",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"roXYvesy26": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-calendar-plus",
+				"style": {
+					"fontSize": "18px",
+					"display": "flex",
+					"alignItems": "end",
+					"paddingRight": "4px",
+					"paddingBottom": "4px",
+					"paddingTop": "4px",
+					"paddingLeft": "4px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "d0CeqoD8PD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"mtJ-_vQgx5": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"display": "flex",
+					"justifyContent": "flex-start"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "DBTGo6M3L9",
+			"hidden": false,
+			"nodes": [
+				"w15JHsHbdz",
+				"wIJh__NIcK"
+			],
+			"linkedNodes": {}
+		},
+		"wIJh__NIcK": {
+			"type": {
+				"resolvedName": "Popover"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"position": "bottom-center",
+				"isShown": false,
+				"action": "click",
+				"style": {
+					"minWidth": "48px",
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Popover",
+			"custom": {},
+			"parent": "mtJ-_vQgx5",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"PopoverTrigger": "d0CeqoD8PD",
+				"PopoverContent": "Au_i0Sr9F5"
+			}
+		},
+		"d0CeqoD8PD": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"alignItems": "end",
+					"paddingBottom": "12px",
+					"paddingRight": "12px",
+					"paddingTop": "12px",
+					"paddingLeft": "12px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "wIJh__NIcK",
+			"hidden": false,
+			"nodes": [
+				"roXYvesy26"
+			],
+			"linkedNodes": {}
+		},
+		"Au_i0Sr9F5": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "transparent"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "wIJh__NIcK",
+			"hidden": false,
+			"nodes": [
+				"vE0NCZtlc8"
+			],
+			"linkedNodes": {}
+		},
+		"vE0NCZtlc8": {
+			"type": {
+				"resolvedName": "DatePicker"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [
+					"box-shadow"
+				],
+				"events": [],
+				"readOnly": false,
+				"style": {
+					"height": "fit-content",
+					"width": "350px",
+					"borderRadius": "4px",
+					"padding": "8px",
+					"backgroundColor": "#ffffffff"
+				},
+				"selectedDateColor": "#dd3c4c",
+				"selectedRangeColor": "rgba(34,139,230,.12)",
+				"selectedDateRaduis": "",
+				"language": "en",
+				"selectionModes": "single",
+				"datasource": "app:selectedReview.Date"
+			},
+			"displayName": "DatePicker",
+			"custom": {},
+			"parent": "Au_i0Sr9F5",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

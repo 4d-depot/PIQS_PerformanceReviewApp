@@ -16,33 +16,27 @@
 				"type": "datastore",
 				"describe": [
 					"guest",
-					"collaborator",
-					"manager",
+					"user",
 					"hr"
 				],
 				"read": [
-					"collaborator",
-					"manager",
+					"user",
 					"hr"
 				],
 				"create": [
-					"collaborator",
-					"manager",
+					"user",
 					"hr"
 				],
 				"update": [
-					"collaborator",
-					"manager",
+					"user",
 					"hr"
 				],
 				"drop": [
-					"collaborator",
-					"manager",
+					"user",
 					"hr"
 				],
 				"execute": [
-					"collaborator",
-					"manager",
+					"user",
 					"hr"
 				]
 			},
@@ -50,106 +44,117 @@
 				"applyTo": "Review",
 				"type": "dataclass",
 				"read": [
-					"collaborator",
-					"manager"
-				],
-				"create": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"update": [
-					"collaborator",
-					"manager"
-				],
-				"drop": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"describe": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"execute": [
-					"collaborator",
-					"manager"
+					"user"
 				]
 			},
 			{
 				"applyTo": "Training",
 				"type": "dataclass",
 				"read": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"create": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"update": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"drop": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"describe": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"execute": [
-					"collaborator",
-					"manager"
+					"user"
 				]
 			},
 			{
 				"applyTo": "Goal",
 				"type": "dataclass",
 				"read": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"create": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"update": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"drop": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"describe": [
-					"collaborator",
-					"manager"
+					"user"
 				],
 				"execute": [
-					"collaborator",
-					"manager"
+					"user"
+				]
+			},
+			{
+				"applyTo": "GoalStatus",
+				"type": "dataclass",
+				"read": [
+					"user"
+				]
+			},
+			{
+				"applyTo": "TrainingStatus",
+				"type": "dataclass",
+				"read": [
+					"user"
+				]
+			},
+			{
+				"applyTo": "Score",
+				"type": "dataclass",
+				"read": [
+					"user"
+				]
+			},
+			{
+				"applyTo": "Departement",
+				"type": "dataclass",
+				"read": [
+					"user"
+				]
+			},
+			{
+				"applyTo": "Skill",
+				"type": "dataclass",
+				"read": [
+					"user"
+				]
+			},
+			{
+				"applyTo": "Template",
+				"type": "dataclass",
+				"read": [
+					"user"
 				]
 			}
 		]
 	},
 	"privileges": [
 		{
-			"id": "8Ae5YpJfo2UiuheYmMz9rs",
-			"privilege": "collaborator",
-			"includes": []
-		},
-		{
 			"id": "k5sH5CT8ePQFBQqpeaMstX",
-			"privilege": "manager",
-			"includes": [
-				"collaborator"
-			]
+			"privilege": "user",
+			"includes": []
 		},
 		{
 			"id": "sA3YF4ynMT8UG76HhHX8LW",
 			"privilege": "hr",
 			"includes": [
-				"manager"
+				"user"
 			]
 		}
 	],

@@ -279,6 +279,26 @@
 								"type": "string"
 							}
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "6QX7xt7yUaNtiGVy1RDjPy",
+						"events": [
+							"onclick"
+						],
+						"action": "clear",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "role",
+							"type": "scalar",
+							"namespace": "app",
+							"from": "",
+							"dataType": "string",
+							"set": {
+								"value": " ",
+								"type": "string"
+							}
+						}
 					}
 				],
 				"iconPosition": "left",
@@ -325,18 +345,14 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": ""
+								"text": "Role: "
 							},
 							{
 								"type": "datasource",
 								"datasource": "app:role",
 								"children": [
 									{
-										"text": "role",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
+										"text": "role"
 									}
 								],
 								"dsType": "string",

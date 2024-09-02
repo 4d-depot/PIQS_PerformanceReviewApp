@@ -30,21 +30,6 @@
 			},
 			"displayable_fields_count": 6
 		},
-		"(Table_1)": {
-			"color": {
-				"red": 255,
-				"green": 255,
-				"blue": 255,
-				"alpha": 0
-			},
-			"coordinates": {
-				"left": 827.44140625,
-				"top": 188.78125,
-				"width": 120,
-				"height": 167.33203125
-			},
-			"displayable_fields_count": 6
-		},
 		"Score": {
 			"color": {
 				"alpha": 0,
@@ -77,16 +62,16 @@
 		},
 		"Departement": {
 			"color": {
-				"alpha": 0,
-				"blue": 255,
+				"red": 255,
 				"green": 255,
-				"red": 255
+				"blue": 255,
+				"alpha": 0
 			},
 			"coordinates": {
-				"height": 167.33203125,
-				"width": 140.23046875,
+				"left": 23.65234375,
 				"top": 4.04296875,
-				"left": 0
+				"width": 140.23046875,
+				"height": 167.33203125
 			},
 			"displayable_fields_count": 6
 		},
@@ -98,40 +83,10 @@
 				"alpha": 0
 			},
 			"coordinates": {
-				"left": 8.08203125,
-				"top": 436.9140625,
+				"left": 22.07421875,
+				"top": 213.65234375,
 				"width": 141.671875,
 				"height": 186.1796875
-			},
-			"displayable_fields_count": 6
-		},
-		"Settings": {
-			"color": {
-				"alpha": 0,
-				"blue": 255,
-				"green": 255,
-				"red": 255
-			},
-			"coordinates": {
-				"height": 181.3828125,
-				"width": 142.69921875,
-				"top": 203.60546875,
-				"left": 0
-			},
-			"displayable_fields_count": 6
-		},
-		"(SkillGroup)": {
-			"color": {
-				"red": 255,
-				"green": 255,
-				"blue": 255,
-				"alpha": 0
-			},
-			"coordinates": {
-				"left": 1184.5390625,
-				"top": 496.9140625,
-				"width": 120,
-				"height": 167.33203125
 			},
 			"displayable_fields_count": 6
 		},
@@ -164,21 +119,6 @@
 				"height": 204.6484375
 			},
 			"displayable_fields_count": 7
-		},
-		"(LinkDocumentGoal)": {
-			"color": {
-				"red": 255,
-				"green": 255,
-				"blue": 255,
-				"alpha": 0
-			},
-			"coordinates": {
-				"left": 665.29296875,
-				"top": 59.13671875,
-				"width": 120,
-				"height": 167.33203125
-			},
-			"displayable_fields_count": 6
 		},
 		"Goal": {
 			"color": {
@@ -227,6 +167,14 @@
 		}
 	},
 	"relations": {
+		"E73743A6AEC24D7D8D8FA86AD34810E9": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			}
+		},
 		"0B05A1E40F944B27B271934ADE8EE296": {
 			"color": {
 				"red": 255,
@@ -249,14 +197,6 @@
 				"green": 255,
 				"blue": 255,
 				"alpha": 0
-			}
-		},
-		"BF587C4703D34C399AD263903A1D7BF9": {
-			"color": {
-				"alpha": 0,
-				"blue": 255,
-				"green": 255,
-				"red": 255
 			}
 		},
 		"7F1976392A6C44D295890C5EA77D0B70": {

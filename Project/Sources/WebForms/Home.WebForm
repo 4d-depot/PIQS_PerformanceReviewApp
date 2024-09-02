@@ -15,6 +15,34 @@
 			{
 				"label": "Base",
 				"id": "root"
+			},
+			{
+				"label": "collaborator",
+				"id": "nwc7S9cPCgGmsgy2esVPYK",
+				"conditions": {
+					"id": "kc3zyqVziaN8gy8VRdtFi1",
+					"type": "datasource",
+					"name": "condition",
+					"value": "Collaborator",
+					"valueType": "hardCoded",
+					"path": "app:maxRole",
+					"dsType": "string",
+					"op": "eq"
+				}
+			},
+			{
+				"label": "manager",
+				"id": "3mxioPT2cwQNmLqRi3RMU3",
+				"conditions": {
+					"id": "7qRq1paF9KFHBV5a9LP6sT",
+					"type": "datasource",
+					"name": "condition",
+					"value": "Manager",
+					"valueType": "hardCoded",
+					"path": "app:maxRole",
+					"dsType": "string",
+					"op": "eq"
+				}
 			}
 		],
 		"defaultStates": [
@@ -176,7 +204,13 @@
 				"iconPosition": "top"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:nwc7S9cPCgGmsgy2esVPYK": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "kUmYJwyTdZ",
 			"hidden": false,
 			"nodes": [],
@@ -406,7 +440,18 @@
 				"iconPosition": "top"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:3mxioPT2cwQNmLqRi3RMU3": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:nwc7S9cPCgGmsgy2esVPYK": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "kUmYJwyTdZ",
 			"hidden": false,
 			"nodes": [],

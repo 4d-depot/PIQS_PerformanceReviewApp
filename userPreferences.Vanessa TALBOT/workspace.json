@@ -2,15 +2,6 @@
 	"editors": [
 		{
 			"type": "explorer"
-		},
-		{
-			"type": "method",
-			"id": 2147483637,
-			"codeDescriptor": {
-				"type": 12,
-				"className": "ReviewEntity",
-				"methodPath": "/SOURCES/Classes/ReviewEntity.4dm"
-			}
 		}
 	]
 }

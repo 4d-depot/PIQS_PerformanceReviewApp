@@ -1,10 +1,11 @@
 
-
 Case of 
 		
 	: (Form event code:C388=On Load:K2:1)
 		
-		If (Form:C1466.review=Null:C1517)
-			Form:C1466.review:=ds:C1482.Review.get(3)
-		End if 
+		Form:C1466.listDepartement:=ds:C1482.Departement.all()
+		Form:C1466.listTemplate:=ds:C1482.Template.all()
+		
+	Else 
+		
 End case 

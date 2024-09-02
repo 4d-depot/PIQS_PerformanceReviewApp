@@ -46,7 +46,7 @@
 		},
 		{
 			"name": "box-shadow",
-			"content": "self {\n  box-shadow : 1px 1px 6px 1px #aaabad;\n\tborder-radius: 4px;\n}",
+			"content": "self {\n  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;\n\tborder-radius: 4px;\n}",
 			"children": {},
 			"parentId": null,
 			"origin": "cvbwVC_Juv",

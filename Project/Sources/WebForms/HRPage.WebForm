@@ -235,9 +235,10 @@
 					{
 						"title": "Date",
 						"source": "Date",
-						"format": "",
+						"format": "Date abbreviated",
 						"width": 150,
 						"sorting": false,
+						"dataType": "date",
 						"id": "dVypQ6jCrUXnYo7Zjs6kGP"
 					},
 					{
@@ -1059,6 +1060,42 @@
 							"namespace": ""
 						},
 						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "fkgVgr9Gk5nezBZujRnjpP",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"38e8QAYft5Z3yfg4AtprFY"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "dK7MQ4NA8NcQ53RTvKoLXp",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"cmKSTz2P83i1bC685Z8Qah"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -1140,6 +1177,42 @@
 							"enabled": true
 						},
 						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "vr5wTKkrWC2oDCFAwp1e7o",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"38e8QAYft5Z3yfg4AtprFY"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "npptmXr6LTwsDXf3F3sFVu",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"cmKSTz2P83i1bC685Z8Qah"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -1997,6 +2070,24 @@
 								"38e8QAYft5Z3yfg4AtprFY"
 							]
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "wrWTyNayA4mp5ESnDxBxFF",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"cmKSTz2P83i1bC685Z8Qah"
+							]
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -2136,7 +2227,8 @@
 			"isCanvas": false,
 			"props": {
 				"classNames": [],
-				"events": []
+				"events": [],
+				"icon": "fa-regular fa-star"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -2177,7 +2269,8 @@
 			"isCanvas": false,
 			"props": {
 				"classNames": [],
-				"events": []
+				"events": [],
+				"icon": "fa-regular fa-star"
 			},
 			"displayName": "Icon",
 			"custom": {},

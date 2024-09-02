@@ -28,6 +28,13 @@
 			"namespace": "app",
 			"dataType": "string",
 			"initialValue": ""
+		},
+		{
+			"id": "maxRole",
+			"type": "scalar",
+			"namespace": "app",
+			"dataType": "string",
+			"initialValue": ""
 		}
 	]
 }

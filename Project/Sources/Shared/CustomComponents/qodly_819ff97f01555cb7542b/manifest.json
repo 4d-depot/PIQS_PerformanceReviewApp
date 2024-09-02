@@ -1,0 +1,10 @@
+{
+  "scope": "qodly_819ff97f01555cb7542b",
+  "author": {
+    "name": "Qodly Team",
+    "email": "contact@qodly.com",
+    "url": "https://qodly.com"
+  },
+  "module": "components",
+  "remoteEntryFileName": "components.js"
+}

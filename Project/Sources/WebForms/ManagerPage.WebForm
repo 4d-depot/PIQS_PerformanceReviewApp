@@ -220,9 +220,10 @@
 					{
 						"title": "Date",
 						"source": "Date",
-						"format": "",
+						"format": "Date abbreviated",
 						"width": 150,
 						"sorting": true,
+						"dataType": "date",
 						"id": "dVypQ6jCrUXnYo7Zjs6kGP"
 					},
 					{

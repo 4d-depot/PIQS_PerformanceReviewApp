@@ -99,13 +99,13 @@
 		"stamp": "2024-04-26T19:57:13.579Z"
 	},
 	"Sources/Classes/ReviewEntity.4dm": {
-		"startSelection": 27,
-		"endSelection": 27,
-		"firstSelectedLine": 101,
-		"lastSelectedLine": 101,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2024-08-30T12:55:11.742Z"
+		"stamp": "2024-08-31T18:35:51.000Z"
 	},
 	"Sources/Forms/Form1/ObjectMethods/SaveTemplate.4dm": {
 		"startSelection": 13,

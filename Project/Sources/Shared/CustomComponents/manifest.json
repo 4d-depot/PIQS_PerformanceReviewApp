@@ -11,6 +11,16 @@
 		"url": "/$shared/CustomComponents/qodly_5ce8a02fb01d4eb57667/"
 	},
 	{
+		"scope": "qodly_19d46f3361fe2825fb10",
+		"author": {
+			"name": "Cyril Limpalaer",
+			"email": "limpalaer.cyril@gmail.com"
+		},
+		"module": "components",
+		"remoteEntryFileName": "components.js",
+		"url": "/$shared/CustomComponents/qodly_19d46f3361fe2825fb10/"
+	},
+	{
 		"scope": "qodly_29100b5169c6dd537d9a",
 		"author": {
 			"name": "Qodly Team",
@@ -20,5 +30,27 @@
 		"module": "components",
 		"remoteEntryFileName": "components.js",
 		"url": "/$shared/CustomComponents/qodly_29100b5169c6dd537d9a/"
+	},
+	{
+		"scope": "qodly_5df9f8bf97cd814323f8",
+		"author": {
+			"name": "Qodly Team",
+			"email": "contact@qodly.com",
+			"url": "https://qodly.com"
+		},
+		"module": "components",
+		"remoteEntryFileName": "components.js",
+		"url": "/$shared/CustomComponents/qodly_5df9f8bf97cd814323f8/"
+	},
+	{
+		"scope": "qodly_819ff97f01555cb7542b",
+		"author": {
+			"name": "Qodly Team",
+			"email": "contact@qodly.com",
+			"url": "https://qodly.com"
+		},
+		"module": "components",
+		"remoteEntryFileName": "components.js",
+		"url": "/$shared/CustomComponents/qodly_819ff97f01555cb7542b/"
 	}
 ]

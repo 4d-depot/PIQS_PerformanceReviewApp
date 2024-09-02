@@ -12,14 +12,14 @@ exposed Function createReview($idEmployee : Integer)
 	
 	// Generate Skill
 	$obj:=New object:C1471
-	$skillSettings:=ds:C1482.Settings.query("ID = :1"; This:C1470.Employee.Departement.ID).first().Skill
+	$skillSettings:=This:C1470.Employee.Departement.Skill
 	For each ($obj; $skillSettings.skill)
 		For each ($name; $obj.value)
 			$skill:=ds:C1482.Skill.new()
 			$skill.Name:=$name
 			$skill.Group:=$obj.group
 			$skill.ID_Score:=(Random:C100%4)+1
-			$skill.ID_Review:=$review.ID
+			$skill.ID_Review:=This:C1470.ID
 			$skill.save()
 		End for each 
 	End for each 
@@ -73,7 +73,7 @@ Function generateDocument() : Object
 	$context:=This:C1470.createContext()
 	
 	// Load template
-	$template:=ds:C1482.Template.get(1).Template
+	$template:=This:C1470.Employee.Departement.Template.Template
 	
 	// Create 4D Write Pro document
 	$doc:=WP New:C1317($template)
@@ -104,6 +104,12 @@ exposed Function generatePDF()
 	
 	
 	//Mark:- Goals
+exposed Function createGoal()->$goal : cs:C1710.GoalEntity
+	$goal:=ds:C1482.Goal.new()
+	$goal.ID_GoalStatus:=1
+	$goal.ID_Review:=This:C1470.ID
+	return $goal
+	
 exposed Function get plannedGoal() : cs:C1710.GoalSelection
 	return This:C1470.Goals.query("ID_GoalStatus = :1"; 1)
 	
@@ -111,6 +117,12 @@ exposed Function get doneGoals() : cs:C1710.GoalSelection
 	return This:C1470.Goals.query("ID_GoalStatus = :1"; 2)
 	
 	//Mark:- Trainings
+exposed Function createTraining($idStatus : Integer)->$training : cs:C1710.TrainingEntity
+	$training:=ds:C1482.Training.new()
+	$training.ID_TrainingStatus:=$idStatus
+	$training.ID_Review:=This:C1470.ID
+	return $training
+	
 exposed Function get plannedTraining() : cs:C1710.TrainingSelection
 	return This:C1470.Trainings.query("ID_TrainingStatus = :1"; 1)
 	

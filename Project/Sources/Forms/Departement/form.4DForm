@@ -1,0 +1,158 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"listbox": {
+					"type": "listbox",
+					"dataSource": "Form:C1466.departement",
+					"top": 25,
+					"left": 25,
+					"width": 200,
+					"height": 300,
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"headerHeight": "2em",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"selectionMode": "single",
+					"currentItemSource": "Form:C1466.currentItem",
+					"columns": [
+						{
+							"name": "ID",
+							"dataSource": "This:C1470.ID",
+							"width": 49,
+							"enterable": false,
+							"header": {
+								"text": "Id",
+								"name": "Header3"
+							},
+							"footer": {
+								"name": "1"
+							}
+						},
+						{
+							"name": "Name",
+							"dataSource": "This:C1470.Name",
+							"width": 120,
+							"enterable": true,
+							"header": {
+								"text": "Name",
+								"name": "2"
+							},
+							"footer": {
+								"name": "3"
+							}
+						}
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 245,
+					"top": 25,
+					"width": 250,
+					"height": 300,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.currentItem.Skill.skill",
+					"headerHeight": "2em",
+					"currentItemSource": "Form:C1466.currentGroup",
+					"columns": [
+						{
+							"header": {
+								"text": "Group",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.group",
+							"width": 226
+						}
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"left": 515,
+					"top": 25,
+					"width": 250,
+					"height": 300,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.currentGroup.value",
+					"headerHeight": "2em",
+					"columns": [
+						{
+							"header": {
+								"text": "Skill",
+								"name": "Header2"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "This:C1470.value",
+							"width": 230
+						}
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 37,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
