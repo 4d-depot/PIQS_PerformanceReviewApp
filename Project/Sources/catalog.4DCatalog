@@ -362,6 +362,6 @@
 		</field_ref>
 	</index>
 	<base_extra>
-		<journal_file journal_file_enabled="true"/>
+		<journal_file journal_file_enabled="false"/>
 	</base_extra>
 </base>
