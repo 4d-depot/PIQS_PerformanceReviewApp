@@ -13,7 +13,8 @@
 			"dataclass": "Review",
 			"namespace": "app",
 			"initialValue": "",
-			"depth": null
+			"depth": null,
+			"events": []
 		},
 		{
 			"id": "role",

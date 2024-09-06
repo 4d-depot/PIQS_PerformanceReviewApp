@@ -1,14 +1,10 @@
 Class extends DataStoreImplementation
 
 exposed Function authentify($email : Text; $password : Text) : Text
-	var $page : Text:=""
-	var $pageLogin : Text:="Login"
-	var $pageHome : Text:="Home"
+	var $page : Text:="Login"
 	var $pageCollaborator : Text:="CollaboratorPage"
 	var $obj : Object
 	var $employee : cs:C1710.Employee
-	
-	$page:=$pageLogin
 	
 	If (Session:C1714=Null:C1517)
 		$obj:=Storage:C1525
@@ -34,10 +30,10 @@ exposed Function authentify($email : Text; $password : Text) : Text
 			Use ($obj.Employee)
 				$obj.Employee.ID:=$employee.ID
 				$obj.Employee.name:=$employee.Firstname+" "+$employee.Lastname
-				$obj.Employee.role:=""
+				$obj.Employee.role:="Collaborator"
 				$obj.Employee.maxRole:=""
 				$obj.Employee.authentify:=True:C214
-				$page:=$pageHome
+				$page:=$pageCollaborator
 				
 				If ($employee.ID_Departement=5)
 					Session:C1714.setPrivileges("hr")
@@ -47,9 +43,7 @@ exposed Function authentify($email : Text; $password : Text) : Text
 					If ($employee.Collaborator.length>0)
 						$obj.Employee.maxRole:="Manager"
 					Else 
-						$obj.Employee.role:="Collaborator"
 						$obj.Employee.maxRole:="Collaborator"
-						$page:=$pageCollaborator
 					End if 
 				End if 
 			End use 

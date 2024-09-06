@@ -2,7 +2,97 @@
 	"metadata": {
 		"v": "1.0",
 		"datasources": [],
-		"styles": []
+		"styles": [],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			},
+			{
+				"label": "login",
+				"id": "2WtCuUp3aRqS2hoJkD9QBY",
+				"conditions": {
+					"id": "6x2s1LJZHxQqQ1UMWbPofV",
+					"type": "datasource",
+					"name": "condition",
+					"value": "Login",
+					"valueType": "hardCoded",
+					"path": "app:pageName",
+					"dsType": "string",
+					"op": "eq"
+				}
+			},
+			{
+				"label": "Collaborator",
+				"id": "dTJajYwqUGeNwUpuiesgHB",
+				"conditions": {
+					"id": "e3xdhnPC2xp8LtoNMZfR4d",
+					"type": "datasource",
+					"name": "condition",
+					"value": "CollaboratorPage",
+					"valueType": "hardCoded",
+					"path": "app:pageName",
+					"dsType": "string",
+					"op": "eq"
+				}
+			},
+			{
+				"label": "Manager",
+				"id": "m5xET9xgcjeJF1kEETWWQA",
+				"conditions": {
+					"id": "bi9PgNB533REGgtAnbYYt5",
+					"type": "datasource",
+					"name": "condition",
+					"value": "ManagerPage",
+					"valueType": "hardCoded",
+					"path": "app:pageName",
+					"dsType": "string",
+					"op": "eq"
+				}
+			},
+			{
+				"label": "HR",
+				"id": "ca3Mfggg1AFjdZjRwTakLr",
+				"conditions": {
+					"id": "nQ8Hqz1cMHP6KjhJ4cLS9p",
+					"type": "datasource",
+					"name": "condition",
+					"value": "HRPage",
+					"valueType": "hardCoded",
+					"path": "app:pageName",
+					"dsType": "string",
+					"op": "eq"
+				}
+			},
+			{
+				"label": "maxCollaborator",
+				"id": "6SUZnHBSMRYziYjMZsrvPK",
+				"conditions": {
+					"id": "b8VFAghC6LL34myzb6dti2",
+					"type": "datasource",
+					"name": "condition",
+					"value": "Collaborator",
+					"valueType": "hardCoded",
+					"path": "app:maxRole",
+					"dsType": "string",
+					"op": "eq"
+				}
+			},
+			{
+				"label": "maxManager",
+				"id": "sfDKDPdYRH3YCScDbM8ATk",
+				"conditions": {
+					"id": "9YEVB4PgZyqRnFjLhcwxSr",
+					"type": "datasource",
+					"name": "condition",
+					"value": "Manager",
+					"valueType": "hardCoded",
+					"path": "app:maxRole",
+					"dsType": "string",
+					"op": "eq"
+				}
+			}
+		]
 	},
 	"components": {
 		"ROOT": {
@@ -27,6 +117,7 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
+				"2gj19l4_1R",
 				"Q-FxuhHCgd"
 			],
 			"linkedNodes": {}
@@ -51,6 +142,728 @@
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [],
+			"linkedNodes": {}
+		},
+		"LRbPRwtbAk": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Human Resources",
+				"classNames": [
+					"menuBar"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onclick"
+						],
+						"id": "2WQQfjhANCYdFaUdCsPJHt",
+						"method": "ds.selectRole",
+						"params": [
+							{
+								"name": "role",
+								"type": "Text",
+								"datasource": "",
+								"id": "oK3HBTnsAN37f2TgaUj8Gd",
+								"isHardCoded": true,
+								"hardCodedType": "string",
+								"hardCodedValue": "HR"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "nXjeQHJqddFaZgCvtBkcNc",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "pageName",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "string",
+							"set": {
+								"value": "HRPage",
+								"type": "string"
+							}
+						},
+						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "6QX7xt7yUaNtiGVy1RDjPy",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "role",
+							"type": "scalar",
+							"namespace": "app",
+							"from": "",
+							"dataType": "string",
+							"set": {
+								"value": "HR ",
+								"type": "string"
+							}
+						},
+						"state": {}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex",
+					"backgroundColor": "transparent",
+					"borderColor": "transparent",
+					"fontSize": "18px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:ca3Mfggg1AFjdZjRwTakLr": {
+					"classNames": [
+						"menuBarSelected"
+					],
+					"style": {
+						"color": ""
+					}
+				},
+				"states:6SUZnHBSMRYziYjMZsrvPK": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:sfDKDPdYRH3YCScDbM8ATk": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "nERikIq9Nb",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "S_uPh4mP9o"
+			}
+		},
+		"S_uPh4mP9o": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-building-user"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "LRbPRwtbAk",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"6Hs8NZskQ_": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Collaborator",
+				"classNames": [
+					"menuBar"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onclick"
+						],
+						"id": "ffpHevoLc6oUs6JuQqpCPc",
+						"method": "ds.selectRole",
+						"params": [
+							{
+								"name": "role",
+								"type": "Text",
+								"datasource": "",
+								"id": "9LAMwRERS2HEELJR5dvBPS",
+								"isHardCoded": true,
+								"hardCodedType": "string",
+								"hardCodedValue": "Collaborator"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "nXjeQHJqddFaZgCvtBkcNc",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "pageName",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "string",
+							"set": {
+								"value": "CollaboratorPage",
+								"type": "string"
+							}
+						},
+						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "6QX7xt7yUaNtiGVy1RDjPy",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "role",
+							"type": "scalar",
+							"namespace": "app",
+							"from": "",
+							"dataType": "string",
+							"set": {
+								"value": "Collaborator ",
+								"type": "string"
+							}
+						},
+						"state": {}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex",
+					"backgroundColor": "transparent",
+					"fontSize": "18px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:dTJajYwqUGeNwUpuiesgHB": {
+					"classNames": [
+						"menuBarSelected"
+					],
+					"style": {
+						"color": ""
+					}
+				}
+			},
+			"parent": "nERikIq9Nb",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "yrqT8kGiOw"
+			}
+		},
+		"yrqT8kGiOw": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-users"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "6Hs8NZskQ_",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Zb5UaWqLUN": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Manager",
+				"classNames": [
+					"menuBar"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onclick"
+						],
+						"id": "qUfoiw4BPB7VCYPqxB2dZr",
+						"method": "ds.selectRole",
+						"params": [
+							{
+								"name": "role",
+								"type": "Text",
+								"datasource": "",
+								"id": "9TAJumk3hPdJZRcv4ahqme",
+								"isHardCoded": true,
+								"hardCodedType": "string",
+								"hardCodedValue": "Manager"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "nXjeQHJqddFaZgCvtBkcNc",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "pageName",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "string",
+							"set": {
+								"value": "ManagerPage",
+								"type": "string"
+							}
+						},
+						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "6QX7xt7yUaNtiGVy1RDjPy",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "role",
+							"type": "scalar",
+							"namespace": "app",
+							"from": "",
+							"dataType": "string",
+							"set": {
+								"value": " Manager",
+								"type": "string"
+							}
+						},
+						"state": {}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex",
+					"backgroundColor": "transparent",
+					"borderColor": "transparent",
+					"fontSize": "18px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:m5xET9xgcjeJF1kEETWWQA": {
+					"classNames": [
+						"menuBarSelected"
+					],
+					"style": {
+						"color": ""
+					}
+				},
+				"states:6SUZnHBSMRYziYjMZsrvPK": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "nERikIq9Nb",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "18M1uUlP7C"
+			}
+		},
+		"18M1uUlP7C": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-user"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "Zb5UaWqLUN",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"nERikIq9Nb": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "10px",
+					"alignItems": "center",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "oo117OhigF",
+			"hidden": false,
+			"nodes": [
+				"LRbPRwtbAk",
+				"Zb5UaWqLUN",
+				"6Hs8NZskQ_"
+			],
+			"linkedNodes": {}
+		},
+		"2gj19l4_1R": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"paddingRight": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"oo117OhigF"
+			],
+			"linkedNodes": {}
+		},
+		"oo117OhigF": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"gap": "40px",
+					"paddingRight": "12px",
+					"justifyContent": "space-around",
+					"position": "sticky",
+					"backgroundColor": "#ffffffff",
+					"top": "0px",
+					"left": "0px",
+					"paddingBottom": "12px",
+					"paddingTop": "12px",
+					"paddingLeft": "12px"
+				},
+				"classNames": [
+					"box-shadow"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:2WtCuUp3aRqS2hoJkD9QBY": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "2gj19l4_1R",
+			"hidden": false,
+			"nodes": [
+				"Ay6kDmi_R6",
+				"nERikIq9Nb",
+				"zbmylyzCac"
+			],
+			"linkedNodes": {}
+		},
+		"-FDctXh6zc": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Welcome ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "app:CollaboratorName",
+								"children": [
+									{
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "name"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "! "
+							}
+						]
+					}
+				],
+				"datasource": "app:CollaboratorName",
+				"style": {
+					"display": "flex",
+					"gap": "40px",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "zbmylyzCac",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"q40fSpWOY6": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "logout",
+				"classNames": [
+					"buttonRed"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "aDzrx9pW2jdcYuvdg7egbj",
+						"events": [
+							"onclick"
+						],
+						"action": "logout",
+						"actionType": "auth",
+						"datasource": {
+							"name": ""
+						},
+						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "pco4tsnGGeGXaQo5GQ37F8",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "pageName",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "string",
+							"target": "",
+							"targetNamespace": "",
+							"targetType": "unknown",
+							"set": {
+								"value": "Login",
+								"type": "string"
+							}
+						},
+						"state": {}
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "zbmylyzCac",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "BbBLXuRqzp"
+			}
+		},
+		"BbBLXuRqzp": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-right-from-bracket"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "q40fSpWOY6",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"w-eo3x7_4O": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-building-user",
+				"style": {
+					"textAlign": "center",
+					"height": "fit-content",
+					"width": "fit-content",
+					"fontSize": "24px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "Ay6kDmi_R6",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"zbmylyzCac": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"justifyContent": "flex-end",
+					"gap": "20px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "oo117OhigF",
+			"hidden": false,
+			"nodes": [
+				"-FDctXh6zc",
+				"q40fSpWOY6"
+			],
+			"linkedNodes": {}
+		},
+		"iriGyUuSq4": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Review App",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "18px",
+					"fontWeight": "500",
+					"width": "150px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "Ay6kDmi_R6",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Ay6kDmi_R6": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "20px",
+					"width": "auto",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "oo117OhigF",
+			"hidden": false,
+			"nodes": [
+				"w-eo3x7_4O",
+				"iriGyUuSq4"
+			],
 			"linkedNodes": {}
 		}
 	}

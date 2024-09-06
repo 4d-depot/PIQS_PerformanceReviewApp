@@ -94,6 +94,8 @@ exposed Function generateFreezeDocument()
 	
 exposed Function generatePDF()
 	
+	This:C1470.generateFreezeDocument()
+	
 	$name:=This:C1470.Employee.Firstname+This:C1470.Employee.Lastname+"_"+String:C10(This:C1470.Date; "Y")
 	
 	$filePath:=File:C1566("/RESOURCES/pdf/"+$name+".pdf")

@@ -21,7 +21,45 @@
 				"depth": null
 			}
 		],
-		"styles": []
+		"styles": [],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			},
+			{
+				"label": "default",
+				"id": "dat9U8XDs9r3sXb4nWJZav",
+				"conditions": {
+					"id": "56SQ95iBjE9MA6nChLq7XN",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview.DocumentPDF",
+					"dsType": "blob",
+					"op": "isnull"
+				}
+			},
+			{
+				"label": "PDF",
+				"id": "stFFrsKEWHbZj1CombH4ov",
+				"conditions": {
+					"id": "shx13HW5WZJkitmeY8bda9",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview.DocumentPDF",
+					"dsType": "blob",
+					"op": "notnull"
+				}
+			}
+		],
+		"defaultStates": [
+			"bV7tposDu4Wn1kFsYK2qjW",
+			"dat9U8XDs9r3sXb4nWJZav"
+		]
 	},
 	"components": {
 		"ROOT": {
@@ -102,7 +140,8 @@
 				"style": {
 					"display": "flex",
 					"gap": "10px",
-					"flexWrap": "nowrap"
+					"flexWrap": "nowrap",
+					"width": "90%"
 				}
 			},
 			"displayName": "Stylebox",
@@ -126,7 +165,9 @@
 					"DataTable"
 				],
 				"events": [],
-				"style": {},
+				"style": {
+					"width": "40%"
+				},
 				"headerHeight": 36,
 				"rowHeight": 30,
 				"datasource": "employees",
@@ -134,7 +175,7 @@
 					{
 						"title": "Firstname",
 						"source": "Firstname",
-						"width": 150,
+						"width": "auto",
 						"sorting": true,
 						"format": "",
 						"dataType": "string",
@@ -143,7 +184,7 @@
 					{
 						"title": "Lastname",
 						"source": "Lastname",
-						"width": 150,
+						"width": "auto",
 						"sorting": true,
 						"format": "",
 						"dataType": "string",
@@ -212,7 +253,9 @@
 					"DataTable"
 				],
 				"events": [],
-				"style": {},
+				"style": {
+					"width": "60%"
+				},
 				"headerHeight": 36,
 				"rowHeight": 30,
 				"datasource": "theEmployee.Reviews",
@@ -221,7 +264,7 @@
 						"title": "Date",
 						"source": "Date",
 						"format": "Date abbreviated",
-						"width": 150,
+						"width": "auto",
 						"sorting": true,
 						"dataType": "date",
 						"id": "dVypQ6jCrUXnYo7Zjs6kGP"
@@ -230,7 +273,7 @@
 						"title": "Score",
 						"source": "ScoreGlobal.Name",
 						"format": "",
-						"width": 150,
+						"width": "auto",
 						"sorting": false,
 						"id": "3FV2GsKeVT7tYnZviNuS7G"
 					},
@@ -238,7 +281,7 @@
 						"title": "Status",
 						"source": "Status.Name",
 						"format": "",
-						"width": 150,
+						"width": "auto",
 						"sorting": false,
 						"id": "7sNP3mBDs87AtCm89YPPmB"
 					}
@@ -272,31 +315,8 @@
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"g_EKcMN1QX",
 				"xV39DPvnOC"
 			],
-			"linkedNodes": {}
-		},
-		"g_EKcMN1QX": {
-			"type": {
-				"resolvedName": "WebformLoader"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"webform": "Header",
-				"style": {
-					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px"
-				}
-			},
-			"displayName": "Page Loader",
-			"custom": {},
-			"parent": "ovt6oU7FZB",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"PbOsnQjMn7": {
@@ -324,65 +344,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"T_rc_tjPmn": {
-			"type": {
-				"resolvedName": "Button"
-			},
-			"isCanvas": false,
-			"props": {
-				"text": "Freezedoc",
-				"classNames": [
-					"buttonRed"
-				],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "ReviewEntity",
-						"events": [
-							"onclick"
-						],
-						"id": "rm712RFxHENkr5KUZZGb8k",
-						"method": "selectedReview.generateFreezeDocument",
-						"params": [],
-						"namespace": "app",
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Variable"
-						}
-					}
-				],
-				"iconPosition": "hidden",
-				"style": {
-					"display": "flex"
-				}
-			},
-			"displayName": "Button",
-			"custom": {},
-			"parent": "wwFbBWYOFa",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"icon": "TT17v5ffMG"
-			}
-		},
-		"TT17v5ffMG": {
-			"type": {
-				"resolvedName": "Icon"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"icon": "fa-regular fa-star"
-			},
-			"displayName": "Icon",
-			"custom": {},
-			"parent": "T_rc_tjPmn",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"SCPuityA3d": {
 			"type": {
 				"resolvedName": "Button"
@@ -391,7 +352,7 @@
 			"props": {
 				"text": "Generate PDF",
 				"classNames": [
-					"buttonGrey"
+					"buttonRed"
 				],
 				"events": [
 					{
@@ -520,6 +481,16 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:dat9U8XDs9r3sXb4nWJZav": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:stFFrsKEWHbZj1CombH4ov": {
+					"style": {
+						"height": "800px"
+					}
 				}
 			},
 			"parent": "1auwpTCNsl",
@@ -563,7 +534,8 @@
 					"flexDirection": "column",
 					"flexWrap": "wrap",
 					"gap": "10px",
-					"maxWidth": "200px"
+					"maxWidth": "200px",
+					"minWidth": "200px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -572,7 +544,6 @@
 			"hidden": false,
 			"nodes": [
 				"XiYibsS4Aq",
-				"T_rc_tjPmn",
 				"SCPuityA3d",
 				"2ATvNMmDGt",
 				"4TxppKSziu"
@@ -596,7 +567,18 @@
 				}
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:dat9U8XDs9r3sXb4nWJZav": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:stFFrsKEWHbZj1CombH4ov": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "wwFbBWYOFa",
 			"hidden": false,
 			"nodes": [],
@@ -638,7 +620,18 @@
 				}
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:dat9U8XDs9r3sXb4nWJZav": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:stFFrsKEWHbZj1CombH4ov": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "wwFbBWYOFa",
 			"hidden": false,
 			"nodes": [],

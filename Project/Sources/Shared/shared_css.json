@@ -26,7 +26,7 @@
 		},
 		{
 			"name": "input",
-			"content": "self {\n   border: 1px solid #ced4da;\n}",
+			"content": "self {\n   border: 1px solid #ced4da;\n\t\n\tpadding-right : 4px;\n\tpadding-bottom : 4px;\n\tpadding-top : 4px;\n\tpadding-left : 4px;\n}",
 			"parentId": null,
 			"id": "PMO_yDiBMrP0HKYvIFDJb"
 		},
@@ -63,6 +63,18 @@
 			"content": "self {\n   background-color: #f3bec3;\n}",
 			"parentId": null,
 			"id": "Sd9vvO3OHzj2IqivZO096"
+		},
+		{
+			"name": "menuBarSelected",
+			"content": "self {\n\tcolor: #dd3c4c;\n\tfont-size: 18px;\n}\n\nself:hover {\n  color: #c32232;\n}",
+			"parentId": null,
+			"id": "nJ0G_h0RXnAY4VR1RVVK_"
+		},
+		{
+			"name": "menuBar",
+			"content": "self {\n\tcolor: #4f5963;\n\tfont-size:18px;\n}\n\nself:hover {\n\tfont-size: 18px;\n\tcolor: #394047;\n}",
+			"parentId": null,
+			"id": "Uj9LtZrpQp_bz6xOUq6yk"
 		}
 	]
 }
