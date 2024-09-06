@@ -371,6 +371,11 @@
 					"style": {
 						"color": ""
 					}
+				},
+				"states:6SUZnHBSMRYziYjMZsrvPK": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "nERikIq9Nb",
@@ -564,7 +569,11 @@
 				"style": {
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
-					"paddingRight": "0px"
+					"paddingRight": "0px",
+					"position": "sticky",
+					"top": "0px",
+					"left": "0px",
+					"zIndex": "1000"
 				}
 			},
 			"displayName": "Stylebox",
@@ -590,10 +599,8 @@
 					"gap": "40px",
 					"paddingRight": "12px",
 					"justifyContent": "space-around",
-					"position": "sticky",
+					"position": "relative",
 					"backgroundColor": "#ffffffff",
-					"top": "0px",
-					"left": "0px",
 					"paddingBottom": "12px",
 					"paddingTop": "12px",
 					"paddingLeft": "12px"
@@ -685,7 +692,7 @@
 			"props": {
 				"text": "logout",
 				"classNames": [
-					"buttonRed"
+					"buttonLogin"
 				],
 				"events": [
 					{

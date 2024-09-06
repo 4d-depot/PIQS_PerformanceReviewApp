@@ -115,7 +115,8 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"flexWrap": "nowrap"
+					"flexWrap": "nowrap",
+					"gap": "20px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -141,7 +142,7 @@
 					"display": "flex",
 					"gap": "10px",
 					"flexWrap": "nowrap",
-					"width": "90%"
+					"width": "80%"
 				}
 			},
 			"displayName": "Stylebox",
@@ -191,7 +192,8 @@
 						"id": "tbrzzRqdqjprsL7UwBb4hp"
 					}
 				],
-				"currentElement": "theEmployee"
+				"currentElement": "theEmployee",
+				"showBorders": true
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -211,7 +213,7 @@
 					"buttonGrey"
 				],
 				"events": [],
-				"iconPosition": "hidden",
+				"iconPosition": "left",
 				"style": {
 					"display": "flex"
 				}
@@ -233,7 +235,7 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-pen"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -286,7 +288,8 @@
 						"id": "7sNP3mBDs87AtCm89YPPmB"
 					}
 				],
-				"currentElement": "app:selectedReview"
+				"currentElement": "app:selectedReview",
+				"showBorders": true
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -372,7 +375,7 @@
 						}
 					}
 				],
-				"iconPosition": "hidden",
+				"iconPosition": "left",
 				"style": {
 					"display": "flex"
 				}
@@ -394,7 +397,7 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-file-pen"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -561,7 +564,7 @@
 					"buttonGrey"
 				],
 				"events": [],
-				"iconPosition": "hidden",
+				"iconPosition": "left",
 				"style": {
 					"display": "flex"
 				}
@@ -594,7 +597,7 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-eye"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -609,12 +612,12 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Hide PDF<br>",
+				"text": "Hide PDF",
 				"classNames": [
 					"buttonGrey"
 				],
 				"events": [],
-				"iconPosition": "hidden",
+				"iconPosition": "left",
 				"style": {
 					"display": "flex"
 				}
@@ -647,7 +650,7 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-eye-slash"
 			},
 			"displayName": "Icon",
 			"custom": {},

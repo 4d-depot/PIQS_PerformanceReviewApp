@@ -9,9 +9,25 @@
 				"initialValue": "all",
 				"depth": null,
 				"pageSize": 100
+			},
+			{
+				"id": "click",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "bool",
+				"initialValue": false
 			}
 		],
-		"styles": [],
+		"styles": [
+			{
+				"id": "fLGHI9CleyAJyUJ3Qv3u6",
+				"name": "DataTable2",
+				"content": "self {\nborder-collapse: collapse;\n\tborder-radius: 4px;\n}\n\nself .header .header-cell {\n  font-size: 18px;\n  color: #4f5963;\n  background-color:  #FFFFFF;\n \tborder-color: #aaadaf;\n\tborder-bottom-width:1px;\n}\n\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}\n\n\nself .row.selected {\n  background-color: #f3bec3;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f8f8;\n}",
+				"scope": "local",
+				"parentId": null,
+				"children": {}
+			}
+		],
 		"states": [
 			{
 				"label": "Base",
@@ -21,25 +37,7 @@
 				"label": "start",
 				"id": "p6PCARUnbAu9AoTpQGNacC",
 				"conditions": {
-					"id": "5zcAdg63hxZrpoBCgSp5Qr",
-					"type": "datasource",
-					"name": "condition",
-					"value": "",
-					"valueType": "hardCoded",
-					"path": "app:selectedReview.DocumentPDF",
-					"dsType": "blob",
-					"op": "notnull"
-				}
-			},
-			{
-				"label": "pdfView",
-				"id": "daWE6Z1rQ45AUxxNMhc1Vz"
-			},
-			{
-				"label": "isNotPDF",
-				"id": "9EHA6D5gEoRgoRe3XqgeGs",
-				"conditions": {
-					"id": "1AJiu2omwhToy8r2vQwrPy",
+					"id": "6VLt4mgkfKNyxwanYDMeXR",
 					"type": "datasource",
 					"name": "condition",
 					"value": "",
@@ -48,11 +46,71 @@
 					"dsType": "blob",
 					"op": "isnull"
 				}
+			},
+			{
+				"label": "pdfView",
+				"id": "daWE6Z1rQ45AUxxNMhc1Vz",
+				"conditions": {
+					"id": "bt1Z9kXwFrNdoEh44xo5r2",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "m3cz6JHRkcn194LbGCihhi",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "click",
+							"dsType": "bool",
+							"op": "istrue"
+						},
+						{
+							"id": "wwNMJ8tGRm1ftx8xdN7JJB",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.DocumentPDF",
+							"dsType": "blob",
+							"op": "notnull"
+						}
+					]
+				}
+			},
+			{
+				"label": "isPDF",
+				"id": "9EHA6D5gEoRgoRe3XqgeGs",
+				"conditions": {
+					"id": "1AJiu2omwhToy8r2vQwrPy",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "87GW4yxKcY4duZN7SBx7Py",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.DocumentPDF",
+							"dsType": "blob",
+							"op": "notnull"
+						},
+						{
+							"id": "subUA9xtrBKsoMbkvvy3Xu",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "click",
+							"dsType": "bool",
+							"op": "isfalse"
+						}
+					]
+				}
 			}
 		],
-		"defaultStates": [
-			"p6PCARUnbAu9AoTpQGNacC"
-		]
+		"defaultStates": []
 	},
 	"components": {
 		"ROOT": {
@@ -78,9 +136,7 @@
 			"hidden": false,
 			"nodes": [
 				"STR-DS8AME",
-				"d9cqmF77IK",
-				"JzcgK1a_wC",
-				"Z8O15dWi1U"
+				"d9cqmF77IK"
 			],
 			"linkedNodes": {}
 		},
@@ -152,7 +208,8 @@
 				],
 				"events": [],
 				"style": {
-					"width": "auto"
+					"width": "auto",
+					"borderStyle": "solid"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -166,6 +223,22 @@
 						"sorting": true,
 						"dataType": "date",
 						"id": "wrDPgD2DR2oMcnEJMqQYQs"
+					},
+					{
+						"title": "Goal Score",
+						"source": "ScoreGoal.Name",
+						"format": "",
+						"width": "auto",
+						"sorting": false,
+						"id": "kpyF88jPUbzZaQGNmHHWA6"
+					},
+					{
+						"title": "Skill Score",
+						"source": "ScoreSkill.Name",
+						"format": "",
+						"width": "auto",
+						"sorting": false,
+						"id": "mQKeZWDF2e1R9RbiRcDkvr"
 					},
 					{
 						"title": "Score",
@@ -185,7 +258,8 @@
 						"id": "koa1GAEzEPM92qnT3wxPYg"
 					}
 				],
-				"currentElement": "app:selectedReview"
+				"currentElement": "app:selectedReview",
+				"showBorders": true
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -203,7 +277,9 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"width": "90%"
+					"width": "90%",
+					"height": "fit-content",
+					"display": "block"
 				}
 			},
 			"displayName": "Stylebox",
@@ -223,7 +299,7 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-pen"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -242,18 +318,8 @@
 				"classNames": [
 					"buttonGrey"
 				],
-				"events": [
-					{
-						"type": "dialog",
-						"id": "fRurDSzNQPYTMRwW9LzGb9",
-						"events": [
-							"onclick"
-						],
-						"actionType": "open",
-						"targetDialog": "test"
-					}
-				],
-				"iconPosition": "hidden",
+				"events": [],
+				"iconPosition": "left",
 				"style": {
 					"display": "flex",
 					"justifyContent": "center"
@@ -276,7 +342,7 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-eye"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -293,29 +359,31 @@
 			"props": {
 				"text": "View PDF",
 				"classNames": [
-					"buttonGrey"
+					"buttonRed"
 				],
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "q5SPZfSFTigcXoosA6yFE4",
+						"id": "jcemSRLH9Artbe2HG8eAtA",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"daWE6Z1rQ45AUxxNMhc1Vz"
-							]
+							"name": "click",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
 						}
 					}
 				],
-				"iconPosition": "hidden",
+				"iconPosition": "left",
 				"style": {
 					"display": "flex"
 				}
@@ -329,12 +397,12 @@
 				},
 				"states:p6PCARUnbAu9AoTpQGNacC": {
 					"style": {
-						"display": "flex"
+						"display": "none"
 					}
 				},
 				"states:9EHA6D5gEoRgoRe3XqgeGs": {
 					"style": {
-						"display": "none"
+						"display": "block"
 					}
 				}
 			},
@@ -353,7 +421,7 @@
 			"props": {
 				"classNames": [],
 				"events": [],
-				"icon": "fa-regular fa-star"
+				"icon": "fa-solid fa-eye-slash"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -375,24 +443,22 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "e53TJ2hdUfaVkwpd3XfbLH",
+						"id": "fRyrgnkRsHf4Ay1Vg5cvqg",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"daWE6Z1rQ45AUxxNMhc1Vz"
-							]
+							"name": "click",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool"
 						}
 					}
 				],
-				"iconPosition": "hidden",
+				"iconPosition": "left",
 				"style": {
 					"display": "flex"
 				}
@@ -433,7 +499,8 @@
 					"flexWrap": "nowrap",
 					"width": "auto",
 					"maxWidth": "300px",
-					"minWidth": "200px"
+					"minWidth": "200px",
+					"height": "fit-content"
 				}
 			},
 			"displayName": "Stylebox",
@@ -509,7 +576,9 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"display": "flex"
+					"display": "flex",
+					"height": "fit-content",
+					"gap": "20px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -521,39 +590,6 @@
 				"9xBrmbCIhQ",
 				"FqGfQt7G4j"
 			],
-			"linkedNodes": {}
-		},
-		"ZbVXLHa0zH": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"style": {
-					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {
-				"states:p6PCARUnbAu9AoTpQGNacC": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:daWE6Z1rQ45AUxxNMhc1Vz": {
-					"style": {
-						"display": "none"
-					}
-				}
-			},
-			"parent": "d9cqmF77IK",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"d9cqmF77IK": {
@@ -578,87 +614,8 @@
 			"nodes": [
 				"OKUCMcU_uZ",
 				"8mM12Iikwe",
-				"ZbVXLHa0zH",
 				"zB6WajDt85"
 			],
-			"linkedNodes": {}
-		},
-		"JzcgK1a_wC": {
-			"type": {
-				"resolvedName": "Dialog"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"overlay": true,
-				"serverSideRef": "ReviewDiag",
-				"closable": true
-			},
-			"displayName": "Dialog",
-			"custom": {},
-			"parent": "ROOT",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"Dialog": "UMyHpDNTME",
-				"close": "nQtIb35C8h"
-			}
-		},
-		"UMyHpDNTME": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"className": "h-full",
-				"iterableChild": true,
-				"style": {
-					"display": "flex"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "JzcgK1a_wC",
-			"hidden": false,
-			"nodes": [
-				"4B3jbf9gr7"
-			],
-			"linkedNodes": {}
-		},
-		"4B3jbf9gr7": {
-			"type": {
-				"resolvedName": "WebformLoader"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"webform": "Review",
-				"datasource": ""
-			},
-			"displayName": "Page Loader",
-			"custom": {},
-			"parent": "UMyHpDNTME",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"nQtIb35C8h": {
-			"type": {
-				"resolvedName": "Icon"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"icon": "fa-times"
-			},
-			"displayName": "Icon",
-			"custom": {},
-			"parent": "JzcgK1a_wC",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"zB6WajDt85": {
@@ -691,96 +648,6 @@
 			"displayName": "Page Loader",
 			"custom": {},
 			"parent": "zB6WajDt85",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"Z8O15dWi1U": {
-			"type": {
-				"resolvedName": "Dialog"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"overlay": true,
-				"serverSideRef": "test",
-				"closable": true
-			},
-			"displayName": "Dialog",
-			"custom": {},
-			"parent": "ROOT",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"Dialog": "JnW6_MJiPX",
-				"close": "VQSsTjs9b-"
-			}
-		},
-		"JnW6_MJiPX": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"className": "h-full"
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "Z8O15dWi1U",
-			"hidden": false,
-			"nodes": [
-				"bFuBddnAEo",
-				"QkKNjJR-Bp"
-			],
-			"linkedNodes": {}
-		},
-		"QkKNjJR-Bp": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "JnW6_MJiPX",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"bFuBddnAEo": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "JnW6_MJiPX",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"VQSsTjs9b-": {
-			"type": {
-				"resolvedName": "Icon"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"icon": "fa-times"
-			},
-			"displayName": "Icon",
-			"custom": {},
-			"parent": "Z8O15dWi1U",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
