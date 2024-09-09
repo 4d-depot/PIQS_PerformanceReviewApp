@@ -145,12 +145,7 @@
 				"classNames": [
 					"input"
 				],
-				"style": {
-					"paddingRight": "2px",
-					"paddingBottom": "2px",
-					"paddingTop": "2px",
-					"paddingLeft": "2px"
-				}
+				"style": {}
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -220,12 +215,7 @@
 				"classNames": [
 					"input"
 				],
-				"style": {
-					"paddingRight": "2px",
-					"paddingBottom": "2px",
-					"paddingTop": "2px",
-					"paddingLeft": "2px"
-				}
+				"style": {}
 			},
 			"displayName": "Input",
 			"custom": {},

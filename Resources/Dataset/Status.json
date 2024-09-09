@@ -1,0 +1,74 @@
+{
+	"GoalStatus": [
+		{
+			"ID": 1,
+			"Name": "Planned"
+		},
+		{
+			"ID": 2,
+			"Name": "Done"
+		}
+	],
+	"ReviewStatus": [
+		{
+			"ID": 1,
+			"Name": "To do",
+			"Description": "Document to be completed"
+		},
+		{
+			"ID": 2,
+			"Name": "In progress",
+			"Description": "Document in progress"
+		},
+		{
+			"ID": 3,
+			"Name": "Done",
+			"Description": "Completed document"
+		},
+		{
+			"ID": 4,
+			"Name": "Closed",
+			"Description": "Archived document"
+		}
+	],
+	"TrainingStatus": [
+		{
+			"ID": 1,
+			"Name": "Planned"
+		},
+		{
+			"ID": 2,
+			"Name": "Done"
+		},
+		{
+			"ID": 3,
+			"Name": "Not done"
+		},
+		{
+			"ID": 4,
+			"Name": "Unknown"
+		}
+	],
+	"Score": [
+		{
+			"ID": 1,
+			"Name": "Insufficient",
+			"Code": "I"
+		},
+		{
+			"ID": 2,
+			"Name": "Partially completed",
+			"Code": "P"
+		},
+		{
+			"ID": 3,
+			"Name": "Realized",
+			"Code": "R"
+		},
+		{
+			"ID": 4,
+			"Name": "Exceeds expectations",
+			"Code": "E"
+		}
+	]
+}

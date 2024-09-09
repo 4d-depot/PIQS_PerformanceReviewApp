@@ -1,5 +1,6 @@
 Class extends Entity
 
+//Mark:- Generate next review
 exposed Function createReview($idEmployee : Integer)
 	var $PrevReview : cs:C1710.ReviewEntity
 	
@@ -60,6 +61,8 @@ exposed Function createReview($idEmployee : Integer)
 		End for each 
 		
 	End if 
+	
+	//Mark:- Generate document
 	
 Function createContext() : Object
 	$context:=New object:C1471

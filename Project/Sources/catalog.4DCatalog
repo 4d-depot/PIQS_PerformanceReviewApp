@@ -81,6 +81,7 @@
 	<table name="ReviewStatus" uuid="2EEC8EE83104496E8D9472B68BDB9E80" id="11">
 		<field name="ID" uuid="C3D601BD36984A38B3751AB09C9C0A5C" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="Name" uuid="8670A784918940F4A37A80386F763DA0" type="10" limiting_length="255" id="2"/>
+		<field name="Description" uuid="E3503D55736D4012904634DFF4F69393" type="10" id="3"/>
 		<primary_key field_name="ID" field_uuid="C3D601BD36984A38B3751AB09C9C0A5C"/>
 	</table>
 	<table name="Score" uuid="BABBF8B10E3543598B75C2840C26A36B" id="12">

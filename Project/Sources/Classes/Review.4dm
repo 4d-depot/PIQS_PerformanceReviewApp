@@ -16,18 +16,30 @@ Function event restrict() : cs:C1710.ReviewSelection
 	Case of 
 		: ($obj.Employee.role="HR")
 			If (This:C1470.query("ID_Employee = :1 and Employee.Departement.Name = :2"; $obj.Employee.ID; "HR").first()#Null:C1517)
-				return This:C1470.all()
+				return This:C1470.all().orderBy("Date desc")
 			End if 
 			return ds:C1482.Employee.newSelection()
 			
 		: ($obj.Employee.role="Manager")
-			return This:C1470.query("Employee.ID_Supervisor = :1"; $obj.Employee.ID)
+			return This:C1470.query("Employee.ID_Supervisor = :1"; $obj.Employee.ID).orderBy("Date desc")
 			
 		: ($obj.Employee.role="Collaborator")
-			return This:C1470.query("ID_Employee = :1"; $obj.Employee.ID)
+			return This:C1470.query("ID_Employee = :1"; $obj.Employee.ID).orderBy("Date desc")
 			
 		Else 
 			return Null:C1517
 			
 	End case 
+	
+	
+/*exposed Function loadReview() : cs.ReviewSelection
+var $obj : Object
+	
+If (Session=Null)
+$obj:=Storage
+Else 
+$obj:=Session.storage
+End if 
+	
+return This.query("ID_Employee = :1"; $obj.Employee.ID).orderBy("Date desc")*/
 	

@@ -18,16 +18,7 @@
 				"initialValue": false
 			}
 		],
-		"styles": [
-			{
-				"id": "fLGHI9CleyAJyUJ3Qv3u6",
-				"name": "DataTable2",
-				"content": "self {\nborder-collapse: collapse;\n\tborder-radius: 4px;\n}\n\nself .header .header-cell {\n  font-size: 18px;\n  color: #4f5963;\n  background-color:  #FFFFFF;\n \tborder-color: #aaadaf;\n\tborder-bottom-width:1px;\n}\n\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}\n\n\nself .row.selected {\n  background-color: #f3bec3;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f8f8;\n}",
-				"scope": "local",
-				"parentId": null,
-				"children": {}
-			}
-		],
+		"styles": [],
 		"states": [
 			{
 				"label": "Base",
@@ -208,8 +199,7 @@
 				],
 				"events": [],
 				"style": {
-					"width": "auto",
-					"borderStyle": "solid"
+					"width": "auto"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -384,9 +374,7 @@
 					}
 				],
 				"iconPosition": "left",
-				"style": {
-					"display": "flex"
-				}
+				"style": {}
 			},
 			"displayName": "Button",
 			"custom": {
@@ -401,9 +389,7 @@
 					}
 				},
 				"states:9EHA6D5gEoRgoRe3XqgeGs": {
-					"style": {
-						"display": "block"
-					}
+					"style": {}
 				}
 			},
 			"parent": "9xBrmbCIhQ",

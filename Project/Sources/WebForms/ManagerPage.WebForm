@@ -18,7 +18,42 @@
 				"from": "employees",
 				"namespace": "",
 				"initialValue": "first",
-				"depth": null
+				"depth": null,
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "4JxdMJ5CfD9rqoCeQdum9s",
+						"events": [
+							"onChange"
+						],
+						"action": "orderBy",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theEmployee.Reviews",
+							"type": "entitysel",
+							"namespace": "",
+							"from": ""
+						},
+						"orderBy": [
+							{
+								"id": "tenNrFhNUZbyjrNYztzE3a",
+								"name": "Date",
+								"order": "desc"
+							}
+						],
+						"disabled": true
+					}
+				]
+			},
+			{
+				"id": "SubReviews",
+				"type": "entitysel",
+				"dataclass": "Review",
+				"from": "theEmployee.Reviews",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
 			}
 		],
 		"styles": [],
@@ -69,24 +104,7 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Employee",
-						"events": [
-							"oninit"
-						],
-						"id": "1AHiQ3xMWavvGoD3W2hH9G",
-						"method": "ds.Employee.loadEmployees",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "cs.EmployeeSelection",
-							"datasource": "employees"
-						}
-					}
-				],
+				"events": [],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
 				"style": {
@@ -260,14 +278,14 @@
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
-				"datasource": "theEmployee.Reviews",
+				"datasource": "SubReviews",
 				"columns": [
 					{
 						"title": "Date",
 						"source": "Date",
 						"format": "Date abbreviated",
 						"width": "auto",
-						"sorting": true,
+						"sorting": false,
 						"dataType": "date",
 						"id": "dVypQ6jCrUXnYo7Zjs6kGP"
 					},

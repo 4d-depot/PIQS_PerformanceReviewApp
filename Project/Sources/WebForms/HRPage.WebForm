@@ -66,24 +66,7 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Employee",
-						"events": [
-							"oninit"
-						],
-						"id": "3kPFtyRSZoK6GooZSTwUbS",
-						"method": "ds.Employee.loadEmployees",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "cs.EmployeeSelection",
-							"datasource": "employees"
-						}
-					}
-				],
+				"events": [],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
 				"style": {
@@ -242,35 +225,7 @@
 			"props": {
 				"iterable": true,
 				"classNames": [],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Employee",
-						"events": [
-							"onselect"
-						],
-						"id": "3dbdeC7yak9qcR2LiRqcM5",
-						"method": "ds.Employee.loadEmployees",
-						"params": [
-							{
-								"name": "idDepartement",
-								"type": "Integer",
-								"datasource": "departement.ID",
-								"id": "2Lu9bKBmecpFeSM68wY5Tj",
-								"isHardCoded": false,
-								"hardCodedType": "number",
-								"hardCodedValue": ""
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "cs.EmployeeSelection",
-							"datasource": "employees"
-						},
-						"feedback": true
-					}
-				],
+				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
 				"datasource": "departements",

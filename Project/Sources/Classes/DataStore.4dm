@@ -31,8 +31,7 @@ exposed Function authentify($email : Text; $password : Text) : Text
 				$obj.Employee.ID:=$employee.ID
 				$obj.Employee.name:=$employee.Firstname+" "+$employee.Lastname
 				$obj.Employee.role:="Collaborator"
-				$obj.Employee.maxRole:=""
-				$obj.Employee.authentify:=True:C214
+				$obj.Employee.maxRole:="Collaborator"
 				$page:=$pageCollaborator
 				
 				If ($employee.ID_Departement=5)
@@ -42,11 +41,11 @@ exposed Function authentify($email : Text; $password : Text) : Text
 					Session:C1714.setPrivileges("user")
 					If ($employee.Collaborator.length>0)
 						$obj.Employee.maxRole:="Manager"
-					Else 
-						$obj.Employee.maxRole:="Collaborator"
 					End if 
 				End if 
+				$obj.Employee.authentify:=True:C214
 			End use 
+			
 			
 			Web Form:C1735.setMessage("Authentication successfull")
 			
@@ -58,20 +57,6 @@ exposed Function authentify($email : Text; $password : Text) : Text
 	End if 
 	
 	return $page
-	
-exposed Function logout()
-	var $obj : Object
-	
-	If (Session:C1714=Null:C1517)
-		$obj:=Storage:C1525
-	Else 
-		$obj:=Session:C1714.storage
-	End if 
-	
-	Use ($obj.Employee)
-		OB REMOVE:C1226($obj; "Employee")
-	End use 
-	
 	
 exposed Function selectRole($role : Text)
 	var $obj : Object

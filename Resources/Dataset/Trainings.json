@@ -1,0 +1,206 @@
+{
+    "TrainingsPO":[{
+        "Title": "Agile Product Owner Training",
+        "ExpectedValue": "Gain a deep understanding of Agile principles and methodologies, including Scrum and Kanban.",
+        "ProfessionalValue": "Enhance your ability to effectively collaborate with stakeholders and development teams to deliver high-quality products."
+    },{
+        "Title": "User Story Writing Workshop",
+        "ExpectedValue": "Learn best practices for writing user stories that effectively capture user requirements and drive product development.",
+        "ProfessionalValue": "Improve your communication skills and ensure alignment between business objectives and product features."
+    },{
+        "Title": "Product Management Fundamentals",
+        "ExpectedValue": "Develop a foundational knowledge of product management concepts, including market research, product strategy, and roadmap planning.",
+        "ProfessionalValue": "Strengthen your strategic thinking and decision-making abilities to drive product success."
+    },{
+        "Title": "Data-Driven Product Management",
+        "ExpectedValue": "Learn how to leverage data analytics and user feedback to make informed product decisions and drive continuous improvement.",
+        "ProfessionalValue": "Develop skills in data analysis and interpretation to guide product strategy and prioritize features."
+    },{
+        "Title": "Stakeholder Management and Communication",
+        "ExpectedValue": "Master techniques for effectively engaging and managing stakeholders to ensure alignment and drive successful product outcomes.",
+        "ProfessionalValue": "Enhance your interpersonal skills and build strong relationships with stakeholders to facilitate collaboration and decision-making."
+    },{
+        "Title": "Product Design Thinking Workshop",
+        "ExpectedValue": "Explore design thinking principles and methodologies to develop innovative and user-centered products.",
+        "ProfessionalValue": "Enhance your creativity and problem-solving skills to design products that meet user needs and drive business value."
+    },{
+        "Title": "Product Roadmapping and Prioritization",
+        "ExpectedValue": "Learn how to create and maintain product roadmaps that align business goals with user needs and technical constraints.",
+        "ProfessionalValue": "Improve your ability to prioritize features and resources effectively to deliver value to customers and achieve product goals."
+    },{
+        "Title": "Product Metrics and KPIs",
+        "ExpectedValue": "Gain expertise in defining and tracking key performance indicators (KPIs) to measure product success and drive data-driven decision-making.",
+        "ProfessionalValue": "Enhance your analytical skills and ability to quantify product performance to inform strategic decisions and product improvements."
+    },{
+        "Title": "Product Launch and Marketing Strategies",
+        "ExpectedValue": "Explore strategies for launching and marketing products effectively to drive user adoption and achieve business objectives.",
+        "ProfessionalValue": "Develop skills in product positioning, marketing communication, and go-to-market planning to drive product success and market competitiveness."
+    },{
+        "Title": "Continuous Improvement and Product Iteration", "ExpectedValue": "Learn how to implement iterative development processes to drive continuous improvement and innovation in product development.", "ProfessionalValue": "Develop a mindset of continuous learning and improvement to adapt to changing market needs and deliver high-value products to customers."
+    }],
+    "TrainingsQA":[{
+        "Title": "Software Testing Fundamentals",
+        "ExpectedValue": "Gain a strong foundation in software testing processes and techniques",
+        "ProfessionalValue": "Improve overall testing skills and knowledge, leading to more efficient and effective testing practices"
+    },{
+        "Title": "Test Automation with Selenium",
+        "ExpectedValue": "Learn how to automate tests using Selenium WebDriver",
+        "ProfessionalValue": "Increase efficiency by automating repetitive testing tasks, making testing processes more scalable and reliable"
+    },{
+        "Title": "Performance Testing",
+        "ExpectedValue": "Understand how to conduct performance testing to ensure applications can handle expected user load",
+        "ProfessionalValue": "Develop skills in identifying performance bottlenecks and optimizing application performance, leading to improved user experience"
+    },{
+        "Title": "Security Testing",
+        "ExpectedValue": "Learn how to assess and improve the security of software applications",
+        "ProfessionalValue": "Enhance understanding of common security vulnerabilities and how to mitigate them, making applications more secure and reducing risk of data breaches"
+    },{
+        "Title": "Agile Testing",
+        "ExpectedValue": "Gain insights into how testing fits within an agile development process",
+        "ProfessionalValue": "Improve collaboration with developers and other team members, resulting in faster delivery of high-quality software products"
+    },{
+        "Title": "Mobile Testing",
+        "ExpectedValue": "Learn strategies for testing mobile applications across different devices and platforms",
+        "ProfessionalValue": "Develop expertise in mobile testing techniques, ensuring applications are functional and user-friendly on mobile devices"
+    },{
+        "Title": "API Testing",
+        "ExpectedValue": "Understand how to test APIs for functionality, reliability, and performance",
+        "ProfessionalValue": "Enhance ability to test integrations between different software systems, ensuring seamless communication and data exchange"
+    },{
+        "Title": "Test Management",
+        "ExpectedValue": "Learn how to plan, organize, and track testing activities",
+        "ProfessionalValue": "Improve efficiency in managing testing projects, leading to better coordination and communication within the QA team"
+    },{
+        "Title": "Exploratory Testing",
+        "ExpectedValue": "Develop skills in exploratory testing to uncover defects and usability issues",
+        "ProfessionalValue": "Enhance ability to uncover critical issues that may not be found through scripted testing, leading to higher-quality software products"
+    },{
+        "Title": "Continuous Integration/Continuous Deployment (CI/CD) Testing",
+        "ExpectedValue": "Learn how to test applications in a CI/CD pipeline",
+        "ProfessionalValue": "Improve understanding of how testing fits within the CI/CD process, enabling faster and more reliable delivery of software updates."
+    }],
+    "TrainingsDEV":[{
+        "Title": "Advanced JavaScript Development",
+        "ExpectedValue": "Learn advanced JavaScript concepts and techniques to improve code quality and performance.",
+        "ProfessionalValue": "Mastering JavaScript can make you a highly sought-after developer, as it is a fundamental language for web development."
+    },{
+        "Title": "Agile Project Management",
+        "ExpectedValue": "Understand Agile methodologies and practices to improve project delivery and collaboration.",
+        "ProfessionalValue": "Agile is widely used in the software industry, and having Agile project management skills can enhance your career opportunities."
+    },{
+        "Title": "DevOps Fundamentals",
+        "ExpectedValue": "Gain knowledge of DevOps principles and tools to streamline development and deployment processes.",
+        "ProfessionalValue": "DevOps is a key trend in the industry, and professionals with DevOps skills are in high demand."
+    },{
+        "Title": "Introduction to Data Structures and Algorithms",
+        "ExpectedValue": "Learn essential data structures and algorithms to solve complex programming problems efficiently.",
+        "ProfessionalValue": "Strong knowledge of data structures and algorithms is critical for technical interviews and developing efficient software solutions."
+    },{
+        "Title": "Cloud Computing Fundamentals",
+        "ExpectedValue": "Understand cloud computing concepts and platforms to deploy and scale applications in the cloud.",
+        "ProfessionalValue": "Cloud computing skills are essential for modern software development, as more companies are moving their infrastructure to the cloud."
+    },{
+        "Title": "Cybersecurity Basics for Developers",
+        "ExpectedValue": "Learn fundamental cybersecurity principles to protect software applications from cyber threats.",
+        "ProfessionalValue": "With the increasing number of cyber attacks, having cybersecurity knowledge can make you a valuable asset to any development team."
+    },{
+        "Title": "Mobile App Development with React Native",
+        "ExpectedValue": "Develop mobile applications using React Native, a popular cross-platform framework.",
+        "ProfessionalValue": "React Native skills are highly sought after in the mobile development industry, as it allows developers to build apps for both iOS and Android platforms with a single codebase."
+    },{
+        "Title": "Introduction to Machine Learning for Developers",
+        "ExpectedValue": "Understand the basics of machine learning to develop intelligent applications and algorithms.",
+        "ProfessionalValue": "Machine learning is a rapidly growing field, and developers with machine learning skills are in high demand across various industries."
+    },{
+        "Title": "Advanced SQL for Developers",
+        "ExpectedValue": "Enhance your SQL skills to write complex queries and optimize database performance.",
+        "ProfessionalValue": "SQL is a fundamental skill for developers working with databases, and mastering advanced SQL techniques can set you apart from other candidates."
+        
+    },{
+        "Title": "Web Accessibility Best Practices",
+        "ExpectedValue": "Learn how to design and develop accessible websites to ensure inclusivity for all users.",
+        "ProfessionalValue": "Web accessibility is a crucial aspect of web development, and developers with knowledge of accessibility best practices can create more inclusive and user-friendly websites."
+    }],
+    "TrainingsSales":[{
+        "Title": "Advanced Sales Techniques",
+        "ExpectedValue": "Improved closing ratio and increased sales revenue",
+        "ProfessionalValue": "Enhanced negotiation skills and increased confidence in sales interactions"
+    },{
+        "Title": "Customer Relationship Management",
+        "ExpectedValue": "Improved customer retention and increased customer satisfaction",
+        "ProfessionalValue": "Improved communication skills and ability to build long-lasting relationships with clients"
+    },{
+        "Title": "Product Knowledge Training",
+        "ExpectedValue": "Increased product knowledge and ability to effectively communicate product features and benefits",
+        "ProfessionalValue": "Improved credibility with clients and increased confidence in selling products"
+    },{
+        "Title": "Time Management for Sales Professionals",
+        "ExpectedValue": "Increased productivity and efficiency in managing sales activities",
+        "ProfessionalValue": "Improved organization skills and ability to prioritize sales tasks effectively"
+    },{
+        "Title": "Social Selling Strategies",
+        "ExpectedValue": "Increased lead generation and expanded network of potential clients",
+        "ProfessionalValue": "Enhanced understanding of social media platforms and ability to leverage them for sales opportunities"
+    },{
+        "Title": "Presentation Skills for Sales Professionals",
+        "ExpectedValue": "Improved ability to deliver compelling sales presentations and persuade clients",
+        "ProfessionalValue": "Increased confidence in public speaking and enhanced communication skills"
+    },{
+        "Title": "Sales Forecasting and Pipeline Management",
+        "ExpectedValue": "Improved accuracy in sales forecasting and better management of sales pipeline",
+        "ProfessionalValue": "Enhanced strategic planning skills and ability to set and achieve sales targets"
+    },{
+        "Title": "Objection Handling and Negotiation",
+        "ExpectedValue": "Increased ability to overcome objections and close deals",
+        "ProfessionalValue": "Improved problem-solving skills and confidence in handling challenging sales situations"
+    },{
+        "Title": "Sales Ethics and Compliance",
+        "ExpectedValue": "Enhanced understanding of ethical sales practices and compliance standards",
+        "ProfessionalValue": "Improved reputation as a trustworthy and reliable sales professional"
+    },{
+        "Title": "Sales Leadership and Team Building",
+        "ExpectedValue": "Improved team performance and increased motivation among sales team members",
+        "ProfessionalValue": "Enhanced leadership skills and ability to drive team success in sales initiatives"
+    }],
+    "TrainingsHR":[{
+        "Title": "Effective Employee Onboarding",
+        "ExpectedValue": "Improved employee retention and engagement from the start.",
+        "ProfessionalValue": "Skills in designing and implementing comprehensive onboarding programs that foster a positive workplace culture."
+    },{
+        "Title": "Conflict Resolution Techniques",
+        "ExpectedValue": "Enhanced ability to mediate disputes and improve team dynamics.",
+        "ProfessionalValue": "Expertise in resolving conflicts that contributes to a healthier work environment and increased employee satisfaction."
+    },{
+        "Title": "Diversity and Inclusion Training",
+        "ExpectedValue": "Increased awareness and strategies to promote a diverse workplace.",
+        "ProfessionalValue": "Skills to develop and implement inclusive policies that enhance organizational culture and compliance."
+    },{
+        "Title": "Performance Management Systems",
+        "ExpectedValue": "More effective evaluation and feedback processes that drive productivity.",
+        "ProfessionalValue": "Knowledge of creating performance improvement plans and aligning employee goals with organizational objectives."
+    },{
+        "Title": "Employment Law Fundamentals",
+        "ExpectedValue": "Reduced legal risks through informed HR practices.",
+        "ProfessionalValue": "Understanding of relevant labor laws and regulations, enabling compliance and risk management."
+    },{
+        "Title": "Talent Acquisition Strategies",
+        "ExpectedValue": "Enhanced recruitment processes leading to better candidate selection.",
+        "ProfessionalValue": "Techniques for attracting top talent and employing data-driven hiring practices."
+    },{
+        "Title": "Leadership Development Programs",
+        "ExpectedValue": "Cultivating future leaders within the organization.",
+        "ProfessionalValue": "Skills to design and facilitate programs that nurture leadership skills in potential and existing leaders."
+    },{
+        "Title": "Employee Engagement and Retention Strategies",
+        "ExpectedValue": "Stronger workforce commitment and lower turnover rates.",
+        "ProfessionalValue": "Capability to analyze engagement metrics and implement strategies to enhance employee satisfaction."
+    },{
+        "Title": "HR Data Analytics",
+        "ExpectedValue": "Data-driven decision-making capabilities in HR functions.",
+        "ProfessionalValue": "Proficiency in using data analytics tools to measure HR performance and inform strategic planning."
+    },{
+        "Title": "Change Management",
+        "ExpectedValue": "Smoother transitions during organizational changes.",
+        "ProfessionalValue": "Skills in facilitating change management processes that minimize disruption and enhance employee buy-in."
+    }]
+}

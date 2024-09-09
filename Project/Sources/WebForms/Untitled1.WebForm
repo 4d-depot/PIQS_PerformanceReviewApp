@@ -1,7 +1,16 @@
 {
 	"metadata": {
 		"v": "1.0",
-		"datasources": [],
+		"datasources": [
+			{
+				"id": "training",
+				"type": "entitysel",
+				"dataclass": "Training",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			}
+		],
 		"styles": [],
 		"states": [
 			{
@@ -38,65 +47,8 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"RMlSPOrGu_"
+				"rzW4HEF0kK"
 			],
-			"linkedNodes": {}
-		},
-		"RMlSPOrGu_": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "ROOT",
-			"hidden": false,
-			"nodes": [
-				"ouP1EK5ZEn"
-			],
-			"linkedNodes": {}
-		},
-		"ouP1EK5ZEn": {
-			"type": {
-				"resolvedName": "Button"
-			},
-			"isCanvas": false,
-			"props": {
-				"text": "Button",
-				"classNames": [],
-				"events": [],
-				"iconPosition": "hidden",
-				"style": {
-					"display": "flex"
-				}
-			},
-			"displayName": "Button",
-			"custom": {},
-			"parent": "RMlSPOrGu_",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"icon": "tsl5NywGyo"
-			}
-		},
-		"tsl5NywGyo": {
-			"type": {
-				"resolvedName": "Icon"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": []
-			},
-			"displayName": "Icon",
-			"custom": {},
-			"parent": "ouP1EK5ZEn",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"8qdTmcRAdG": {
@@ -106,7 +58,8 @@
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"className": "h-full"
+				"className": "h-full",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -122,7 +75,8 @@
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"className": "h-full"
+				"className": "h-full",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -144,6 +98,157 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "L3faHCRNVH",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"rzW4HEF0kK": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"3XQ4-KBP6X",
+				"mAO2rKKHuF"
+			],
+			"linkedNodes": {}
+		},
+		"3XQ4-KBP6X": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Button",
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Training",
+						"events": [
+							"onclick"
+						],
+						"id": "oediGM4jjDF5crgHVZnFuR",
+						"method": "ds.Training.allPlanned",
+						"params": [],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.TrainingSelection",
+							"datasource": "training"
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "rzW4HEF0kK",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "5EfEizHPPo"
+			}
+		},
+		"5EfEizHPPo": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "3XQ4-KBP6X",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"mAO2rKKHuF": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [],
+				"events": [],
+				"style": {},
+				"headerHeight": 36,
+				"rowHeight": 30,
+				"datasource": "training",
+				"columns": [
+					{
+						"title": "Name",
+						"source": "Name",
+						"width": 150,
+						"sorting": true,
+						"format": "",
+						"dataType": "string",
+						"id": "imCFQfossxNA8uL6bDhgYv"
+					},
+					{
+						"title": "Expectedresult",
+						"source": "ExpectedResult",
+						"width": 150,
+						"sorting": false,
+						"id": "gm2mZ4Lb7qK711hg2oyHGy",
+						"format": "",
+						"dataType": "string"
+					},
+					{
+						"title": "Professionalvalue",
+						"source": "ProfessionalValue",
+						"width": 150,
+						"sorting": false,
+						"id": "6BC5SKiFVYiMxNHGnr8eok",
+						"format": "",
+						"dataType": "string"
+					},
+					{
+						"title": "Id_trainingstatus",
+						"source": "ID_TrainingStatus",
+						"width": 150,
+						"sorting": false,
+						"id": "52UFzTNh4VUik9rx5NiNS8",
+						"format": "",
+						"dataType": "long"
+					},
+					{
+						"title": "",
+						"source": "Review.Date",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"id": "797Tm3uynN4G7jwon4eVfb"
+					},
+					{
+						"title": "",
+						"source": "Review.Employee.Lastname",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"id": "jZsbZJtQFGssGKZ7BJzHdU"
+					}
+				]
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "rzW4HEF0kK",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
