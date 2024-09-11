@@ -95,3 +95,10 @@ exposed Function getMaxRole : Text
 		return Session:C1714.storage.Employee.maxRole
 	End if 
 	
+exposed Function setTrue() : Boolean
+	
+	return True:C214
+	
+exposed Function setFalse() : Boolean
+	
+	return False:C215

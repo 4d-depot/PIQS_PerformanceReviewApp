@@ -109,7 +109,11 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"position": "relative",
+					"display": "flex",
+					"flexDirection": "column",
+					"justifyContent": "flex-start"
 				}
 			},
 			"displayName": "Page",
@@ -118,7 +122,8 @@
 			"hidden": false,
 			"nodes": [
 				"2gj19l4_1R",
-				"Q-FxuhHCgd"
+				"t0KbSvehBL",
+				"PirbSSK2hr"
 			],
 			"linkedNodes": {}
 		},
@@ -139,7 +144,7 @@
 			},
 			"displayName": "Page Loader",
 			"custom": {},
-			"parent": "ROOT",
+			"parent": "t0KbSvehBL",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
@@ -871,6 +876,91 @@
 				"w-eo3x7_4O",
 				"iriGyUuSq4"
 			],
+			"linkedNodes": {}
+		},
+		"PirbSSK2hr": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"backgroundColor": "rgb(26,32,44)",
+					"position": "relative",
+					"bottom": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"zgtzlR80Tq"
+			],
+			"linkedNodes": {}
+		},
+		"t0KbSvehBL": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"display": "flex",
+					"height": "100%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"Q-FxuhHCgd"
+			],
+			"linkedNodes": {}
+		},
+		"zgtzlR80Tq": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"color": "#ffffffff",
+					"fontSize": "14px",
+					"textAlign": "center"
+				},
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "© 2024 4D SAS - All rights reserved",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "PirbSSK2hr",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}

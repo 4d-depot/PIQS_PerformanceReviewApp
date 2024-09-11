@@ -5818,7 +5818,8 @@
 			"props": {
 				"events": [],
 				"style": {
-					"backgroundColor": "transparent"
+					"backgroundColor": "transparent",
+					"zIndex": "1000"
 				},
 				"iterableChild": true
 			},

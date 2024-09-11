@@ -148,20 +148,7 @@
 				"classNames": [
 					"DataTable"
 				],
-				"events": [
-					{
-						"type": "navigation",
-						"id": "pKixzsahsx1JkshJ2ANAXq",
-						"events": [
-							"onselect"
-						],
-						"externalLink": false,
-						"loader": "",
-						"parent": "new-tab",
-						"target": "",
-						"isHardCoded": true
-					}
-				],
+				"events": [],
 				"style": {
 					"display": "flex",
 					"alignItems": "stretch",
@@ -225,7 +212,35 @@
 			"props": {
 				"iterable": true,
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Employee",
+						"events": [
+							"onselect"
+						],
+						"id": "3dbdeC7yak9qcR2LiRqcM5",
+						"method": "ds.Employee.loadEmployees",
+						"params": [
+							{
+								"name": "idDepartement",
+								"type": "Integer",
+								"datasource": "departement.ID",
+								"id": "2Lu9bKBmecpFeSM68wY5Tj",
+								"isHardCoded": false,
+								"hardCodedType": "number",
+								"hardCodedValue": ""
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.EmployeeSelection",
+							"datasource": "employees"
+						},
+						"feedback": true
+					}
+				],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
 				"datasource": "departements",
@@ -769,14 +784,14 @@
 					}
 				],
 				"iconPosition": "left",
-				"style": {
-					"display": "flex",
-					"alignItems": "center",
-					"justifyContent": "center"
-				}
+				"style": {}
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:cmKSTz2P83i1bC685Z8Qah": {
+					"style": {}
+				}
+			},
 			"parent": "1Usd5uv9sh",
 			"hidden": false,
 			"nodes": [],
@@ -1620,7 +1635,7 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Generate Reviews",
+				"text": "Generate next Reviews",
 				"classNames": [
 					"buttonGrey"
 				],
@@ -2825,7 +2840,7 @@
 						"source": "Date",
 						"format": "Date abbreviated",
 						"width": "auto",
-						"sorting": true,
+						"sorting": false,
 						"dataType": "date",
 						"id": "wrDPgD2DR2oMcnEJMqQYQs"
 					},
@@ -2850,7 +2865,7 @@
 						"source": "ScoreGlobal.Name",
 						"format": "",
 						"width": "auto",
-						"sorting": true,
+						"sorting": false,
 						"id": "n7nxQYDom3aghs6ZSqMUvL"
 					},
 					{
@@ -2858,7 +2873,7 @@
 						"source": "Status.Name",
 						"format": "",
 						"width": "auto",
-						"sorting": true,
+						"sorting": false,
 						"disabled": false,
 						"id": "koa1GAEzEPM92qnT3wxPYg"
 					}

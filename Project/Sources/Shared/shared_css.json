@@ -14,7 +14,7 @@
 		},
 		{
 			"name": "backgroundRed",
-			"content": "self {\n  background-color: #c32232;\n\tcolor: #ffffff;\n}",
+			"content": "self {\n  background-color: #dd3c4c;\n\tcolor: #ffffff;\n\tborder-radius: 10px 0 0 10px;\n}",
 			"parentId": null,
 			"id": "umNirmsABdmhp5eCja7X8"
 		},
@@ -46,7 +46,7 @@
 		},
 		{
 			"name": "box-shadow",
-			"content": "self {\n  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;\n\tborder-radius: 4px;\n}",
+			"content": "self {\n  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;\n}",
 			"children": {},
 			"parentId": null,
 			"origin": "cvbwVC_Juv",
