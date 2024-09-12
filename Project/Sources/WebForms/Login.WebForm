@@ -733,7 +733,12 @@
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"display": "block",
+					"flexDirection": "column",
+					"width": "auto"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -754,7 +759,8 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"backgroundColor": "transparent"
+					"backgroundColor": "transparent",
+					"width": "auto"
 				}
 			},
 			"displayName": "Stylebox",
@@ -855,7 +861,10 @@
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"width": "auto"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {},

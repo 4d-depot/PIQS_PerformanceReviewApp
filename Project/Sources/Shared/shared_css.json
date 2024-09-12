@@ -38,7 +38,7 @@
 		},
 		{
 			"name": "DataTable",
-			"content": "self {\nborder-collapse: collapse;\n\tborder-radius: 4px;\n}\n\nself .header .header-cell{\n  font-size: 18px;\n  background-color: #4f5963;\n  color:  #FFFFFF;\n \tborder-color: #aaadaf;\n}\n\nself .header .header-cell .headerTruncatedText{\n\t white-space: normal;\n}\n\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}\n\n\nself .row.selected {\n  background-color: #f3bec3;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f8f8;\n}",
+			"content": "self {\n  border-collapse: collapse;\n\tborder-radius: 4px;\n}\n\nself .header .header-cell{\n  font-size: 18px;\n  background-color: #4f5963;\n  color:  #FFFFFF;\n \tborder-color: #aaadaf;\n}\n\nself .header .header-cell .headerTruncatedText{\n\t white-space: normal;\n}\n\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}\n\n\n\nself .row.selected {\n  background-color: #f3bec3;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f8f8;\n}",
 			"children": {},
 			"parentId": null,
 			"origin": "msZvlSfNvg",

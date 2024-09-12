@@ -109,7 +109,17 @@
 			},
 			{
 				"label": "editReview",
-				"id": "hvySCE8nphJt5dSvaweWXG"
+				"id": "hvySCE8nphJt5dSvaweWXG",
+				"conditions": {
+					"id": "jedcqmZMoPz3u2q34UG7XC",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "viewReview",
+					"dsType": "bool",
+					"op": "istrue"
+				}
 			}
 		],
 		"defaultStates": [
@@ -676,6 +686,11 @@
 					}
 				},
 				"states:daWE6Z1rQ45AUxxNMhc1Vz": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:9EHA6D5gEoRgoRe3XqgeGs": {
 					"style": {
 						"display": "none"
 					}
