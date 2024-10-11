@@ -1,562 +1,297 @@
 {
-	"Departement": [
-		{
-			"ID": 1,
-			"Name": "Product",
-			"ID_Template": 2,
-			"Skill": {
-				"skill": [
-					{
-						"group": "Product Management Skills",
-						"value": [
-							"Strategic Planning",
-							"Product Roadmapping",
-							"Market Research and Analysis",
-							"User Story Development",
-							"Feature Prioritization"
-						]
-					},
-					{
-						"group": "Communication Skills",
-						"value": [
-							"Stakeholder Engagement",
-							"Presentation Skills",
-							"Negotiation Skills",
-							"Active Listening",
-							"Conflict Resolution"
-						]
-					},
-					{
-						"group": "Agile and Scrum Practices",
-						"value": [
-							"Backlog Management",
-							"Sprint Planning",
-							"User Acceptance Testing(UAT)",
-							"Sprint Review Facilitation",
-							"Agile Metrics Understanding"
-						]
-					},
-					{
-						"group": "Technical Skills",
-						"value": [
-							"Basic Understanding of Software Development",
-							"Requirements Gathering",
-							"Prototyping and Wireframing",
-							"Familiarity with APIs",
-							"Data Analysis and Interpretation"
-						]
-					},
-					{
-						"group": "Leadership and Team Collaboration",
-						"value": [
-							"Team Motivation",
-							"Vision Setting",
-							"Collaborative Decision Making",
-							"Mentoring and Coaching Team Members",
-							"Crisis Management"
-						]
-					}
-				]
-			}
-		},{
-			"ID": 2,
-			"Name": "Sales",
-			"ID_Template": 1,
-			"Skill": {
-				"skill": [
-					{
-						"group": "Communication Skills",
-						"value": [
-							"Active Listening",
-							"Persuasive Communication",
-							"Presentation Skills",
-							"Interpersonal Skills"
-						]
-					},
-					{
-						"group": "Sales Techniques",
-						"value": [
-							"Negotiation Skills",
-							"Closing Techniques",
-							"Negotiation Skills",
-							"Lead Generation",
-							"Consultative Selling"
-						]
-					},
-					{
-						"group": "Product Knowledge",
-						"value": [
-							"Product Demonstration Skills",
-							"Market Knowledge",
-							"Competitor Analysis",
-							"Industry Trends Awareness"
-						]
-					},
-					{
-						"group": "Relationship Management",
-						"value": [
-							"Customer Relationship Management(CRM)",
-							"Networking Skills",
-							"Client Retention Strategies",
-							"Conflict Resolution"
-						]
-					},
-					{
-						"group": "Strategic Thinking",
-						"value": [
-							"Problem Solving",
-							"Sales Strategy Development",
-							"Goal Setting and Tracking",
-							"Data Analysis and Interpretation"
-						]
-					}
-				]
-			}
-		},{
-			"ID": 3,
-			"Name": "QA",
-			"ID_Template": 1,
-			"Skill": {
-				"skill": [
-					{
-						"group": "Technical Skills",
-						"value": [
-							"Test Automation",
-							"API Testing",
-							"Scripting Languages",
-							"Continuous Integration/Continuous Deployment(CI/CD)"
-						]
-					},
-					{
-						"group": "User Acceptance Testing(UAT)",
-						"value": [
-							"Agile Testing Practices",
-							"Exploratory Testing",
-							"Performance Testing",
-							"Remote Collaboration Tools"
-						]
-					},
-					{
-						"group": "Analytical Skills",
-						"value": [
-							"Defect Analysis",
-							"Test Case Design",
-							"Risk Assessmentn",
-							"Data Analysis"
-						]
-					},
-					{
-						"group": "Collaboration and Communication",
-						"value": [
-							"Cross-Functional Collaboration",
-							"Agile Ceremonies Participation",
-							"Documentation Skills",
-							"Feedback Mechanisms"
-						]
-					},
-					{
-						"group": "Soft Skills",
-						"value": [
-							"Problem-Solving",
-							"Adaptability",
-							"Time Management",
-							"Team Player"
-						]
-					}
-				]
-			}
-		},{
-			"ID": 4,
-			"Name": "Dev",
-			"ID_Template": 1,
-			"Skill": {
-				"skill": [
-					{
-						"group": "Agile Methodologies",
-						"value": [
-							"Scrum Mastery",
-							"Lean Principles",
-							"Sprint Review Facilitation"
-						]
-					},
-					{
-						"group": "Collaboration & Communication",
-						"value": [
-							"Effective Communication",
-							"Conflict Resolution",
-							"Active Listening",
-							"Remote Collaboration Tools"
-						]
-					},
-					{
-						"group": "Technical Proficiency",
-						"value": [
-							"Version Control Systems",
-							"CI/CD Practices",
-							"Technical Documentation",
-							"Automated Testing"
-						]
-					},
-					{
-						"group": "Problem-Solving & Adaptability",
-						"value": [
-							"Critical Thinking",
-							"Quick Learning",
-							"Flexibility",
-							"Innovation"
-						]
-					},
-					{
-						"group": "Team Dynamics & Leadership",
-						"value": [
-							"Mentorship",
-							"Team Building",
-							"Feedback Culture",
-							"Goal Setting"
-						]
-					}
-				]
-			}
-		},{
-			"ID": 5,
-			"Name": "HR",
-			"ID_Template": 1,
-			"Skill": {
-				"skill": [
-					{
-						"group": "Recruitment and Selection",
-						"value": [
-							"Talent Acquisition",
-							"Interviewing Techniques",
-							"Job Analysis and Design",
-							"Candidate Screening"
-						]
-					},
-					{
-						"group": "Employee Relations",
-						"value": [
-							"Conflict Resolution",
-							"Communication Skills",
-							"Performance Testing",
-							"Employee Engagement Strategies"
-						]
-					},
-					{
-						"group": "Training and Development",
-						"value": [
-							"Learning and Development Program Design",
-							"Performance Management Systems",
-							"Coaching and Mentoring",
-							"Needs Assessment"
-						]
-					},
-					{
-						"group": "Compliance and Legal Knowledge",
-						"value": [
-							"Labor Law Knowledge",
-							"Policy Development and Implementation",
-							"Risk Management",
-							"Employee Rights Awareness"
-						]
-					},
-					{
-						"group": "Compensation and Benefits",
-						"value": [
-							"Salary Structure Development",
-							"Compensation Analysis",
-							"Benefits Administration",
-							"Payroll Management"
-						]
-					}
-				]
-			}
-		}
-	],
-	"Employee": [
-		{
-			"ID": 1,
-			"Lastname": "Doe",
-			"Firstname": "John",
-			"Job": "Product Owner",
-			"Description": "∙ Define and prioritize the product backlog in collaboration with the development team.\n∙ Gather requirements from stakeholders and translate them into user stories.\n∙ Work with the development team to ensure that user stories are implemented correctly and meet stakeholder needs.\n∙ Conduct user acceptance testing to ensure that the product meets quality standards.\n∙ Communicate with stakeholders to gather feedback and provide updates on the progress of the project.\n∙ Make decisions on product features and prioritize them based on business value and stakeholder needs.\n∙ Collaborate with the Scrum Master and other team members to ensure that the product is delivered on time and within budget.\n∙ Monitor and evaluate the performance of the product and make adjustments as needed.\n∙ Keep up-to-date with market trends and competitor products to inform product decisions.\n∙ Continuously improve the product development process and identify opportunities for innovation.\n",
-			"ID_Supervisor": 3,
-			"ID_Departement": 1,
-			"Position": "",
-			"Email": "john.doe@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},
-		{
-			"ID": 2,
-			"Lastname": "Smith",
-			"Firstname": "Jenny",
-			"Job": "Product Owner",
-			"Description": "∙ Define and prioritize the product backlog in collaboration with the development team.\n∙ Gather requirements from stakeholders and translate them into user stories.\n∙ Work with the development team to ensure that user stories are implemented correctly and meet stakeholder needs.\n∙ Conduct user acceptance testing to ensure that the product meets quality standards.\n∙ Communicate with stakeholders to gather feedback and provide updates on the progress of the project.\n∙ Make decisions on product features and prioritize them based on business value and stakeholder needs.\n∙ Collaborate with the Scrum Master and other team members to ensure that the product is delivered on time and within budget.\n∙ Monitor and evaluate the performance of the product and make adjustments as needed.\n∙ Keep up-to-date with market trends and competitor products to inform product decisions.\n∙ Continuously improve the product development process and identify opportunities for innovation.",
-			"ID_Supervisor": 3,
-			"ID_Departement": 1,
-			"Position": "",
-			"Email": "jenny.smith@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},
-		{
-			"ID": 3,
-			"Lastname": "Martin",
-			"Firstname": "Karl",
-			"Job": "Product Manager",
-			"Description": "∙ Collaborate with stakeholders to identify and prioritize product features and requirements.\n∙ Create and maintain a product roadmap and release plan.\n∙ Coordinate with development teams to ensure tasks are completed according to schedule and budget.\n∙ Conduct user research and gather feedback to improve product performance and usability.\n∙ Work with the marketing team to develop go-to-market strategies and product messaging.\n∙ Monitor product performance and respond to customer feedback and issues.\n∙ Analyze market trends and competitors to identify opportunities for product enhancement.\n∙ Manage product backlog and prioritize user stories for development teams.\n∙ Facilitate sprint planning, review,\n",
-			"ID_Supervisor": 12,
-			"ID_Departement": 1,
-			"Position": "",
-			"Email": "karl.martin@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},
-		{
-			"ID": 4,
-			"Lastname": "Anderson",
-			"Firstname": "Benjamin",
-			"Job": "Sales",
-			"Description": "∙ Prospecting and generating leads\n∙ Qualifying leads based on specific criteria\n∙ Conducting product demonstrations and presentations\n∙ Negotiating and closing sales deals\n∙ Building and maintaining long-term relationships with clients\n∙ Providing excellent customer service and support\n∙ Following up with clients to ensure satisfaction and repeat business\n∙ Monitoring and analyzing sales performance and metrics\n∙ Collaborating with marketing and product teams to develop sales strategies\n∙ Staying updated on industry trends and competitor activities.",
-			"ID_Supervisor": 5,
-			"ID_Departement": 2,
-			"Position": null,
-			"Email": "benjamin.anderson@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},
-		{
-			"ID": 5,
-			"Lastname": "Johnson",
-			"Firstname": "Emily",
-			"Job": "Sales Manager",
-			"Description": "∙ Develop and implement sales strategies to achieve company targets and objectives\n∙ Lead and motivate the sales team to meet and exceed sales goals\n∙ Monitor and analyze sales data to track performance and identify areas for improvement\n∙ Train and onboard new sales team members to ensure they have the knowledge and skills to succeed\n∙ Build and maintain relationships with key clients and business partners\n∙ Collaborate with marketing and product development teams to align sales strategies with overall business objectives\n∙ Conduct regular performance reviews and provide feedback to sales team members\n∙ Attend industry events and conferences to network and stay up-to-date on industry trends\n∙ Develop and maintain sales forecasts and budgets\n∙ Provide regular reports to senior management on sales performance and initiatives.\n",
-			"ID_Supervisor": 12,
-			"ID_Departement": 2,
-			"Position": null,
-			"Email": "emily.johnsom@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},
-		{
-			"ID": 6,
-			"Lastname": "Williams",
-			"Firstname": "Alexander",
-			"Job": "QA",
-			"Description": "∙ Review and analyze requirements and specifications.\n∙ Develop and execute test plans and test cases.\n∙ Perform manual testing of software applications.\n∙ Identify and report bugs and issues in a detailed manner.\n∙ Verify bug fixes and ensure they meet the specified requirements.\n∙ Conduct regression testing to ensure that previously fixed bugs do not reappear.\n∙ Collaborate with developers and other team members to resolve issues.\n∙ Provide feedback on the overall quality of the software.\n∙ Participate in sprint planning and retrospective meetings.\n∙ Stay updated on industry best practices and tools related to testing.\n",
-			"ID_Supervisor": 7,
-			"ID_Departement": 3,
-			"Position": null,
-			"Email": "alexander.williams@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},
-		{
-			"ID": 7,
-			"Lastname": "Brown",
-			"Firstname": "Matthew",
-			"Job": "QA Manager",
-			"Description": "∙ Develop and implement sales strategies to achieve company targets and objectives\n∙ Lead and motivate the sales team to meet and exceed sales goals\n∙ Monitor and analyze sales data to track performance and identify areas for improvement\n∙ Train and onboard new sales team members to ensure they have the knowledge and skills to succeed\n∙ Build and maintain relationships with key clients and business partners\n∙ Collaborate with marketing and product development teams to align sales strategies with overall business objectives\n∙ Conduct regular performance reviews and provide feedback to sales team members\n∙ Attend industry events and conferences to network and stay up-to-date on industry trends\n∙ Develop and maintain sales forecasts and budgets\n∙ Provide regular reports to senior management on sales performance and initiatives.",
-			"ID_Supervisor": 12,
-			"ID_Departement": 3,
-			"Position": null,
-			"Email": "matthew.brown@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},
-		{
-			"ID": 8,
-			"Lastname": "Taylor",
-			"Firstname": "Olivia",
-			"Job": "Dev",
-			"Description": "∙ Writing and reviewing code\n∙ Debugging and troubleshooting technical issues\n∙ Developing and implementing software solutions\n∙ Collaborating with other team members on projects\n∙ Testing and quality assurance of code\n∙ Researching new technologies and tools\n∙ Participating in code reviews and providing feedback\n∙ Documenting code and technical processes\n∙ Providing technical support to clients or end-users\n∙ Following best practices and coding standards.\n",
-			"ID_Supervisor": 10,
-			"ID_Departement": 4,
-			"Position": null,
-			"Email": "olivia.taylor@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 9,
-			"Lastname": "Jones",
-			"Firstname": "William",
-			"Job": "Dev",
-			"Description": "∙ Writing and reviewing code\n∙ Debugging and troubleshooting technical issues\n∙ Developing and implementing software solutions\n∙ Collaborating with other team members on projects\n∙ Testing and quality assurance of code\n∙ Researching new technologies and tools\n∙ Participating in code reviews and providing feedback\n∙ Documenting code and technical processes\n∙ Providing technical support to clients or end-users\n∙ Following best practices and coding standards.\n",
-			"ID_Supervisor": 10,
-			"ID_Departement": 4,
-			"Position": null,
-			"Email": "william.jones@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 10,
-			"Lastname": "Miller",
-			"Firstname": "Jacob",
-			"Job": "Dev Manager",
-			"Description": "∙ Lead and manage the team of developers, ensuring they have the necessary resources and support to complete projects successfully\n∙ Set and communicate clear goals and expectations for the team, and track progress towards those goals\n∙ Hire, train, and mentor developers, providing ongoing feedback and guidance to help them grow and improve\n∙ Collaborate with other teams and stakeholders to define project requirements and ensure alignment with business and technical objectives\n∙ Develop project timelines, budgets, and resource plans, and manage projects to ensure they are completed on time and within budget\n∙ Identify and address technical challenges and roadblocks, working with the team to find creative solutions\n∙ Stay current on industry trends and best practices, and make recommendations for new technologies or tools that could improve the team's efficiency and effectiveness\n∙ Ensure compliance with coding standards, security protocols, and other best practices to maintain a high level of quality in the team's work.\n",
-			"ID_Supervisor": 12,
-			"ID_Departement": 4,
-			"Position": null,
-			"Email": "jacob.miller@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 11,
-			"Lastname": "Beth",
-			"Firstname": "Sara",
-			"Job": "HR Manager",
-			"Description": "• Assess the staffing needs for annual maintenance tasks.\n• Collaborate with department heads to understand maintenance requirements and align staffing strategies accordingly.\n• Oversee the recruitment process for maintenance personnel, ensuring that the right skills and expertise are available.\n• Plan and facilitate training programs to ensure that employees are knowledgeable about maintenance procedures, safety protocols, and compliance standards.\n• Implement ongoing development programs to keep staff updated on the latest maintenance technologies and practices.\n• Manage administrative tasks related to staffing, such as maintaining records of attendance and time-off requests.\n• Work with management to create and manage the budget for personnel-related expenses in maintenance activities.\n\n",
-			"ID_Supervisor": 12,
-			"ID_Departement": 5,
-			"Position": null,
-			"Email": "sara.beth@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 12,
-			"Lastname": "Caron",
-			"Firstname": "Phil",
-			"Job": "CEO",
-			"Description": null,
-			"ID_Supervisor": null,
-			"ID_Departement": 5,
-			"Position": null,
-			"Email": null,
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG",
-			"Supervisor": null
-		},{
-			"ID": 17,
-			"Lastname": "White",
-			"Firstname": "Christopher",
-			"Job": "HR",
-			"Description": "• Assess the staffing needs for annual maintenance tasks.\n• Collaborate with department heads to understand maintenance requirements and align staffing strategies accordingly.\n• Oversee the recruitment process for maintenance personnel, ensuring that the right skills and expertise are available.\n• Plan and facilitate training programs to ensure that employees are knowledgeable about maintenance procedures, safety protocols, and compliance standards.\n• Implement ongoing development programs to keep staff updated on the latest maintenance technologies and practices.\n• Manage administrative tasks related to staffing, such as maintaining records of attendance and time-off requests.\n• Work with management to create and manage the budget for personnel-related expenses in maintenance activities.",
-			"ID_Supervisor": 11,
-			"ID_Departement": 5,
-			"Position": null,
-			"Email": "christopher.white@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 16,
-			"Lastname": "Harris",
-			"Firstname": "Ava",
-			"Job": "QA",
-			"Description": "∙ Review and analyze requirements and specifications.\n∙ Develop and execute test plans and test cases.\n∙ Perform manual testing of software applications.\n∙ Identify and report bugs and issues in a detailed manner.\n∙ Verify bug fixes and ensure they meet the specified requirements.\n∙ Conduct regression testing to ensure that previously fixed bugs do not reappear.\n∙ Collaborate with developers and other team members to resolve issues.\n∙ Provide feedback on the overall quality of the software.\n∙ Participate in sprint planning and retrospective meetings.\n∙ Stay updated on industry best practices and tools related to testing.",
-			"ID_Supervisor": 7,
-			"ID_Departement": 3,
-			"Position": null,
-			"Email": "ava.harris@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 15,
-			"Lastname": "Thompson",
-			"Firstname": "Mia",
-			"Job": "Product Owner",
-			"Description": "∙ Define and prioritize the product backlog in collaboration with the development team.\n∙ Gather requirements from stakeholders and translate them into user stories.\n∙ Work with the development team to ensure that user stories are implemented correctly and meet stakeholder needs.\n∙ Conduct user acceptance testing to ensure that the product meets quality standards.\n∙ Communicate with stakeholders to gather feedback and provide updates on the progress of the project.\n∙ Make decisions on product features and prioritize them based on business value and stakeholder needs.\n∙ Collaborate with the Scrum Master and other team members to ensure that the product is delivered on time and within budget.\n∙ Monitor and evaluate the performance of the product and make adjustments as needed.\n∙ Keep up-to-date with market trends and competitor products to inform product decisions.\n∙ Continuously improve the product development process and identify opportunities for innovation.",
-			"ID_Supervisor": 3,
-			"ID_Departement": 1,
-			"Position": null,
-			"Email": "mia.thompson@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 14,
-			"Lastname": "Garcia",
-			"Firstname": "Joshua",
-			"Job": "Dev",
-			"Description": "∙ Writing and reviewing code\n∙ Debugging and troubleshooting technical issues\n∙ Developing and implementing software solutions\n∙ Collaborating with other team members on projects\n∙ Testing and quality assurance of code\n∙ Researching new technologies and tools\n∙ Participating in code reviews and providing feedback\n∙ Documenting code and technical processes\n∙ Providing technical support to clients or end-users\n∙ Following best practices and coding standards.",
-			"ID_Supervisor": 10,
-			"ID_Departement": 4,
-			"Position": null,
-			"Email": "Joshua.Garcia@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 13,
-			"Lastname": "Martinez",
-			"Firstname": "Isabella",
-			"Job": "Product Owner",
-			"Description": "∙ Define and prioritize the product backlog in collaboration with the development team.\n∙ Gather requirements from stakeholders and translate them into user stories.\n∙ Work with the development team to ensure that user stories are implemented correctly and meet stakeholder needs.\n∙ Conduct user acceptance testing to ensure that the product meets quality standards.\n∙ Communicate with stakeholders to gather feedback and provide updates on the progress of the project.\n∙ Make decisions on product features and prioritize them based on business value and stakeholder needs.\n∙ Collaborate with the Scrum Master and other team members to ensure that the product is delivered on time and within budget.\n∙ Monitor and evaluate the performance of the product and make adjustments as needed.\n∙ Keep up-to-date with market trends and competitor products to inform product decisions.\n∙ Continuously improve the product development process and identify opportunities for innovation.",
-			"ID_Supervisor": 3,
-			"ID_Departement": 1,
-			"Position": null,
-			"Email": "Isabella.Martinez@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},
-		{
-			"ID": 18,
-			"Lastname": "Jackson",
-			"Firstname": "Sophia",
-			"Job": "Dev",
-			"Description": "∙ Writing and reviewing code\n∙ Debugging and troubleshooting technical issues\n∙ Developing and implementing software solutions\n∙ Collaborating with other team members on projects\n∙ Testing and quality assurance of code\n∙ Researching new technologies and tools\n∙ Participating in code reviews and providing feedback\n∙ Documenting code and technical processes\n∙ Providing technical support to clients or end-users\n∙ Following best practices and coding standards.",
-			"ID_Supervisor": 10,
-			"ID_Departement": 4,
-			"Position": null,
-			"Email": "sophia.jackson@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 19,
-			"Lastname": "Moore",
-			"Firstname": "Anthony",
-			"Job": "Sales",
-			"Description": "∙ Prospecting and generating leads\n∙ Qualifying leads based on specific criteria\n∙ Conducting product demonstrations and presentations\n∙ Negotiating and closing sales deals\n∙ Building and maintaining long-term relationships with clients\n∙ Providing excellent customer service and support\n∙ Following up with clients to ensure satisfaction and repeat business\n∙ Monitoring and analyzing sales performance and metrics\n∙ Collaborating with marketing and product teams to develop sales strategies\n∙ Staying updated on industry trends and competitor activities.",
-			"ID_Supervisor": 5,
-			"ID_Departement": 2,
-			"Position": null,
-			"Email": "anthony.moore@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 20,
-			"Lastname": "Thomas",
-			"Firstname": "Daniel",
-			"Job": "Sales",
-			"Description": "∙ Prospecting and generating leads\n∙ Qualifying leads based on specific criteria\n∙ Conducting product demonstrations and presentations\n∙ Negotiating and closing sales deals\n∙ Building and maintaining long-term relationships with clients\n∙ Providing excellent customer service and support\n∙ Following up with clients to ensure satisfaction and repeat business\n∙ Monitoring and analyzing sales performance and metrics\n∙ Collaborating with marketing and product teams to develop sales strategies\n∙ Staying updated on industry trends and competitor activities.",
-			"ID_Supervisor": 5,
-			"ID_Departement": 2,
-			"Position": null,
-			"Email": "daniel.thomas@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 21,
-			"Lastname": "Hernandez",
-			"Firstname": "Emma",
-			"Job": "Sales",
-			"Description": "∙ Prospecting and generating leads\n∙ Qualifying leads based on specific criteria\n∙ Conducting product demonstrations and presentations\n∙ Negotiating and closing sales deals\n∙ Building and maintaining long-term relationships with clients\n∙ Providing excellent customer service and support\n∙ Following up with clients to ensure satisfaction and repeat business\n∙ Monitoring and analyzing sales performance and metrics\n∙ Collaborating with marketing and product teams to develop sales strategies\n∙ Staying updated on industry trends and competitor activities.",
-			"ID_Supervisor": 5,
-			"ID_Departement": 2,
-			"Position": null,
-			"Email": "emma.hernandez@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 22,
-			"Lastname": "Davis",
-			"Firstname": "Jane",
-			"Job": "Product Owner",
-			"Description": "∙ Define and prioritize the product backlog in collaboration with the development team.\n∙ Gather requirements from stakeholders and translate them into user stories.\n∙ Work with the development team to ensure that user stories are implemented correctly and meet stakeholder needs.\n∙ Conduct user acceptance testing to ensure that the product meets quality standards.\n∙ Communicate with stakeholders to gather feedback and provide updates on the progress of the project.\n∙ Make decisions on product features and prioritize them based on business value and stakeholder needs.\n∙ Collaborate with the Scrum Master and other team members to ensure that the product is delivered on time and within budget.\n∙ Monitor and evaluate the performance of the product and make adjustments as needed.\n∙ Keep up-to-date with market trends and competitor products to inform product decisions.\n∙ Continuously improve the product development process and identify opportunities for innovation.",
-			"ID_Supervisor": 3,
-			"ID_Departement": 1,
-			"Position": null,
-			"Email": "jane.davis@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 23,
-			"Lastname": "Wilson",
-			"Firstname": "Jessica",
-			"Job": "Dev",
-			"Description": "∙ Writing and reviewing code\n∙ Debugging and troubleshooting technical issues\n∙ Developing and implementing software solutions\n∙ Collaborating with other team members on projects\n∙ Testing and quality assurance of code\n∙ Researching new technologies and tools\n∙ Participating in code reviews and providing feedback\n∙ Documenting code and technical processes\n∙ Providing technical support to clients or end-users\n∙ Following best practices and coding standards.",
-			"ID_Supervisor": 10,
-			"ID_Departement": 4,
-			"Position": null,
-			"Email": "jessica.wilson@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 24,
-			"Lastname": "Robinson",
-			"Firstname": "Isabella",
-			"Job": "QA",
-			"Description": "∙ Review and analyze requirements and specifications.\n∙ Develop and execute test plans and test cases.\n∙ Perform manual testing of software applications.\n∙ Identify and report bugs and issues in a detailed manner.\n∙ Verify bug fixes and ensure they meet the specified requirements.\n∙ Conduct regression testing to ensure that previously fixed bugs do not reappear.\n∙ Collaborate with developers and other team members to resolve issues.\n∙ Provide feedback on the overall quality of the software.\n∙ Participate in sprint planning and retrospective meetings.\n∙ Stay updated on industry best practices and tools related to testing.",
-			"ID_Supervisor": 7,
-			"ID_Departement": 3,
-			"Position": null,
-			"Email": "isabella.robinson@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		},{
-			"ID": 25,
-			"Lastname": "Clark",
-			"Firstname": "David",
-			"Job": "QA",
-			"Description": "∙ Review and analyze requirements and specifications.\n∙ Develop and execute test plans and test cases.\n∙ Perform manual testing of software applications.\n∙ Identify and report bugs and issues in a detailed manner.\n∙ Verify bug fixes and ensure they meet the specified requirements.\n∙ Conduct regression testing to ensure that previously fixed bugs do not reappear.\n∙ Collaborate with developers and other team members to resolve issues.\n∙ Provide feedback on the overall quality of the software.\n∙ Participate in sprint planning and retrospective meetings.\n∙ Stay updated on industry best practices and tools related to testing.",
-			"ID_Supervisor": 7,
-			"ID_Departement": 3,
-			"Position": null,
-			"Email": "david.clark@company.com",
-			"Password": "$2b$10$GL6CkloG2/HuCqb7NQPsI.81kJs9DUtm0fIyPyN4qvar7XqTYA8ZG"
-		}
-	]
+    "Firstname": ["Karl", "John", "Noah", "Olivia", "Oliver", "Ava", "Elijah", "Sophia", "James", "Isabella", "William", "Mia", "Benjamin", "Amelia", "Lucas", "Harper", "Henry", "Evelyn", "Alexander", "Abigail", "Mason", "Ella", "Michael", "Scarlett", "Sebastian", "Grace", "Ethan", "Chloe", "Logan", "Aria", "Jackson", "Zoe", "Aiden", "Lily", "Owen", "Nora", "Samuel", "Riley", "Matthew", "Layla", "Joseph", "Lucy", "Levi", "Paige", "David", "Audrey", "Daniel", "Aubrey", "Carter", "Lillian", "Wyatt", "Sofia", "Jayden", "Brooklyn", "Emma", "Hannah", "Luke", "Mila", "Dylan", "Ellie", "Asher", "Kylie", "Isaac", "Claire", "Gabriel", "Anna", "Julian", "Nina", "Eli", "Andrew", "Charles", "Sadie", "Christopher", "Natalie", "Anthony", "Cora", "Jaxon", "Ariana", "Isaiah", "Bella", "Sara", "Peyton", "Nathan", "Genevieve", "Adrian", "Samantha", "Aaron", "Kinsley", "Adam", "Madelyn", "Hunter", "Elena", "Cameron", "Brielle", "Caleb", "Maria", "Jonathan", "Eva", "Grayson", "Taylor", "Christian", "Melanie", "Robert", "Scarlet", "Thomas", "Lyla", "Hugo", "Liam"],
+    
+    "Lastname": ["Martin", "Doe", "Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor", "Anderson", "Thomas", "Jackson", "White", "Harris", "Thompson", "Garcia", "Martinez", "Robinson", "Clark", "Rodriguez", "Lewis", "Lee", "Walker", "Hall", "Allen", "Young", "Hernandez", "King", "Wright", "Scott", "Torres", "Nguyen", "Hill", "Flores", "Green", "Adams", "Nelson", "Baker", "Hall", "Rivera", "Campbell", "Mitchell", "Carter", "Roberts", "Gomez", "Phillips", "Evans", "Turner", "Diaz", "Parker", "Edwards", "Collins", "Stewart", "Sanchez", "Morris", "Rogers", "Reed", "Cook", "Morgan", "Bell", "Murphy", "Bailey", "Rivera", "Cooper", "Richardson", "Cox", "Howard", "Ward", "Torres", "Peterson", "Gray", "Ramirez", "James", "Watson", "Brooks", "Kelly", "Sanders", "Beth", "Price", "Bennett", "Wood", "Barnes", "Ross", "Henderson", "Coleman", "Jenkins", "Perry", "Powell", "Long", "Patterson", "Hughes", "Flores", "Washington", "Butler", "Simmons", "Foster", "Gonzalez", "Bryant", "Alexander", "Caron", "Taylor"],
+    "Departement": [
+        {
+            "ID": 1,
+            "Name": "Product",
+            "ID_Template": 2,
+            "Skill": {
+                "skill": [
+                    {
+                        "group": "Product Management Skills",
+                        "value": [
+                            "Strategic Planning",
+                            "Product Roadmapping",
+                            "Market Research and Analysis",
+                            "User Story Development",
+                            "Feature Prioritization"
+                        ]
+                    },
+                    {
+                        "group": "Communication Skills",
+                        "value": [
+                            "Stakeholder Engagement",
+                            "Presentation Skills",
+                            "Negotiation Skills",
+                            "Active Listening",
+                            "Conflict Resolution"
+                        ]
+                    },
+                    {
+                        "group": "Agile and Scrum Practices",
+                        "value": [
+                            "Backlog Management",
+                            "Sprint Planning",
+                            "User Acceptance Testing(UAT)",
+                            "Sprint Review Facilitation",
+                            "Agile Metrics Understanding"
+                        ]
+                    },
+                    {
+                        "group": "Technical Skills",
+                        "value": [
+                            "Basic Understanding of Software Development",
+                            "Requirements Gathering",
+                            "Prototyping and Wireframing",
+                            "Familiarity with APIs",
+                            "Data Analysis and Interpretation"
+                        ]
+                    },
+                    {
+                        "group": "Leadership and Team Collaboration",
+                        "value": [
+                            "Team Motivation",
+                            "Vision Setting",
+                            "Collaborative Decision Making",
+                            "Mentoring and Coaching Team Members",
+                            "Crisis Management"
+                        ]
+                    }
+                ]
+            },
+            "Manager": "Product Manager",
+            "Collaborator": "Product Owner",
+            "ManagerDescription": "∙ Collaborate with stakeholders to identify and prioritize product features and requirements.\n∙ Create and maintain a product roadmap and release plan.\n∙ Coordinate with development teams to ensure tasks are completed according to schedule and budget.\n∙ Conduct user research and gather feedback to improve product performance and usability.\n∙ Work with the marketing team to develop go-to-market strategies and product messaging.\n∙ Monitor product performance and respond to customer feedback and issues.\n∙ Analyze market trends and competitors to identify opportunities for product enhancement.\n∙ Manage product backlog and prioritize user stories for development teams.\n∙ Facilitate sprint planning, review,\n",
+            "CollaboratorDescription": "∙ Define and prioritize the product backlog in collaboration with the development team.\n∙ Gather requirements from stakeholders and translate them into user stories.\n∙ Work with the development team to ensure that user stories are implemented correctly and meet stakeholder needs.\n∙ Conduct user acceptance testing to ensure that the product meets quality standards.\n∙ Communicate with stakeholders to gather feedback and provide updates on the progress of the project.\n∙ Make decisions on product features and prioritize them based on business value and stakeholder needs.\n∙ Collaborate with the Scrum Master and other team members to ensure that the product is delivered on time and within budget.\n∙ Monitor and evaluate the performance of the product and make adjustments as needed.\n∙ Keep up-to-date with market trends and competitor products to inform product decisions.\n∙ Continuously improve the product development process and identify opportunities for innovation.\n"
+        },{
+            "ID": 2,
+            "Name": "Sales",
+            "ID_Template": 1,
+            "Skill": {
+                "skill": [
+                    {
+                        "group": "Communication Skills",
+                        "value": [
+                            "Active Listening",
+                            "Persuasive Communication",
+                            "Presentation Skills",
+                            "Interpersonal Skills"
+                        ]
+                    },
+                    {
+                        "group": "Sales Techniques",
+                        "value": [
+                            "Negotiation Skills",
+                            "Closing Techniques",
+                            "Negotiation Skills",
+                            "Lead Generation",
+                            "Consultative Selling"
+                        ]
+                    },
+                    {
+                        "group": "Product Knowledge",
+                        "value": [
+                            "Product Demonstration Skills",
+                            "Market Knowledge",
+                            "Competitor Analysis",
+                            "Industry Trends Awareness"
+                        ]
+                    },
+                    {
+                        "group": "Relationship Management",
+                        "value": [
+                            "Customer Relationship Management(CRM)",
+                            "Networking Skills",
+                            "Client Retention Strategies",
+                            "Conflict Resolution"
+                        ]
+                    },
+                    {
+                        "group": "Strategic Thinking",
+                        "value": [
+                            "Problem Solving",
+                            "Sales Strategy Development",
+                            "Goal Setting and Tracking",
+                            "Data Analysis and Interpretation"
+                        ]
+                    }
+                ]
+            },
+            "Manager": "Sales Manager",
+            "Collaborator": "Sales",
+            "ManagerDescription": "∙ Develop and implement sales strategies to achieve company targets and objectives\n∙ Lead and motivate the sales team to meet and exceed sales goals\n∙ Monitor and analyze sales data to track performance and identify areas for improvement\n∙ Train and onboard new sales team members to ensure they have the knowledge and skills to succeed\n∙ Build and maintain relationships with key clients and business partners\n∙ Collaborate with marketing and product development teams to align sales strategies with overall business objectives\n∙ Conduct regular performance reviews and provide feedback to sales team members\n∙ Attend industry events and conferences to network and stay up-to-date on industry trends\n∙ Develop and maintain sales forecasts and budgets\n∙ Provide regular reports to senior management on sales performance and initiatives.\n",
+            "CollaboratorDescription": "∙ Prospecting and generating leads\n∙ Qualifying leads based on specific criteria\n∙ Conducting product demonstrations and presentations\n∙ Negotiating and closing sales deals\n∙ Building and maintaining long-term relationships with clients\n∙ Providing excellent customer service and support\n∙ Following up with clients to ensure satisfaction and repeat business\n∙ Monitoring and analyzing sales performance and metrics\n∙ Collaborating with marketing and product teams to develop sales strategies\n∙ Staying updated on industry trends and competitor activities."
+        },{
+            "ID": 3,
+            "Name": "QA",
+            "ID_Template": 1,
+            "Skill": {
+                "skill": [
+                    {
+                        "group": "Technical Skills",
+                        "value": [
+                            "Test Automation",
+                            "API Testing",
+                            "Scripting Languages",
+                            "Continuous Integration/Continuous Deployment(CI/CD)"
+                        ]
+                    },
+                    {
+                        "group": "User Acceptance Testing(UAT)",
+                        "value": [
+                            "Agile Testing Practices",
+                            "Exploratory Testing",
+                            "Performance Testing",
+                            "Remote Collaboration Tools"
+                        ]
+                    },
+                    {
+                        "group": "Analytical Skills",
+                        "value": [
+                            "Defect Analysis",
+                            "Test Case Design",
+                            "Risk Assessmentn",
+                            "Data Analysis"
+                        ]
+                    },
+                    {
+                        "group": "Collaboration and Communication",
+                        "value": [
+                            "Cross-Functional Collaboration",
+                            "Agile Ceremonies Participation",
+                            "Documentation Skills",
+                            "Feedback Mechanisms"
+                        ]
+                    },
+                    {
+                        "group": "Soft Skills",
+                        "value": [
+                            "Problem-Solving",
+                            "Adaptability",
+                            "Time Management",
+                            "Team Player"
+                        ]
+                    }
+                ]
+            },
+            "Manager": "QA Manager",
+            "Collaborator": "QA",
+            "ManagerDescription": "∙ Develop and implement sales strategies to achieve company targets and objectives\n∙ Lead and motivate the sales team to meet and exceed sales goals\n∙ Monitor and analyze sales data to track performance and identify areas for improvement\n∙ Train and onboard new sales team members to ensure they have the knowledge and skills to succeed\n∙ Build and maintain relationships with key clients and business partners\n∙ Collaborate with marketing and product development teams to align sales strategies with overall business objectives\n∙ Conduct regular performance reviews and provide feedback to sales team members\n∙ Attend industry events and conferences to network and stay up-to-date on industry trends\n∙ Develop and maintain sales forecasts and budgets\n∙ Provide regular reports to senior management on sales performance and initiatives.",
+            "CollaboratorDescription": "∙ Review and analyze requirements and specifications.\n∙ Develop and execute test plans and test cases.\n∙ Perform manual testing of software applications.\n∙ Identify and report bugs and issues in a detailed manner.\n∙ Verify bug fixes and ensure they meet the specified requirements.\n∙ Conduct regression testing to ensure that previously fixed bugs do not reappear.\n∙ Collaborate with developers and other team members to resolve issues.\n∙ Provide feedback on the overall quality of the software.\n∙ Participate in sprint planning and retrospective meetings.\n∙ Stay updated on industry best practices and tools related to testing.\n"
+        },{
+            "ID": 4,
+            "Name": "Dev",
+            "ID_Template": 1,
+            "Skill": {
+                "skill": [
+                    {
+                        "group": "Agile Methodologies",
+                        "value": [
+                            "Scrum Mastery",
+                            "Lean Principles",
+                            "Sprint Review Facilitation"
+                        ]
+                    },
+                    {
+                        "group": "Collaboration & Communication",
+                        "value": [
+                            "Effective Communication",
+                            "Conflict Resolution",
+                            "Active Listening",
+                            "Remote Collaboration Tools"
+                        ]
+                    },
+                    {
+                        "group": "Technical Proficiency",
+                        "value": [
+                            "Version Control Systems",
+                            "CI/CD Practices",
+                            "Technical Documentation",
+                            "Automated Testing"
+                        ]
+                    },
+                    {
+                        "group": "Problem-Solving & Adaptability",
+                        "value": [
+                            "Critical Thinking",
+                            "Quick Learning",
+                            "Flexibility",
+                            "Innovation"
+                        ]
+                    },
+                    {
+                        "group": "Team Dynamics & Leadership",
+                        "value": [
+                            "Mentorship",
+                            "Team Building",
+                            "Feedback Culture",
+                            "Goal Setting"
+                        ]
+                    }
+                ]
+            },
+            "Manager": "Dev Manager",
+            "Collaborator": "Dev",
+            "ManagerDescription": "∙ Lead and manage the team of developers, ensuring they have the necessary resources and support to complete projects successfully\n∙ Set and communicate clear goals and expectations for the team, and track progress towards those goals\n∙ Hire, train, and mentor developers, providing ongoing feedback and guidance to help them grow and improve\n∙ Collaborate with other teams and stakeholders to define project requirements and ensure alignment with business and technical objectives\n∙ Develop project timelines, budgets, and resource plans, and manage projects to ensure they are completed on time and within budget\n∙ Identify and address technical challenges and roadblocks, working with the team to find creative solutions\n∙ Stay current on industry trends and best practices, and make recommendations for new technologies or tools that could improve the team's efficiency and effectiveness\n∙ Ensure compliance with coding standards, security protocols, and other best practices to maintain a high level of quality in the team's work.\n",
+            "CollaboratorDescription": "∙ Writing and reviewing code\n∙ Debugging and troubleshooting technical issues\n∙ Developing and implementing software solutions\n∙ Collaborating with other team members on projects\n∙ Testing and quality assurance of code\n∙ Researching new technologies and tools\n∙ Participating in code reviews and providing feedback\n∙ Documenting code and technical processes\n∙ Providing technical support to clients or end-users\n∙ Following best practices and coding standards.\n"
+        },{
+            "ID": 5,
+            "Name": "HR",
+            "ID_Template": 1,
+            "Skill": {
+                "skill": [
+                    {
+                        "group": "Recruitment and Selection",
+                        "value": [
+                            "Talent Acquisition",
+                            "Interviewing Techniques",
+                            "Job Analysis and Design",
+                            "Candidate Screening"
+                        ]
+                    },
+                    {
+                        "group": "Employee Relations",
+                        "value": [
+                            "Conflict Resolution",
+                            "Communication Skills",
+                            "Performance Testing",
+                            "Employee Engagement Strategies"
+                        ]
+                    },
+                    {
+                        "group": "Training and Development",
+                        "value": [
+                            "Learning and Development Program Design",
+                            "Performance Management Systems",
+                            "Coaching and Mentoring",
+                            "Needs Assessment"
+                        ]
+                    },
+                    {
+                        "group": "Compliance and Legal Knowledge",
+                        "value": [
+                            "Labor Law Knowledge",
+                            "Policy Development and Implementation",
+                            "Risk Management",
+                            "Employee Rights Awareness"
+                        ]
+                    },
+                    {
+                        "group": "Compensation and Benefits",
+                        "value": [
+                            "Salary Structure Development",
+                            "Compensation Analysis",
+                            "Benefits Administration",
+                            "Payroll Management"
+                        ]
+                    }
+                ]
+            },
+            "Manager": "HR Manager",
+            "Collaborator": "HR",
+            "ManagerDescription": "• Assess the staffing needs for annual maintenance tasks.\n• Collaborate with department heads to understand maintenance requirements and align staffing strategies accordingly.\n• Oversee the recruitment process for maintenance personnel, ensuring that the right skills and expertise are available.\n• Plan and facilitate training programs to ensure that employees are knowledgeable about maintenance procedures, safety protocols, and compliance standards.\n• Implement ongoing development programs to keep staff updated on the latest maintenance technologies and practices.\n• Manage administrative tasks related to staffing, such as maintaining records of attendance and time-off requests.\n• Work with management to create and manage the budget for personnel-related expenses in maintenance activities.\n\n",
+            "CollaboratorDescription": "• Assess the staffing needs for annual maintenance tasks.\n• Collaborate with department heads to understand maintenance requirements and align staffing strategies accordingly.\n• Oversee the recruitment process for maintenance personnel, ensuring that the right skills and expertise are available.\n• Plan and facilitate training programs to ensure that employees are knowledgeable about maintenance procedures, safety protocols, and compliance standards.\n• Implement ongoing development programs to keep staff updated on the latest maintenance technologies and practices.\n• Manage administrative tasks related to staffing, such as maintaining records of attendance and time-off requests.\n• Work with management to create and manage the budget for personnel-related expenses in maintenance activities."
+        }]
 }

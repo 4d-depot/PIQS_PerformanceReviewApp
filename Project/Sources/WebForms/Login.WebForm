@@ -779,7 +779,7 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Alexander - QA<br>",
+				"text": "Lucy - QA<br>",
 				"classNames": [],
 				"events": [
 					{
@@ -797,7 +797,7 @@
 							"namespace": "",
 							"dataType": "string",
 							"set": {
-								"value": "alexander.williams@company.com",
+								"value": "ella.clark@company.com",
 								"type": "string"
 							}
 						}
@@ -881,7 +881,7 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Matthew - QA Manager<br>",
+				"text": "Joseph - QA Manager<br>",
 				"classNames": [],
 				"events": [
 					{
@@ -899,7 +899,7 @@
 							"namespace": "",
 							"dataType": "string",
 							"set": {
-								"value": "matthew.brown@company.com",
+								"value": "Joseph.Baker@company.com",
 								"type": "string"
 							}
 						}

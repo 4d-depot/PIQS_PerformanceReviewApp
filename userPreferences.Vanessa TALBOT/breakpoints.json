@@ -10,66 +10,28 @@
 		}
 	},
 	{
-		"line": 2,
-		"method": {
-			"type": 2,
-			"formName": "Form1",
-			"objectName": "Button"
-		}
-	},
-	{
 		"line": 6,
 		"method": {
 			"type": 2,
-			"formName": "Form1",
-			"objectName": "Button"
+			"formName": "WP_Review",
+			"objectName": "Button",
+			"methodPath": "/SOURCES/Forms/WP_Review/ObjectMethods/Button.4dm"
 		}
 	},
 	{
-		"line": 11,
+		"line": 1,
 		"method": {
-			"type": 2,
-			"formName": "Form2",
-			"objectName": "OpenComputeVersion"
+			"type": 1,
+			"methodName": "GenerateAllData"
 		}
 	},
 	{
-		"line": 11,
-		"method": {
-			"type": 2,
-			"formName": "Form2",
-			"objectName": "GenerateFreezeVersion"
-		}
-	},
-	{
-		"line": 9,
-		"method": {
-			"type": 2,
-			"formName": "ffff",
-			"objectName": "Button2"
-		}
-	},
-	{
-		"line": 33,
-		"method": {
-			"type": 2,
-			"formName": "ffff",
-			"objectName": "CreateReview"
-		}
-	},
-	{
-		"line": 8,
-		"method": {
-			"type": 3,
-			"formName": "Form2"
-		}
-	},
-	{
-		"line": 3,
+		"line": 2,
 		"method": {
 			"type": 10,
-			"className": "ReviewSelection",
-			"functionName": "event restrict"
+			"className": "Employee",
+			"functionName": "loadEmployees",
+			"methodPath": "/SOURCES/Classes/Employee.4dm"
 		}
 	}
 ]

@@ -105,24 +105,50 @@
 				"id": "rEnHuy36k47jW8a5kPLpjk",
 				"conditions": {
 					"id": "x3ppeP5mUibNcTF4QFBDwL",
-					"type": "datasource",
-					"name": "condition",
-					"value": "",
-					"valueType": "hardCoded",
-					"path": "viewPDF",
-					"dsType": "bool",
-					"op": "istrue"
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "2W4ppssy7oT2YUf5xuHKbd",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "viewPDF",
+							"dsType": "bool",
+							"op": "istrue"
+						},
+						{
+							"id": "5QSDLJwf7moWgDP11gEa6T",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview",
+							"dsType": "entity",
+							"op": "notnull"
+						}
+					]
 				}
 			},
 			{
 				"label": "start",
-				"id": "wH37eYV5TxyFbu1v8EPaZj"
+				"id": "wH37eYV5TxyFbu1v8EPaZj",
+				"conditions": {
+					"id": "wpFeynU53sdxLbZ7B3A2pc",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview",
+					"dsType": "entity",
+					"op": "isnull"
+				}
 			}
 		],
 		"defaultStates": [
 			"bV7tposDu4Wn1kFsYK2qjW",
-			"dat9U8XDs9r3sXb4nWJZav",
-			"wH37eYV5TxyFbu1v8EPaZj"
+			"dat9U8XDs9r3sXb4nWJZav"
 		]
 	},
 	"components": {
@@ -193,7 +219,13 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:wH37eYV5TxyFbu1v8EPaZj": {
+					"style": {
+						"width": ""
+					}
+				}
+			},
 			"parent": "1auwpTCNsl",
 			"hidden": false,
 			"nodes": [
@@ -243,7 +275,14 @@
 				"showBorders": true
 			},
 			"displayName": "DataTable",
-			"custom": {},
+			"custom": {
+				"states:wH37eYV5TxyFbu1v8EPaZj": {
+					"style": {
+						"width": "40%",
+						"backgroundPosition": ""
+					}
+				}
+			},
 			"parent": "fxj6Yn99-A",
 			"hidden": false,
 			"nodes": [],
@@ -339,7 +378,14 @@
 				"showBorders": true
 			},
 			"displayName": "DataTable",
-			"custom": {},
+			"custom": {
+				"states:wH37eYV5TxyFbu1v8EPaZj": {
+					"style": {
+						"width": "60%",
+						"backgroundPosition": ""
+					}
+				}
+			},
 			"parent": "fxj6Yn99-A",
 			"hidden": false,
 			"nodes": [],
@@ -587,7 +633,13 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:wH37eYV5TxyFbu1v8EPaZj": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "1auwpTCNsl",
 			"hidden": false,
 			"nodes": [

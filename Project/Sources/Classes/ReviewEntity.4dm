@@ -64,13 +64,13 @@ exposed Function createReview($idEmployee : Integer)
 	
 	//Mark:- Generate document
 	
-Function createContext() : Object
+Function createContext()->$context : Object
 	$context:=New object:C1471
 	$context.review:=This:C1470
 	$context.previousReviewDate:=This:C1470.previousReview.Date
 	return $context
 	
-Function generateDocument() : Object
+Function generateDocument()->$doc : Object
 	
 	// Create context
 	$context:=This:C1470.createContext()
@@ -82,29 +82,24 @@ Function generateDocument() : Object
 	$doc:=WP New:C1317($template)
 	WP SET DATA CONTEXT:C1786($doc; $context)
 	WP COMPUTE FORMULAS:C1707($doc)
-	This:C1470.Document:=$doc
-	This:C1470.save()
+	
 	return $doc
 	
-exposed Function generateFreezeDocument()
+exposed Function generateFreezeDocument()->$freezeDoc : Object
 	
 	$freezeDoc:=This:C1470.generateDocument()
 	WP FREEZE FORMULAS:C1708($freezeDoc)
 	
-	// Save doc
-	This:C1470.DocumentFreeze:=$freezeDoc
-	This:C1470.save()
+	return $freezeDoc
 	
 exposed Function generatePDF()
+	var $WPdoc : Object
+	var $blob : 4D:C1709.Blob
 	
-	This:C1470.generateFreezeDocument()
+	$WPdoc:=This:C1470.generateFreezeDocument()
+	WP EXPORT VARIABLE:C1319($WPdoc; $blob; wk pdf:K81:315)
 	
-	$name:=This:C1470.Employee.Firstname+This:C1470.Employee.Lastname+"_"+String:C10(This:C1470.Date; "Y")
-	
-	$filePath:=File:C1566("/RESOURCES/pdf/"+$name+".pdf")
-	WP EXPORT DOCUMENT:C1337(This:C1470.DocumentFreeze; $filePath.platformPath; wk pdf:K81:315)
-	
-	This:C1470.DocumentPDF:=$filePath.getContent()
+	This:C1470.DocumentPDF:=$blob
 	This:C1470.save()
 	
 	

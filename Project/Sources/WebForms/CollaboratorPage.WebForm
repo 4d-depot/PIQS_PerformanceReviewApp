@@ -40,8 +40,8 @@
 					"name": "condition",
 					"value": "",
 					"valueType": "hardCoded",
-					"path": "app:selectedReview.DocumentPDF",
-					"dsType": "blob",
+					"path": "app:selectedReview",
+					"dsType": "entity",
 					"op": "isnull"
 				}
 			},
@@ -119,6 +119,37 @@
 					"path": "viewReview",
 					"dsType": "bool",
 					"op": "istrue"
+				}
+			},
+			{
+				"label": "reviewSelected",
+				"id": "oRgAuWZBaeXaNqmAaRkwfQ",
+				"conditions": {
+					"id": "7dYwUtm9uWpWCKK6pn5tmp",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "hFYcFKR1b3Y3rCbzg9H6jH",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview",
+							"dsType": "entity",
+							"op": "notnull"
+						},
+						{
+							"id": "5vpCNgWqrU7B1Fz7JDa9Hf",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.DocumentPDF",
+							"dsType": "blob",
+							"op": "isnull"
+						}
+					]
 				}
 			}
 		],
@@ -307,7 +338,18 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:p6PCARUnbAu9AoTpQGNacC": {
+					"style": {
+						"width": ""
+					}
+				},
+				"states:hvySCE8nphJt5dSvaweWXG": {
+					"style": {
+						"width": ""
+					}
+				}
+			},
 			"parent": "8mM12Iikwe",
 			"hidden": false,
 			"nodes": [
@@ -358,6 +400,29 @@
 							"type": "Boolean",
 							"datasource": "viewReview"
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "1JiP3AjQxTSgcN5k9q79i2",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"target": "",
+							"targetNamespace": "",
+							"targetType": "unknown",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
 					}
 				],
 				"iconPosition": "left",
@@ -367,7 +432,13 @@
 				}
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:p6PCARUnbAu9AoTpQGNacC": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "9xBrmbCIhQ",
 			"hidden": false,
 			"nodes": [],
@@ -437,6 +508,11 @@
 				},
 				"states:9EHA6D5gEoRgoRe3XqgeGs": {
 					"style": {}
+				},
+				"states:oRgAuWZBaeXaNqmAaRkwfQ": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "9xBrmbCIhQ",
@@ -507,6 +583,11 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:oRgAuWZBaeXaNqmAaRkwfQ": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "9xBrmbCIhQ",
@@ -539,6 +620,11 @@
 			"displayName": "Stylebox",
 			"custom": {
 				"states:hvySCE8nphJt5dSvaweWXG": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:p6PCARUnbAu9AoTpQGNacC": {
 					"style": {
 						"display": "none"
 					}
@@ -599,6 +685,11 @@
 					}
 				},
 				"states:hvySCE8nphJt5dSvaweWXG": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:oRgAuWZBaeXaNqmAaRkwfQ": {
 					"style": {
 						"display": "none"
 					}
@@ -675,7 +766,8 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"display": "flex"
 				}
 			},
 			"displayName": "Stylebox",
@@ -691,6 +783,16 @@
 					}
 				},
 				"states:9EHA6D5gEoRgoRe3XqgeGs": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:hvySCE8nphJt5dSvaweWXG": {
+					"style": {
+						"display": "flex"
+					}
+				},
+				"states:oRgAuWZBaeXaNqmAaRkwfQ": {
 					"style": {
 						"display": "none"
 					}
@@ -722,7 +824,11 @@
 				}
 			},
 			"displayName": "Page Loader",
-			"custom": {},
+			"custom": {
+				"states:hvySCE8nphJt5dSvaweWXG": {
+					"style": {}
+				}
+			},
 			"parent": "zB6WajDt85",
 			"hidden": false,
 			"nodes": [],

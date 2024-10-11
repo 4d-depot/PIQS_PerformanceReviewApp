@@ -1140,7 +1140,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 56
+				"contentHeight": 32
 			},
 			"parent": "zrWbNq7Dcq",
 			"hidden": false,

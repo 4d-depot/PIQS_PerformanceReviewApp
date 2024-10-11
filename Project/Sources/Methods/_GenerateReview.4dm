@@ -153,7 +153,6 @@ For ($y; 2020; 2024)
 			
 		End if 
 		
-		$review.generatePDF()
 		$review.save()
 		
 	End for each 

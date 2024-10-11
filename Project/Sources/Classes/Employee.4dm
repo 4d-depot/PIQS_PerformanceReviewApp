@@ -1,6 +1,7 @@
 Class extends DataClass
 
 Function event restrict() : cs:C1710.EmployeeSelection
+	
 	var $obj : Object
 	
 	If (Session:C1714=Null:C1517)
@@ -41,4 +42,6 @@ Function event restrict() : cs:C1710.EmployeeSelection
 	End case 
 	
 	
+exposed Function loadEmployees($idDepartement : Integer) : cs:C1710.EmployeeSelection
 	
+	This:C1470.query("ID_Departement = :1"; $idDepartement)

@@ -11,12 +11,6 @@
 		"width": 1208,
 		"height": 734
 	},
-	"Sources/Methods/Method1.4dm": {
-		"left": 0,
-		"top": 162,
-		"width": 1225,
-		"height": 1037
-	},
 	"Sources/Methods/dev_generateSkill.4dm": {
 		"left": 371,
 		"top": 174,
@@ -66,10 +60,10 @@
 		"height": 734
 	},
 	"Sources/Classes/ReviewEntity.4dm": {
-		"left": 907,
-		"top": 181,
-		"width": 965,
-		"height": 561
+		"left": 217,
+		"top": 112,
+		"width": 1161,
+		"height": 910
 	},
 	"Sources/Forms/Form1/ObjectMethods/SaveTemplate.4dm": {
 		"left": 378,
@@ -318,10 +312,10 @@
 		"height": 561
 	},
 	"Sources/Forms/WP_Review/ObjectMethods/Button.4dm": {
-		"left": 364,
-		"top": 215,
-		"width": 967,
-		"height": 694
+		"left": 1014,
+		"top": 172,
+		"width": 1141,
+		"height": 809
 	},
 	"Sources/Forms/WP_Review/ObjectMethods/SaveTemplate.4dm": {
 		"left": 364,
@@ -334,5 +328,29 @@
 		"top": 248,
 		"width": 1345,
 		"height": 823
+	},
+	"Sources/Methods/_GenerateStatus.4dm": {
+		"left": 0,
+		"top": 134,
+		"width": 1225,
+		"height": 910
+	},
+	"Sources/Methods/_GenerateCollaborator.4dm": {
+		"left": 702,
+		"top": 132,
+		"width": 1225,
+		"height": 910
+	},
+	"Sources/Methods/GenerateAllData.4dm": {
+		"left": 649,
+		"top": 148,
+		"width": 1225,
+		"height": 882
+	},
+	"Sources/Methods/_GenerateReview.4dm": {
+		"left": 649,
+		"top": 176,
+		"width": 1225,
+		"height": 854
 	}
 }
