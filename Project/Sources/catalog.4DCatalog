@@ -10,7 +10,7 @@
 		<field name="Description" uuid="D44A4527BDA14144AC4F997CAC851C77" type="10" id="5"/>
 		<field name="ID_Supervisor" uuid="C2BE3379896D44BD9B7F6AF75F6B6C1E" type="4" id="6"/>
 		<field name="ID_Departement" uuid="0CD7DDDFA5114662A3C6E111E53CFA3C" type="4" id="7"/>
-		<field name="Position" uuid="C7E7BDD77C6B494C80448E8EC4824A8A" type="10" limiting_length="255" id="8"/>
+		<field name="isActive" uuid="C7E7BDD77C6B494C80448E8EC4824A8A" type="1" id="8"/>
 		<field name="Email" uuid="F2D38283F29549E4918BD95D93C27FC4" type="10" limiting_length="255" id="9"/>
 		<field name="Password" uuid="8D5B596AC1974BE38EE2F1C916F229A1" type="10" limiting_length="255" id="10"/>
 		<primary_key field_name="ID" field_uuid="FB9F56D6920E41C49E2D4B76B7FBFA63"/>

@@ -153,9 +153,7 @@
 				}
 			}
 		],
-		"defaultStates": [
-			"p6PCARUnbAu9AoTpQGNacC"
-		]
+		"defaultStates": []
 	},
 	"components": {
 		"ROOT": {
@@ -165,7 +163,22 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "ks6fetQX96cLry9o3i3PKn",
+						"events": [
+							"onload"
+						],
+						"action": "reset",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						}
+					}
+				],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
 				"style": {

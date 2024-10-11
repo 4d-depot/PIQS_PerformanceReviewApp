@@ -4147,12 +4147,16 @@
 				"iterableChild": true,
 				"style": {
 					"justifyContent": "flex-start",
-					"alignItems": "center"
+					"alignItems": "center",
+					"paddingRight": "6px",
+					"paddingBottom": "6px",
+					"paddingTop": "6px",
+					"paddingLeft": "6px"
 				}
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 48
+				"contentHeight": 36
 			},
 			"parent": "2l0sWRjztc",
 			"hidden": false,

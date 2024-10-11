@@ -124,8 +124,8 @@
 							"name": "condition",
 							"value": "",
 							"valueType": "hardCoded",
-							"path": "app:selectedReview",
-							"dsType": "entity",
+							"path": "app:selectedReview.DocumentPDF",
+							"dsType": "blob",
 							"op": "notnull"
 						}
 					]
@@ -144,6 +144,37 @@
 					"dsType": "entity",
 					"op": "isnull"
 				}
+			},
+			{
+				"label": "reviewSelected",
+				"id": "9fdPN2pQLg1cf5Q45uE4ww",
+				"conditions": {
+					"id": "pfLCDxnSFwkvCPjuvGCV9Y",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "d2JyYkPReoAwagC7jzKFaq",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview",
+							"dsType": "entity",
+							"op": "notnull"
+						},
+						{
+							"id": "knE9yHN9eRwr3FfjBA3XMX",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.DocumentPDF",
+							"dsType": "blob",
+							"op": "isnull"
+						}
+					]
+				}
 			}
 		],
 		"defaultStates": [
@@ -159,7 +190,22 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "tidmot1TK3Ktfygq2K1gKR",
+						"events": [
+							"onload"
+						],
+						"action": "reset",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						}
+					}
+				],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
 				"style": {
@@ -438,65 +484,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"SCPuityA3d": {
-			"type": {
-				"resolvedName": "Button"
-			},
-			"isCanvas": false,
-			"props": {
-				"text": "Generate PDF",
-				"classNames": [
-					"buttonRed"
-				],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "ReviewEntity",
-						"events": [
-							"onclick"
-						],
-						"id": "mDTbAQ6KTpN2A44zgqai7W",
-						"method": "selectedReview.generatePDF",
-						"params": [],
-						"namespace": "app",
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Variable"
-						}
-					}
-				],
-				"iconPosition": "left",
-				"style": {
-					"display": "flex"
-				}
-			},
-			"displayName": "Button",
-			"custom": {},
-			"parent": "wwFbBWYOFa",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"icon": "SP9qYj5_VN"
-			}
-		},
-		"SP9qYj5_VN": {
-			"type": {
-				"resolvedName": "Icon"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"icon": "fa-solid fa-file-pen"
-			},
-			"displayName": "Icon",
-			"custom": {},
-			"parent": "SCPuityA3d",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"xV39DPvnOC": {
 			"type": {
 				"resolvedName": "StyleBox"
@@ -585,6 +572,11 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:9fdPN2pQLg1cf5Q45uE4ww": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "1auwpTCNsl",
@@ -644,7 +636,6 @@
 			"hidden": false,
 			"nodes": [
 				"XiYibsS4Aq",
-				"SCPuityA3d",
 				"2ATvNMmDGt",
 				"4TxppKSziu"
 			],
@@ -658,7 +649,7 @@
 			"props": {
 				"text": "View PDF<br>",
 				"classNames": [
-					"buttonGrey"
+					"buttonRed"
 				],
 				"events": [
 					{
@@ -691,6 +682,11 @@
 					}
 				},
 				"states:wH37eYV5TxyFbu1v8EPaZj": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:9fdPN2pQLg1cf5Q45uE4ww": {
 					"style": {
 						"display": "none"
 					}
@@ -761,6 +757,11 @@
 					}
 				},
 				"states:wH37eYV5TxyFbu1v8EPaZj": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:9fdPN2pQLg1cf5Q45uE4ww": {
 					"style": {
 						"display": "none"
 					}
