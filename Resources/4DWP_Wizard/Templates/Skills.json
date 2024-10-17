@@ -1,0 +1,63 @@
+{
+    "tableDataSource": "This.data.review.Skills.orderBy(\"Group asc\")",
+    "columns": [{
+            "check": true,
+            "header": "SkillName",
+            "source": "This.item.Name"
+        }, {
+            "check": false,
+            "header": "CheckCodeI",
+            "source": "Choose(This.item.ID_Score=1; \"X\"; \"\")"
+        }, {
+            "check": false,
+            "header": "CheckCodeP",
+            "source": "Choose(This.item.ID_Score=2; \"X\"; \"\")"
+        },{
+            "check": false,
+            "header": "CheckCodeR",
+            "source": "Choose(This.item.ID_Score=3; \"X\"; \"\")"
+        },{
+            "check": false,
+            "header": "CheckCodeE",
+            "source": "Choose(This.item.ID_Score=4; \"X\"; \"\")"
+        },{
+            "check": true,
+            "header": "ScoreName",
+            "source": "This.item.Score.Name"
+        },{
+            "check": true,
+            "header": "ScoreCode",
+            "source": "This.item.Score.Code"
+        }
+    ],
+    "breaks": [{
+            "label": "SkillGroup",
+            "source": "This.item.Group"
+        }
+    ],
+    "breakFormulas": [{
+            "label": "GroupName",
+            "source": "This.item.Group"
+	}
+    ],
+    "extraFormulas": [{
+            "label": "ScoreSkillName",
+            "source": "This.data.review.ScoreSkill.Name"
+        },{
+            "label": "ScoreSkillCode",
+            "source": "This.data.review.ScoreSkill.Code"
+        },{
+            "label": "CheckSkillScoreCodeI",
+            "source": "Choose(This.data.review.ID_ScoreSkill=1; \"X\"; \"\")"
+        }, {
+            "label": "CheckSkillScoreCodeP",
+            "source": "Choose(This.data.review.ID_ScoreSkill=2; \"X\"; \"\")"
+        }, {
+            "label": "CheckSkillScoreCodeR",
+            "source": "Choose(This.data.review.ID_ScoreSkill=3; \"X\"; \"\")"
+        }, {
+            "label": "CheckSkillScoreCodeE",
+            "source": "Choose(This.data.review.ID_ScoreSkill=4; \"X\"; \"\")"
+        }
+    ]
+}

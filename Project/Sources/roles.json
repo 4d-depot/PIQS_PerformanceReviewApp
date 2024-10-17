@@ -2,48 +2,47 @@
 	"permissions": {
 		"allowed": [
 			{
-				"applyTo": "Employee",
-				"type": "dataclass",
-				"read": [
+				"applyTo": "ds.authentify",
+				"type": "method",
+				"describe": [
 					"guest"
 				],
 				"execute": [
 					"guest"
+				],
+				"promote": [
+					"authentify"
 				]
 			},
 			{
-				"applyTo": "ds",
-				"type": "datastore",
-				"describe": [
-					"guest",
-					"user",
-					"hr"
-				],
+				"applyTo": "Employee",
+				"type": "dataclass",
 				"read": [
-					"user",
-					"hr"
+					"authentify",
+					"user"
 				],
-				"create": [
-					"user",
-					"hr"
-				],
-				"update": [
-					"user",
-					"hr"
-				],
-				"drop": [
-					"user",
-					"hr"
+				"describe": [
+					"authentify",
+					"user"
 				],
 				"execute": [
-					"user",
-					"hr"
+					"authentify",
+					"user"
+				],
+				"create": [
+					"user"
+				],
+				"update": [
+					"user"
 				]
 			},
 			{
 				"applyTo": "Review",
 				"type": "dataclass",
 				"read": [
+					"user"
+				],
+				"create": [
 					"user"
 				],
 				"update": [
@@ -79,7 +78,7 @@
 				]
 			},
 			{
-				"applyTo": "Goal",
+				"applyTo": "Skill",
 				"type": "dataclass",
 				"read": [
 					"user"
@@ -101,9 +100,12 @@
 				]
 			},
 			{
-				"applyTo": "GoalStatus",
+				"applyTo": "Score",
 				"type": "dataclass",
 				"read": [
+					"user"
+				],
+				"describe": [
 					"user"
 				]
 			},
@@ -112,32 +114,45 @@
 				"type": "dataclass",
 				"read": [
 					"user"
+				],
+				"describe": [
+					"user"
 				]
 			},
 			{
-				"applyTo": "Score",
+				"applyTo": "ReviewStatus",
 				"type": "dataclass",
+				"read": [
+					"user"
+				],
+				"describe": [
+					"user"
+				]
+			},
+			{
+				"applyTo": "Review.doneTraining",
+				"type": "attribute",
 				"read": [
 					"user"
 				]
 			},
 			{
-				"applyTo": "Departement",
-				"type": "dataclass",
+				"applyTo": "Review.plannedTraining",
+				"type": "attribute",
 				"read": [
 					"user"
 				]
 			},
 			{
-				"applyTo": "Skill",
-				"type": "dataclass",
+				"applyTo": "Review.doneGoals",
+				"type": "attribute",
 				"read": [
 					"user"
 				]
 			},
 			{
-				"applyTo": "Template",
-				"type": "dataclass",
+				"applyTo": "Review.plannedGoal",
+				"type": "attribute",
 				"read": [
 					"user"
 				]
@@ -146,16 +161,14 @@
 	},
 	"privileges": [
 		{
-			"id": "k5sH5CT8ePQFBQqpeaMstX",
-			"privilege": "user",
+			"id": "ssKA2rfRmNuuxEr5TdDwX9",
+			"privilege": "authentify",
 			"includes": []
 		},
 		{
-			"id": "sA3YF4ynMT8UG76HhHX8LW",
-			"privilege": "hr",
-			"includes": [
-				"user"
-			]
+			"id": "6DGzBiPVpwyvhc2sewAfKg",
+			"privilege": "user",
+			"includes": []
 		}
 	],
 	"roles": [

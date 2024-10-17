@@ -81,6 +81,12 @@
 			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #dd3c4c;\n\tbackground-color: #dd3c4c;\n\tcolor: #FFFFFF;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #c32232;\n  background-color: #c32232;\n  color: #FFFFFF;\n}",
 			"parentId": null,
 			"id": "Md4KhKp30EbgGiU1x9y7b"
+		},
+		{
+			"name": "selectBox",
+			"content": "self .bg-primary-light {\n background-color: #f3bec3 !important;\n}",
+			"parentId": null,
+			"id": "JNzGU5UCYXykMFWabN4W9"
 		}
 	]
 }

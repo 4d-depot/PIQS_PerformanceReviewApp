@@ -1,0 +1,88 @@
+{
+	"expression": [
+		{
+			"name": "Lastname",
+			"formula": "This.data.review.Employee.Lastname"
+		},
+		{
+			"name": "Firstname",
+			"formula": "This.data.review.Employee.Firstname"
+		},
+		{
+			"name": "CollaboratorName",
+			"formula": "This.data.review.Employee.Firstname+\" \"+This.data.review.Employee.Lastname"
+		},
+		{
+			"name": "Job",
+			"formula": "This.data.review.Employee.Job"
+		},
+		{
+			"name": "JobDescription",
+			"formula": "This.data.review.Employee.Description"
+		},
+		{
+			"name": "Departement",
+			"formula": "This.data.review.Employee.Departement.Name"
+		},
+		{
+			"name": "ManagerName",
+			"formula": "This.data.review.Employee.Supervisor.Firstname+\" \"+This.data.review.Employee.Supervisor.Lastname"
+		},
+		{
+			"name": "ReviewDate",
+			"formula": "This.data.review.Date"
+		},
+		{
+			"name": "PreviousReviewDate",
+			"formula": "This.data.previousReviewDate"
+		},
+		{
+			"name": "ReviewYear",
+			"formula": "String(This.data.review.Date; \"y\")"
+		},
+		{
+			"name": "PreviousReviewYear",
+			"formula": "String(This.data.previousReviewDate; \"y\")"
+		},
+		{
+			"name": "MobilityWish",
+			"formula": "This.data.review.MobilityWish"
+		},
+		{
+			"name": "MobilityMotivations",
+			"formula": "This.data.review.MobilityMotivations"
+		},
+		{
+			"name": "CollaboratorComment",
+			"formula": "This.data.review.EmployeeComment"
+		},
+		{
+			"name": "ManagerComment",
+			"formula": "This.data.review.ManagerComment"
+		},
+		{
+			"name": "ScoreGlobalCode",
+			"formula": "This.data.review.ScoreGlobal.Code"
+		},
+		{
+			"name": "ScoreGlobalName",
+			"formula": "This.data.review.ScoreGlobal.Name"
+		},
+		{
+			"name": "CkeckScoreGlobalCodeI",
+			"formula": "Choose(This.data.review.ID_ScoreGlobal=1; \"X\"; \"\")"
+		},
+		{
+			"name": "CkeckScoreGlobalCodeP",
+			"formula": "Choose(This.data.review.ID_ScoreGlobal=2; \"X\"; \"\")"
+		},
+		{
+			"name": "CkeckScoreGlobalCodeR",
+			"formula": "Choose(This.data.review.ID_ScoreGlobal=3; \"X\"; \"\")"
+		},
+		{
+			"name": "CkeckScoreGlobalCodeE",
+			"formula": "Choose(This.data.review.ID_ScoreGlobal=4; \"X\"; \"\")"
+		}
+	]
+}

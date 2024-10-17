@@ -44,4 +44,4 @@ Function event restrict() : cs:C1710.EmployeeSelection
 	
 exposed Function loadEmployees($idDepartement : Integer) : cs:C1710.EmployeeSelection
 	
-	This:C1470.query("ID_Departement = :1"; $idDepartement)
+	//This.query("ID_Departement = :1"; $idDepartement)

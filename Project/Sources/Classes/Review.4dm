@@ -32,14 +32,4 @@ Function event restrict() : cs:C1710.ReviewSelection
 	End case 
 	
 	
-/*exposed Function loadReview() : cs.ReviewSelection
-var $obj : Object
-	
-If (Session=Null)
-$obj:=Storage
-Else 
-$obj:=Session.storage
-End if 
-	
-return This.query("ID_Employee = :1"; $obj.Employee.ID).orderBy("Date desc")*/
 	

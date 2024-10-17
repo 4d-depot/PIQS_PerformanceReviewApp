@@ -1,0 +1,13 @@
+{
+    "tableDataSource": "This.data.review.plannedTraining",
+    "columns": [{
+            "check": true,
+            "header": "Name",
+            "source": "This.item.Name"
+        }, {
+            "check": true,
+            "header": "ExpectedResult",
+            "source": "This.item.ExpectedResult"
+        }
+    ]
+}

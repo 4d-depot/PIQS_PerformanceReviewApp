@@ -46,7 +46,7 @@ exposed Function authentify($email : Text; $password : Text) : Text
 				$obj.Employee.authentify:=True:C214
 			End use 
 			
-			
+			Session:C1714.setPrivileges("user")
 			Web Form:C1735.setMessage("Authentication successfull")
 			
 		Else 

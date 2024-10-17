@@ -1,0 +1,37 @@
+{
+    "tableDataSource": "This.data.review.plannedGoal",
+    "columns": [{
+            "check": true,
+            "header": "Name",
+            "source": "This.item.Name"
+        }, {
+            "check": true,
+            "header": "PerformanceIndicator",
+            "source": "This.item.PerformanceIndicator"
+        }, {
+            "check": true,
+            "header": "DueDate",
+            "source": "This.item.DueDate"
+        }
+    ],
+    "extraFormulas": [{
+            "label": "CheckCodeI",
+            "source": "Choose(This.data.review.ID_ScoreGoal=1; \"X\"; \"\")"
+        }, {
+            "label": "CheckCodeP",
+            "source": "Choose(This.data.review.ID_ScoreGoal=2; \"X\"; \"\")"
+        }, {
+            "label": "CheckCodeR",
+            "source": "Choose(This.data.review.ID_ScoreGoal=3; \"X\"; \"\")"
+        }, {
+            "label": "CheckCodeE",
+            "source": "Choose(This.data.review.ID_ScoreGoal=4; \"X\"; \"\")"
+        }, {
+            "label": "CodeScore",
+            "source": "This.data.review.ScoreGoal.Code"
+        }, {
+            "label": "NameScore",
+            "source": "This.data.review.ScoreGoal.Name"
+        }
+    ]
+}

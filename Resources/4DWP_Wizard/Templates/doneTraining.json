@@ -1,0 +1,13 @@
+{
+    "tableDataSource": "This.data.review.doneTraining",
+    "columns": [{
+            "check": true,
+            "header": "Name",
+            "source": "This.item.Name"
+        }, {
+            "check": true,
+            "header": "ProfessionalValue",
+            "source": "This.item.ProfessionalValue"
+        }
+    ]
+}

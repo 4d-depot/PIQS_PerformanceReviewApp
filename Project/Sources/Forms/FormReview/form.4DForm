@@ -74,7 +74,7 @@
 						"onSelectionChange"
 					],
 					"listboxType": "collection",
-					"dataSource": "Form:C1466.review.Goals",
+					"dataSource": "Form:C1466.review.plannedGoal",
 					"headerHeight": "1em",
 					"rowHeight": "2em",
 					"hideExtraBlankRows": true,
@@ -130,7 +130,7 @@
 						"onSelectionChange"
 					],
 					"listboxType": "collection",
-					"dataSource": "Form:C1466.review.previousReview.Goals",
+					"dataSource": "Form:C1466.review.doneGoals",
 					"rowHeight": "2em",
 					"columns": [
 						{
@@ -271,7 +271,7 @@
 						"onDataChange",
 						"onSelectionChange"
 					],
-					"dataSource": "Form:C1466.review.Training",
+					"dataSource": "Form:C1466.review.doneTraining",
 					"listboxType": "collection",
 					"rowHeightAutoMin": "1em",
 					"rowHeightAutoMax": "1600em",

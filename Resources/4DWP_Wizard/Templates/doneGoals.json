@@ -1,0 +1,41 @@
+{
+    "tableDataSource": "This.data.review.doneGoals",
+    "columns": [{
+            "check": true,
+            "header": "Name",
+            "source": "This.item.Name"
+        }, {
+            "check": true,
+            "header": "ScoreCode",
+            "source": "This.item.Score.Code"
+        }, {
+            "check": true,
+            "header": "ScoreName",
+            "source": "This.item.Score.Name"
+        }, {
+            "check": true,
+            "header": "Comment",
+            "source": "This.item.Comment"
+        }
+    ],
+    "extraFormulas": [{
+            "label": "CheckScoreCodeI",
+            "source": "Choose(This.data.review.ID_ScoreGoal=1; \"X\"; \"\")"
+        }, {
+            "label": "CheckScoreCodeP",
+            "source": "Choose(This.data.review.ID_ScoreGoal=2; \"X\"; \"\")"
+        }, {
+            "label": "CheckScoreCodeR",
+            "source": "Choose(This.data.review.ID_ScoreGoal=3; \"X\"; \"\")"
+        }, {
+            "label": "CheckScoreCodeE",
+            "source": "Choose(This.data.review.ID_ScoreGoal=4; \"X\"; \"\")"
+        }, {
+            "label": "ScoreGoalCode",
+            "source": "This.data.review.ScoreGoal.Code"
+        }, {
+            "label": "ScoreGoalName",
+            "source": "This.data.review.ScoreGoal.Name"
+        }
+    ]
+}
