@@ -15,7 +15,7 @@
 		"onLoad",
 		"onClick"
 	],
-	"windowTitle": "window title",
+	"windowTitle": "Review",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -26,7 +26,7 @@
 				"listbox": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.CurrentDepartement.Employees",
-					"top": 60,
+					"top": 20,
 					"left": 164,
 					"width": 249,
 					"height": 300,
@@ -85,7 +85,7 @@
 				"listbox1": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.CurrentEmployee.Reviews",
-					"top": 60,
+					"top": 20,
 					"left": 426,
 					"width": 143,
 					"height": 300,
@@ -130,7 +130,7 @@
 				"listbox2": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.listDepartement",
-					"top": 60,
+					"top": 20,
 					"left": 20,
 					"width": 130,
 					"height": 300,
@@ -164,7 +164,7 @@
 				"OpenComputeVersion": {
 					"type": "button",
 					"text": "Open WP Doc",
-					"top": 142,
+					"top": 102,
 					"left": 589,
 					"width": 189,
 					"height": 27,
@@ -176,7 +176,7 @@
 				"GeneratePDF": {
 					"type": "button",
 					"text": "Generate PDF",
-					"top": 275,
+					"top": 235,
 					"left": 589,
 					"width": 189,
 					"height": 27,
@@ -188,7 +188,7 @@
 				"CreateReview": {
 					"type": "button",
 					"text": "Create Review",
-					"top": 73,
+					"top": 33,
 					"left": 589,
 					"width": 189,
 					"height": 27,
@@ -200,7 +200,7 @@
 				"GenerateFreezeVersion": {
 					"type": "button",
 					"text": "Generate Freeze Version",
-					"top": 240,
+					"top": 200,
 					"left": 589,
 					"width": 189,
 					"height": 27,
@@ -212,7 +212,7 @@
 				"OpenComputeVersion1": {
 					"type": "button",
 					"text": "Open Review",
-					"top": 177,
+					"top": 137,
 					"left": 589,
 					"width": 189,
 					"height": 27,
@@ -220,20 +220,11 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/OpenComputeVersion1.4dm"
-				},
-				"Text": {
-					"type": "text",
-					"text": "Reviews",
-					"top": 20,
-					"left": 20,
-					"width": 194,
-					"height": 16,
-					"fontTheme": "main"
 				}
 			}
 		}
 	],
-	"geometryStamp": 153,
+	"geometryStamp": 156,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

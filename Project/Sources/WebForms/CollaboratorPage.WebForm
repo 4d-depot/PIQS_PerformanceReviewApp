@@ -426,7 +426,7 @@
 			"props": {
 				"text": "View PDF",
 				"classNames": [
-					"buttonRed"
+					"buttonGrey"
 				],
 				"events": [
 					{

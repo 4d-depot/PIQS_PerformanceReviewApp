@@ -636,6 +636,7 @@
 			"hidden": false,
 			"nodes": [
 				"XiYibsS4Aq",
+				"rSSylDdjmX",
 				"2ATvNMmDGt",
 				"4TxppKSziu"
 			],
@@ -649,7 +650,7 @@
 			"props": {
 				"text": "View PDF<br>",
 				"classNames": [
-					"buttonRed"
+					"buttonGrey"
 				],
 				"events": [
 					{
@@ -795,6 +796,65 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "4TxppKSziu",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"rSSylDdjmX": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Generate PDF",
+				"classNames": [
+					"buttonRed"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "ReviewEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "3VG9Wi3qZ7rBKTurew28aP",
+						"method": "selectedReview.generatePDF",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "wwFbBWYOFa",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "NIskxRUwPm"
+			}
+		},
+		"NIskxRUwPm": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-file-pdf"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "rSSylDdjmX",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

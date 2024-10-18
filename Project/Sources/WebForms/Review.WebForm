@@ -68,6 +68,52 @@
 				"initialValue": "all",
 				"depth": null,
 				"pageSize": 100
+			},
+			{
+				"id": "editGoalDone",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "bool",
+				"initialValue": false
+			},
+			{
+				"id": "editGoalToDo",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "bool",
+				"initialValue": false
+			},
+			{
+				"id": "editSkill",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "bool",
+				"initialValue": false
+			},
+			{
+				"id": "state",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "object",
+				"initialValue": {
+					"editGoalDone": false,
+					"editGoalTodo": false,
+					"editSkill": false
+				}
+			},
+			{
+				"id": "editTrainingDone",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "bool",
+				"initialValue": false
+			},
+			{
+				"id": "editTrainingToDo",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "bool",
+				"initialValue": false
 			}
 		],
 		"styles": [
@@ -128,33 +174,139 @@
 				"id": "root"
 			},
 			{
-				"label": "editItemGoalDo",
-				"id": "nGP5N37pAxfGj7nn2Ucny5"
+				"label": "editItemGoalDone",
+				"id": "nGP5N37pAxfGj7nn2Ucny5",
+				"conditions": {
+					"id": "iwzr19gAC9NUGLtVrBhPN1",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "editGoalDone",
+					"dsType": "bool",
+					"op": "istrue"
+				}
 			},
 			{
 				"label": "editItemGoalTodo",
-				"id": "nd1AYH6fNk1WUPqTsmzuYP"
+				"id": "nd1AYH6fNk1WUPqTsmzuYP",
+				"conditions": {
+					"id": "dEAMnwGJRAZPUEV52x57oR",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "editGoalToDo",
+					"dsType": "bool",
+					"op": "istrue"
+				}
 			},
 			{
 				"label": "default",
-				"id": "taPrcGBqkSd1hTtGn6TaPG"
+				"id": "taPrcGBqkSd1hTtGn6TaPG",
+				"conditions": {
+					"id": "fe5S6UCoMw9fBo5XZzqBQL",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "ioTUmmcoZty6cKGNZqL8zH",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "editGoalDone",
+							"dsType": "bool",
+							"op": "isfalse"
+						},
+						{
+							"id": "ttg4UQWPKZygeBp7VM8cuC",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "editGoalToDo",
+							"dsType": "bool",
+							"op": "isfalse"
+						},
+						{
+							"id": "fvDM9eEKnUyRW7nYzHbWf8",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "editSkill",
+							"dsType": "bool",
+							"op": "isfalse"
+						},
+						{
+							"id": "kyHFxJXHhQQdU2GMdeyrcU",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "editTrainingDone",
+							"dsType": "bool",
+							"op": "isfalse"
+						},
+						{
+							"id": "3FWAL7rkUcBYBXSWF3gPFr",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "editTrainingToDo",
+							"dsType": "bool",
+							"op": "isfalse"
+						}
+					]
+				}
 			},
 			{
 				"label": "editItemSkill",
-				"id": "4uDA5Ywo925GjzgLLLuMxk"
+				"id": "4uDA5Ywo925GjzgLLLuMxk",
+				"conditions": {
+					"id": "q7RobziqEdtpWMNYKKvQfe",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "editSkill",
+					"dsType": "bool",
+					"op": "istrue"
+				}
 			},
 			{
 				"label": "editItemTrainingDo",
-				"id": "7TKw1fUMMyFbY97Hw3PB8M"
+				"id": "7TKw1fUMMyFbY97Hw3PB8M",
+				"conditions": {
+					"id": "adHtT9FqWXiM6uqtEzX8ky",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "editTrainingDone",
+					"dsType": "bool",
+					"op": "istrue"
+				}
 			},
 			{
 				"label": "editItemTrainingTodo",
-				"id": "rc7ghzYUZjRW16mh6KPNGj"
+				"id": "rc7ghzYUZjRW16mh6KPNGj",
+				"conditions": {
+					"id": "qXqrQZtqaU8eh4CDVBDQ7D",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "editTrainingToDo",
+					"dsType": "bool",
+					"op": "istrue"
+				}
 			}
 		],
 		"defaultStates": [
-			"kyEV7TCPeqEaNVbeZTirS7",
-			"taPrcGBqkSd1hTtGn6TaPG"
+			"kyEV7TCPeqEaNVbeZTirS7"
 		]
 	},
 	"components": {
@@ -375,7 +527,8 @@
 				],
 				"events": [],
 				"style": {
-					"width": "auto"
+					"width": "auto",
+					"height": "160px"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -756,7 +909,8 @@
 				],
 				"events": [],
 				"style": {
-					"width": "auto"
+					"width": "auto",
+					"height": "160px"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -879,7 +1033,8 @@
 				],
 				"events": [],
 				"style": {
-					"width": "auto"
+					"width": "auto",
+					"height": "160px"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -987,7 +1142,8 @@
 				],
 				"events": [],
 				"style": {
-					"width": "auto"
+					"width": "auto",
+					"height": "160px"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -1041,7 +1197,8 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"width": "auto"
 				}
 			},
 			"displayName": "Stylebox",
@@ -1278,38 +1435,22 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "cWSeJQC9PD3x23kboHpneo",
+						"id": "5B4q3uqFaeWZ2h9uFJGzcy",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"nGP5N37pAxfGj7nn2Ucny5"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "bL6f7SxELYKRDLjaSasFpA",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -1433,20 +1574,102 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "vm2yFGDPwNVk8obxsQsihS",
+						"id": "dY7EUZPqAZhmB8vefzVHRt",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"nd1AYH6fNk1WUPqTsmzuYP"
-							]
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "ghAHwkRczCaremDFZNHicM",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "uqKNXjT28mCDiC5EQzLoyq",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editSkill",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "vDqwuSxn7xRdwBzNrhosrM",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "irvXncsM2JbDfoLxTZRaR4",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -1529,38 +1752,22 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "se5Sgr6j5frLZYumZTHJnV",
+						"id": "vckw94qMU782usRtHi9paH",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"nd1AYH6fNk1WUPqTsmzuYP"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "3FjppkWYyUNguq34E5DnE6",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -1643,38 +1850,22 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "a7MrtzArgDmv1rtXcd6pPV",
+						"id": "gCq4Drs5r1vvE2ysto1Zor",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"nd1AYH6fNk1WUPqTsmzuYP"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "e7HsekES5fpUcCD4duyPxn",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -2203,6 +2394,11 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:4uDA5Ywo925GjzgLLLuMxk": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "TL9IhEQNTx",
@@ -2434,38 +2630,102 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "czJesVuHm2PmHdNPEEi7Qc",
+						"id": "9KFJCsuCzJ3VUFPYHRTTYh",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
 						}
 					},
 					{
 						"type": "simple-action",
-						"id": "eSG7BDert7vP4Jc9daafNu",
+						"id": "aDGGwVvvnmQs3pbYgUjzpT",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"7TKw1fUMMyFbY97Hw3PB8M"
-							]
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "vqf6vVEo36GwrvR9sGyMRW",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "6TtdCqSg6E37cb5xMDRD1j",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editSkill",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "dB59FuRijzkAnjEkxsp9ti",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -2545,38 +2805,22 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "v9JpsCbVeKpaBuFS1NTTHP",
+						"id": "c3SxTDU6aicCa8zCvoqeLt",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"7TKw1fUMMyFbY97Hw3PB8M"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "usuM42TeHxVEqZqpU9fXrm",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -2656,38 +2900,22 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "6UKDR4mdSQ5QbwLhUp5GU8",
+						"id": "6knvE4qvvyLvALJCuKp2Fa",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"7TKw1fUMMyFbY97Hw3PB8M"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "cmjk5stL3rJ8XbTyAL8e8y",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -2804,6 +3032,11 @@
 					}
 				},
 				"states:7TKw1fUMMyFbY97Hw3PB8M": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:4uDA5Ywo925GjzgLLLuMxk": {
 					"style": {
 						"display": "none"
 					}
@@ -3029,38 +3262,102 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "rDzjHkwDuWoi2CLoL4zgAr",
+						"id": "6cLdno3UrKiQnJMk6FgAtm",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"rc7ghzYUZjRW16mh6KPNGj"
-							]
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
 						}
 					},
 					{
 						"type": "simple-action",
-						"id": "79YSGGzL3p8jA3EmAo8Fxj",
+						"id": "fP38Qzz6USPzPHyjaEaB1F",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "9qHtfxnLir6kmu34jJgPF8",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "7GYUR8oERFQCec6EUV73j3",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editSkill",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "bQ61HpvPt6HoLmn4k3QM2g",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -3143,38 +3440,22 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "5jSa8gEXbkA13k5VuyCeAi",
+						"id": "8gwMxQPEuzowbwMDJPx82P",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"rc7ghzYUZjRW16mh6KPNGj"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "b5WJBzW5bmjsR4dNHZ5PRf",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -3257,38 +3538,22 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "tEou8mApFMhYFFEQvnf47w",
+						"id": "wxxogSBrnNtGDHhZtAaPuC",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"rc7ghzYUZjRW16mh6KPNGj"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "1nbfpt7YeCEUyzExnPAFkJ",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -3478,7 +3743,7 @@
 				},
 				"states:nGP5N37pAxfGj7nn2Ucny5": {
 					"style": {
-						"display": "none"
+						"display": "flex"
 					}
 				}
 			},
@@ -3503,38 +3768,102 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "o5WRGvkZsWYuu9HSG8VaQ2",
+						"id": "pBp6aU9jsqua7b2U89YBNN",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"nGP5N37pAxfGj7nn2Ucny5"
-							]
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
 						}
 					},
 					{
 						"type": "simple-action",
-						"id": "df7gydndxF7C6SBiAXTk3a",
+						"id": "bskSmpwnZia1ZcpqXCsCvX",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "eXdCwgGovFEWf5GXvYR4bV",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editSkill",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "gjfe93go5HbTDVY3raVjf9",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "btrTSBBzsaFmsJQrBkJfw2",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -3581,20 +3910,102 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "siL2jae4e3taznVYwZeDmx",
+						"id": "9b62rea1pYk2XmcBLWHsKL",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"nd1AYH6fNk1WUPqTsmzuYP"
-							]
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "hSrTU5CQRfQUAkrRUHnHxq",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "4XAhGL22wJMY6bFjNXbHbA",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editSkill",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "imfTcgEQSzrSwTMtpbnVK7",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "79ZxzRsbHzCADRfTTxrWGn",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -3655,7 +4066,7 @@
 				},
 				"states:rc7ghzYUZjRW16mh6KPNGj": {
 					"style": {
-						"display": "none"
+						"display": "flex"
 					}
 				}
 			},
@@ -3680,38 +4091,102 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "hrjn8VYKNZSHw8jCeNGMDE",
+						"id": "6pWJiT71hFiH8H24hQXg3h",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"7TKw1fUMMyFbY97Hw3PB8M"
-							]
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
 						}
 					},
 					{
 						"type": "simple-action",
-						"id": "8d1bZkSUUGWPQW7Xfdxi1m",
+						"id": "oVcG5TeXTxL1KCF6dGT22P",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "qEZP5tZGupdCwkmSvYy9RB",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "ot7w1ZPzWMzE6bxJMRKAtD",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editSkill",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "4FhnAhXrC3fKtiPXNCDJy9",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -3797,38 +4272,102 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "9FzvURPn3ba8UupbkinE3K",
+						"id": "9w3DNXJdhLCNwvYrQfYymD",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"rc7ghzYUZjRW16mh6KPNGj"
-							]
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
 						}
 					},
 					{
 						"type": "simple-action",
-						"id": "1MjzXUUtZznz843osbencj",
+						"id": "jFpJtak4peeTnNdW54w2ZT",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "sTtzym9QJgahy6vTAxuHDS",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "4qDyiCfpAphoMnZZDPTVBE",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editSkill",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "pNmpPBsXTEqK5Z3uJKv9SA",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -4657,7 +5196,7 @@
 				},
 				"states:nGP5N37pAxfGj7nn2Ucny5": {
 					"style": {
-						"display": "none"
+						"display": "flex"
 					}
 				}
 			},
@@ -4681,20 +5220,102 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "aszqZs3WR4RKQAJJfKt25T",
+						"id": "jWqVkfUW2o6r8F1tjBa6bv",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"4uDA5Ywo925GjzgLLLuMxk"
-							]
+							"name": "editSkill",
+							"namespace": "",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							},
+							"from": "",
+							"type": "scalar",
+							"dataType": "bool"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "7GyPkVTgycUo8FTauYsPAN",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "3HvpZ2Yk6dFzPRstnTSnB9",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editGoalToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "76WezoY3Nx73ccCb83imnR",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "naBXY4LxSjxCBVUCBMkf5m",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -5145,20 +5766,22 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "6idsCWhEU1dsNMJez1bdUB",
+						"id": "nUoQUDFBSi8E9NKdRL4hVi",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"4uDA5Ywo925GjzgLLLuMxk"
-							]
+							"name": "editSkill",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -5348,38 +5971,22 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "2tE9rNuYNcCMp66x6eZhXa",
+						"id": "9SHGhLtonwgY6TwFidncCd",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"nGP5N37pAxfGj7nn2Ucny5"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "6DNkwiwhrrtZFQuqH2pZkx",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editGoalDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -5427,39 +6034,22 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "xwVpknEa6fo3rnNJ4V4dWK",
+						"id": "rBJ2Rb6TMRMgHuSLRbara2",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"nd1AYH6fNk1WUPqTsmzuYP"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "4azk5TK9gAMhxMbF1ArAWg",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": "",
-							"from": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editGoalToDo",
+							"namespace": "",
+							"from": "",
+							"type": "scalar",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -5546,20 +6136,22 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "2f8zFfHj3ZQTNYUzLUe7CU",
+						"id": "fM5tcjF852rUuYzwa5e2YN",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"4uDA5Ywo925GjzgLLLuMxk"
-							]
+							"name": "editSkill",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -5607,38 +6199,22 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "4tWpehEoGFs3imyjzJ27nk",
+						"id": "4NHAbPQiHfnUien935asgW",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"7TKw1fUMMyFbY97Hw3PB8M"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "v3uwJMBBvKyhgAG5LYMQXd",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editTrainingDone",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -5686,38 +6262,22 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "uvEjM8y6dFGbD1EXwdvCeE",
+						"id": "uBpepz1zz7NxnypqBTdZcR",
 						"events": [
 							"onclick"
 						],
-						"action": "",
-						"actionType": "state",
+						"action": "set",
+						"actionType": "datasource",
 						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "delete",
-							"states": [
-								"rc7ghzYUZjRW16mh6KPNGj"
-							]
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "9Rwub6KEp6BU9ZVBS7xqgV",
-						"events": [
-							"onclick"
-						],
-						"action": "",
-						"actionType": "state",
-						"datasource": {
-							"name": ""
-						},
-						"state": {
-							"action": "add",
-							"states": [
-								"taPrcGBqkSd1hTtGn6TaPG"
-							]
+							"name": "editTrainingToDo",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],
