@@ -653,19 +653,23 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "wdYHoi4h5BPEuygYJf2hha",
 						"events": [
 							"onclick"
 						],
-						"id": "eqUQ2J1yrJYGckFTMa4B9u",
-						"method": "ds.setTrue",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Boolean",
-							"datasource": "viewPDF"
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"dataType": "bool",
+							"namespace": "",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
 						}
 					}
 				],
@@ -728,19 +732,23 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "q9j4XJzYFQyNzJsPjr3851",
 						"events": [
 							"onclick"
 						],
-						"id": "k8z17PZgi8MEjcZB1Fdr65",
-						"method": "ds.setFalse",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Boolean",
-							"datasource": "viewPDF"
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"dataType": "bool",
+							"namespace": "",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
 						}
 					}
 				],

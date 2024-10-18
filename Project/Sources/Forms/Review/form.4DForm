@@ -197,70 +197,6 @@
 					],
 					"method": "ObjectMethods/CreateReview.4dm"
 				},
-				"listbox3": {
-					"type": "listbox",
-					"dataSource": "Form:C1466.listTemplate",
-					"top": 424,
-					"left": 20,
-					"width": 130,
-					"height": 300,
-					"visibility": "visible",
-					"sizingX": "fixed",
-					"sizingY": "grow",
-					"headerHeight": "2em",
-					"listboxType": "collection",
-					"scrollbarHorizontal": "automatic",
-					"scrollbarVertical": "automatic",
-					"resizingMode": "legacy",
-					"currentItemSource": "Form:C1466.CurrentTemplate",
-					"columns": [
-						{
-							"name": "Name1",
-							"dataSource": "This:C1470.Name",
-							"width": 120,
-							"enterable": true,
-							"header": {
-								"text": "Template",
-								"name": "Header2"
-							},
-							"footer": {
-								"name": "8"
-							}
-						}
-					]
-				},
-				"OpenTemplate": {
-					"type": "button",
-					"text": "Open template",
-					"top": 424,
-					"left": 188,
-					"width": 126,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/OpenTemplate.4dm"
-				},
-				"Button1": {
-					"type": "button",
-					"text": "Create template",
-					"top": 547,
-					"left": 188,
-					"width": 126,
-					"height": 30,
-					"events": [
-						"onClick"
-					]
-				},
-				"Input": {
-					"type": "input",
-					"left": 188,
-					"top": 515,
-					"width": 189,
-					"height": 17,
-					"placeholder": "Template name",
-					"dataSource": "Form:C1466.newTemplateName"
-				},
 				"GenerateFreezeVersion": {
 					"type": "button",
 					"text": "Generate Freeze Version",
@@ -272,18 +208,6 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/GenerateFreezeVersion.4dm"
-				},
-				"Button2": {
-					"type": "button",
-					"text": "Duplicate template",
-					"top": 547,
-					"left": 334,
-					"width": 126,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button2.4dm"
 				},
 				"OpenComputeVersion1": {
 					"type": "button",
@@ -305,20 +229,11 @@
 					"width": 194,
 					"height": 16,
 					"fontTheme": "main"
-				},
-				"Text1": {
-					"type": "text",
-					"text": "Template",
-					"top": 393,
-					"left": 20,
-					"width": 194,
-					"height": 16,
-					"fontTheme": "main"
 				}
 			}
 		}
 	],
-	"geometryStamp": 152,
+	"geometryStamp": 153,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -28,7 +28,7 @@
 		"onTimer",
 		"onBoundVariableChange"
 	],
-	"windowTitle": "window title",
+	"windowTitle": "Departement",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -39,9 +39,9 @@
 				"listbox": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.departement",
-					"top": 25,
-					"left": 25,
-					"width": 200,
+					"top": 20,
+					"left": 20,
+					"width": 300,
 					"height": 300,
 					"visibility": "visible",
 					"sizingX": "fixed",
@@ -79,13 +79,24 @@
 							"footer": {
 								"name": "3"
 							}
+						},
+						{
+							"header": {
+								"name": "Header4",
+								"text": "Template"
+							},
+							"name": "Column3",
+							"dataSource": "This:C1470.ID_Template",
+							"footer": {
+								"name": "Footer3"
+							}
 						}
 					]
 				},
 				"List Box": {
 					"type": "listbox",
-					"left": 245,
-					"top": 25,
+					"left": 340,
+					"top": 20,
 					"width": 250,
 					"height": 300,
 					"events": [
@@ -115,8 +126,8 @@
 				},
 				"List Box1": {
 					"type": "listbox",
-					"left": 515,
-					"top": 25,
+					"left": 610,
+					"top": 20,
 					"width": 250,
 					"height": 300,
 					"events": [
@@ -128,6 +139,8 @@
 					"listboxType": "collection",
 					"dataSource": "Form:C1466.currentGroup.value",
 					"headerHeight": "2em",
+					"currentItemSource": "",
+					"selectedItemsSource": "Form:C1466.currentSkill",
 					"columns": [
 						{
 							"header": {
@@ -142,11 +155,71 @@
 							"width": 230
 						}
 					]
+				},
+				"Button": {
+					"type": "button",
+					"text": "Save",
+					"top": 20,
+					"left": 899,
+					"width": 91,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"AddGroup": {
+					"type": "button",
+					"text": "+",
+					"top": 331,
+					"left": 340,
+					"width": 30,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/AddGroup.4dm"
+				},
+				"DeleteGroup": {
+					"type": "button",
+					"text": "-",
+					"top": 331,
+					"left": 378,
+					"width": 30,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/DeleteGroup.4dm"
+				},
+				"AddSkill": {
+					"type": "button",
+					"text": "+",
+					"top": 331,
+					"left": 610,
+					"width": 30,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/AddSkill.4dm"
+				},
+				"DeleteSkill": {
+					"type": "button",
+					"text": "-",
+					"top": 331,
+					"left": 648,
+					"width": 30,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/DeleteSkill.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 37,
+	"geometryStamp": 68,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -22,7 +22,11 @@ Function event restrict() : cs:C1710.EmployeeSelection
 	Case of 
 		: ($obj.Employee.role="HR")
 			If (This:C1470.query("ID = :1 and Departement.Name = :2"; $obj.Employee.ID; "HR").first()#Null:C1517)
-				If ($idDepartement>0)
+				If ($obj.Settings.Departement>0)
+					$idDepartement:=$obj.Settings.Departement
+					Use ($obj.Settings)
+						$obj.Settings.Departement:=0
+					End use 
 					return This:C1470.query("ID_Departement = :1"; $idDepartement)
 				Else 
 					return This:C1470.all()
@@ -44,4 +48,14 @@ Function event restrict() : cs:C1710.EmployeeSelection
 	
 exposed Function loadEmployees($idDepartement : Integer) : cs:C1710.EmployeeSelection
 	
-	//This.query("ID_Departement = :1"; $idDepartement)
+	If (Session:C1714=Null:C1517)
+		$obj:=Storage:C1525
+	Else 
+		$obj:=Session:C1714.storage
+	End if 
+	
+	Use ($obj.Settings)
+		$obj.Settings.Departement:=$idDepartement
+	End use 
+	
+	This:C1470.query("ID_Departement = :1"; $idDepartement)

@@ -18,6 +18,16 @@ exposed Function authentify($email : Text; $password : Text) : Text
 		End use 
 	End if 
 	
+	If ($obj.Settings=Null:C1517)
+		Use ($obj)
+			$obj.Settings:=New shared object:C1526
+		End use 
+	End if 
+	
+	Use ($obj.Settings)
+		$obj.Settings.Departement:=0
+	End use 
+	
 	Use ($obj.Employee)
 		$obj.Employee.authentify:=False:C215
 	End use 
@@ -45,6 +55,8 @@ exposed Function authentify($email : Text; $password : Text) : Text
 				End if 
 				$obj.Employee.authentify:=True:C214
 			End use 
+			
+			
 			
 			Session:C1714.setPrivileges("user")
 			Web Form:C1735.setMessage("Authentication successfull")
@@ -95,10 +107,3 @@ exposed Function getMaxRole : Text
 		return Session:C1714.storage.Employee.maxRole
 	End if 
 	
-exposed Function setTrue() : Boolean
-	
-	return True:C214
-	
-exposed Function setFalse() : Boolean
-	
-	return False:C215

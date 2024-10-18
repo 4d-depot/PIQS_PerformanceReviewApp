@@ -1,0 +1,140 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "Template",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"listbox3": {
+					"type": "listbox",
+					"dataSource": "Form:C1466.listTemplate",
+					"top": 29,
+					"left": 24,
+					"width": 130,
+					"height": 300,
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"headerHeight": "2em",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"currentItemSource": "Form:C1466.CurrentTemplate",
+					"columns": [
+						{
+							"name": "Name1",
+							"dataSource": "This:C1470.Name",
+							"width": 120,
+							"enterable": true,
+							"header": {
+								"text": "Template",
+								"name": "Header2"
+							},
+							"footer": {
+								"name": "8"
+							}
+						}
+					]
+				},
+				"OpenTemplate": {
+					"type": "button",
+					"text": "Open template",
+					"top": 35,
+					"left": 188,
+					"width": 126,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/OpenTemplate.4dm"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Create template",
+					"top": 181,
+					"left": 188,
+					"width": 126,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm"
+				},
+				"Input": {
+					"type": "input",
+					"left": 188,
+					"top": 149,
+					"width": 189,
+					"height": 17,
+					"placeholder": "Template name",
+					"dataSource": "Form:C1466.newTemplateName"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Duplicate template",
+					"top": 181,
+					"left": 334,
+					"width": 126,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm"
+				},
+				"DeleteTemplate": {
+					"type": "button",
+					"text": "Delete template",
+					"top": 299,
+					"left": 188,
+					"width": 126,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/DeleteTemplate.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 11,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

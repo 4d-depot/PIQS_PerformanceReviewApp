@@ -108,20 +108,6 @@
 				}
 			},
 			{
-				"label": "editReview",
-				"id": "hvySCE8nphJt5dSvaweWXG",
-				"conditions": {
-					"id": "jedcqmZMoPz3u2q34UG7XC",
-					"type": "datasource",
-					"name": "condition",
-					"value": "",
-					"valueType": "hardCoded",
-					"path": "viewReview",
-					"dsType": "bool",
-					"op": "istrue"
-				}
-			},
-			{
 				"label": "reviewSelected",
 				"id": "oRgAuWZBaeXaNqmAaRkwfQ",
 				"conditions": {
@@ -176,7 +162,8 @@
 							"name": "selectedReview",
 							"type": "entity",
 							"namespace": "app"
-						}
+						},
+						"state": {}
 					}
 				],
 				"airyMode": false,
@@ -299,7 +286,7 @@
 						"id": "mQKeZWDF2e1R9RbiRcDkvr"
 					},
 					{
-						"title": "Score",
+						"title": "Global Score",
 						"source": "ScoreGlobal.Name",
 						"format": "",
 						"width": "auto",
@@ -356,11 +343,6 @@
 					"style": {
 						"width": ""
 					}
-				},
-				"states:hvySCE8nphJt5dSvaweWXG": {
-					"style": {
-						"width": ""
-					}
 				}
 			},
 			"parent": "8mM12Iikwe",
@@ -397,47 +379,7 @@
 				"classNames": [
 					"buttonGrey"
 				],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "DataStore",
-						"events": [
-							"onclick"
-						],
-						"id": "fSsVd5VmyQahMaooJgWrEW",
-						"method": "ds.setTrue",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Boolean",
-							"datasource": "viewReview"
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "1JiP3AjQxTSgcN5k9q79i2",
-						"events": [
-							"onclick"
-						],
-						"action": "set",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "viewPDF",
-							"type": "scalar",
-							"from": "",
-							"namespace": "",
-							"dataType": "bool",
-							"target": "",
-							"targetNamespace": "",
-							"targetType": "unknown",
-							"set": {
-								"value": "false",
-								"type": "bool"
-							}
-						}
-					}
-				],
+				"events": [],
 				"iconPosition": "left",
 				"style": {
 					"display": "flex",
@@ -488,20 +430,25 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "nUBfRtaXL4DsD8b2Upmwzx",
 						"events": [
 							"onclick"
 						],
-						"id": "vZifLmqPUtA89dERi3LfDE",
-						"method": "ds.setTrue",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Boolean",
-							"datasource": "viewPDF"
-						}
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
+						},
+						"state": {}
 					}
 				],
 				"iconPosition": "left",
@@ -564,20 +511,25 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "c2HmFRaboxtesatRxuo3Dh",
 						"events": [
 							"onclick"
 						],
-						"id": "eSPdb5pUfavTNmYDJnG7AW",
-						"method": "ds.setFalse",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Boolean",
-							"datasource": "viewPDF"
-						}
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						},
+						"state": {}
 					}
 				],
 				"iconPosition": "left",
@@ -632,11 +584,6 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"states:hvySCE8nphJt5dSvaweWXG": {
-					"style": {
-						"display": "none"
-					}
-				},
 				"states:p6PCARUnbAu9AoTpQGNacC": {
 					"style": {
 						"display": "none"
@@ -693,11 +640,6 @@
 					}
 				},
 				"states:9EHA6D5gEoRgoRe3XqgeGs": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:hvySCE8nphJt5dSvaweWXG": {
 					"style": {
 						"display": "none"
 					}
@@ -800,11 +742,6 @@
 						"display": "none"
 					}
 				},
-				"states:hvySCE8nphJt5dSvaweWXG": {
-					"style": {
-						"display": "flex"
-					}
-				},
 				"states:oRgAuWZBaeXaNqmAaRkwfQ": {
 					"style": {
 						"display": "none"
@@ -837,11 +774,7 @@
 				}
 			},
 			"displayName": "Page Loader",
-			"custom": {
-				"states:hvySCE8nphJt5dSvaweWXG": {
-					"style": {}
-				}
-			},
+			"custom": {},
 			"parent": "zB6WajDt85",
 			"hidden": false,
 			"nodes": [],
