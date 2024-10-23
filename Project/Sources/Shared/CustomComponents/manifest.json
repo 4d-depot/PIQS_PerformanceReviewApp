@@ -32,6 +32,8 @@
 		"url": "/$shared/CustomComponents/qodly_29100b5169c6dd537d9a/"
 	},
 	{
+		"name": "qodly_popover",
+		"version": "0.2.1",
 		"scope": "qodly_5df9f8bf97cd814323f8",
 		"author": {
 			"name": "Qodly Team",

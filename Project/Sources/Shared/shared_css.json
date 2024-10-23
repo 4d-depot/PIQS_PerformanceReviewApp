@@ -84,9 +84,15 @@
 		},
 		{
 			"name": "selectBox",
-			"content": "self .bg-primary-light {\n background-color: #f3bec3 !important;\n}",
+			"content": ".bg-primary-light {\n background-color: #f3bec3 !important;\n}",
 			"parentId": null,
 			"id": "JNzGU5UCYXykMFWabN4W9"
+		},
+		{
+			"name": "tabRedLine",
+			"content": "self button[data-headlessui-state] {\n\tcolor: #717275;\n\tbackground-color: transparent;\n\tborder-color: transparent !important;\n\tfont-size: 16px !important;\n\tfont-weight: 400 !important;\n\tpadding: 10px 10px;\n}\n\nself button[data-headlessui-state=\"selected\"]:after {\n\tbackground-color:  #dd3c4c !important;\n}\n\nself button[data-headlessui-state=\"selected\"] {\n\tcolor:  #dd3c4c !important;\n}",
+			"parentId": null,
+			"id": "hsMQLjJAxPhWOwDuXGN-k"
 		}
 	]
 }

@@ -92,9 +92,10 @@ For ($y; 2020; 2024)
 		End for each 
 		
 		// Create new Goals
+		$pos:=Random:C100%10
 		For ($i; 1; 4)
 			$goal:=ds:C1482.Goal.new()
-			$pos:=Random:C100%10
+			$pos:=($pos+1)%10
 			$goal.Name:=$colGoals[$pos].Title
 			$goal.PerformanceIndicator:=$colGoals[$pos].KPI
 			$goal.Comment:=$colGoals[$pos].Comment
@@ -107,7 +108,7 @@ For ($y; 2020; 2024)
 		// Create new Trainings
 		For ($i; 1; 3)
 			$training:=ds:C1482.Training.new()
-			$pos:=Random:C100%10
+			$pos:=($pos+1)%10
 			$training.Name:=$colTrainings[$pos].Title
 			$training.ExpectedResult:=$colTrainings[$pos].ExpectedValue
 			$training.ProfessionalValue:=$colTrainings[$pos].ProfessionalValue

@@ -139,7 +139,8 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"overflow": "auto"
 				}
 			},
 			"displayName": "Page Loader",
@@ -915,7 +916,8 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"display": "flex",
-					"height": "100%"
+					"height": "100%",
+					"cursor": "auto"
 				}
 			},
 			"displayName": "Stylebox",

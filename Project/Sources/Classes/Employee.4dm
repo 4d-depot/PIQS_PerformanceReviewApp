@@ -40,6 +40,9 @@ Function event restrict() : cs:C1710.EmployeeSelection
 		: ($obj.Employee.role="Collaborator")
 			return This:C1470.query("ID = :1"; $obj.Employee.ID)
 			
+		: ($obj.Employee.role="ComputeDoc")
+			return This:C1470.all()
+			
 		Else 
 			return Null:C1517
 			

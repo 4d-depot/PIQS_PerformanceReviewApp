@@ -190,7 +190,7 @@
 						"source": "lastReview.Date",
 						"width": "auto",
 						"sorting": true,
-						"format": "Date short",
+						"format": "",
 						"dataType": "date",
 						"id": "3Pkep4GnAfsKxzv7iQAtPk"
 					},
@@ -250,6 +250,21 @@
 							"datasource": "employees"
 						},
 						"feedback": true
+					},
+					{
+						"type": "simple-action",
+						"id": "dAF37wa1wRTa1vb87ckt3w",
+						"events": [
+							"onselect"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "employees",
+							"type": "entitysel",
+							"from": "",
+							"namespace": ""
+						}
 					}
 				],
 				"template": "{{ length }} items",
@@ -380,7 +395,7 @@
 							"onclick"
 						],
 						"actionType": "open",
-						"targetDialog": "collaborator"
+						"targetDialog": "EditCollaborator"
 					}
 				],
 				"style": {},
@@ -442,31 +457,6 @@
 				"m1deE1lf-D",
 				"HJW0ys9lUv"
 			],
-			"linkedNodes": {}
-		},
-		"fIq3AnufF9": {
-			"type": {
-				"resolvedName": "WebformLoader"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"webform": "Review",
-				"style": {
-					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px"
-				},
-				"classNames": [
-					"box-shadow"
-				]
-			},
-			"displayName": "Page Loader",
-			"custom": {},
-			"parent": "IjJSyYDz9F",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"Y9RC79887J": {
@@ -608,8 +598,7 @@
 			"hidden": false,
 			"nodes": [
 				"6KITTbQEly",
-				"Y9RC79887J",
-				"IjJSyYDz9F"
+				"Y9RC79887J"
 			],
 			"linkedNodes": {}
 		},
@@ -706,24 +695,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"IjJSyYDz9F": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "HJW0ys9lUv",
-			"hidden": false,
-			"nodes": [
-				"fIq3AnufF9"
-			],
-			"linkedNodes": {}
-		},
 		"-wTzZYVKBO": {
 			"type": {
 				"resolvedName": "StyleBox"
@@ -787,8 +758,8 @@
 				"classNames": [],
 				"events": [],
 				"overlay": true,
-				"serverSideRef": "collaborator",
-				"closable": true
+				"serverSideRef": "EditCollaborator",
+				"closable": false
 			},
 			"displayName": "Dialog",
 			"custom": {},
@@ -1553,7 +1524,7 @@
 				"iterableChild": true,
 				"style": {
 					"width": "90%",
-					"height": "fit-content",
+					"height": "auto",
 					"display": "block"
 				}
 			},
@@ -1688,7 +1659,7 @@
 							"onclick"
 						],
 						"actionType": "open",
-						"targetDialog": "review"
+						"targetDialog": "EditReview"
 					}
 				],
 				"iconPosition": "left",
@@ -1876,7 +1847,7 @@
 							"onclick"
 						],
 						"actionType": "open",
-						"targetDialog": "collaborator"
+						"targetDialog": "EditCollaborator"
 					}
 				],
 				"iconPosition": "left",
@@ -1977,7 +1948,7 @@
 			"props": {
 				"text": "Save",
 				"classNames": [
-					"buttonGrey"
+					"buttonRed"
 				],
 				"events": [
 					{
@@ -2002,12 +1973,13 @@
 							"onclick"
 						],
 						"actionType": "close",
-						"targetDialog": "collaborator"
+						"targetDialog": "EditCollaborator"
 					}
 				],
 				"iconPosition": "left",
 				"style": {
-					"display": "flex"
+					"display": "flex",
+					"minWidth": "150px"
 				}
 			},
 			"displayName": "Button",
@@ -2054,12 +2026,13 @@
 							"onclick"
 						],
 						"actionType": "close",
-						"targetDialog": "collaborator"
+						"targetDialog": "EditCollaborator"
 					}
 				],
 				"iconPosition": "left",
 				"style": {
-					"display": "flex"
+					"display": "flex",
+					"minWidth": "150px"
 				}
 			},
 			"displayName": "Button",
@@ -2206,13 +2179,12 @@
 				"classNames": [],
 				"events": [],
 				"overlay": true,
-				"serverSideRef": "review",
+				"serverSideRef": "EditReview",
 				"closable": false,
 				"style": {
 					"width": "90%",
-					"height": "90%",
-					"position": "absolute",
-					"top": "90px"
+					"height": "fit-content",
+					"position": "absolute"
 				}
 			},
 			"displayName": "Dialog",
@@ -2237,7 +2209,8 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"height": "auto"
 				},
 				"iterableChild": true
 			},
@@ -2246,7 +2219,8 @@
 			"parent": "NTTqPn_C1r",
 			"hidden": false,
 			"nodes": [
-				"PBPGqFsqX3"
+				"PBPGqFsqX3",
+				"w_0BR42vMT"
 			],
 			"linkedNodes": {}
 		},
@@ -2279,6 +2253,172 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "NTTqPn_C1r",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"w_0BR42vMT": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "10px",
+					"paddingLeft": "44px",
+					"paddingRight": "44px",
+					"paddingTop": "10px",
+					"paddingBottom": "40px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "XIuNJAZMGc",
+			"hidden": false,
+			"nodes": [
+				"fc1Y-m4cfS",
+				"MAiQNaqUVr"
+			],
+			"linkedNodes": {}
+		},
+		"fc1Y-m4cfS": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Save",
+				"classNames": [
+					"buttonRed"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "pAyEYZF1Ta5xTdiVVA14Se",
+						"events": [
+							"onclick"
+						],
+						"action": "save",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						},
+						"state": {}
+					},
+					{
+						"type": "dialog",
+						"id": "v7TttMk5cYCBurSMAmTgGB",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "EditReview"
+					},
+					{
+						"type": "simple-action",
+						"id": "jgYicV6tiTauRhMCAvAvSc",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theEmployee.Reviews",
+							"type": "entitysel",
+							"namespace": "",
+							"from": ""
+						}
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"width": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "w_0BR42vMT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "UGEueBM2pI"
+			}
+		},
+		"UGEueBM2pI": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-download"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "fc1Y-m4cfS",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"MAiQNaqUVr": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Cancel",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "xqNe7VsSDjrPz6Un2NtG6G",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "EditReview"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"width": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "w_0BR42vMT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "qoE9foXW6r"
+			}
+		},
+		"qoE9foXW6r": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-square-xmark"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "MAiQNaqUVr",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

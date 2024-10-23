@@ -1,4 +1,6 @@
 {
+  "name": "qodly_popover",
+  "version": "0.2.1",
   "scope": "qodly_5df9f8bf97cd814323f8",
   "author": {
     "name": "Qodly Team",

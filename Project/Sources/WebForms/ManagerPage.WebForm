@@ -220,7 +220,8 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"ovt6oU7FZB"
+				"ovt6oU7FZB",
+				"YY2hq17Ctk"
 			],
 			"linkedNodes": {}
 		},
@@ -344,7 +345,17 @@
 				"classNames": [
 					"buttonGrey"
 				],
-				"events": [],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "7qPRP4QddvC2wytv3zF5uR",
+						"events": [
+							"onclick"
+						],
+						"actionType": "open",
+						"targetDialog": "EditReview"
+					}
+				],
 				"iconPosition": "left",
 				"style": {
 					"display": "flex"
@@ -461,29 +472,6 @@
 			],
 			"linkedNodes": {}
 		},
-		"PbOsnQjMn7": {
-			"type": {
-				"resolvedName": "WebformLoader"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"webform": "Review",
-				"style": {
-					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px"
-				},
-				"classNames": []
-			},
-			"displayName": "Page Loader",
-			"custom": {},
-			"parent": "xV39DPvnOC",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"xV39DPvnOC": {
 			"type": {
 				"resolvedName": "StyleBox"
@@ -505,8 +493,7 @@
 			"hidden": false,
 			"nodes": [
 				"j9pHv4_SSr",
-				"1auwpTCNsl",
-				"PbOsnQjMn7"
+				"1auwpTCNsl"
 			],
 			"linkedNodes": {}
 		},
@@ -855,6 +842,232 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "rSSylDdjmX",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"YY2hq17Ctk": {
+			"type": {
+				"resolvedName": "Dialog"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"overlay": true,
+				"serverSideRef": "EditReview",
+				"style": {
+					"width": "90%",
+					"height": "fit-content"
+				}
+			},
+			"displayName": "Dialog",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"Dialog": "q-ysSEVy7R"
+			}
+		},
+		"q-ysSEVy7R": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "h-full",
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "YY2hq17Ctk",
+			"hidden": false,
+			"nodes": [
+				"sOqEpq8dv1",
+				"g3_FXdk7zR"
+			],
+			"linkedNodes": {}
+		},
+		"sOqEpq8dv1": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"webform": "Review"
+			},
+			"displayName": "Page Loader",
+			"custom": {},
+			"parent": "q-ysSEVy7R",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"g3_FXdk7zR": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "10px",
+					"paddingLeft": "44px",
+					"paddingRight": "44px",
+					"paddingTop": "10px",
+					"paddingBottom": "40px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "q-ysSEVy7R",
+			"hidden": false,
+			"nodes": [
+				"fg8OPs5Dm2",
+				"0gxmLCeibq"
+			],
+			"linkedNodes": {}
+		},
+		"fg8OPs5Dm2": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Save",
+				"classNames": [
+					"buttonRed"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "pAyEYZF1Ta5xTdiVVA14Se",
+						"events": [
+							"onclick"
+						],
+						"action": "save",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						},
+						"state": {}
+					},
+					{
+						"type": "dialog",
+						"id": "v7TttMk5cYCBurSMAmTgGB",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "EditReview"
+					},
+					{
+						"type": "simple-action",
+						"id": "xjYho61mSb85D5DWWXYSZ7",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "SubReviews",
+							"type": "entitysel",
+							"namespace": "",
+							"from": ""
+						}
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"width": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "g3_FXdk7zR",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "hY3EiMZcg9"
+			}
+		},
+		"hY3EiMZcg9": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-download"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "fg8OPs5Dm2",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"0gxmLCeibq": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Cancel",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "xqNe7VsSDjrPz6Un2NtG6G",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "EditReview"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"width": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "g3_FXdk7zR",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "QdNkU4UdO9"
+			}
+		},
+		"QdNkU4UdO9": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-square-xmark"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "0gxmLCeibq",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

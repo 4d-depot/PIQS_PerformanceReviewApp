@@ -98,13 +98,27 @@ exposed Function generatePDF()
 	var $WPdoc : Object
 	var $blob : 4D:C1709.Blob
 	
+	If (Session:C1714=Null:C1517)
+		$obj:=Storage:C1525
+	Else 
+		$obj:=Session:C1714.storage
+	End if 
+	
+	Use ($obj.Employee)
+		$tmp:=$obj.Employee.role
+		$obj.Employee.role:="ComputeDoc"
+	End use 
+	
 	$WPdoc:=This:C1470.generateFreezeDocument()
 	WP EXPORT VARIABLE:C1319($WPdoc; $blob; wk pdf:K81:315)
 	
 	This:C1470.DocumentPDF:=$blob
-	This:C1470.Status:=4  //Archived
+	This:C1470.ID_Status:=4  //Archived
 	This:C1470.save()
 	
+	Use ($obj.Employee)
+		$obj.Employee.role:=$tmp
+	End use 
 	
 	//Mark:- Goals
 exposed Function createGoal()->$goal : cs:C1710.GoalEntity
