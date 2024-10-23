@@ -17,25 +17,22 @@
 			"events": []
 		},
 		{
-			"id": "role",
+			"id": "userInfo",
 			"type": "scalar",
 			"namespace": "app",
-			"dataType": "string",
-			"initialValue": ""
+			"dataType": "object",
+			"initialValue": {
+				"name": "",
+				"maxRole": "",
+				"role": ""
+			}
 		},
 		{
-			"id": "CollaboratorName",
+			"id": "readOnly",
 			"type": "scalar",
 			"namespace": "app",
-			"dataType": "string",
-			"initialValue": ""
-		},
-		{
-			"id": "maxRole",
-			"type": "scalar",
-			"namespace": "app",
-			"dataType": "string",
-			"initialValue": ""
+			"dataType": "bool",
+			"initialValue": false
 		}
 	]
 }

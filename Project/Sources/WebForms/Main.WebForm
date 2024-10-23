@@ -73,8 +73,8 @@
 					"name": "condition",
 					"value": "Collaborator",
 					"valueType": "hardCoded",
-					"path": "app:maxRole",
-					"dsType": "string",
+					"path": "app:userInfo.maxRole",
+					"dsType": "unknown",
 					"op": "eq"
 				}
 			},
@@ -87,8 +87,8 @@
 					"name": "condition",
 					"value": "Manager",
 					"valueType": "hardCoded",
-					"path": "app:maxRole",
-					"dsType": "string",
+					"path": "app:userInfo.maxRole",
+					"dsType": "unknown",
 					"op": "eq"
 				}
 			}
@@ -209,24 +209,23 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "6QX7xt7yUaNtiGVy1RDjPy",
+						"id": "dpiRwegiNCBZ1qo759nAV9",
 						"events": [
 							"onclick"
 						],
 						"action": "set",
 						"actionType": "datasource",
 						"datasource": {
-							"name": "role",
-							"type": "scalar",
+							"name": "userInfo.role",
+							"type": "unknown",
 							"namespace": "app",
+							"dataType": "object",
 							"from": "",
-							"dataType": "string",
 							"set": {
-								"value": "HR ",
+								"value": "HR",
 								"type": "string"
 							}
-						},
-						"state": {}
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -341,24 +340,23 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "6QX7xt7yUaNtiGVy1RDjPy",
+						"id": "7WmTcZWTjpCYKuTve8BPcU",
 						"events": [
 							"onclick"
 						],
 						"action": "set",
 						"actionType": "datasource",
 						"datasource": {
-							"name": "role",
-							"type": "scalar",
+							"name": "userInfo.role",
+							"type": "unknown",
 							"namespace": "app",
+							"dataType": "object",
 							"from": "",
-							"dataType": "string",
 							"set": {
-								"value": "Collaborator ",
+								"value": "Collaborator",
 								"type": "string"
 							}
-						},
-						"state": {}
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -467,24 +465,23 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "6QX7xt7yUaNtiGVy1RDjPy",
+						"id": "dhuxjGXiYJATLEXrLDqUse",
 						"events": [
 							"onclick"
 						],
 						"action": "set",
 						"actionType": "datasource",
 						"datasource": {
-							"name": "role",
-							"type": "scalar",
+							"name": "userInfo.role",
+							"type": "unknown",
 							"namespace": "app",
+							"dataType": "object",
 							"from": "",
-							"dataType": "string",
 							"set": {
-								"value": " Manager",
+								"value": "Manager",
 								"type": "string"
 							}
-						},
-						"state": {}
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -653,7 +650,7 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "app:CollaboratorName",
+								"datasource": "app:userInfo.name",
 								"children": [
 									{
 										"bold": false,
@@ -663,7 +660,7 @@
 										"text": "name"
 									}
 								],
-								"dsType": "string",
+								"dsType": "unknown",
 								"format": ""
 							},
 							{
@@ -676,7 +673,7 @@
 						]
 					}
 				],
-				"datasource": "app:CollaboratorName",
+				"datasource": "app:userInfo.name",
 				"style": {
 					"display": "flex",
 					"gap": "40px",

@@ -36,6 +36,13 @@
 				"namespace": "",
 				"initialValue": "",
 				"depth": null
+			},
+			{
+				"id": "viewPDF",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "bool",
+				"initialValue": false
 			}
 		],
 		"styles": [],
@@ -43,6 +50,96 @@
 			{
 				"label": "Base",
 				"id": "root"
+			},
+			{
+				"label": "default",
+				"id": "dUC6qmJHYcuAgVna5d5KPP",
+				"conditions": {
+					"id": "1i43SNMTjTLkcTvghKe5kk",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview",
+					"dsType": "entity",
+					"op": "isnull"
+				}
+			},
+			{
+				"label": "pdfView",
+				"id": "9tNvTv4NWYU4eNdgoACB5R",
+				"conditions": {
+					"id": "g9cdezBGBtx2M1viA241hC",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "viewPDF",
+					"dsType": "bool",
+					"op": "istrue"
+				}
+			},
+			{
+				"label": "isPDF",
+				"id": "m7RP9WHJMPajUWQPFE39K4",
+				"conditions": {
+					"id": "dNBhmD7w7uGCDkkwZP7KJF",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "pvo6hoq2sdieSazhk1w8FD",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "viewPDF",
+							"dsType": "bool",
+							"op": "isfalse"
+						},
+						{
+							"id": "fqYkkfNasi1FVCAwAqCA7s",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.DocumentPDF",
+							"dsType": "blob",
+							"op": "notnull"
+						}
+					]
+				}
+			},
+			{
+				"label": "reviewSelected",
+				"id": "iKY9ZmR7SWdCTypT4tvJA7",
+				"conditions": {
+					"id": "bTjQAzLMERQW3dvsGai8z6",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "qWemb8ENvkCAi2b2kZr2jq",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview",
+							"dsType": "entity",
+							"op": "notnull"
+						},
+						{
+							"id": "sSCzqSHUs4Z8gvXBmTE1n3",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.DocumentPDF",
+							"dsType": "blob",
+							"op": "isnull"
+						}
+					]
+				}
 			}
 		],
 		"defaultStates": [
@@ -407,7 +504,7 @@
 					"style": {}
 				}
 			},
-			"parent": "gP5xQobGnf",
+			"parent": "Aoiru8ludF",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -473,13 +570,24 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:9tNvTv4NWYU4eNdgoACB5R": {
+					"style": {
+						"backgroundSize": "",
+						"height": "80vh"
+					},
+					"classNames": [
+						"box-shadow"
+					]
+				}
+			},
 			"parent": "HJW0ys9lUv",
 			"hidden": false,
 			"nodes": [
 				"e1L27yX9AS",
 				"32jA3feuhE",
-				"-wTzZYVKBO"
+				"-wTzZYVKBO",
+				"3k41afqQn4"
 			],
 			"linkedNodes": {}
 		},
@@ -504,6 +612,11 @@
 				"states:cmKSTz2P83i1bC685Z8Qah": {
 					"style": {
 						"width": "90%"
+					}
+				},
+				"states:dUC6qmJHYcuAgVna5d5KPP": {
+					"style": {
+						"width": ""
 					}
 				}
 			},
@@ -671,7 +784,7 @@
 			},
 			"displayName": "Button",
 			"custom": {},
-			"parent": "gP5xQobGnf",
+			"parent": "AgURDB0m3x",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -1529,7 +1642,13 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:dUC6qmJHYcuAgVna5d5KPP": {
+					"style": {
+						"width": ""
+					}
+				}
+			},
 			"parent": "Y9RC79887J",
 			"hidden": false,
 			"nodes": [
@@ -1630,7 +1749,13 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:dUC6qmJHYcuAgVna5d5KPP": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "Y9RC79887J",
 			"hidden": false,
 			"nodes": [
@@ -1818,14 +1943,18 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:dUC6qmJHYcuAgVna5d5KPP": {
+					"style": {
+						"display": "flex"
+					}
+				}
+			},
 			"parent": "unYVERUgZt",
 			"hidden": false,
 			"nodes": [
-				"_0MCZIkdeF",
-				"ANkR_BJbJn",
-				"MQlUyiff5n",
-				"N7bJIT4he4"
+				"Aoiru8ludF",
+				"AgURDB0m3x"
 			],
 			"linkedNodes": {}
 		},
@@ -1857,7 +1986,7 @@
 			},
 			"displayName": "Button",
 			"custom": {},
-			"parent": "gP5xQobGnf",
+			"parent": "Aoiru8ludF",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -1916,7 +2045,7 @@
 			},
 			"displayName": "Button",
 			"custom": {},
-			"parent": "gP5xQobGnf",
+			"parent": "AgURDB0m3x",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -2096,14 +2225,46 @@
 				"classNames": [
 					"buttonGrey"
 				],
-				"events": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "gh83rxcZBUDUJhDW3nHegJ",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
+						}
+					}
+				],
 				"iconPosition": "left",
 				"style": {
 					"display": "flex"
 				}
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:9tNvTv4NWYU4eNdgoACB5R": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iKY9ZmR7SWdCTypT4tvJA7": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "32jA3feuhE",
 			"hidden": false,
 			"nodes": [],
@@ -2138,14 +2299,46 @@
 				"classNames": [
 					"buttonGrey"
 				],
-				"events": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "drHWmUsJDBDbjqH6swgmSK",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					}
+				],
 				"iconPosition": "left",
 				"style": {
 					"display": "flex"
 				}
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:m7RP9WHJMPajUWQPFE39K4": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iKY9ZmR7SWdCTypT4tvJA7": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "32jA3feuhE",
 			"hidden": false,
 			"nodes": [],
@@ -2419,6 +2612,147 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "MAiQNaqUVr",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"AgURDB0m3x": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "gP5xQobGnf",
+			"hidden": false,
+			"nodes": [
+				"MQlUyiff5n",
+				"N7bJIT4he4"
+			],
+			"linkedNodes": {}
+		},
+		"Aoiru8ludF": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:dUC6qmJHYcuAgVna5d5KPP": {
+					"style": {
+						"display": "flex"
+					}
+				}
+			},
+			"parent": "gP5xQobGnf",
+			"hidden": false,
+			"nodes": [
+				"_0MCZIkdeF",
+				"ANkR_BJbJn"
+			],
+			"linkedNodes": {}
+		},
+		"3k41afqQn4": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"height": "auto"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:p6PCARUnbAu9AoTpQGNacC": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:9EHA6D5gEoRgoRe3XqgeGs": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:oRgAuWZBaeXaNqmAaRkwfQ": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:dUC6qmJHYcuAgVna5d5KPP": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:m7RP9WHJMPajUWQPFE39K4": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iKY9ZmR7SWdCTypT4tvJA7": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:9tNvTv4NWYU4eNdgoACB5R": {
+					"style": {
+						"display": "block",
+						"height": "inherit"
+					}
+				}
+			},
+			"parent": "Y9RC79887J",
+			"hidden": false,
+			"nodes": [
+				"z2wA5tqFkM"
+			],
+			"linkedNodes": {}
+		},
+		"z2wA5tqFkM": {
+			"type": {
+				"resolvedName": "PdfViewer"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"datasource": "app:selectedReview.DocumentPDF",
+				"style": {
+					"display": "inline"
+				}
+			},
+			"displayName": "PdfViewer",
+			"custom": {},
+			"parent": "3k41afqQn4",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

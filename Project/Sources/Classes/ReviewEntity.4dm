@@ -113,7 +113,6 @@ exposed Function generatePDF()
 	WP EXPORT VARIABLE:C1319($WPdoc; $blob; wk pdf:K81:315)
 	
 	This:C1470.DocumentPDF:=$blob
-	This:C1470.ID_Status:=4  //Archived
 	This:C1470.save()
 	
 	Use ($obj.Employee)
@@ -146,3 +145,22 @@ exposed Function get plannedTraining() : cs:C1710.TrainingSelection
 exposed Function get doneTraining() : cs:C1710.TrainingSelection
 	return This:C1470.Trainings.query("ID_TrainingStatus in :1"; [2; 3; 4])
 	
+	//Mark:- ReadWrite or ReadOnly
+	
+exposed Function get isReadOnly() : Boolean
+	
+	var $status : Boolean:=False:C215
+	
+	If (ds:C1482.getUserInfo()#Null:C1517)
+		
+		If ((ds:C1482.getUserInfo().role="Collaborator") && (This:C1470.ID_Status>2))
+			$status:=True:C214
+		End if 
+		
+		If ((ds:C1482.getUserInfo().role="Manager") && (This:C1470.ID_Status>3))
+			$status:=True:C214
+		End if 
+		
+	End if 
+	
+	return $status

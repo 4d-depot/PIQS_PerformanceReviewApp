@@ -880,7 +880,8 @@
 							"namespace": "",
 							"from": "",
 							"type": "entitysel"
-						}
+						},
+						"state": {}
 					}
 				],
 				"iconPosition": "left",

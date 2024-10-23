@@ -2,47 +2,6 @@
 	"permissions": {
 		"allowed": [
 			{
-				"applyTo": "Employee",
-				"type": "dataclass",
-				"create": [
-					"hr"
-				],
-				"update": [
-					"hr"
-				],
-				"read": [
-					"authentify",
-					"user"
-				],
-				"describe": [
-					"authentify",
-					"user"
-				],
-				"execute": [
-					"authentify",
-					"user"
-				]
-			},
-			{
-				"applyTo": "Review",
-				"type": "dataclass",
-				"create": [
-					"hr"
-				],
-				"read": [
-					"user"
-				],
-				"update": [
-					"user"
-				],
-				"describe": [
-					"user"
-				],
-				"execute": [
-					"user"
-				]
-			},
-			{
 				"applyTo": "ds.authentify",
 				"type": "method",
 				"describe": [
@@ -53,6 +12,47 @@
 				],
 				"promote": [
 					"authentify"
+				]
+			},
+			{
+				"applyTo": "Employee",
+				"type": "dataclass",
+				"read": [
+					"authentify",
+					"user"
+				],
+				"describe": [
+					"authentify",
+					"user"
+				],
+				"execute": [
+					"authentify",
+					"user"
+				],
+				"create": [
+					"hr"
+				],
+				"update": [
+					"hr"
+				]
+			},
+			{
+				"applyTo": "Review",
+				"type": "dataclass",
+				"read": [
+					"user"
+				],
+				"update": [
+					"user"
+				],
+				"describe": [
+					"user"
+				],
+				"execute": [
+					"user"
+				],
+				"create": [
+					"hr"
 				]
 			},
 			{
@@ -83,13 +83,7 @@
 				"read": [
 					"user"
 				],
-				"create": [
-					"user"
-				],
 				"update": [
-					"user"
-				],
-				"drop": [
 					"user"
 				],
 				"describe": [
@@ -97,6 +91,12 @@
 				],
 				"execute": [
 					"user"
+				],
+				"create": [
+					"hr"
+				],
+				"drop": [
+					"hr"
 				]
 			},
 			{
@@ -156,10 +156,37 @@
 				"read": [
 					"user"
 				]
+			},
+			{
+				"applyTo": "Goal",
+				"type": "dataclass",
+				"read": [
+					"user"
+				],
+				"create": [
+					"user"
+				],
+				"update": [
+					"user"
+				],
+				"drop": [
+					"user"
+				],
+				"describe": [
+					"user"
+				],
+				"execute": [
+					"user"
+				]
 			}
 		]
 	},
 	"privileges": [
+		{
+			"id": "2YYEiWzUXb2yySjhzK2WFz",
+			"privilege": "nobody",
+			"includes": []
+		},
 		{
 			"id": "ssKA2rfRmNuuxEr5TdDwX9",
 			"privilege": "authentify",

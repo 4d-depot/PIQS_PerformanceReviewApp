@@ -172,8 +172,32 @@
 							"path": "app:selectedReview.DocumentPDF",
 							"dsType": "blob",
 							"op": "isnull"
+						},
+						{
+							"id": "ss6FnnzhvePwbX2T5BEK2d",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.isReadOnly",
+							"dsType": "bool",
+							"op": "isfalse"
 						}
 					]
+				}
+			},
+			{
+				"label": "readOnly",
+				"id": "jneg4zY5GzB9PHzspQ4wJw",
+				"conditions": {
+					"id": "5RXdHxvbYAV9TsAs8JEpms",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview.isReadOnly",
+					"dsType": "bool",
+					"op": "istrue"
 				}
 			}
 		],
@@ -362,7 +386,11 @@
 				}
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:jneg4zY5GzB9PHzspQ4wJw": {
+					"text": "View"
+				}
+			},
 			"parent": "wwFbBWYOFa",
 			"hidden": false,
 			"nodes": [],
@@ -381,7 +409,11 @@
 				"icon": "fa-solid fa-pen"
 			},
 			"displayName": "Icon",
-			"custom": {},
+			"custom": {
+				"states:jneg4zY5GzB9PHzspQ4wJw": {
+					"icon": "fa-solid fa-book"
+				}
+			},
 			"parent": "XiYibsS4Aq",
 			"hidden": false,
 			"nodes": [],
@@ -561,6 +593,11 @@
 					}
 				},
 				"states:9fdPN2pQLg1cf5Q45uE4ww": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:jneg4zY5GzB9PHzspQ4wJw": {
 					"style": {
 						"display": "none"
 					}
@@ -761,6 +798,11 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:jneg4zY5GzB9PHzspQ4wJw": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "wwFbBWYOFa",
@@ -781,7 +823,13 @@
 				"icon": "fa-solid fa-eye-slash"
 			},
 			"displayName": "Icon",
-			"custom": {},
+			"custom": {
+				"states:jneg4zY5GzB9PHzspQ4wJw": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "4TxppKSziu",
 			"hidden": false,
 			"nodes": [],
@@ -821,7 +869,13 @@
 				}
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:jneg4zY5GzB9PHzspQ4wJw": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "wwFbBWYOFa",
 			"hidden": false,
 			"nodes": [],

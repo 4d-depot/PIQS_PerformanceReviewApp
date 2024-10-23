@@ -83,27 +83,10 @@ exposed Function selectRole($role : Text)
 		$obj.Employee.role:=$role
 	End use 
 	
-exposed Function getName : Text
-	
+exposed Function getUserInfo : Object
 	If (Session:C1714=Null:C1517)
-		return Storage:C1525.Employee.name
+		return Storage:C1525.Employee
 	Else 
-		return Session:C1714.storage.Employee.name
-	End if 
-	
-exposed Function getRole : Text
-	
-	If (Session:C1714=Null:C1517)
-		return Storage:C1525.Employee.role
-	Else 
-		return Session:C1714.storage.Employee.role
-	End if 
-	
-exposed Function getMaxRole : Text
-	
-	If (Session:C1714=Null:C1517)
-		return Storage:C1525.Employee.maxRole
-	Else 
-		return Session:C1714.storage.Employee.maxRole
+		return Session:C1714.storage.Employee
 	End if 
 	

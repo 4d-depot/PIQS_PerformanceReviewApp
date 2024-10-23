@@ -298,46 +298,14 @@
 						"events": [
 							"onclick"
 						],
-						"id": "f32pgs3wBs9xDGDhCiWT3H",
-						"method": "ds.getName",
+						"id": "wxHueznZKxgiHx1XPHepJF",
+						"method": "ds.getUserInfo",
 						"params": [],
 						"datasource": "",
 						"returns": {
 							"name": "result",
-							"type": "Text",
-							"datasource": "app:CollaboratorName"
-						}
-					},
-					{
-						"type": "method",
-						"dataclass": "DataStore",
-						"events": [
-							"onclick"
-						],
-						"id": "1ut7jtp26EB3Qi1mQ9wrau",
-						"method": "ds.getRole",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Text",
-							"datasource": "app:role"
-						}
-					},
-					{
-						"type": "method",
-						"dataclass": "DataStore",
-						"events": [
-							"onclick"
-						],
-						"id": "35B567LAuMp28ciA9HzGD7",
-						"method": "ds.getMaxRole",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Text",
-							"datasource": "app:maxRole"
+							"type": "Object",
+							"datasource": "app:userInfo"
 						}
 					}
 				],

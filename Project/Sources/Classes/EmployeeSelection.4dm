@@ -12,7 +12,8 @@ exposed Function generateAllReview()
 exposed Function generateAllPDF()
 	$employees:=ds:C1482.Employee.all()
 	For each ($employee; $employees)
-		$sel:=ds:C1482.Review.query("ID_Employee = :1 AND DocumentPDF is not null AND ID_Status = :2"; $employee.ID; 3).orderBy("Date desc")
+		$sel:=ds:C1482.Review.query("ID_Employee = :1 AND ID_Status = :2"; $employee.ID; 3).orderBy("Date desc")
 		$review:=$sel.first()
 		$review.Review.generatePDF()
+		//$review.Review.ID_Status:=4  //Archived
 	End for each 
