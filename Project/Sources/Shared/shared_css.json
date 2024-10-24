@@ -93,6 +93,37 @@
 			"content": "self button[data-headlessui-state] {\n\tcolor: #717275;\n\tbackground-color: transparent;\n\tborder-color: transparent !important;\n\tfont-size: 16px !important;\n\tfont-weight: 400 !important;\n\tpadding: 10px 10px;\n}\n\nself button[data-headlessui-state=\"selected\"]:after {\n\tbackground-color:  #dd3c4c !important;\n}\n\nself button[data-headlessui-state=\"selected\"] {\n\tcolor:  #dd3c4c !important;\n}",
 			"parentId": null,
 			"id": "hsMQLjJAxPhWOwDuXGN-k"
+		},
+		{
+			"name": "dialog",
+			"content": "self {\n  padding-right : 0px;\n  padding-bottom : 0px;\n  padding-top : 0px;\n  padding-left : 0px;\n  height : 90%-108px;\n  width: 80%;\n  display : flex;\n  flex-direction : row;\n}",
+			"children": {
+				"Dialog": "7EJelZ01Va3IPPb5qITbI",
+				"close": "W_rmW4rPzEWTXKeWI1K5g"
+			},
+			"parentId": null,
+			"origin": "PXvV0dDXg1",
+			"id": "rXZbVSGWXomEyBZnG_4KG"
+		},
+		{
+			"id": "7EJelZ01Va3IPPb5qITbI",
+			"name": "dialog__Dialog",
+			"content": "self {\n  \n}",
+			"parentId": "rXZbVSGWXomEyBZnG_4KG"
+		},
+		{
+			"id": "W_rmW4rPzEWTXKeWI1K5g",
+			"name": "dialog__close",
+			"content": "self {\n  \n}",
+			"parentId": "rXZbVSGWXomEyBZnG_4KG"
+		},
+		{
+			"name": "position",
+			"content": "self {\n  height : 100VH-108px;\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "xV39DPvnOC",
+			"id": "pU3O0WuhEcfmo1bUsYOwg"
 		}
 	]
 }

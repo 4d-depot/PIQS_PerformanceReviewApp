@@ -18,7 +18,17 @@
 				"initialValue": false
 			}
 		],
-		"styles": [],
+		"styles": [
+			{
+				"name": "test",
+				"content": "self {\n  display : flex;\n  height : 100%;\n  gap : 20px;\n  border-top-color : #000000ff;\n  padding-bottom : 0px;\n  background-color : #29db25ff;\n}",
+				"children": {},
+				"parentId": null,
+				"scope": "local",
+				"origin": "8mM12Iikwe",
+				"id": "BP7sxfL1ucrJPFYb49u95"
+			}
+		],
 		"states": [
 			{
 				"label": "Base",
@@ -141,7 +151,9 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"position"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -197,40 +209,6 @@
 			"displayName": "Stylebox",
 			"custom": {},
 			"parent": "ROOT",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"OKUCMcU_uZ": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "Reviews",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							}
-						]
-					}
-				],
-				"datasource": "",
-				"classNames": [
-					"title"
-				]
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "d9cqmF77IK",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
@@ -326,7 +304,7 @@
 				"iterableChild": true,
 				"style": {
 					"width": "90%",
-					"height": "fit-content",
+					"height": "auto",
 					"display": "block"
 				}
 			},
@@ -582,7 +560,7 @@
 					"width": "auto",
 					"maxWidth": "300px",
 					"minWidth": "200px",
-					"height": "fit-content"
+					"height": "auto"
 				}
 			},
 			"displayName": "Stylebox",
@@ -670,10 +648,11 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"height": "80vh",
-					"gap": "20px",
-					"borderTopColor": "#000000ff",
-					"paddingBottom": "0px"
+					"height": "auto",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
 				},
 				"classNames": []
 			},
@@ -700,15 +679,20 @@
 					"paddingRight": "40px",
 					"paddingBottom": "40px",
 					"paddingTop": "40px",
-					"paddingLeft": "40px"
-				}
+					"paddingLeft": "40px",
+					"flexDirection": "row",
+					"height": "100%",
+					"display": "flex"
+				},
+				"classNames": [
+					"position"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {},
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"OKUCMcU_uZ",
 				"8mM12Iikwe"
 			],
 			"linkedNodes": {}
@@ -719,7 +703,9 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"dialog"
+				],
 				"events": [
 					{
 						"type": "dialog",
@@ -734,10 +720,7 @@
 				"overlay": true,
 				"serverSideRef": "EditReview",
 				"closable": false,
-				"style": {
-					"width": "90%",
-					"height": "fit-content"
-				}
+				"style": {}
 			},
 			"displayName": "Dialog",
 			"custom": {},
@@ -757,7 +740,11 @@
 			"props": {
 				"events": [],
 				"className": "h-full",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {},
+				"classNames": [
+					"dialog__Dialog"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -791,9 +778,12 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"dialog__close"
+				],
 				"events": [],
-				"icon": "fa-times"
+				"icon": "fa-times",
+				"style": {}
 			},
 			"displayName": "Icon",
 			"custom": {},

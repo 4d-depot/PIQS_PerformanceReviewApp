@@ -755,7 +755,7 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Generate next Reviews",
+				"text": "Create Reviews",
 				"classNames": [
 					"buttonGrey"
 				],
@@ -2016,7 +2016,7 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Generate all PDF",
+				"text": "Generate PDFs",
 				"classNames": [
 					"buttonGrey"
 				],

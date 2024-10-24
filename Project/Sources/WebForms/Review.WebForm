@@ -359,7 +359,7 @@
 				],
 				"variant": "line",
 				"style": {
-					"height": "580px"
+					"height": "600px"
 				}
 			},
 			"displayName": "Tabs",
@@ -412,7 +412,8 @@
 				"h1ktXQriH1",
 				"-CsN3WT15y",
 				"iAvLro-_Wl",
-				"5NFV-KXRx9"
+				"5NFV-KXRx9",
+				"FhFE3dUZqa"
 			],
 			"linkedNodes": {}
 		},
@@ -602,7 +603,11 @@
 				"role": "tab",
 				"deletable": true,
 				"iterableChild": true,
-				"style": {},
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "20px"
+				},
 				"classNames": []
 			},
 			"displayName": "Stylebox",
@@ -625,7 +630,8 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "top",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -665,9 +671,7 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"style": {
-					"minHeight": "50%"
-				},
+				"style": {},
 				"deletable": false,
 				"className": "w-full bg-transparent",
 				"type": "textArea",
@@ -702,7 +706,8 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "top",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -742,9 +747,7 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"style": {
-					"minHeight": "50%"
-				},
+				"style": {},
 				"deletable": false,
 				"className": "w-full bg-transparent",
 				"type": "textArea",
@@ -4058,7 +4061,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 100
+				"contentHeight": 48
 			},
 			"parent": "L8pIP9d_JS",
 			"hidden": false,
@@ -5079,7 +5082,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 100
+				"contentHeight": 48
 			},
 			"parent": "KKeIehbfTt",
 			"hidden": false,
@@ -5274,7 +5277,12 @@
 				"role": "tab",
 				"deletable": true,
 				"iterableChild": true,
-				"style": {},
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"justifyContent": "flex-start",
+					"gap": "20px"
+				},
 				"classNames": []
 			},
 			"displayName": "Stylebox",
@@ -5312,7 +5320,8 @@
 			"hidden": false,
 			"nodes": [
 				"DBTGo6M3L9",
-				"Gm_IHWaOGw"
+				"Gm_IHWaOGw",
+				"dTXeU1AonK"
 			],
 			"linkedNodes": {}
 		},
@@ -6177,6 +6186,193 @@
 			"displayName": "Text",
 			"custom": {},
 			"parent": "74K801hlI-",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"FhFE3dUZqa": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Waiyp-zUbS",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"dTXeU1AonK": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"gap": "20px",
+					"minWidth": "150px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "cvbwVC_Juv",
+			"hidden": false,
+			"nodes": [
+				"dT-azuy19z",
+				"drRaOPjnj5"
+			],
+			"linkedNodes": {}
+		},
+		"dT-azuy19z": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Save",
+				"classNames": [
+					"buttonRed"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "9EeH3CZya4o5vbQCEgsF4W",
+						"events": [
+							"onclick"
+						],
+						"action": "save",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						},
+						"state": {}
+					},
+					{
+						"type": "simple-action",
+						"id": "gUJBjyhFawJV8aoWxhwQ4B",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "closeDialReview",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
+						}
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"width": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "dTXeU1AonK",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "D_4yFhfE3D"
+			}
+		},
+		"D_4yFhfE3D": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-download"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "dT-azuy19z",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"drRaOPjnj5": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Cancel",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "xngNnXRp49FPw5jp14Rhc6",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "closeDialReview",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
+						}
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"width": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "dTXeU1AonK",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "B4rkRwz1Gl"
+			}
+		},
+		"B4rkRwz1Gl": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-square-xmark"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "drRaOPjnj5",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
