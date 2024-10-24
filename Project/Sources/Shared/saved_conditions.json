@@ -1,3 +1,88 @@
 {
-	"conditions": []
+	"conditions": [
+		{
+			"id": "isVdcd17DrVumEAjGWst1j",
+			"type": "combination",
+			"op": "and",
+			"conditions": [
+				{
+					"id": "m3cz6JHRkcn194LbGCihhi",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "viewPDF",
+					"dsType": "bool",
+					"op": "istrue"
+				},
+				{
+					"id": "wwNMJ8tGRm1ftx8xdN7JJB",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview.DocumentPDF",
+					"dsType": "blob",
+					"op": "notnull"
+				}
+			],
+			"name": "ViewPDF"
+		},
+		{
+			"id": "brSVuQPp8r5LJJyFkqhLWY",
+			"type": "combination",
+			"op": "and",
+			"conditions": [
+				{
+					"id": "87GW4yxKcY4duZN7SBx7Py",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview.DocumentPDF",
+					"dsType": "blob",
+					"op": "notnull"
+				},
+				{
+					"id": "subUA9xtrBKsoMbkvvy3Xu",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "viewPDF",
+					"dsType": "bool",
+					"op": "isfalse"
+				}
+			],
+			"name": "selectedWithPDF"
+		},
+		{
+			"id": "5nF59Am5BBHsv6rNcpUKdc",
+			"type": "combination",
+			"op": "and",
+			"conditions": [
+				{
+					"id": "hFYcFKR1b3Y3rCbzg9H6jH",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview",
+					"dsType": "entity",
+					"op": "notnull"
+				},
+				{
+					"id": "5vpCNgWqrU7B1Fz7JDa9Hf",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview.DocumentPDF",
+					"dsType": "blob",
+					"op": "isnull"
+				}
+			],
+			"name": "selected"
+		}
+	]
 }

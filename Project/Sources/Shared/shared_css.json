@@ -38,7 +38,7 @@
 		},
 		{
 			"name": "DataTable",
-			"content": "self {\n  border-collapse: collapse;\n\tborder-radius: 4px;\n}\n\nself .header .header-cell{\n  font-size: 18px;\n  background-color: #4f5963;\n  color:  #FFFFFF;\n \tborder-color: #aaadaf;\n}\n\nself .header .header-cell .headerTruncatedText{\n\t white-space: normal;\n}\n\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}\n\n\n\nself .row.selected {\n  background-color: #f3bec3;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f8f8;\n}",
+			"content": "self {\n  border-collapse: collapse;\n}\n\nself .header{\n\theight: fit-content !important;\n\tpadding-top: 2px !important;\n\tpadding-bottom: 2px !important;\n}\n\nself .header .header-cell{\n  font-size: 18px;\n  background-color: #4f5963;\n  color:  #FFFFFF;\n \tborder-color: #aaadaf;\n}\n\nself .header .header-cell .headerTruncatedText{\n\twhite-space: normal;\n}\n\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}\n\nself .row.selected {\n  background-color: #f3bec3;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f8f8;\n}",
 			"children": {},
 			"parentId": null,
 			"origin": "msZvlSfNvg",
@@ -96,7 +96,7 @@
 		},
 		{
 			"name": "dialog",
-			"content": "self {\n  padding-right : 0px;\n  padding-bottom : 0px;\n  padding-top : 0px;\n  padding-left : 0px;\n  height : 90%-108px;\n  width: 80%;\n  display : flex;\n  flex-direction : row;\n}",
+			"content": "self {\n  padding-right : 0px;\n  padding-bottom : 0px;\n  padding-top : 0px;\n  padding-left : 0px;\n  height : 90%-108px;\n  width: 80%;\n}",
 			"children": {
 				"Dialog": "7EJelZ01Va3IPPb5qITbI",
 				"close": "W_rmW4rPzEWTXKeWI1K5g"
@@ -108,13 +108,13 @@
 		{
 			"id": "7EJelZ01Va3IPPb5qITbI",
 			"name": "dialog__Dialog",
-			"content": "self {\n  \n}",
+			"content": "self {\n\tdisplay : flex;\n  flex-direction : column;\n}",
 			"parentId": "rXZbVSGWXomEyBZnG_4KG"
 		},
 		{
 			"id": "W_rmW4rPzEWTXKeWI1K5g",
 			"name": "dialog__close",
-			"content": "self {\n  \n}",
+			"content": "self {\n\n}",
 			"parentId": "rXZbVSGWXomEyBZnG_4KG"
 		},
 		{

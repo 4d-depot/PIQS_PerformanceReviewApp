@@ -292,9 +292,9 @@
 						"type": "method",
 						"dataclass": "ReviewStatus",
 						"events": [
-							"oninit"
+							"onload"
 						],
-						"id": "5DXXyJ9eaWLk813tQbkUgL",
+						"id": "aH3BMoo5rMMFDMLZFNXd3M",
 						"method": "ds.ReviewStatus.loadStatus",
 						"params": [],
 						"datasource": "",
@@ -302,7 +302,8 @@
 							"name": "result",
 							"type": "cs.ReviewStatusSelection",
 							"datasource": "reviewstatuses"
-						}
+						},
+						"feedback": true
 					}
 				],
 				"airyMode": false,
@@ -4032,7 +4033,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"selectBox"
+				],
 				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
@@ -4122,7 +4125,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"selectBox"
+				],
 				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
@@ -4228,7 +4233,8 @@
 				"style": {
 					"display": "flex",
 					"flexDirection": "column",
-					"gap": "10px"
+					"gap": "10px",
+					"maxWidth": "300px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -4462,7 +4468,8 @@
 				"style": {
 					"display": "flex",
 					"flexDirection": "column",
-					"gap": "10px"
+					"gap": "10px",
+					"maxWidth": "300px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -4516,7 +4523,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"selectBox"
+				],
 				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
@@ -5052,7 +5061,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"selectBox"
+				],
 				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
@@ -6092,7 +6103,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"selectBox"
+				],
 				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,

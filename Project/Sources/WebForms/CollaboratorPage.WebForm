@@ -53,30 +53,8 @@
 				"id": "daWE6Z1rQ45AUxxNMhc1Vz",
 				"conditions": {
 					"id": "bt1Z9kXwFrNdoEh44xo5r2",
-					"type": "combination",
-					"op": "and",
-					"conditions": [
-						{
-							"id": "m3cz6JHRkcn194LbGCihhi",
-							"type": "datasource",
-							"name": "condition",
-							"value": "",
-							"valueType": "hardCoded",
-							"path": "viewPDF",
-							"dsType": "bool",
-							"op": "istrue"
-						},
-						{
-							"id": "wwNMJ8tGRm1ftx8xdN7JJB",
-							"type": "datasource",
-							"name": "condition",
-							"value": "",
-							"valueType": "hardCoded",
-							"path": "app:selectedReview.DocumentPDF",
-							"dsType": "blob",
-							"op": "notnull"
-						}
-					]
+					"type": "reference",
+					"ref": "isVdcd17DrVumEAjGWst1j"
 				}
 			},
 			{
@@ -84,30 +62,8 @@
 				"id": "9EHA6D5gEoRgoRe3XqgeGs",
 				"conditions": {
 					"id": "1AJiu2omwhToy8r2vQwrPy",
-					"type": "combination",
-					"op": "and",
-					"conditions": [
-						{
-							"id": "87GW4yxKcY4duZN7SBx7Py",
-							"type": "datasource",
-							"name": "condition",
-							"value": "",
-							"valueType": "hardCoded",
-							"path": "app:selectedReview.DocumentPDF",
-							"dsType": "blob",
-							"op": "notnull"
-						},
-						{
-							"id": "subUA9xtrBKsoMbkvvy3Xu",
-							"type": "datasource",
-							"name": "condition",
-							"value": "",
-							"valueType": "hardCoded",
-							"path": "viewPDF",
-							"dsType": "bool",
-							"op": "isfalse"
-						}
-					]
+					"type": "reference",
+					"ref": "brSVuQPp8r5LJJyFkqhLWY"
 				}
 			},
 			{
@@ -115,30 +71,8 @@
 				"id": "oRgAuWZBaeXaNqmAaRkwfQ",
 				"conditions": {
 					"id": "7dYwUtm9uWpWCKK6pn5tmp",
-					"type": "combination",
-					"op": "and",
-					"conditions": [
-						{
-							"id": "hFYcFKR1b3Y3rCbzg9H6jH",
-							"type": "datasource",
-							"name": "condition",
-							"value": "",
-							"valueType": "hardCoded",
-							"path": "app:selectedReview",
-							"dsType": "entity",
-							"op": "notnull"
-						},
-						{
-							"id": "5vpCNgWqrU7B1Fz7JDa9Hf",
-							"type": "datasource",
-							"name": "condition",
-							"value": "",
-							"valueType": "hardCoded",
-							"path": "app:selectedReview.DocumentPDF",
-							"dsType": "blob",
-							"op": "isnull"
-						}
-					]
+					"type": "reference",
+					"ref": "5nF59Am5BBHsv6rNcpUKdc"
 				}
 			}
 		],
@@ -319,7 +253,8 @@
 			"parent": "8mM12Iikwe",
 			"hidden": false,
 			"nodes": [
-				"zTHGqALYSX"
+				"zTHGqALYSX",
+				"g1QDpM22bU"
 			],
 			"linkedNodes": {}
 		},
@@ -955,6 +890,22 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "VHMXDPhREw",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"g1QDpM22bU": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"webform": "ReviewActionButtons"
+			},
+			"displayName": "Page Loader",
+			"custom": {},
+			"parent": "dyynYpkprC",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

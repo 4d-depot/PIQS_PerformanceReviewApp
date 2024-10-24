@@ -1,0 +1,820 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "viewPDF",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "bool",
+				"initialValue": false
+			}
+		],
+		"styles": [],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			},
+			{
+				"label": "readOnly",
+				"id": "7CnGTyNnvXknnvyFhbFa3x",
+				"conditions": {
+					"id": "3tmNLdUtCFgpKnkotMgXdS",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "osdkYRLDDrpRo4tJGZEJaA",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "5nF59Am5BBHsv6rNcpUKdc"
+						},
+						{
+							"id": "72XSBjYDGvqmMRdkWd2NFF",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.isReadOnly",
+							"dsType": "bool",
+							"op": "istrue"
+						}
+					]
+				}
+			},
+			{
+				"label": "readOnlyPDF",
+				"id": "bPX3VMrYiJc39xcehf72co",
+				"conditions": {
+					"id": "amGsDFCShrwbiELYrHSqMJ",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "b6uNY8aDuKK6hDAPzPsRdQ",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "brSVuQPp8r5LJJyFkqhLWY"
+						},
+						{
+							"id": "5SYMkEaS8r8PkQQZVyBgiD",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.isReadOnly",
+							"dsType": "bool",
+							"op": "istrue"
+						}
+					]
+				}
+			},
+			{
+				"label": "readOnlyViewPDF",
+				"id": "6wNAvGurxSNXFGXEG95KxK",
+				"conditions": {
+					"id": "eWFTU8DHneLgTfDZCyzC8U",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "nrrEV7gkSU3qJw6S7Pkew7",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "isVdcd17DrVumEAjGWst1j"
+						},
+						{
+							"id": "uifvW1yaTvCTKAU2YtajwH",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.isReadOnly",
+							"dsType": "bool",
+							"op": "istrue"
+						}
+					]
+				}
+			},
+			{
+				"label": "readWrite",
+				"id": "4wunRmkSRifAoquQS9xQKt",
+				"conditions": {
+					"id": "tDQQwpsZZvmTM3URog2AAY",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "oHLmHPF9csRXdojmpKgp9W",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "5nF59Am5BBHsv6rNcpUKdc"
+						},
+						{
+							"id": "swx2gX7bHG193psBvxmw36",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.isReadOnly",
+							"dsType": "bool",
+							"op": "isfalse"
+						}
+					]
+				}
+			},
+			{
+				"label": "readWritePDF",
+				"id": "eu1sT7UL5jnotQP1HcEPMW",
+				"conditions": {
+					"id": "pNP3SZpJeXbPqCjR3gRxJ7",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "wrdTHjuyBY5YhqFHMtcRdU",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "selec",
+							"dsType": "",
+							"ref": "brSVuQPp8r5LJJyFkqhLWY"
+						},
+						{
+							"id": "sjhGCwgUNVQSGHKcawEMnU",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.isReadOnly",
+							"dsType": "bool",
+							"op": "isfalse"
+						}
+					]
+				}
+			},
+			{
+				"label": "readWriteViewPDF",
+				"id": "3mBY7vDs38fK2BJvFNWhXc",
+				"conditions": {
+					"id": "aFP2otvrV8WG6nWM9WwkJ8",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "pTshtugncW1sCuHtEHUhkr",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "isVdcd17DrVumEAjGWst1j"
+						},
+						{
+							"id": "4yg96KmACJotVQDzFNwmct",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview.isReadOnly",
+							"dsType": "bool",
+							"op": "isfalse"
+						}
+					]
+				}
+			}
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"bSPR9iIrA3",
+				"42ry7QAnuU"
+			],
+			"linkedNodes": {}
+		},
+		"yQLT6nKrq3": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px",
+					"alignItems": "stretch",
+					"flexWrap": "nowrap",
+					"width": "auto",
+					"maxWidth": "300px",
+					"minWidth": "200px",
+					"height": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:dUC6qmJHYcuAgVna5d5KPP": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "42ry7QAnuU",
+			"hidden": false,
+			"nodes": [
+				"r1r7aNbSNp",
+				"tpP1cUVNIc",
+				"A604UJisHt",
+				"Rn5dqmBzxq"
+			],
+			"linkedNodes": {}
+		},
+		"r1r7aNbSNp": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Edit",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "qhCBKTdtEbqwtet2v5MDdW",
+						"events": [
+							"onclick"
+						],
+						"actionType": "open",
+						"targetDialog": "EditReview"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"justifyContent": "center"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"text": "View"
+				},
+				"states:bPX3VMrYiJc39xcehf72co": {
+					"text": "View"
+				},
+				"states:6wNAvGurxSNXFGXEG95KxK": {
+					"text": "View"
+				}
+			},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "rQy8axl8jr"
+			}
+		},
+		"rQy8axl8jr": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-pen"
+			},
+			"displayName": "Icon",
+			"custom": {
+				"states:6wNAvGurxSNXFGXEG95KxK": {
+					"icon": "fa-solid fa-book"
+				},
+				"states:bPX3VMrYiJc39xcehf72co": {
+					"icon": "fa-solid fa-book"
+				},
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"icon": "fa-solid fa-book"
+				}
+			},
+			"parent": "r1r7aNbSNp",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"tpP1cUVNIc": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Generate PDF<br>",
+				"classNames": [
+					"buttonRed"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "ReviewEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "qQcmKj4NXgwgnMWcTu2A4Y",
+						"method": "selectedReview.generatePDF",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:bPX3VMrYiJc39xcehf72co": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:6wNAvGurxSNXFGXEG95KxK": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:4wunRmkSRifAoquQS9xQKt": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:eu1sT7UL5jnotQP1HcEPMW": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:3mBY7vDs38fK2BJvFNWhXc": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "-gQevCYwXf"
+			}
+		},
+		"-gQevCYwXf": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-file-pdf"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "tpP1cUVNIc",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"A604UJisHt": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "View PDF<br>",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "gh83rxcZBUDUJhDW3nHegJ",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "true",
+								"type": "bool"
+							}
+						}
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:9tNvTv4NWYU4eNdgoACB5R": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iKY9ZmR7SWdCTypT4tvJA7": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:6wNAvGurxSNXFGXEG95KxK": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:4wunRmkSRifAoquQS9xQKt": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:3mBY7vDs38fK2BJvFNWhXc": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "JlcbE1cj2j"
+			}
+		},
+		"JlcbE1cj2j": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-eye"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "A604UJisHt",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Rn5dqmBzxq": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Hide PDF<br>",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "drHWmUsJDBDbjqH6swgmSK",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:m7RP9WHJMPajUWQPFE39K4": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iKY9ZmR7SWdCTypT4tvJA7": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:bPX3VMrYiJc39xcehf72co": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:4wunRmkSRifAoquQS9xQKt": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:eu1sT7UL5jnotQP1HcEPMW": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "M9Rur60sOo"
+			}
+		},
+		"M9Rur60sOo": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-eye-slash"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "Rn5dqmBzxq",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"bSPR9iIrA3": {
+			"type": {
+				"resolvedName": "Dialog"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"overlay": true,
+				"serverSideRef": "EditReview"
+			},
+			"displayName": "Dialog",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"Dialog": "Hud39h5uYP"
+			}
+		},
+		"Hud39h5uYP": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "h-full",
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "bSPR9iIrA3",
+			"hidden": false,
+			"nodes": [
+				"ndiTbe3t5N",
+				"GtWQ6QwKo_"
+			],
+			"linkedNodes": {}
+		},
+		"ndiTbe3t5N": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"webform": "Review"
+			},
+			"displayName": "Page Loader",
+			"custom": {},
+			"parent": "Hud39h5uYP",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"GRqHKUWlYH": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"height": "auto"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:p6PCARUnbAu9AoTpQGNacC": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:9EHA6D5gEoRgoRe3XqgeGs": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:oRgAuWZBaeXaNqmAaRkwfQ": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:bPX3VMrYiJc39xcehf72co": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:4wunRmkSRifAoquQS9xQKt": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:eu1sT7UL5jnotQP1HcEPMW": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "42ry7QAnuU",
+			"hidden": false,
+			"nodes": [
+				"YoO9S2TGu8"
+			],
+			"linkedNodes": {}
+		},
+		"YoO9S2TGu8": {
+			"type": {
+				"resolvedName": "PdfViewer"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"datasource": "app:selectedReview.DocumentPDF",
+				"style": {
+					"display": "inline"
+				}
+			},
+			"displayName": "PdfViewer",
+			"custom": {},
+			"parent": "GRqHKUWlYH",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"42ry7QAnuU": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"yQLT6nKrq3",
+				"GRqHKUWlYH"
+			],
+			"linkedNodes": {}
+		},
+		"GtWQ6QwKo_": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Button",
+				"classNames": [],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "aC5tsa5brBC8UL5Eb94LQg",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "EditReview"
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "Hud39h5uYP",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "yeeFuVRVwn"
+			}
+		},
+		"yeeFuVRVwn": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": []
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "GtWQ6QwKo_",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}
