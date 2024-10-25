@@ -10,7 +10,17 @@
 				"initialValue": false
 			}
 		],
-		"styles": [],
+		"styles": [
+			{
+				"name": "SizePDF",
+				"content": "self {\n  min-width : 400px;\n\twidth: calc(100vw*0.4) !important;\n\tmin-height: calc(100vh*0.8) !important;\n}",
+				"children": {},
+				"parentId": null,
+				"scope": "local",
+				"origin": "GRqHKUWlYH",
+				"id": "Mdr8rCI7T73-6Ky0dLUWd"
+			}
+		],
 		"states": [
 			{
 				"label": "Base",
@@ -34,13 +44,14 @@
 						},
 						{
 							"id": "72XSBjYDGvqmMRdkWd2NFF",
-							"type": "datasource",
+							"type": "reference",
 							"name": "condition",
 							"value": "",
 							"valueType": "hardCoded",
 							"path": "app:selectedReview.isReadOnly",
 							"dsType": "bool",
-							"op": "istrue"
+							"op": "istrue",
+							"ref": "k4oida2DnM9C7bDQeDeRto"
 						}
 					]
 				}
@@ -63,13 +74,14 @@
 						},
 						{
 							"id": "5SYMkEaS8r8PkQQZVyBgiD",
-							"type": "datasource",
+							"type": "reference",
 							"name": "condition",
 							"value": "",
 							"valueType": "hardCoded",
 							"path": "app:selectedReview.isReadOnly",
 							"dsType": "bool",
-							"op": "istrue"
+							"op": "istrue",
+							"ref": "k4oida2DnM9C7bDQeDeRto"
 						}
 					]
 				}
@@ -92,13 +104,8 @@
 						},
 						{
 							"id": "uifvW1yaTvCTKAU2YtajwH",
-							"type": "datasource",
-							"name": "condition",
-							"value": "",
-							"valueType": "hardCoded",
-							"path": "app:selectedReview.isReadOnly",
-							"dsType": "bool",
-							"op": "istrue"
+							"type": "reference",
+							"ref": "k4oida2DnM9C7bDQeDeRto"
 						}
 					]
 				}
@@ -121,13 +128,19 @@
 						},
 						{
 							"id": "swx2gX7bHG193psBvxmw36",
-							"type": "datasource",
+							"type": "reference",
 							"name": "condition",
 							"value": "",
 							"valueType": "hardCoded",
 							"path": "app:selectedReview.isReadOnly",
 							"dsType": "bool",
-							"op": "isfalse"
+							"op": "isfalse",
+							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
+						},
+						{
+							"id": "34XBEJKfttqYB9iaJkMLJg",
+							"type": "reference",
+							"ref": "wLYkCtvTsTwC1zwEuRTEUD"
 						}
 					]
 				}
@@ -152,13 +165,25 @@
 						},
 						{
 							"id": "sjhGCwgUNVQSGHKcawEMnU",
-							"type": "datasource",
+							"type": "reference",
 							"name": "condition",
 							"value": "",
 							"valueType": "hardCoded",
 							"path": "app:selectedReview.isReadOnly",
 							"dsType": "bool",
-							"op": "isfalse"
+							"op": "isfalse",
+							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
+						},
+						{
+							"id": "vzVoXJwV4bGchoj7o8XnSv",
+							"type": "reference",
+							"name": "condition",
+							"value": "Collaborator",
+							"valueType": "hardCoded",
+							"path": "app:userInfo.role",
+							"dsType": "unknown",
+							"op": "neq",
+							"ref": "wLYkCtvTsTwC1zwEuRTEUD"
 						}
 					]
 				}
@@ -181,13 +206,144 @@
 						},
 						{
 							"id": "4yg96KmACJotVQDzFNwmct",
-							"type": "datasource",
+							"type": "reference",
 							"name": "condition",
 							"value": "",
 							"valueType": "hardCoded",
 							"path": "app:selectedReview.isReadOnly",
 							"dsType": "bool",
-							"op": "isfalse"
+							"op": "isfalse",
+							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
+						},
+						{
+							"id": "oUu2fXK2emYrbJhAeSXbc5",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "wLYkCtvTsTwC1zwEuRTEUD"
+						}
+					]
+				}
+			},
+			{
+				"label": "unselected",
+				"id": "57dwi1rZ7WcaMEofzyVjCb",
+				"conditions": {
+					"id": "5LZoLnQzgYKG66xnqAgPdC",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "app:selectedReview",
+					"dsType": "entity",
+					"op": "isnull"
+				}
+			},
+			{
+				"label": "readWriteUser",
+				"id": "reZtyHD4grjgG7zDu6M14s",
+				"conditions": {
+					"id": "iZWpu8NXHYQnovU5yF9WWx",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "umfzXvuGvBhihZbJVNo3mu",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "5nF59Am5BBHsv6rNcpUKdc"
+						},
+						{
+							"id": "eiv59gJHewpWcuAS6vVrKE",
+							"type": "reference",
+							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
+						},
+						{
+							"id": "tMBaPprokyHJWPajt6NURp",
+							"type": "datasource",
+							"name": "condition",
+							"value": "Collaborator",
+							"valueType": "hardCoded",
+							"path": "app:userInfo.role",
+							"dsType": "unknown",
+							"op": "eq"
+						}
+					]
+				}
+			},
+			{
+				"label": "readWritePDFUser",
+				"id": "79hJwfxGNpq4qm2dY6Z4TL",
+				"conditions": {
+					"id": "52wE9fY7oaXzrMuBDEAty1",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "bwcVFEqdQEnXQtsB7TSCjv",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "brSVuQPp8r5LJJyFkqhLWY"
+						},
+						{
+							"id": "5GYVHHtA1VLFqUVmbjjDcQ",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
+						},
+						{
+							"id": "joTSkvgJyDic2ijrido3mN",
+							"type": "datasource",
+							"name": "condition",
+							"value": "Collaborator",
+							"valueType": "hardCoded",
+							"path": "app:userInfo.role",
+							"dsType": "unknown",
+							"op": "eq"
+						}
+					]
+				}
+			},
+			{
+				"label": "readWriteViewPDFUser",
+				"id": "dSvcUQJPEGzgsSF2nKxCse",
+				"conditions": {
+					"id": "3Dz6Jk7Vgcs68wqBLjxCNo",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "k7NzdqqMdoMopqZGGyCKbf",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "isVdcd17DrVumEAjGWst1j"
+						},
+						{
+							"id": "cReMrYvDjNeCsW72RxqusM",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
+						},
+						{
+							"id": "xfj74ULeetzfAmZ78yxfoc",
+							"type": "datasource",
+							"name": "condition",
+							"value": "Collaborator",
+							"valueType": "hardCoded",
+							"path": "app:userInfo.role",
+							"dsType": "unknown",
+							"op": "eq"
 						}
 					]
 				}
@@ -239,7 +395,7 @@
 					"width": "auto",
 					"maxWidth": "300px",
 					"minWidth": "200px",
-					"height": "fit-content"
+					"height": "auto"
 				}
 			},
 			"displayName": "Stylebox",
@@ -385,15 +541,30 @@
 				},
 				"states:4wunRmkSRifAoquQS9xQKt": {
 					"style": {
-						"display": "none"
+						"display": "flex"
 					}
 				},
 				"states:eu1sT7UL5jnotQP1HcEPMW": {
 					"style": {
-						"display": "none"
+						"display": "flex"
 					}
 				},
 				"states:3mBY7vDs38fK2BJvFNWhXc": {
+					"style": {
+						"display": "flex"
+					}
+				},
+				"states:reZtyHD4grjgG7zDu6M14s": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:79hJwfxGNpq4qm2dY6Z4TL": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:dSvcUQJPEGzgsSF2nKxCse": {
 					"style": {
 						"display": "none"
 					}
@@ -491,6 +662,16 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:reZtyHD4grjgG7zDu6M14s": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:dSvcUQJPEGzgsSF2nKxCse": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "yQLT6nKrq3",
@@ -585,6 +766,16 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:reZtyHD4grjgG7zDu6M14s": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:79hJwfxGNpq4qm2dY6Z4TL": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "yQLT6nKrq3",
@@ -617,7 +808,9 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"dialog"
+				],
 				"events": [],
 				"overlay": true,
 				"serverSideRef": "EditReview"
@@ -639,7 +832,17 @@
 			"props": {
 				"events": [],
 				"className": "h-full",
-				"iterableChild": true
+				"iterableChild": true,
+				"classNames": [
+					"dialog__Dialog"
+				],
+				"style": {
+					"flexDirection": "column",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -647,7 +850,7 @@
 			"hidden": false,
 			"nodes": [
 				"ndiTbe3t5N",
-				"GtWQ6QwKo_"
+				"jqbqSG8_gv"
 			],
 			"linkedNodes": {}
 		},
@@ -658,7 +861,13 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"webform": "Review"
+				"webform": "Review",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
 			},
 			"displayName": "Page Loader",
 			"custom": {},
@@ -675,9 +884,10 @@
 			"props": {
 				"events": [],
 				"iterableChild": true,
-				"style": {
-					"height": "auto"
-				}
+				"style": {},
+				"classNames": [
+					"SizePDF"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -712,6 +922,21 @@
 					}
 				},
 				"states:eu1sT7UL5jnotQP1HcEPMW": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:57dwi1rZ7WcaMEofzyVjCb": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:reZtyHD4grjgG7zDu6M14s": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:79hJwfxGNpq4qm2dY6Z4TL": {
 					"style": {
 						"display": "none"
 					}
@@ -754,11 +979,22 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"display": "flex"
+					"display": "flex",
+					"height": "100%",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:57dwi1rZ7WcaMEofzyVjCb": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
@@ -773,9 +1009,46 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "Button",
-				"classNames": [],
+				"text": "Save<br>",
+				"classNames": [
+					"buttonRed"
+				],
 				"events": [
+					{
+						"type": "simple-action",
+						"id": "wxpUiaUT4oUE2swi2X3VtM",
+						"events": [
+							"onclick"
+						],
+						"action": "save",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "u7ptwVLpBe9nBy1cgac9hU",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "subReviews",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						}
+					},
 					{
 						"type": "dialog",
 						"id": "aC5tsa5brBC8UL5Eb94LQg",
@@ -786,14 +1059,32 @@
 						"targetDialog": "EditReview"
 					}
 				],
-				"iconPosition": "hidden",
+				"iconPosition": "left",
 				"style": {
-					"display": "flex"
+					"display": "flex",
+					"width": "150px"
 				}
 			},
 			"displayName": "Button",
-			"custom": {},
-			"parent": "Hud39h5uYP",
+			"custom": {
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"disabled": false,
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:bPX3VMrYiJc39xcehf72co": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:6wNAvGurxSNXFGXEG95KxK": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "jqbqSG8_gv",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -807,11 +1098,102 @@
 			"isCanvas": false,
 			"props": {
 				"classNames": [],
-				"events": []
+				"events": [],
+				"icon": "fa-solid fa-download"
 			},
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "GtWQ6QwKo_",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"jqbqSG8_gv": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "10px",
+					"paddingLeft": "20px",
+					"paddingBottom": "20px",
+					"paddingRight": "20px",
+					"justifyContent": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Hud39h5uYP",
+			"hidden": false,
+			"nodes": [
+				"GtWQ6QwKo_",
+				"dUB14KZZz7"
+			],
+			"linkedNodes": {}
+		},
+		"dUB14KZZz7": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Cancel",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "fhW7qxtkPWcjJYwyQgyipP",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "EditReview"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"width": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"text": "Close"
+				},
+				"states:bPX3VMrYiJc39xcehf72co": {
+					"text": "Close"
+				},
+				"states:6wNAvGurxSNXFGXEG95KxK": {
+					"text": "Close"
+				}
+			},
+			"parent": "jqbqSG8_gv",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "8BjhRZAY-o"
+			}
+		},
+		"8BjhRZAY-o": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-square-xmark"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "dUB14KZZz7",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

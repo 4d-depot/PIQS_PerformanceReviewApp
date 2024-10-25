@@ -33,6 +33,7 @@
 		<field name="ID_ScoreSkill" uuid="33D4C4CBD9FD47D894D0A0780D576FDA" type="4" id="13"/>
 		<field name="ID_ScoreGlobal" uuid="D90DFFB94DE5475F8DF26E4F5B9F8271" type="4" id="14"/>
 		<field name="DocumentPDF" uuid="9EC4D7B6F3254374A360089BAB33D4F9" type="18" id="15"/>
+		<field name="isActive" uuid="91FC295F38FB4FE88FFD900FB75E3B71" type="1" id="16"/>
 		<primary_key field_name="ID" field_uuid="1522B900750C4C75B278C00213324D42"/>
 		<table_extra output_form="Form1" input_form="Form2"/>
 	</table>

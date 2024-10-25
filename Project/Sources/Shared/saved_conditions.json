@@ -83,6 +83,36 @@
 				}
 			],
 			"name": "selected"
+		},
+		{
+			"id": "wLYkCtvTsTwC1zwEuRTEUD",
+			"type": "datasource",
+			"name": "NotCollaborator",
+			"value": "Collaborator",
+			"valueType": "hardCoded",
+			"path": "app:userInfo.role",
+			"dsType": "unknown",
+			"op": "neq"
+		},
+		{
+			"id": "dkLJrwXZNcXQfQGUrUXzeh",
+			"type": "datasource",
+			"name": "isReadWrite",
+			"value": "",
+			"valueType": "hardCoded",
+			"path": "app:selectedReview.isReadOnly",
+			"dsType": "bool",
+			"op": "isfalse"
+		},
+		{
+			"id": "k4oida2DnM9C7bDQeDeRto",
+			"type": "datasource",
+			"name": "isReadOnly",
+			"value": "",
+			"valueType": "hardCoded",
+			"path": "app:selectedReview.isReadOnly",
+			"dsType": "bool",
+			"op": "istrue"
 		}
 	]
 }

@@ -137,16 +137,16 @@
 		},
 		"Review": {
 			"color": {
-				"alpha": 0,
-				"blue": 255,
+				"red": 255,
 				"green": 255,
-				"red": 255
+				"blue": 255,
+				"alpha": 0
 			},
 			"coordinates": {
-				"height": 377.76171875,
-				"width": 230.43359375,
+				"left": 517.09765625,
 				"top": 0.28125,
-				"left": 517.09765625
+				"width": 230.43359375,
+				"height": 388.76171875
 			},
 			"displayable_fields_count": 16
 		},

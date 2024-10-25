@@ -28,9 +28,9 @@ exposed Function authentify($email : Text; $password : Text) : Text
 		$obj.Settings.Departement:=0
 	End use 
 	
-	Use ($obj.Employee)
-		$obj.Employee.authentify:=False:C215
-	End use 
+	//Use ($obj.Employee)
+	//$obj.Employee.authentify:=False
+	//End use 
 	
 	$employee:=This:C1470.Employee.query("Email = :1"; $email).first()
 	
@@ -53,7 +53,7 @@ exposed Function authentify($email : Text; $password : Text) : Text
 						$obj.Employee.maxRole:="Manager"
 					End if 
 				End if 
-				$obj.Employee.authentify:=True:C214
+				//$obj.Employee.authentify:=True
 			End use 
 			
 			

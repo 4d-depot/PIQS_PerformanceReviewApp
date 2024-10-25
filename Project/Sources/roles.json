@@ -15,6 +15,53 @@
 				]
 			},
 			{
+				"applyTo": "Review.generatePDF",
+				"type": "method",
+				"promote": [
+					"computeDoc"
+				]
+			},
+			{
+				"applyTo": "Template",
+				"type": "dataclass",
+				"read": [
+					"computeDoc"
+				]
+			},
+			{
+				"applyTo": "Departement",
+				"type": "dataclass",
+				"read": [
+					"computeDoc",
+					"hr"
+				],
+				"describe": [
+					"hr"
+				],
+				"execute": [
+					"hr"
+				]
+			},
+			{
+				"applyTo": "ds",
+				"type": "datastore",
+				"read": [
+					"nobody"
+				],
+				"create": [
+					"nobody"
+				],
+				"update": [
+					"nobody"
+				],
+				"drop": [
+					"nobody"
+				],
+				"execute": [
+					"nobody"
+				]
+			},
+			{
 				"applyTo": "Employee",
 				"type": "dataclass",
 				"read": [
@@ -105,6 +152,9 @@
 				"read": [
 					"user"
 				],
+				"update": [
+					"user"
+				],
 				"describe": [
 					"user"
 				]
@@ -113,6 +163,9 @@
 				"applyTo": "TrainingStatus",
 				"type": "dataclass",
 				"read": [
+					"user"
+				],
+				"update": [
 					"user"
 				],
 				"describe": [
@@ -125,35 +178,13 @@
 				"read": [
 					"user"
 				],
+				"update": [
+					"user"
+				],
 				"describe": [
 					"user"
-				]
-			},
-			{
-				"applyTo": "Review.doneTraining",
-				"type": "attribute",
-				"read": [
-					"user"
-				]
-			},
-			{
-				"applyTo": "Review.plannedTraining",
-				"type": "attribute",
-				"read": [
-					"user"
-				]
-			},
-			{
-				"applyTo": "Review.doneGoals",
-				"type": "attribute",
-				"read": [
-					"user"
-				]
-			},
-			{
-				"applyTo": "Review.plannedGoal",
-				"type": "attribute",
-				"read": [
+				],
+				"execute": [
 					"user"
 				]
 			},
@@ -178,10 +209,55 @@
 				"execute": [
 					"user"
 				]
+			},
+			{
+				"applyTo": "ds.getUserInfo",
+				"type": "method",
+				"describe": [
+					"user"
+				],
+				"execute": [
+					"user"
+				]
+			},
+			{
+				"applyTo": "ds.selectRole",
+				"type": "method",
+				"describe": [
+					"user"
+				],
+				"execute": [
+					"user"
+				]
+			},
+			{
+				"applyTo": "Employee.generateAllPDF",
+				"type": "method",
+				"describe": [
+					"hr"
+				],
+				"execute": [
+					"hr"
+				]
+			},
+			{
+				"applyTo": "Employee.generateAllReview",
+				"type": "method",
+				"describe": [
+					"hr"
+				],
+				"execute": [
+					"hr"
+				]
 			}
 		]
 	},
 	"privileges": [
+		{
+			"id": "fS2VauLFJzbTadoNLJ5CgU",
+			"privilege": "computeDoc",
+			"includes": []
+		},
 		{
 			"id": "2YYEiWzUXb2yySjhzK2WFz",
 			"privilege": "nobody",

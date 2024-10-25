@@ -28,50 +28,13 @@
 			}
 		},
 		{
-			"id": "readOnly",
-			"type": "scalar",
+			"id": "subReviews",
+			"type": "entitysel",
+			"dataclass": "Review",
 			"namespace": "app",
-			"dataType": "bool",
-			"initialValue": false
-		},
-		{
-			"id": "closeDialReview",
-			"type": "scalar",
-			"namespace": "app",
-			"dataType": "bool",
-			"initialValue": false,
-			"events": [
-				{
-					"type": "simple-action",
-					"id": "ie7UA97rBypw2RRPyH5ZnD",
-					"events": [
-						"onChange"
-					],
-					"action": "set",
-					"actionType": "datasource",
-					"datasource": {
-						"name": "closeDialReview",
-						"type": "scalar",
-						"namespace": "app",
-						"from": "",
-						"dataType": "bool",
-						"set": {
-							"value": "false",
-							"type": "bool"
-						}
-					},
-					"disabled": true
-				},
-				{
-					"type": "dialog",
-					"id": "aQ4diXkTC1v4reV9Uzc3Pr",
-					"events": [
-						"onChange"
-					],
-					"actionType": "close",
-					"targetDialog": "EditReview"
-				}
-			]
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100
 		}
 	]
 }

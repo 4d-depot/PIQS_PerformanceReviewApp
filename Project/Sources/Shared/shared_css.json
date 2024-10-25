@@ -96,7 +96,7 @@
 		},
 		{
 			"name": "dialog",
-			"content": "self {\n  padding-right : 0px;\n  padding-bottom : 0px;\n  padding-top : 0px;\n  padding-left : 0px;\n  height : 90%-108px;\n  width: 80%;\n}",
+			"content": "self {\n  padding-right : 0px;\n  padding-bottom : 0px;\n  padding-top : 0px;\n  padding-left : 0px;\n  height : calc(100WH-120px);\n\tmin-height: Calc(100WH-120px);\n  width: 80%;\n}",
 			"children": {
 				"Dialog": "7EJelZ01Va3IPPb5qITbI",
 				"close": "W_rmW4rPzEWTXKeWI1K5g"
