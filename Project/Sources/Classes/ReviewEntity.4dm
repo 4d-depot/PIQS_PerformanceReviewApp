@@ -3,10 +3,22 @@ Class extends Entity
 //Mark:- Generate next review
 exposed Function createReview($idEmployee : Integer)
 	var $PrevReview : cs:C1710.ReviewEntity
+	var $sel : cs:C1710.ReviewSelection
+	
+	var $trainings : cs:C1710.TrainingSelection
+	
+	var $skill : cs:C1710.SkillEntity
+	var $goal : cs:C1710.GoalEntity
+	var $training : cs:C1710.TrainingEntity
+	var $obj : Object
+	
+	var $goals : cs:C1710.GoalSelection
+	var $skillSettings : cs:C1710.SkillSelection
+	var $name : Text
 	
 	$sel:=ds:C1482.Review.query("ID_Employee = :1"; $idEmployee).orderBy("Date desc")
 	
-	This:C1470.Date:=Current date:C33
+	This:C1470.Date:=Date:C102("01/01/"+String:C10(Year of:C25(Current date:C33)))
 	This:C1470.ID_Employee:=$idEmployee
 	This:C1470.ID_Status:=1
 	This:C1470.save()
@@ -19,7 +31,6 @@ exposed Function createReview($idEmployee : Integer)
 			$skill:=ds:C1482.Skill.new()
 			$skill.Name:=$name
 			$skill.Group:=$obj.group
-			$skill.ID_Score:=(Random:C100%4)+1
 			$skill.ID_Review:=This:C1470.ID
 			$skill.save()
 		End for each 
@@ -32,7 +43,6 @@ exposed Function createReview($idEmployee : Integer)
 		This:C1470.save()
 		
 		// Copy previous Goals
-		var $goal : cs:C1710.GoalEntity
 		$obj:=New object:C1471
 		$goals:=$PrevReview.plannedGoal
 		
@@ -47,7 +57,6 @@ exposed Function createReview($idEmployee : Integer)
 		End for each 
 		
 		// Copy previousTrainings
-		var $training : cs:C1710.TrainingEntity
 		$obj:=New object:C1471
 		$trainings:=$PrevReview.plannedTraining
 		
@@ -71,6 +80,8 @@ Function createContext()->$context : Object
 	return $context
 	
 Function generateDocument()->$doc : Object
+	var $context : Object
+	var $template : cs:C1710.TemplateEntity
 	
 	// Create context
 	$context:=This:C1470.createContext()

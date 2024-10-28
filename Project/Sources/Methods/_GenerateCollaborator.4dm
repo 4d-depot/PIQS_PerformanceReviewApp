@@ -5,6 +5,9 @@ $collaboratorFile:=JSON Parse:C1218(File:C1566("/RESOURCES/Dataset/Collaborator.
 
 var $departement : cs:C1710.DepartementEntity
 var $employee : cs:C1710.EmployeeEntity
+var $obj : Object
+var $pos; $i : Integer
+var $idManager : Integer
 
 TRUNCATE TABLE:C1051([Departement:10])
 TRUNCATE TABLE:C1051([Employee:1])
@@ -29,6 +32,7 @@ For each ($obj; $collaboratorFile.Departement)
 	$employee.ID_Departement:=$departement.ID
 	$employee.Email:=$employee.Firstname+"."+$employee.Lastname+"@company.com"
 	$employee.Password:=Generate password hash:C1533("test")
+	$employee.isActive:=True:C214
 	$employee.save()
 	$idManager:=$employee.ID
 	$pos+=1
@@ -43,6 +47,7 @@ For each ($obj; $collaboratorFile.Departement)
 		$employee.ID_Departement:=$departement.ID
 		$employee.Email:=$employee.Firstname+"."+$employee.Lastname+"@company.com"
 		$employee.Password:=Generate password hash:C1533("test")
+		$employee.isActive:=True:C214
 		$employee.save()
 		$pos+=1
 	End for 

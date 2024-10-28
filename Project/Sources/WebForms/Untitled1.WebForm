@@ -3,14 +3,32 @@
 		"v": "1.0",
 		"datasources": [
 			{
-				"id": "myDate",
-				"type": "scalar",
+				"id": "qodlysource",
+				"type": "entitysel",
+				"dataclass": "Employee",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "entity",
+				"type": "entity",
+				"dataclass": "Employee",
+				"from": "qodlysource",
 				"namespace": "",
-				"dataType": "date",
-				"initialValue": "22/10/2024"
+				"initialValue": "first",
+				"depth": null
 			}
 		],
-		"styles": []
+		"styles": [
+			{
+				"name": "test",
+				"content": "self {\nmax-width: 100%;\n overflow: hidden;\n text-overflow: ellipsis;\n white-space: nowrap;\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "inijiiD6dGz0bOtQA4WXY"
+			}
+		]
 	},
 	"components": {
 		"ROOT": {
@@ -29,280 +47,132 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"6WKVIszogL"
+				"r_r_dGugzq",
+				"7ClyTrZ_81"
 			],
 			"linkedNodes": {}
 		},
-		"6WKVIszogL": {
+		"7ClyTrZ_81": {
 			"type": {
-				"resolvedName": "Dialog"
+				"resolvedName": "DataTable"
 			},
 			"isCanvas": false,
 			"props": {
-				"classNames": [],
+				"iterable": true,
+				"classNames": [
+					"DataTable"
+				],
 				"events": [],
-				"overlay": true,
-				"serverSideRef": "testDialog",
-				"closable": true
+				"style": {
+					"width": "100%",
+					"overflow": "auto"
+				},
+				"headerHeight": 36,
+				"rowHeight": 30,
+				"currentElement": "entity",
+				"columns": [
+					{
+						"title": "",
+						"source": "Lastname",
+						"format": "",
+						"width": "auto",
+						"sorting": false,
+						"dataType": "string",
+						"id": "v1u8u6p56r6GVRTPjKSmxS"
+					},
+					{
+						"title": "",
+						"source": "Firstname",
+						"format": "",
+						"width": "auto",
+						"sorting": false,
+						"dataType": "string",
+						"id": "wXjqv7x9LchPHPN97R6Eb2"
+					},
+					{
+						"title": "",
+						"source": "Job",
+						"format": "",
+						"width": "auto",
+						"sorting": false,
+						"dataType": "string",
+						"id": "gDLYBiapZ5fMAk9gkiioXu"
+					},
+					{
+						"title": "",
+						"source": "Description",
+						"format": "",
+						"width": "auto",
+						"sorting": false,
+						"dataType": "string",
+						"id": "oG8eVFTMWuoXMzEiRAhMFp"
+					}
+				],
+				"datasource": "qodlysource"
 			},
-			"displayName": "Dialog",
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"r_r_dGugzq": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "left",
+				"iterableChild": true
+			},
+			"displayName": "Text Input",
 			"custom": {},
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
-				"Dialog": "cLBgJwiPM6",
-				"close": "u0Fv5g8D5e"
+				"label": "BLYsnX8K0S",
+				"input": "f-UtGhQPbC"
 			}
 		},
-		"cLBgJwiPM6": {
+		"BLYsnX8K0S": {
 			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"className": "h-full",
-				"iterableChild": true
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "6WKVIszogL",
-			"hidden": false,
-			"nodes": [
-				"Bb7j6y8Xrr"
-			],
-			"linkedNodes": {}
-		},
-		"u0Fv5g8D5e": {
-			"type": {
-				"resolvedName": "Icon"
+				"resolvedName": "Label"
 			},
 			"isCanvas": false,
 			"props": {
-				"classNames": [],
 				"events": [],
-				"icon": "fa-times"
+				"moveable": false
 			},
-			"displayName": "Icon",
+			"displayName": "Label",
 			"custom": {},
-			"parent": "6WKVIszogL",
+			"parent": "r_r_dGugzq",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"Bb7j6y8Xrr": {
+		"f-UtGhQPbC": {
 			"type": {
-				"resolvedName": "StyleBox"
+				"resolvedName": "Input"
 			},
-			"isCanvas": true,
+			"isCanvas": false,
 			"props": {
 				"events": [],
-				"iterableChild": true,
-				"style": {
-					"display": "flex",
-					"gap": "10px",
-					"maxWidth": "300px",
-					"justifyContent": "space-between",
-					"alignItems": "center"
-				},
+				"deletable": false,
+				"className": "w-full bg-transparent",
+				"type": "textArea",
+				"datasource": "entity.Description",
 				"classNames": [
-					"input"
+					"test"
 				]
 			},
-			"displayName": "Stylebox",
+			"displayName": "Input",
 			"custom": {},
-			"parent": "cLBgJwiPM6",
-			"hidden": false,
-			"nodes": [
-				"34ZiisnufL",
-				"bETAGIeSiZ"
-			],
-			"linkedNodes": {}
-		},
-		"34ZiisnufL": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "myDate",
-								"children": [
-									{
-										"text": "Date",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"dsType": "date",
-								"format": "Date abbreviated"
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "myDate"
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "Bb7j6y8Xrr",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"bETAGIeSiZ": {
-			"type": {
-				"resolvedName": "Popover"
-			},
-			"isCanvas": false,
-			"props": {
-				"name": "",
-				"classNames": [],
-				"events": [],
-				"position": "bottom-center",
-				"isShown": true,
-				"action": "click",
-				"style": {
-					"minWidth": "48px",
-					"width": "fit-content"
-				},
-				"datasource": ""
-			},
-			"displayName": "Popover",
-			"custom": {},
-			"parent": "Bb7j6y8Xrr",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"PopoverTrigger": "qBGZF_XFHk",
-				"PopoverContent": "5TYd0ka73O"
-			}
-		},
-		"qBGZF_XFHk": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"style": {
-					"display": "flex",
-					"alignItems": "center",
-					"paddingBottom": "0px",
-					"paddingRight": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px",
-					"height": "auto",
-					"justifyContent": "flex-end"
-				},
-				"iterableChild": true
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "bETAGIeSiZ",
-			"hidden": false,
-			"nodes": [
-				"-wS0bqxJ-q"
-			],
-			"linkedNodes": {}
-		},
-		"-wS0bqxJ-q": {
-			"type": {
-				"resolvedName": "Icon"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"icon": "fa-regular fa-calendar-plus",
-				"style": {
-					"fontSize": "18px",
-					"display": "flex",
-					"alignItems": "end",
-					"paddingRight": "4px",
-					"paddingBottom": "4px",
-					"paddingTop": "4px",
-					"paddingLeft": "4px"
-				}
-			},
-			"displayName": "Icon",
-			"custom": {},
-			"parent": "qBGZF_XFHk",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"5TYd0ka73O": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"style": {
-					"backgroundColor": "transparent",
-					"zIndex": "1000",
-					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px"
-				},
-				"iterableChild": true,
-				"classNames": [
-					"box-shadow"
-				]
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "bETAGIeSiZ",
-			"hidden": false,
-			"nodes": [
-				"uXcgSnGgCR"
-			],
-			"linkedNodes": {}
-		},
-		"uXcgSnGgCR": {
-			"type": {
-				"resolvedName": "DatePicker"
-			},
-			"isCanvas": false,
-			"props": {
-				"name": "",
-				"classNames": [],
-				"events": [],
-				"readOnly": false,
-				"style": {
-					"height": "fit-content",
-					"width": "350px",
-					"borderRadius": "4px",
-					"padding": "8px",
-					"backgroundColor": "#ffffffff"
-				},
-				"selectedDateColor": "#dd3c4c",
-				"selectedRangeColor": "rgba(34,139,230,.12)",
-				"selectedDateRaduis": "",
-				"language": "en",
-				"selectionModes": "single",
-				"datasource": "myDate"
-			},
-			"displayName": "DatePicker",
-			"custom": {},
-			"parent": "5TYd0ka73O",
+			"parent": "r_r_dGugzq",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

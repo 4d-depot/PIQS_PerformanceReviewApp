@@ -1,3 +1,6 @@
+var WParea : Object
+var $context : Object
+
 
 Case of 
 		

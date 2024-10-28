@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="5">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="6">
 	<com.4d>
 		<web>
 			<standalone_server>
@@ -10,5 +10,8 @@
 		<interface>
 			<user color_scheme="light"/>
 		</interface>
+		<compiler>
+			<options compilation_path="4"/>
+		</compiler>
 	</com.4d>
 </preferences>

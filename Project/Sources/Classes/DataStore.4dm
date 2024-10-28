@@ -4,7 +4,7 @@ exposed Function authentify($email : Text; $password : Text) : Text
 	var $page : Text:="Login"
 	var $pageCollaborator : Text:="CollaboratorPage"
 	var $obj : Object
-	var $employee : cs:C1710.Employee
+	var $employee : cs:C1710.EmployeeEntity
 	
 	If (Session:C1714=Null:C1517)
 		$obj:=Storage:C1525
@@ -28,10 +28,6 @@ exposed Function authentify($email : Text; $password : Text) : Text
 		$obj.Settings.Departement:=0
 	End use 
 	
-	//Use ($obj.Employee)
-	//$obj.Employee.authentify:=False
-	//End use 
-	
 	$employee:=This:C1470.Employee.query("Email = :1"; $email).first()
 	
 	If ($employee#Null:C1517)
@@ -53,10 +49,7 @@ exposed Function authentify($email : Text; $password : Text) : Text
 						$obj.Employee.maxRole:="Manager"
 					End if 
 				End if 
-				//$obj.Employee.authentify:=True
 			End use 
-			
-			
 			
 			Session:C1714.setPrivileges("user")
 			Web Form:C1735.setMessage("Authentication successfull")

@@ -3,15 +3,28 @@ var $comment : Object:=New object:C1471
 var $goals : Object:=New object:C1471
 var $trainings : Object:=New object:C1471
 
+var $commentFile; $goalsFile; $trainingsFile : Object
+
 $commentFile:=JSON Parse:C1218(File:C1566("/RESOURCES/Dataset/Comments.json").getText())
 $goalsFile:=JSON Parse:C1218(File:C1566("/RESOURCES/Dataset/Goals.json").getText())
 $trainingsFile:=JSON Parse:C1218(File:C1566("/RESOURCES/Dataset/Trainings.json").getText())
 
 var $employees : cs:C1710.EmployeeSelection
+var $skillSettings : cs:C1710.SkillSelection
+var $sel : cs:C1710.ReviewSelection
+var $PrevReview : cs:C1710.ReviewEntity
 var $employee : cs:C1710.EmployeeEntity
 var $review : cs:C1710.ReviewEntity
+var $skill : cs:C1710.SkillEntity
 var $goal : cs:C1710.GoalEntity
 var $training : cs:C1710.TrainingEntity
+
+var $y; $pos; $i; $m; $d : Integer
+var $date : Date
+var $obj : Object
+var $name : Text
+
+var $colComment; $colGoals; $colTrainings : Collection
 
 TRUNCATE TABLE:C1051([Review:2])
 TRUNCATE TABLE:C1051([Goal:3])

@@ -26,7 +26,7 @@
 		},
 		{
 			"name": "input",
-			"content": "self {\n   border: 1px solid #ced4da;\n\t\n\tpadding-right : 6px;\n\tpadding-bottom : 6px;\n\tpadding-top : 6px;\n\tpadding-left : 6px;\n}",
+			"content": "self {\n\tborder: 1px solid #ced4da;\n\t\n\tpadding-right : 6px;\n\tpadding-bottom : 6px;\n\tpadding-top : 6px;\n\tpadding-left : 6px;\n}",
 			"parentId": null,
 			"id": "PMO_yDiBMrP0HKYvIFDJb"
 		},
@@ -96,7 +96,7 @@
 		},
 		{
 			"name": "dialog",
-			"content": "self {\n  padding-right : 0px;\n  padding-bottom : 0px;\n  padding-top : 0px;\n  padding-left : 0px;\n  height : calc(100WH-120px);\n\tmin-height: Calc(100WH-120px);\n  width: 80%;\n}",
+			"content": "self {\n  padding-right : 0px;\n  padding-bottom : 0px;\n  padding-top : 0px;\n  padding-left : 0px;\n}",
 			"children": {
 				"Dialog": "7EJelZ01Va3IPPb5qITbI",
 				"close": "W_rmW4rPzEWTXKeWI1K5g"
@@ -108,13 +108,13 @@
 		{
 			"id": "7EJelZ01Va3IPPb5qITbI",
 			"name": "dialog__Dialog",
-			"content": "self {\n\tdisplay : flex;\n  flex-direction : column;\n}",
+			"content": "",
 			"parentId": "rXZbVSGWXomEyBZnG_4KG"
 		},
 		{
 			"id": "W_rmW4rPzEWTXKeWI1K5g",
 			"name": "dialog__close",
-			"content": "self {\n\n}",
+			"content": "",
 			"parentId": "rXZbVSGWXomEyBZnG_4KG"
 		},
 		{

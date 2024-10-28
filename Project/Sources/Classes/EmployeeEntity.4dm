@@ -1,6 +1,8 @@
 Class extends Entity
 
 exposed Function get lastReview->$last : Object
+	var $sel : cs:C1710.ReviewSelection
+	
 	$last:=New object:C1471
 	$sel:=ds:C1482.Review.query("ID_Employee = :1"; This:C1470.ID).orderBy("Date desc")
 	If ($sel.length>0)

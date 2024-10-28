@@ -1,3 +1,4 @@
+var $value : Text
 $value:=Request:C163("Please enter the group:")
 
 If (Form:C1466.currentGroup.value=Null:C1517)

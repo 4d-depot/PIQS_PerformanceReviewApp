@@ -86,19 +86,6 @@
 					],
 					"method": "ObjectMethods/SaveTemplate.4dm"
 				},
-				"SaveTemplate1": {
-					"type": "button",
-					"text": "Save Document",
-					"top": 399,
-					"left": 901,
-					"width": 102,
-					"height": 35,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/SaveTemplate1.4dm",
-					"visibility": "hidden"
-				},
 				"Popup Dropdown List": {
 					"type": "dropdown",
 					"left": 919,
@@ -114,7 +101,7 @@
 			}
 		}
 	],
-	"geometryStamp": 21,
+	"geometryStamp": 23,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

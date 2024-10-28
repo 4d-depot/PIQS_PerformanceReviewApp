@@ -36,7 +36,9 @@ Function event restrict() : cs:C1710.EmployeeSelection
 			
 	End case 
 	
-	
-exposed Function loadEmployees($idDepartement : Integer) : cs:C1710.EmployeeSelection
-	
-	This:C1470.query("ID_Departement = :1"; $idDepartement)
+exposed Function loadEmployees($departement : Object) : cs:C1710.EmployeeSelection
+	If ($departement#Null:C1517)
+		return This:C1470.query("ID_Departement = :1"; $departement.ID)
+	Else 
+		return This:C1470.all()
+	End if 

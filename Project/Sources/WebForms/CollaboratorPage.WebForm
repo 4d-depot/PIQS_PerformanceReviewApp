@@ -126,7 +126,7 @@
 						"source": "ScoreGoal.Name",
 						"format": "",
 						"width": "auto",
-						"sorting": false,
+						"sorting": true,
 						"id": "kpyF88jPUbzZaQGNmHHWA6"
 					},
 					{
@@ -134,7 +134,7 @@
 						"source": "ScoreSkill.Name",
 						"format": "",
 						"width": "auto",
-						"sorting": false,
+						"sorting": true,
 						"id": "mQKeZWDF2e1R9RbiRcDkvr"
 					},
 					{

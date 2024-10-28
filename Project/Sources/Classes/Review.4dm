@@ -14,11 +14,8 @@ Function event restrict() : cs:C1710.ReviewSelection
 	End if 
 	
 	Case of 
-		: ($obj.Employee.role="HR")
-			If (This:C1470.query("ID_Employee = :1 and Employee.Departement.Name = :2"; $obj.Employee.ID; "HR").first()#Null:C1517)
-				return This:C1470.all().orderBy("Date desc")
-			End if 
-			return ds:C1482.Employee.newSelection()
+		: (($obj.Employee.role="HR") && (Session:C1714.hasPrivilege("hr")))
+			return This:C1470.all().orderBy("Date desc")
 			
 		: ($obj.Employee.role="Manager")
 			return This:C1470.query("Employee.ID_Supervisor = :1"; $obj.Employee.ID).orderBy("Date desc")

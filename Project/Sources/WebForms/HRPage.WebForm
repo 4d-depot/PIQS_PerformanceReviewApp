@@ -17,7 +17,27 @@
 				"from": "employees",
 				"namespace": "",
 				"initialValue": "first",
-				"depth": null
+				"depth": null,
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "9NC64b5H7H9EQc7DH5vTHF",
+						"events": [
+							"onChange"
+						],
+						"action": "copy",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theEmployee.Reviews",
+							"type": "entitysel",
+							"namespace": "",
+							"from": "",
+							"target": "subReviews",
+							"targetNamespace": "app",
+							"targetType": "entitysel"
+						}
+					}
+				]
 			},
 			{
 				"id": "departements",
@@ -35,7 +55,49 @@
 				"from": "departements",
 				"namespace": "",
 				"initialValue": "",
-				"depth": null
+				"depth": null,
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Employee",
+						"events": [
+							"onChange"
+						],
+						"id": "aWUNC1K8hcFnDhAhGebntS",
+						"method": "ds.Employee.loadEmployees",
+						"params": [
+							{
+								"name": "departement",
+								"type": "Object",
+								"datasource": "departement",
+								"id": "aLziU5cz2c47saPFqBuU2U"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.EmployeeSelection",
+							"datasource": "employees"
+						},
+						"feedback": true,
+						"disabled": false
+					},
+					{
+						"type": "simple-action",
+						"id": "oJf4LZmBWqjyZZx8yR9dVr",
+						"events": [
+							"onChange"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theEmployee",
+							"type": "entity",
+							"namespace": "",
+							"from": "employees"
+						}
+					}
+				]
 			}
 		],
 		"styles": [],
@@ -172,26 +234,7 @@
 				"classNames": [
 					"DataTable"
 				],
-				"events": [
-					{
-						"type": "simple-action",
-						"id": "kFmqsYX26YTSmWeyMa9M88",
-						"events": [
-							"onselect"
-						],
-						"action": "copy",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "theEmployee.Reviews",
-							"type": "entitysel",
-							"from": "",
-							"namespace": "",
-							"target": "subReviews",
-							"targetNamespace": "app",
-							"targetType": "entitysel"
-						}
-					}
-				],
+				"events": [],
 				"style": {
 					"display": "flex",
 					"alignItems": "stretch",
@@ -239,7 +282,7 @@
 					{
 						"title": "Active",
 						"source": "isActive",
-						"width": 150,
+						"width": "auto",
 						"sorting": true,
 						"id": "sYT9LJQxWPJ1mHAttFq63M"
 					},
@@ -281,51 +324,7 @@
 				"classNames": [
 					"selectBox"
 				],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Employee",
-						"events": [
-							"onselect"
-						],
-						"id": "3dbdeC7yak9qcR2LiRqcM5",
-						"method": "ds.Employee.loadEmployees",
-						"params": [
-							{
-								"name": "idDepartement",
-								"type": "Integer",
-								"datasource": "departement.ID",
-								"id": "2Lu9bKBmecpFeSM68wY5Tj",
-								"isHardCoded": false,
-								"hardCodedType": "number",
-								"hardCodedValue": ""
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "cs.EmployeeSelection",
-							"datasource": "employees"
-						},
-						"feedback": true
-					},
-					{
-						"type": "simple-action",
-						"id": "dAF37wa1wRTa1vb87ckt3w",
-						"events": [
-							"onselect"
-						],
-						"action": "refresh",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "employees",
-							"type": "entitysel",
-							"from": "",
-							"namespace": ""
-						},
-						"state": {}
-					}
-				],
+				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
 				"datasource": "departements",
@@ -1619,7 +1618,7 @@
 						"source": "Date",
 						"format": "Date abbreviated",
 						"width": "auto",
-						"sorting": false,
+						"sorting": true,
 						"dataType": "date",
 						"id": "wrDPgD2DR2oMcnEJMqQYQs"
 					},
@@ -1628,7 +1627,7 @@
 						"source": "ScoreGoal.Name",
 						"format": "",
 						"width": "auto",
-						"sorting": false,
+						"sorting": true,
 						"id": "kpyF88jPUbzZaQGNmHHWA6"
 					},
 					{
@@ -1636,7 +1635,7 @@
 						"source": "ScoreSkill.Name",
 						"format": "",
 						"width": "auto",
-						"sorting": false,
+						"sorting": true,
 						"id": "mQKeZWDF2e1R9RbiRcDkvr"
 					},
 					{
@@ -1644,7 +1643,7 @@
 						"source": "ScoreGlobal.Name",
 						"format": "",
 						"width": "auto",
-						"sorting": false,
+						"sorting": true,
 						"id": "n7nxQYDom3aghs6ZSqMUvL"
 					},
 					{
@@ -1652,7 +1651,7 @@
 						"source": "Status.Name",
 						"format": "",
 						"width": "auto",
-						"sorting": false,
+						"sorting": true,
 						"disabled": false,
 						"id": "koa1GAEzEPM92qnT3wxPYg"
 					}

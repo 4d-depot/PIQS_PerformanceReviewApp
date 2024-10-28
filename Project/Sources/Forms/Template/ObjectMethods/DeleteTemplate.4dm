@@ -1,4 +1,5 @@
 var $context : Object:=New object:C1471
+var $template : cs:C1710.TemplateEntity
 
 If (Form:C1466.CurrentTemplate=Null:C1517)
 	ALERT:C41("Select a template.")

@@ -11,36 +11,44 @@ SET DATABASE PARAMETER:C642([ReviewStatus:11]; Table sequence number:K37:31; 0)
 SET DATABASE PARAMETER:C642([TrainingStatus:14]; Table sequence number:K37:31; 0)
 SET DATABASE PARAMETER:C642([Score:12]; Table sequence number:K37:31; 0)
 
-$goals:=$obj.GoalStatus
-For each ($e; $goals)
-	$s:=ds:C1482.GoalStatus.new()
-	$s.ID:=$e.ID
-	$s.Name:=$e.Name
-	$s.save()
+var $col : Collection
+var $e : Object
+
+var $goal : cs:C1710.GoalEntity
+var $rstatus : cs:C1710.ReviewStatusEntity
+var $tstatus : cs:C1710.TrainingStatusEntity
+var $score : cs:C1710.ScoreEntity
+
+$col:=$obj.GoalStatus
+For each ($e; $col)
+	$goal:=ds:C1482.GoalStatus.new()
+	$goal.ID:=$e.ID
+	$goal.Name:=$e.Name
+	$goal.save()
 End for each 
 
-$reviews:=$obj.ReviewStatus
-For each ($e; $reviews)
-	$s:=ds:C1482.ReviewStatus.new()
-	$s.ID:=$e.ID
-	$s.Name:=$e.Name
-	$s.Description:=$e.Description
-	$s.save()
+$col:=$obj.ReviewStatus
+For each ($e; $col)
+	$rstatus:=ds:C1482.ReviewStatus.new()
+	$rstatus.ID:=$e.ID
+	$rstatus.Name:=$e.Name
+	$rstatus.Description:=$e.Description
+	$rstatus.save()
 End for each 
 
-$trainings:=$obj.TrainingStatus
-For each ($e; $trainings)
-	$s:=ds:C1482.TrainingStatus.new()
-	$s.ID:=$e.ID
-	$s.Name:=$e.Name
-	$s.save()
+$col:=$obj.TrainingStatus
+For each ($e; $col)
+	$tstatus:=ds:C1482.TrainingStatus.new()
+	$tstatus.ID:=$e.ID
+	$tstatus.Name:=$e.Name
+	$tstatus.save()
 End for each 
 
-$scores:=$obj.Score
-For each ($e; $scores)
-	$s:=ds:C1482.Score.new()
-	$s.ID:=$e.ID
-	$s.Name:=$e.Name
-	$s.Code:=$e.Code
-	$s.save()
+$col:=$obj.Score
+For each ($e; $col)
+	$score:=ds:C1482.Score.new()
+	$score.ID:=$e.ID
+	$score.Name:=$e.Name
+	$score.Code:=$e.Code
+	$score.save()
 End for each 

@@ -96,12 +96,12 @@
 					"id": "19WBfBTeMkgNFW2WfebHqf",
 					"type": "datasource",
 					"name": "condition",
-					"value": true,
+					"value": "{\"editGoalDone\":true,\"editGoalTodo\":false,\"editSkill\":false,\"editTraningDone\":false,\"editTrainingToDo\":false}",
 					"valueType": "hardCoded",
-					"path": "state.editGoalDone",
-					"dsType": "unknown",
+					"path": "state",
+					"dsType": "object",
 					"op": "eq",
-					"dataType": "boolean"
+					"dataType": "object"
 				}
 			},
 			{
@@ -111,12 +111,12 @@
 					"id": "dEAMnwGJRAZPUEV52x57oR",
 					"type": "datasource",
 					"name": "condition",
-					"value": true,
+					"value": "{\"editGoalDone\":false,\"editGoalTodo\":true,\"editSkill\":false,\"editTraningDone\":false,\"editTrainingToDo\":false}",
 					"valueType": "hardCoded",
-					"path": "state.editGoalTodo",
-					"dsType": "unknown",
+					"path": "state",
+					"dsType": "object",
 					"op": "eq",
-					"dataType": "boolean"
+					"dataType": "object"
 				}
 			},
 			{
@@ -202,27 +202,27 @@
 					"id": "q7RobziqEdtpWMNYKKvQfe",
 					"type": "datasource",
 					"name": "condition",
-					"value": true,
+					"value": "{\"editGoalDone\":false,\"editGoalTodo\":false,\"editSkill\":true,\"editTraningDone\":false,\"editTrainingToDo\":false}",
 					"valueType": "hardCoded",
-					"path": "state.editSkill",
-					"dsType": "unknown",
+					"path": "state",
+					"dsType": "object",
 					"op": "eq",
-					"dataType": "boolean"
+					"dataType": "object"
 				}
 			},
 			{
 				"label": "editItemTrainingDo",
 				"id": "7TKw1fUMMyFbY97Hw3PB8M",
 				"conditions": {
-					"id": "adHtT9FqWXiM6uqtEzX8ky",
+					"id": "hehYmrvXL7TA8dVPhcug47",
 					"type": "datasource",
 					"name": "condition",
-					"value": true,
+					"value": "{\"editGoalDone\":false,\"editGoalTodo\":false,\"editSkill\":false,\"editTraningDone\":true,\"editTrainingToDo\":false}",
 					"valueType": "hardCoded",
-					"path": "state.editTraningDone",
-					"dsType": "unknown",
+					"path": "state",
+					"dsType": "object",
 					"op": "eq",
-					"dataType": "boolean"
+					"dataType": "object"
 				}
 			},
 			{
@@ -232,12 +232,12 @@
 					"id": "qXqrQZtqaU8eh4CDVBDQ7D",
 					"type": "datasource",
 					"name": "condition",
-					"value": true,
+					"value": "{\"editGoalDone\":false,\"editGoalTodo\":false,\"editSkill\":false,\"editTraningDone\":false,\"editTrainingToDo\":true}",
 					"valueType": "hardCoded",
-					"path": "state.editTrainingToDo",
-					"dsType": "unknown",
+					"path": "state",
+					"dsType": "object",
 					"op": "eq",
-					"dataType": "boolean"
+					"dataType": "object"
 				}
 			},
 			{
@@ -270,6 +270,23 @@
 				"classNames": [],
 				"events": [
 					{
+						"type": "method",
+						"dataclass": "ReviewStatus",
+						"events": [
+							"oninit"
+						],
+						"id": "f41UW3UxFHP9kCL5synwFX",
+						"method": "ds.ReviewStatus.loadStatus",
+						"params": [],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.ReviewStatusSelection",
+							"datasource": "reviewstatuses"
+						},
+						"feedback": true
+					},
+					{
 						"type": "simple-action",
 						"id": "3CAomAJ4YSau1AEk2Yg4gU",
 						"events": [
@@ -286,24 +303,8 @@
 								"value": "{\"editGoalDone\":false,\"editGoalTodo\":false,\"editSkill\":false,\"editTraningDone\":false,\"editTrainingToDo\":false}",
 								"type": "object"
 							}
-						}
-					},
-					{
-						"type": "method",
-						"dataclass": "ReviewStatus",
-						"events": [
-							"onload"
-						],
-						"id": "aH3BMoo5rMMFDMLZFNXd3M",
-						"method": "ds.ReviewStatus.loadStatus",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "cs.ReviewStatusSelection",
-							"datasource": "reviewstatuses"
 						},
-						"feedback": true
+						"disabled": true
 					}
 				],
 				"airyMode": false,
@@ -360,7 +361,7 @@
 				],
 				"variant": "line",
 				"style": {
-					"height": "600px"
+					"height": "80%"
 				}
 			},
 			"displayName": "Tabs",
@@ -401,7 +402,9 @@
 				"deletable": true,
 				"serverSideRef": "tab_1",
 				"iterableChild": true,
-				"style": {},
+				"style": {
+					"height": "100%"
+				},
 				"classNames": []
 			},
 			"displayName": "Stylebox",
@@ -522,7 +525,7 @@
 				"events": [],
 				"style": {
 					"width": "auto",
-					"height": "160px"
+					"height": "164px"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -941,7 +944,7 @@
 				"events": [],
 				"style": {
 					"width": "auto",
-					"height": "160px"
+					"height": "164px"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -1235,8 +1238,7 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
-					"width": "auto",
-					"height": "auto"
+					"width": "auto"
 				},
 				"iterableChild": true
 			},
@@ -1267,7 +1269,7 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"height": "auto",
+					"height": "40%",
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
@@ -2172,7 +2174,7 @@
 				"style": {
 					"display": "block",
 					"width": "90%",
-					"height": "fit-content"
+					"height": "auto"
 				},
 				"iterableChild": true
 			},
@@ -3936,7 +3938,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 48
+				"contentHeight": 40
 			},
 			"parent": "60_tV17Sze",
 			"hidden": false,
@@ -4312,7 +4314,8 @@
 			"nodes": [
 				"GPp0vVCYcs",
 				"Mn4P2r-pgA",
-				"oz_Es1qIew"
+				"oz_Es1qIew",
+				"g4y1PWCAHn"
 			],
 			"linkedNodes": {}
 		},
@@ -4561,7 +4564,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 48
+				"contentHeight": 40
 			},
 			"parent": "SVmb0eZem3",
 			"hidden": false,
@@ -5093,7 +5096,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 48
+				"contentHeight": 40
 			},
 			"parent": "KKeIehbfTt",
 			"hidden": false,
@@ -5259,7 +5262,8 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"width": "90%"
+					"width": "90%",
+					"height": "100%"
 				}
 			},
 			"displayName": "Stylebox",
@@ -5315,13 +5319,15 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"paddingRight": "20px",
-					"paddingBottom": "20px",
-					"paddingTop": "20px",
-					"paddingLeft": "20px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
 					"display": "flex",
 					"flexDirection": "column",
-					"gap": "20px"
+					"gap": "20px",
+					"height": "100%",
+					"justifyContent": "flex-start"
 				},
 				"classNames": []
 			},
@@ -6214,6 +6220,69 @@
 			"displayName": "Stylebox",
 			"custom": {},
 			"parent": "Waiyp-zUbS",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"g4y1PWCAHn": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "ro: "
+							},
+							{
+								"type": "datasource",
+								"datasource": "app:selectedReview.isReadOnly",
+								"children": [
+									{
+										"text": "TT"
+									}
+								],
+								"dsType": "bool",
+								"format": ""
+							},
+							{
+								"text": " "
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "state: "
+							},
+							{
+								"type": "datasource",
+								"datasource": "state",
+								"children": [
+									{
+										"text": "TT"
+									}
+								],
+								"dsType": "object",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "app:selectedReview.isReadOnly,state"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "DBTGo6M3L9",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

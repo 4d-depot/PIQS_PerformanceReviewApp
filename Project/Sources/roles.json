@@ -231,6 +231,16 @@
 				]
 			},
 			{
+				"applyTo": "GoalStatus",
+				"type": "dataclass",
+				"read": [
+					"user"
+				],
+				"describe": [
+					"user"
+				]
+			},
+			{
 				"applyTo": "Employee.generateAllPDF",
 				"type": "method",
 				"describe": [
@@ -281,11 +291,5 @@
 			]
 		}
 	],
-	"roles": [
-		{
-			"id": "atDf3Qk2NgTQ6y6sbfZyDy",
-			"role": "test",
-			"privileges": []
-		}
-	]
+	"roles": []
 }
