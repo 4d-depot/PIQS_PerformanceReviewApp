@@ -2,14 +2,14 @@
 	"Template": [{
 		"ID": 1,
 		"Name": "Classic",
-		"File": "/RESOURCES/Template/Classic.4wp"
+		"File": "/RESOURCES/Dataset/Template/Classic.4wp"
 	},{
 		"ID": 2,
 		"Name": "Modern",
-		"File": "/RESOURCES/Template/Modern.4wp"
+		"File": "/RESOURCES/Dataset/Template/Modern.4wp"
 	}, {
 		"ID": 3,
 		"Name": "Table",
-		"File": "/RESOURCES/Template/Table.4wp"
+		"File": "/RESOURCES/Dataset/Template/Table.4wp"
 	}]
 }

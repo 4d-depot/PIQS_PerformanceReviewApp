@@ -167,6 +167,10 @@ For ($y; 2020; 2024)
 			
 		End if 
 		
+		If (($review.ID_Employee=1) || ($review.ID_Employee=2) || ($review.ID_Employee=41) || ($review.ID_Employee=42) || ($review.ID_Employee=81))
+			$review.generatePDF()
+		End if 
+		
 		$review.save()
 		
 	End for each 

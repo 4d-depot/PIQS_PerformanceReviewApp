@@ -18,16 +18,6 @@ exposed Function authentify($email : Text; $password : Text) : Text
 		End use 
 	End if 
 	
-	If ($obj.Settings=Null:C1517)
-		Use ($obj)
-			$obj.Settings:=New shared object:C1526
-		End use 
-	End if 
-	
-	Use ($obj.Settings)
-		$obj.Settings.Departement:=0
-	End use 
-	
 	$employee:=This:C1470.Employee.query("Email = :1"; $email).first()
 	
 	If ($employee#Null:C1517)
@@ -43,6 +33,7 @@ exposed Function authentify($email : Text; $password : Text) : Text
 				If ($employee.ID_Departement=5)
 					Session:C1714.setPrivileges("hr")
 					$obj.Employee.maxRole:="HR"
+					$obj.Employee.year:=Year of:C25(Current date:C33)
 				Else 
 					Session:C1714.setPrivileges("user")
 					If ($employee.Collaborator.length>0)

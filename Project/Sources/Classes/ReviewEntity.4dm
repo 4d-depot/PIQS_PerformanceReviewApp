@@ -1,7 +1,7 @@
 Class extends Entity
 
 //Mark:- Generate next review
-exposed Function createReview($idEmployee : Integer)
+exposed Function createReview($idEmployee : Integer; $year : Integer)
 	var $PrevReview : cs:C1710.ReviewEntity
 	var $sel : cs:C1710.ReviewSelection
 	
@@ -18,7 +18,7 @@ exposed Function createReview($idEmployee : Integer)
 	
 	$sel:=ds:C1482.Review.query("ID_Employee = :1"; $idEmployee).orderBy("Date desc")
 	
-	This:C1470.Date:=Date:C102("01/01/"+String:C10(Year of:C25(Current date:C33)))
+	This:C1470.Date:=Date:C102("01/01/"+String:C10($year))
 	This:C1470.ID_Employee:=$idEmployee
 	This:C1470.ID_Status:=1
 	This:C1470.save()
