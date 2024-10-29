@@ -1,6 +1,6 @@
 //%attributes = {}
 _GenerateCollaborator
-//_GenerateTemplate
+_GenerateTemplate
 _GenerateStatus
 _GenerateReview
 
