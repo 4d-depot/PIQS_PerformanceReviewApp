@@ -20,13 +20,13 @@
 		},
 		{
 			"name": "label",
-			"content": "self {\n   color: #717275;\n}",
+			"content": "self {\n   color: #717275;\n}\n\nself.disabled {\n\topacity: 1;\n}",
 			"parentId": null,
 			"id": "QksB3_uGA9xyqrWMTnS6k"
 		},
 		{
 			"name": "input",
-			"content": "self {\n\tborder: 1px solid #ced4da;\n\t\n\tpadding-right : 6px;\n\tpadding-bottom : 6px;\n\tpadding-top : 6px;\n\tpadding-left : 6px;\n}",
+			"content": "self {\n\tborder: 1px solid #ced4da;\n\t\n\tpadding-right : 6px;\n\tpadding-bottom : 6px;\n\tpadding-top : 6px;\n\tpadding-left : 6px;\n}\n\nself.disabled {\n\topacity: 1 !important;\n}",
 			"parentId": null,
 			"id": "PMO_yDiBMrP0HKYvIFDJb"
 		},
@@ -84,7 +84,7 @@
 		},
 		{
 			"name": "selectBox",
-			"content": ".bg-primary-light {\n background-color: #f3bec3 !important;\n}",
+			"content": ".bg-primary-light {\n background-color: #f3bec3 !important;\n}\n\nself.disabled {\n\topacity: 0.90;\n}",
 			"parentId": null,
 			"id": "JNzGU5UCYXykMFWabN4W9"
 		},

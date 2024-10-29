@@ -2,31 +2,13 @@
 	"conditions": [
 		{
 			"id": "isVdcd17DrVumEAjGWst1j",
-			"type": "combination",
-			"op": "and",
-			"conditions": [
-				{
-					"id": "m3cz6JHRkcn194LbGCihhi",
-					"type": "datasource",
-					"name": "condition",
-					"value": "",
-					"valueType": "hardCoded",
-					"path": "viewPDF",
-					"dsType": "bool",
-					"op": "istrue"
-				},
-				{
-					"id": "wwNMJ8tGRm1ftx8xdN7JJB",
-					"type": "datasource",
-					"name": "condition",
-					"value": "",
-					"valueType": "hardCoded",
-					"path": "app:selectedReview.DocumentPDF",
-					"dsType": "blob",
-					"op": "notnull"
-				}
-			],
-			"name": "ViewPDF"
+			"type": "datasource",
+			"name": "condition",
+			"value": "",
+			"valueType": "hardCoded",
+			"path": "viewPDF",
+			"dsType": "bool",
+			"op": "istrue"
 		},
 		{
 			"id": "brSVuQPp8r5LJJyFkqhLWY",

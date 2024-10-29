@@ -358,7 +358,28 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "8hLai5uWXSAGz66zrMZT19",
+						"events": [
+							"onload"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
+					}
+				],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
 				"style": {
@@ -412,7 +433,8 @@
 				"r1r7aNbSNp",
 				"tpP1cUVNIc",
 				"A604UJisHt",
-				"Rn5dqmBzxq"
+				"Rn5dqmBzxq",
+				"WQWfEaRFM1"
 			],
 			"linkedNodes": {}
 		},
@@ -1208,6 +1230,51 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "dUB14KZZz7",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"WQWfEaRFM1": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "viewPDF",
+								"children": [
+									{
+										"text": "Write your text here",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "bool",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "viewPDF"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "yQLT6nKrq3",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

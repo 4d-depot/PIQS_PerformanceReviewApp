@@ -510,7 +510,9 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"style": {},
+				"style": {
+					"minHeight": "200px"
+				},
 				"deletable": false,
 				"className": "w-full bg-transparent",
 				"type": "textArea",
@@ -586,7 +588,9 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"style": {},
+				"style": {
+					"minHeight": "200px"
+				},
 				"deletable": false,
 				"className": "w-full bg-transparent",
 				"type": "textArea",
@@ -2246,7 +2250,8 @@
 						]
 					}
 				],
-				"datasource": "$This.Name"
+				"datasource": "$This.Name",
+				"classNames": []
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -2715,32 +2720,6 @@
 			],
 			"linkedNodes": {}
 		},
-		"roXYvesy26": {
-			"type": {
-				"resolvedName": "Icon"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"icon": "fa-regular fa-calendar-plus",
-				"style": {
-					"fontSize": "18px",
-					"display": "flex",
-					"alignItems": "end",
-					"paddingRight": "4px",
-					"paddingBottom": "4px",
-					"paddingTop": "4px",
-					"paddingLeft": "4px"
-				}
-			},
-			"displayName": "Icon",
-			"custom": {},
-			"parent": "d0CeqoD8PD",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"wIJh__NIcK": {
 			"type": {
 				"resolvedName": "Popover"
@@ -2756,12 +2735,16 @@
 				"style": {
 					"minWidth": "48px",
 					"width": "fit-content"
-				}
+				},
+				"disabled": false
 			},
 			"displayName": "Popover",
 			"custom": {
 				"states:8S4WGVvLdSyVCxcAKwTc86": {
-					"disabled": true
+					"disabled": true,
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "kA5yP2fAOb",
@@ -2961,7 +2944,8 @@
 			"hidden": false,
 			"nodes": [
 				"hQ3mT9ygWP",
-				"wIJh__NIcK"
+				"wIJh__NIcK",
+				"uI6aTBz3cs"
 			],
 			"linkedNodes": {}
 		},
@@ -3115,7 +3099,13 @@
 				]
 			},
 			"displayName": "Text",
-			"custom": {},
+			"custom": {
+				"states:8S4WGVvLdSyVCxcAKwTc86": {
+					"classNames": [
+						"label"
+					]
+				}
+			},
 			"parent": "oz_Es1qIew",
 			"hidden": false,
 			"nodes": [],
@@ -3524,7 +3514,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"selectBox"
+				],
 				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
@@ -3559,7 +3551,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 48
+				"contentHeight": 40
 			},
 			"parent": "ncO1zeHHsv",
 			"hidden": false,
@@ -4728,7 +4720,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 48
+				"contentHeight": 40
 			},
 			"parent": "fUHl0cdUI5",
 			"hidden": false,
@@ -5289,7 +5281,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 48
+				"contentHeight": 40
 			},
 			"parent": "NpaYqTx35C",
 			"hidden": false,
@@ -6635,6 +6627,70 @@
 			"linkedNodes": {
 				"container": "74K801hlI-"
 			}
+		},
+		"uI6aTBz3cs": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-calendar-plus",
+				"style": {
+					"fontSize": "18px",
+					"display": "flex",
+					"alignItems": "end",
+					"paddingRight": "4px",
+					"paddingBottom": "4px",
+					"paddingTop": "4px",
+					"paddingLeft": "4px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {
+				"states:taPrcGBqkSd1hTtGn6TaPG": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "kA5yP2fAOb",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"roXYvesy26": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-calendar-plus",
+				"style": {
+					"fontSize": "18px",
+					"display": "flex",
+					"alignItems": "end",
+					"paddingRight": "4px",
+					"paddingBottom": "4px",
+					"paddingTop": "4px",
+					"paddingLeft": "4px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {
+				"states:taPrcGBqkSd1hTtGn6TaPG": {
+					"style": {
+						"display": "flex"
+					}
+				}
+			},
+			"parent": "d0CeqoD8PD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
 		}
 	}
 }
