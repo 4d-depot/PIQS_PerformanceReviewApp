@@ -185,7 +185,11 @@
 				"iterableChild": true,
 				"style": {
 					"height": "auto",
-					"display": "block"
+					"display": "block",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -218,7 +222,9 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
-					"width": "100%"
+					"width": "100%",
+					"gap": "20px",
+					"justifyContent": "space-between"
 				},
 				"classNames": []
 			},

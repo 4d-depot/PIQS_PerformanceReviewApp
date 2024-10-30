@@ -72,7 +72,7 @@
 		},
 		{
 			"name": "menuBar",
-			"content": "self {\n\tcolor: #4f5963;\n\tfont-size:18px;\n}\n\nself:hover {\n\tfont-size: 18px;\n\tcolor: #394047;\n}",
+			"content": "self {\n\tcolor: #4f5963;\n\tfont-size:18px;\n\tbackground-color: transparent;\n}\n\nself:hover {\n\tfont-size: 18px;\n\tcolor: #394047;\n}",
 			"parentId": null,
 			"id": "Uj9LtZrpQp_bz6xOUq6yk"
 		},

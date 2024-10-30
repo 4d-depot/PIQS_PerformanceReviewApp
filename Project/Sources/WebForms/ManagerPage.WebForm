@@ -137,7 +137,8 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
-					"width": "100%"
+					"width": "100%",
+					"gap": "20px"
 				},
 				"classNames": []
 			},
@@ -178,9 +179,14 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"gap": "10px",
+					"gap": "20px",
 					"flexWrap": "nowrap",
-					"height": "auto"
+					"height": "auto",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"justifyContent": "space-between"
 				}
 			},
 			"displayName": "Stylebox",

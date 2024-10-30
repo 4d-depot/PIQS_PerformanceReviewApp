@@ -8,6 +8,13 @@
 				"namespace": "",
 				"dataType": "bool",
 				"initialValue": false
+			},
+			{
+				"id": "year",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "number",
+				"initialValue": "0"
 			}
 		],
 		"styles": [
@@ -16,7 +23,6 @@
 				"content": "self {\n  min-width : 400px;\n\twidth: calc(100vw*0.4) !important;\n\tmin-height: calc(100vh*0.8) !important;\n}",
 				"children": {},
 				"parentId": null,
-				"scope": "local",
 				"origin": "GRqHKUWlYH",
 				"id": "Mdr8rCI7T73-6Ky0dLUWd"
 			}
@@ -111,7 +117,7 @@
 				}
 			},
 			{
-				"label": "readWrite",
+				"label": "readWriteHR",
 				"id": "4wunRmkSRifAoquQS9xQKt",
 				"conditions": {
 					"id": "tDQQwpsZZvmTM3URog2AAY",
@@ -138,15 +144,15 @@
 							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
 						},
 						{
-							"id": "34XBEJKfttqYB9iaJkMLJg",
+							"id": "gCbrsJXCog1p385ZfM1ZX6",
 							"type": "reference",
-							"ref": "wLYkCtvTsTwC1zwEuRTEUD"
+							"ref": "iU7mX6SGpfReAKExrtTPXV"
 						}
 					]
 				}
 			},
 			{
-				"label": "readWritePDF",
+				"label": "readWritePDFHR",
 				"id": "eu1sT7UL5jnotQP1HcEPMW",
 				"conditions": {
 					"id": "pNP3SZpJeXbPqCjR3gRxJ7",
@@ -175,21 +181,21 @@
 							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
 						},
 						{
-							"id": "vzVoXJwV4bGchoj7o8XnSv",
+							"id": "pWj9VzhHutuvfkArrysCAH",
 							"type": "reference",
 							"name": "condition",
-							"value": "Collaborator",
+							"value": "HR",
 							"valueType": "hardCoded",
 							"path": "app:userInfo.role",
 							"dsType": "unknown",
-							"op": "neq",
-							"ref": "wLYkCtvTsTwC1zwEuRTEUD"
+							"op": "eq",
+							"ref": "iU7mX6SGpfReAKExrtTPXV"
 						}
 					]
 				}
 			},
 			{
-				"label": "readWriteViewPDF",
+				"label": "readWriteViewPDFHR",
 				"id": "3mBY7vDs38fK2BJvFNWhXc",
 				"conditions": {
 					"id": "aFP2otvrV8WG6nWM9WwkJ8",
@@ -216,28 +222,49 @@
 							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
 						},
 						{
-							"id": "oUu2fXK2emYrbJhAeSXbc5",
+							"id": "3wLxEP9ZgJwhdszTQLbqsB",
 							"type": "reference",
 							"name": "condition",
-							"value": "",
+							"value": "HR",
 							"valueType": "hardCoded",
-							"ref": "wLYkCtvTsTwC1zwEuRTEUD"
+							"path": "app:userInfo.role",
+							"dsType": "unknown",
+							"op": "eq",
+							"ref": "iU7mX6SGpfReAKExrtTPXV"
 						}
 					]
 				}
 			},
 			{
-				"label": "unselected",
+				"label": "unselectedHR",
 				"id": "57dwi1rZ7WcaMEofzyVjCb",
 				"conditions": {
 					"id": "5LZoLnQzgYKG66xnqAgPdC",
-					"type": "datasource",
-					"name": "condition",
-					"value": "",
-					"valueType": "hardCoded",
-					"path": "app:selectedReview",
-					"dsType": "entity",
-					"op": "isnull"
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "91Csbo9Cos91S2kiwSFr2F",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview",
+							"dsType": "entity",
+							"op": "isnull"
+						},
+						{
+							"id": "uTTP8VvmTjrodaXN7XEeLK",
+							"type": "reference",
+							"name": "condition",
+							"value": "HR",
+							"valueType": "hardCoded",
+							"op": "eq",
+							"path": "app:userInfo.role",
+							"dsType": "unknown",
+							"ref": "iU7mX6SGpfReAKExrtTPXV"
+						}
+					]
 				}
 			},
 			{
@@ -263,13 +290,14 @@
 						},
 						{
 							"id": "tMBaPprokyHJWPajt6NURp",
-							"type": "datasource",
-							"name": "condition",
+							"type": "reference",
+							"name": "Collaborator",
 							"value": "Collaborator",
 							"valueType": "hardCoded",
 							"path": "app:userInfo.role",
 							"dsType": "unknown",
-							"op": "eq"
+							"op": "eq",
+							"ref": "wLYkCtvTsTwC1zwEuRTEUD"
 						}
 					]
 				}
@@ -300,13 +328,14 @@
 						},
 						{
 							"id": "joTSkvgJyDic2ijrido3mN",
-							"type": "datasource",
+							"type": "reference",
 							"name": "condition",
 							"value": "Collaborator",
 							"valueType": "hardCoded",
 							"path": "app:userInfo.role",
 							"dsType": "unknown",
-							"op": "eq"
+							"op": "eq",
+							"ref": "wLYkCtvTsTwC1zwEuRTEUD"
 						}
 					]
 				}
@@ -337,13 +366,147 @@
 						},
 						{
 							"id": "xfj74ULeetzfAmZ78yxfoc",
-							"type": "datasource",
+							"type": "reference",
 							"name": "condition",
 							"value": "Collaborator",
 							"valueType": "hardCoded",
 							"path": "app:userInfo.role",
 							"dsType": "unknown",
-							"op": "eq"
+							"op": "eq",
+							"ref": "wLYkCtvTsTwC1zwEuRTEUD"
+						}
+					]
+				}
+			},
+			{
+				"label": "unselectedUser",
+				"id": "ppSZALpZXd8tb1kdr2rrj3",
+				"conditions": {
+					"id": "e5tmasdgw8zrdD7PHY4smR",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "31tLH2DJSQBdWbbY7sczXb",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "app:selectedReview",
+							"dsType": "entity",
+							"op": "isnull"
+						},
+						{
+							"id": "p9sq1KgWqz9SfoZ5MAg8Ho",
+							"type": "datasource",
+							"name": "condition",
+							"value": "HR",
+							"valueType": "hardCoded",
+							"op": "neq",
+							"path": "app:userInfo.role",
+							"dsType": "unknown"
+						}
+					]
+				}
+			},
+			{
+				"label": "readWriteManager",
+				"id": "eyrqkd31AbHVwrX1GnyuLU",
+				"conditions": {
+					"id": "stLn3w8dqtX9Vwniy79AU2",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "qtZXQtcGM5vgXUgQ3o29D8",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "5nF59Am5BBHsv6rNcpUKdc"
+						},
+						{
+							"id": "9BzvqHqTp7SR8ynRrrW8cN",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
+						},
+						{
+							"id": "fweBNLxoRm7jrrGwNtspNV",
+							"type": "reference",
+							"ref": "k8XR4dKBHXJFwHT1JFPmx3"
+						}
+					]
+				}
+			},
+			{
+				"label": "readWritePDFManager",
+				"id": "m5x3WhPVud8GxY53SFK6d5",
+				"conditions": {
+					"id": "4HXCUSx8kAq9cRWfQkAfPQ",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "tuwRoEKSawS2BRuHz3xExb",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "brSVuQPp8r5LJJyFkqhLWY"
+						},
+						{
+							"id": "7xH73yQFEeaZKQ2c7y94hH",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
+						},
+						{
+							"id": "eGjmdteMqeEkRPP7Gmg2R5",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "k8XR4dKBHXJFwHT1JFPmx3"
+						}
+					]
+				}
+			},
+			{
+				"label": "readWriteViewPDFManager",
+				"id": "iGU3dXde9SQyZyFYXV91ot",
+				"conditions": {
+					"id": "nGAYYDJHCCd6L1nb5sdwXP",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "iavBxohzMNHZ6GhJrrG8oT",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "isVdcd17DrVumEAjGWst1j"
+						},
+						{
+							"id": "ok7qAeUwGHr8ZzLfZ2D138",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
+						},
+						{
+							"id": "9bLNLwThPxGsmoteAuS1Db",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "k8XR4dKBHXJFwHT1JFPmx3"
 						}
 					]
 				}
@@ -395,7 +558,9 @@
 			"hidden": false,
 			"nodes": [
 				"bSPR9iIrA3",
-				"42ry7QAnuU"
+				"42ry7QAnuU",
+				"l70dWEOG9N",
+				"lwjzLhuggu"
 			],
 			"linkedNodes": {}
 		},
@@ -416,7 +581,11 @@
 					"width": "auto",
 					"maxWidth": "300px",
 					"minWidth": "200px",
-					"height": "auto"
+					"height": "auto",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -425,16 +594,18 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:ppSZALpZXd8tb1kdr2rrj3": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "42ry7QAnuU",
 			"hidden": false,
 			"nodes": [
-				"r1r7aNbSNp",
-				"tpP1cUVNIc",
-				"A604UJisHt",
-				"Rn5dqmBzxq",
-				"WQWfEaRFM1"
+				"l--1PHQslY",
+				"rKNsS40hki"
 			],
 			"linkedNodes": {}
 		},
@@ -477,7 +648,7 @@
 					"text": "View"
 				}
 			},
-			"parent": "yQLT6nKrq3",
+			"parent": "rKNsS40hki",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -592,7 +763,7 @@
 					}
 				}
 			},
-			"parent": "yQLT6nKrq3",
+			"parent": "rKNsS40hki",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -694,9 +865,19 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:eyrqkd31AbHVwrX1GnyuLU": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iGU3dXde9SQyZyFYXV91ot": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
-			"parent": "yQLT6nKrq3",
+			"parent": "rKNsS40hki",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -798,9 +979,19 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:eyrqkd31AbHVwrX1GnyuLU": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:m5x3WhPVud8GxY53SFK6d5": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
-			"parent": "yQLT6nKrq3",
+			"parent": "rKNsS40hki",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -886,7 +1077,7 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"webform": "Review_copy_1",
+				"webform": "Review",
 				"style": {
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
@@ -909,7 +1100,12 @@
 			"props": {
 				"events": [],
 				"iterableChild": true,
-				"style": {},
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				},
 				"classNames": [
 					"SizePDF"
 				]
@@ -965,6 +1161,21 @@
 					"style": {
 						"display": "none"
 					}
+				},
+				"states:ppSZALpZXd8tb1kdr2rrj3": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:eyrqkd31AbHVwrX1GnyuLU": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:m5x3WhPVud8GxY53SFK6d5": {
+					"style": {
+						"display": "none"
+					}
 				}
 			},
 			"parent": "42ry7QAnuU",
@@ -1009,14 +1220,15 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"gap": "20px"
 				}
 			},
 			"displayName": "Stylebox",
 			"custom": {
 				"states:57dwi1rZ7WcaMEofzyVjCb": {
 					"style": {
-						"display": "none"
+						"display": "flex"
 					}
 				},
 				"states:reZtyHD4grjgG7zDu6M14s": {
@@ -1027,6 +1239,11 @@
 				"states:7CnGTyNnvXknnvyFhbFa3x": {
 					"style": {
 						"backgroundColor": ""
+					}
+				},
+				"states:ppSZALpZXd8tb1kdr2rrj3": {
+					"style": {
+						"display": "none"
 					}
 				}
 			},
@@ -1234,7 +1451,239 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"WQWfEaRFM1": {
+		"l--1PHQslY": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px",
+					"paddingRight": "0px",
+					"paddingBottom": "10px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:ppSZALpZXd8tb1kdr2rrj3": {
+					"style": {
+						"display": "flex"
+					}
+				},
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:bPX3VMrYiJc39xcehf72co": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:6wNAvGurxSNXFGXEG95KxK": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:reZtyHD4grjgG7zDu6M14s": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:79hJwfxGNpq4qm2dY6Z4TL": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:dSvcUQJPEGzgsSF2nKxCse": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:eyrqkd31AbHVwrX1GnyuLU": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:m5x3WhPVud8GxY53SFK6d5": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iGU3dXde9SQyZyFYXV91ot": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [
+				"FLhh8f2uDo",
+				"X3G1gUEQHH"
+			],
+			"linkedNodes": {}
+		},
+		"FLhh8f2uDo": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Create next Reviews",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "p6yJfWSKtpKLZvZsXbEj7R",
+						"events": [
+							"onclick"
+						],
+						"actionType": "open",
+						"targetDialog": "GenerateDoc"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:57dwi1rZ7WcaMEofzyVjCb": {
+					"text": "Create next Reviews"
+				}
+			},
+			"parent": "l--1PHQslY",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "82NuS5SELZ"
+			}
+		},
+		"82NuS5SELZ": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-file-pen"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "FLhh8f2uDo",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"X3G1gUEQHH": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Generate all PDFs",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "nMw7aniggi4HBHcUrCTJL2",
+						"events": [
+							"onclick"
+						],
+						"actionType": "open",
+						"targetDialog": "GeneratePDF"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:57dwi1rZ7WcaMEofzyVjCb": {
+					"text": "Generate all PDFs"
+				}
+			},
+			"parent": "l--1PHQslY",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "oVDZh3-nQ0"
+			}
+		},
+		"oVDZh3-nQ0": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-file-pdf"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "X3G1gUEQHH",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"l70dWEOG9N": {
+			"type": {
+				"resolvedName": "Dialog"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"overlay": true,
+				"serverSideRef": "GenerateDoc"
+			},
+			"displayName": "Dialog",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"Dialog": "z3AmdpxsFN"
+			}
+		},
+		"z3AmdpxsFN": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "h-full flex-1",
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "l70dWEOG9N",
+			"hidden": false,
+			"nodes": [
+				"p3loM3DI2e",
+				"FtNGl-6ttR",
+				"5wS5UD8VE1"
+			],
+			"linkedNodes": {}
+		},
+		"p3loM3DI2e": {
 			"type": {
 				"resolvedName": "Text"
 			},
@@ -1247,36 +1696,621 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "viewPDF",
-								"children": [
-									{
-										"text": "Write your text here",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"dsType": "bool",
-								"format": ""
-							},
-							{
-								"text": ""
+								"text": "Generate next Reviews",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
 							}
 						]
 					}
 				],
-				"datasource": "viewPDF"
+				"datasource": "",
+				"classNames": [
+					"title"
+				],
+				"style": {
+					"textAlign": "center"
+				}
 			},
 			"displayName": "Text",
 			"custom": {},
-			"parent": "yQLT6nKrq3",
+			"parent": "z3AmdpxsFN",
 			"hidden": false,
 			"nodes": [],
+			"linkedNodes": {}
+		},
+		"FtNGl-6ttR": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "top",
+				"iterableChild": true
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "z3AmdpxsFN",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "9AXVBt_Bs_",
+				"input": "kTQLUSis4y"
+			}
+		},
+		"9AXVBt_Bs_": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Enter the year",
+				"classNames": [
+					"label"
+				],
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "FtNGl-6ttR",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"kTQLUSis4y": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "w-full bg-transparent",
+				"type": "number",
+				"classNames": [
+					"input"
+				],
+				"format": "",
+				"dataType": "number",
+				"datasource": "year",
+				"moveable": false,
+				"placeholder": ""
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "FtNGl-6ttR",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"5wS5UD8VE1": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"gap": "10px",
+					"justifyContent": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "z3AmdpxsFN",
+			"hidden": false,
+			"nodes": [
+				"Zj2rWcq2Ak",
+				"DqApw2NKN1"
+			],
+			"linkedNodes": {}
+		},
+		"Zj2rWcq2Ak": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Generate",
+				"classNames": [
+					"buttonRed"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Review",
+						"events": [
+							"onclick"
+						],
+						"id": "sxg4dVPRjUKe964iCA7Geo",
+						"method": "ds.Review.generateAllReview",
+						"params": [
+							{
+								"name": "year",
+								"type": "Integer",
+								"datasource": "year"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						},
+						"feedback": true
+					},
+					{
+						"type": "simple-action",
+						"id": "9BkepzmCr8LsbADenUQi1k",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "subReviews",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "app"
+						}
+					},
+					{
+						"type": "dialog",
+						"id": "jj19KokEnFTK5agnP9tfzr",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "GenerateDoc"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"minWidth": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "5wS5UD8VE1",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "NHUXLa5ycF"
+			}
+		},
+		"NHUXLa5ycF": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-file-circle-plus"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "Zj2rWcq2Ak",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"DqApw2NKN1": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Cancel",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "fvnFJpCprjGNzynV6TfE47",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "GenerateDoc"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"minWidth": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "5wS5UD8VE1",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "djMBdrLXs2"
+			}
+		},
+		"djMBdrLXs2": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-square-xmark"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "DqApw2NKN1",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"lwjzLhuggu": {
+			"type": {
+				"resolvedName": "Dialog"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"overlay": true,
+				"serverSideRef": "GeneratePDF"
+			},
+			"displayName": "Dialog",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"Dialog": "0b3V7FdJVf"
+			}
+		},
+		"0b3V7FdJVf": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "h-full flex-1",
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "lwjzLhuggu",
+			"hidden": false,
+			"nodes": [
+				"rSv7bkuKIm",
+				"Ba5CSSEIuo",
+				"SMPSZfHpvR"
+			],
+			"linkedNodes": {}
+		},
+		"rSv7bkuKIm": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Generate PDFs",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"classNames": [
+					"title"
+				],
+				"style": {
+					"textAlign": "center"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "0b3V7FdJVf",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Ba5CSSEIuo": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "top",
+				"iterableChild": true
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "0b3V7FdJVf",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "h89pfeYIPf",
+				"input": "NGBM_YVUXa"
+			}
+		},
+		"h89pfeYIPf": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Enter the year",
+				"classNames": [
+					"label"
+				],
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "Ba5CSSEIuo",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"NGBM_YVUXa": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "w-full bg-transparent",
+				"type": "text",
+				"classNames": [
+					"input"
+				],
+				"datasource": "year",
+				"dataType": "number",
+				"moveable": false,
+				"placeholder": ""
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "Ba5CSSEIuo",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"SMPSZfHpvR": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "10px",
+					"flexDirection": "row",
+					"justifyContent": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "0b3V7FdJVf",
+			"hidden": false,
+			"nodes": [
+				"cQjY3z8CP4",
+				"6YJwYJfS7p"
+			],
+			"linkedNodes": {}
+		},
+		"cQjY3z8CP4": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Generate",
+				"classNames": [
+					"buttonRed"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Review",
+						"events": [
+							"onclick"
+						],
+						"id": "pniDMdb6yshpjkKfbw2HqH",
+						"method": "ds.Review.generateAllPDF",
+						"params": [
+							{
+								"name": "year",
+								"type": "Integer",
+								"datasource": "year",
+								"id": "4d7WahfkuT5z9boH1gX9Kn"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						},
+						"feedback": true
+					},
+					{
+						"type": "simple-action",
+						"id": "vGKm5vynG1JBfcebJ7Lx2N",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "subReviews",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "app"
+						}
+					},
+					{
+						"type": "dialog",
+						"id": "9CKPK3ZWEizj9TsVyuf315",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "GeneratePDF"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"minWidth": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "SMPSZfHpvR",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "7wmROVeJLA"
+			}
+		},
+		"7wmROVeJLA": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-file-circle-plus"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "cQjY3z8CP4",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"6YJwYJfS7p": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Cancel",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "seDMCqZ4ed7ZTqxj7ucogs",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "GeneratePDF"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"minWidth": "150px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "SMPSZfHpvR",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "163mUbtiSZ"
+			}
+		},
+		"163mUbtiSZ": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-square-xmark"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "6YJwYJfS7p",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"rKNsS40hki": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:57dwi1rZ7WcaMEofzyVjCb": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:ppSZALpZXd8tb1kdr2rrj3": {
+					"style": {
+						"display": "flex"
+					}
+				}
+			},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [
+				"r1r7aNbSNp",
+				"tpP1cUVNIc",
+				"A604UJisHt",
+				"Rn5dqmBzxq"
+			],
 			"linkedNodes": {}
 		}
 	}

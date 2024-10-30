@@ -1,0 +1,650 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "employees",
+				"type": "entitysel",
+				"dataclass": "Employee",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "theEmployee",
+				"type": "entity",
+				"dataclass": "Employee",
+				"from": "employees",
+				"namespace": "",
+				"initialValue": "first",
+				"depth": null,
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "9NC64b5H7H9EQc7DH5vTHF",
+						"events": [
+							"onChange"
+						],
+						"action": "copy",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theEmployee.Reviews",
+							"type": "entitysel",
+							"namespace": "",
+							"from": "",
+							"target": "subReviews",
+							"targetNamespace": "app",
+							"targetType": "entitysel"
+						}
+					}
+				]
+			},
+			{
+				"id": "departements",
+				"type": "entitysel",
+				"dataclass": "Departement",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "departement",
+				"type": "entity",
+				"dataclass": "Departement",
+				"from": "departements",
+				"namespace": "",
+				"initialValue": "",
+				"depth": null,
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Employee",
+						"events": [
+							"onChange"
+						],
+						"id": "aWUNC1K8hcFnDhAhGebntS",
+						"method": "ds.Employee.loadEmployees",
+						"params": [
+							{
+								"name": "departement",
+								"type": "Object",
+								"datasource": "departement",
+								"id": "aLziU5cz2c47saPFqBuU2U"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.EmployeeSelection",
+							"datasource": "employees"
+						},
+						"feedback": true,
+						"disabled": false
+					},
+					{
+						"type": "simple-action",
+						"id": "oJf4LZmBWqjyZZx8yR9dVr",
+						"events": [
+							"onChange"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theEmployee",
+							"type": "entity",
+							"namespace": "",
+							"from": "employees"
+						}
+					}
+				]
+			},
+			{
+				"id": "year",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "number",
+				"initialValue": "0"
+			}
+		],
+		"styles": [],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			}
+		],
+		"defaultStates": [
+			"pBMMRXDtD22UYsGbfgxfMk",
+			"cmKSTz2P83i1bC685Z8Qah"
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "vBMKSYPNGTuoy8Wqfvz4W6",
+						"events": [
+							"onload"
+						],
+						"action": "reset",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "tG8N6gTqiiGoHWBqomR7fH",
+						"events": [
+							"onload"
+						],
+						"action": "copy",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theEmployee.Reviews",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "",
+							"target": "subReviews",
+							"targetNamespace": "app",
+							"targetType": "entitysel"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "4BDRwRdQESnkaNLG66SK6f",
+						"events": [
+							"onload"
+						],
+						"action": "copy",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "userInfo.year",
+							"type": "unknown",
+							"namespace": "app",
+							"dataType": "object",
+							"from": "",
+							"target": "year",
+							"targetNamespace": "",
+							"targetType": "number"
+						}
+					}
+				],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"FypJvnw6Gs"
+			],
+			"linkedNodes": {}
+		},
+		"FypJvnw6Gs": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "40px",
+					"paddingBottom": "40px",
+					"paddingTop": "40px",
+					"paddingLeft": "40px",
+					"display": "flex",
+					"width": "100%",
+					"height": "100%"
+				},
+				"classNames": [
+					"position"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"9uKyQDClp-"
+			],
+			"linkedNodes": {}
+		},
+		"NkKx7NmRKJ": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [
+					"DataTable"
+				],
+				"events": [],
+				"style": {
+					"display": "flex",
+					"alignItems": "stretch",
+					"height": "auto",
+					"width": "60%"
+				},
+				"headerHeight": 36,
+				"rowHeight": 30,
+				"datasource": "employees",
+				"columns": [
+					{
+						"title": "Departement",
+						"source": "Departement.Name",
+						"format": "",
+						"width": "auto",
+						"sorting": true,
+						"id": "gbpS2yGRN8K8ZL3BNDXJdP"
+					},
+					{
+						"title": "Firstname",
+						"source": "Firstname",
+						"width": "auto",
+						"sorting": true,
+						"format": "",
+						"dataType": "string",
+						"id": "iCWoS5Z9zX1p1XAEsQy2L8"
+					},
+					{
+						"title": "Lastname",
+						"source": "Lastname",
+						"width": "auto",
+						"sorting": true,
+						"format": "",
+						"dataType": "string",
+						"id": "tbrzzRqdqjprsL7UwBb4hp"
+					},
+					{
+						"title": "Last Date",
+						"source": "lastReview.Date",
+						"width": "auto",
+						"sorting": true,
+						"format": "",
+						"dataType": "date",
+						"id": "3Pkep4GnAfsKxzv7iQAtPk"
+					},
+					{
+						"title": "Last Status",
+						"source": "lastReview.Status",
+						"width": "auto",
+						"sorting": true,
+						"format": "",
+						"id": "qNWyDnbWcgNz1HQLnv7cqZ"
+					}
+				],
+				"currentElement": "theEmployee",
+				"showBorders": true
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "zKeDOWK-di",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"FSuKj8nS5s": {
+			"type": {
+				"resolvedName": "SelectBox"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [
+					"selectBox"
+				],
+				"events": [],
+				"template": "{{ length }} items",
+				"rowsNumber": 5,
+				"datasource": "departements",
+				"iterator": "$This",
+				"placeholder": "Departement",
+				"enableSearch": false,
+				"searchAttributes": [],
+				"currentElement": "departement",
+				"style": {
+					"width": "400px"
+				}
+			},
+			"displayName": "Select Box",
+			"custom": {},
+			"parent": "yUTsXpNmZr",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"container": "dEVLLeoZQd"
+			}
+		},
+		"dEVLLeoZQd": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "fd-selectbox__container",
+				"isFixedWidth": true,
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "6px",
+					"paddingBottom": "6px",
+					"paddingTop": "6px",
+					"paddingLeft": "6px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"contentHeight": 36
+			},
+			"parent": "FSuKj8nS5s",
+			"hidden": false,
+			"nodes": [
+				"-OG7yWvoCS"
+			],
+			"linkedNodes": {}
+		},
+		"-OG7yWvoCS": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "$This.Name",
+								"children": [
+									{
+										"text": "Name",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "$This.Name"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "dEVLLeoZQd",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"uX5ZzoiAJc": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [
+					"DataTable"
+				],
+				"events": [],
+				"style": {
+					"width": "50%",
+					"borderStyle": "solid",
+					"height": "auto"
+				},
+				"headerHeight": 36,
+				"rowHeight": 30,
+				"datasource": "app:subReviews",
+				"columns": [
+					{
+						"title": "Date",
+						"source": "Date",
+						"format": "Date abbreviated",
+						"width": "auto",
+						"sorting": true,
+						"dataType": "date",
+						"id": "wrDPgD2DR2oMcnEJMqQYQs"
+					},
+					{
+						"title": "Score",
+						"source": "ScoreGlobal.Name",
+						"format": "",
+						"width": "auto",
+						"sorting": true,
+						"id": "n7nxQYDom3aghs6ZSqMUvL"
+					},
+					{
+						"title": "Status",
+						"source": "Status.Name",
+						"format": "",
+						"width": "auto",
+						"sorting": true,
+						"disabled": false,
+						"id": "koa1GAEzEPM92qnT3wxPYg"
+					}
+				],
+				"currentElement": "app:selectedReview",
+				"showBorders": true
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "zKeDOWK-di",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"IuPSU2dfje": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"width": "fit-content",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"height": "auto",
+					"flexDirection": "column",
+					"gap": "10px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "rOW9xKi-zF",
+			"hidden": false,
+			"nodes": [
+				"2mlEmRLfwx"
+			],
+			"linkedNodes": {}
+		},
+		"2mlEmRLfwx": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"webform": "ReviewActionButtons",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"width": "auto",
+					"height": "fit-content"
+				}
+			},
+			"displayName": "Page Loader",
+			"custom": {},
+			"parent": "IuPSU2dfje",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"9uKyQDClp-": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"width": "100%",
+					"height": "100%",
+					"gap": "20px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "FypJvnw6Gs",
+			"hidden": false,
+			"nodes": [
+				"yUTsXpNmZr",
+				"zKeDOWK-di"
+			],
+			"linkedNodes": {}
+		},
+		"yUTsXpNmZr": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "9uKyQDClp-",
+			"hidden": false,
+			"nodes": [
+				"FSuKj8nS5s"
+			],
+			"linkedNodes": {}
+		},
+		"zKeDOWK-di": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "20px",
+					"width": "auto",
+					"height": "100%",
+					"paddingTop": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingLeft": "0px",
+					"alignItems": "stretch",
+					"justifyContent": "space-between"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "9uKyQDClp-",
+			"hidden": false,
+			"nodes": [
+				"NkKx7NmRKJ",
+				"uX5ZzoiAJc",
+				"rOW9xKi-zF"
+			],
+			"linkedNodes": {}
+		},
+		"rOW9xKi-zF": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "zKeDOWK-di",
+			"hidden": false,
+			"nodes": [
+				"IuPSU2dfje",
+				"Pmv-vqjPEa"
+			],
+			"linkedNodes": {}
+		},
+		"Pmv-vqjPEa": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "rOW9xKi-zF",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}
