@@ -3,13 +3,6 @@
 		"v": "1.0",
 		"datasources": [
 			{
-				"id": "viewPDF",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "bool",
-				"initialValue": false
-			},
-			{
 				"id": "year",
 				"type": "scalar",
 				"namespace": "",
@@ -25,6 +18,12 @@
 				"parentId": null,
 				"origin": "GRqHKUWlYH",
 				"id": "Mdr8rCI7T73-6Ky0dLUWd"
+			},
+			{
+				"name": "loader",
+				"content": "self.loader {\n  border: 16px solid #f3f3f3; /* Light grey */\n  border-top: 16px solid #dd3c4c; /* Blue */\n  border-radius: 50%;\n  width: 120px;\n  height: 120px;\n  animation: spin 2s linear infinite;\n}\n\n@keyframes spin {\n  0% { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}",
+				"parentId": null,
+				"id": "Jc6HjGMuPEb2R_QNpgxES"
 			}
 		],
 		"states": [
@@ -524,22 +523,21 @@
 				"events": [
 					{
 						"type": "simple-action",
-						"id": "8hLai5uWXSAGz66zrMZT19",
+						"id": "5JHuWgfA6qzJShKsQWRNq9",
 						"events": [
 							"onload"
 						],
-						"action": "set",
+						"action": "copy",
 						"actionType": "datasource",
 						"datasource": {
-							"name": "viewPDF",
-							"type": "scalar",
+							"name": "userInfo.year",
+							"type": "unknown",
+							"namespace": "app",
+							"dataType": "object",
 							"from": "",
-							"namespace": "",
-							"dataType": "bool",
-							"set": {
-								"value": "false",
-								"type": "bool"
-							}
+							"target": "year",
+							"targetNamespace": "",
+							"targetType": "unknown"
 						}
 					}
 				],
@@ -560,7 +558,8 @@
 				"bSPR9iIrA3",
 				"42ry7QAnuU",
 				"l70dWEOG9N",
-				"lwjzLhuggu"
+				"lwjzLhuggu",
+				"1n0vDUaevg"
 			],
 			"linkedNodes": {}
 		},
@@ -575,7 +574,7 @@
 				"style": {
 					"display": "flex",
 					"flexDirection": "column",
-					"gap": "10px",
+					"gap": "20px",
 					"alignItems": "stretch",
 					"flexWrap": "nowrap",
 					"width": "auto",
@@ -585,7 +584,8 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"justifyContent": "flex-start"
 				}
 			},
 			"displayName": "Stylebox",
@@ -605,6 +605,7 @@
 			"hidden": false,
 			"nodes": [
 				"l--1PHQslY",
+				"FSUjYhWaw-",
 				"rKNsS40hki"
 			],
 			"linkedNodes": {}
@@ -707,7 +708,8 @@
 						"returns": {
 							"name": "result",
 							"type": "Variable"
-						}
+						},
+						"feedback": true
 					}
 				],
 				"iconPosition": "left",
@@ -808,14 +810,14 @@
 						"actionType": "datasource",
 						"datasource": {
 							"name": "viewPDF",
-							"type": "scalar",
 							"from": "",
-							"namespace": "",
-							"dataType": "bool",
+							"namespace": "app",
 							"set": {
 								"value": "true",
 								"type": "bool"
-							}
+							},
+							"type": "scalar",
+							"dataType": "bool"
 						}
 					}
 				],
@@ -922,14 +924,14 @@
 						"actionType": "datasource",
 						"datasource": {
 							"name": "viewPDF",
-							"type": "scalar",
 							"from": "",
-							"namespace": "",
-							"dataType": "bool",
+							"namespace": "app",
 							"set": {
 								"value": "false",
 								"type": "bool"
-							}
+							},
+							"type": "scalar",
+							"dataType": "bool"
 						}
 					}
 				],
@@ -1027,8 +1029,7 @@
 				"serverSideRef": "EditReview",
 				"style": {
 					"width": "100vw",
-					"height": "85vh",
-					"top": "20px"
+					"height": "85vh"
 				}
 			},
 			"displayName": "Dialog",
@@ -1280,7 +1281,11 @@
 							"namespace": "app"
 						},
 						"feedback": {
-							"enabled": true
+							"enabled": true,
+							"messages": {
+								"onSuccess": "Review saved successfull.",
+								"onFail": "Review saved failed."
+							}
 						}
 					},
 					{
@@ -1298,7 +1303,7 @@
 							"namespace": "app"
 						},
 						"feedback": {
-							"enabled": true
+							"enabled": false
 						}
 					},
 					{
@@ -1464,7 +1469,7 @@
 					"flexDirection": "column",
 					"gap": "10px",
 					"paddingRight": "0px",
-					"paddingBottom": "10px",
+					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px"
 				}
@@ -1651,7 +1656,10 @@
 				"classNames": [],
 				"events": [],
 				"overlay": true,
-				"serverSideRef": "GenerateDoc"
+				"serverSideRef": "GenerateDoc",
+				"style": {
+					"width": "fit-content"
+				}
 			},
 			"displayName": "Dialog",
 			"custom": {},
@@ -1670,7 +1678,19 @@
 			"props": {
 				"events": [],
 				"className": "h-full flex-1",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "20px",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"width": "fit-content",
+					"paddingRight": "20px",
+					"paddingBottom": "20px",
+					"paddingTop": "20px",
+					"paddingLeft": "20px"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1678,7 +1698,7 @@
 			"hidden": false,
 			"nodes": [
 				"p3loM3DI2e",
-				"FtNGl-6ttR",
+				"5EmBrmh8Hz",
 				"5wS5UD8VE1"
 			],
 			"linkedNodes": {}
@@ -1720,75 +1740,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"FtNGl-6ttR": {
-			"type": {
-				"resolvedName": "TextInput"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"placeholder": "placeholder",
-				"label": "label",
-				"labelPosition": "top",
-				"iterableChild": true
-			},
-			"displayName": "Text Input",
-			"custom": {},
-			"parent": "z3AmdpxsFN",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"label": "9AXVBt_Bs_",
-				"input": "kTQLUSis4y"
-			}
-		},
-		"9AXVBt_Bs_": {
-			"type": {
-				"resolvedName": "Label"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"moveable": false,
-				"text": "Enter the year",
-				"classNames": [
-					"label"
-				],
-				"deletable": true
-			},
-			"displayName": "Label",
-			"custom": {},
-			"parent": "FtNGl-6ttR",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"kTQLUSis4y": {
-			"type": {
-				"resolvedName": "Input"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"deletable": false,
-				"className": "w-full bg-transparent",
-				"type": "number",
-				"classNames": [
-					"input"
-				],
-				"format": "",
-				"dataType": "number",
-				"datasource": "year",
-				"moveable": false,
-				"placeholder": ""
-			},
-			"displayName": "Input",
-			"custom": {},
-			"parent": "FtNGl-6ttR",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"5wS5UD8VE1": {
 			"type": {
 				"resolvedName": "StyleBox"
@@ -1826,6 +1777,24 @@
 				],
 				"events": [
 					{
+						"type": "dialog",
+						"id": "jj19KokEnFTK5agnP9tfzr",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "GenerateDoc"
+					},
+					{
+						"type": "dialog",
+						"id": "fH6V3ePGAnAYB2dd4wuKf5",
+						"events": [
+							"onclick"
+						],
+						"actionType": "open",
+						"targetDialog": "Spinner"
+					},
+					{
 						"type": "method",
 						"dataclass": "Review",
 						"events": [
@@ -1860,16 +1829,17 @@
 							"type": "entitysel",
 							"from": "",
 							"namespace": "app"
-						}
+						},
+						"disabled": false
 					},
 					{
 						"type": "dialog",
-						"id": "jj19KokEnFTK5agnP9tfzr",
+						"id": "fKdE1mMvAV6dbfp8yozeeg",
 						"events": [
 							"onclick"
 						],
 						"actionType": "close",
-						"targetDialog": "GenerateDoc"
+						"targetDialog": "Spinner"
 					}
 				],
 				"iconPosition": "left",
@@ -1966,7 +1936,10 @@
 				"classNames": [],
 				"events": [],
 				"overlay": true,
-				"serverSideRef": "GeneratePDF"
+				"serverSideRef": "GeneratePDF",
+				"style": {
+					"width": "fit-content"
+				}
 			},
 			"displayName": "Dialog",
 			"custom": {},
@@ -1985,7 +1958,19 @@
 			"props": {
 				"events": [],
 				"className": "h-full flex-1",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "20px",
+					"flexDirection": "column",
+					"alignItems": "center",
+					"justifyContent": "center",
+					"width": "fit-content",
+					"paddingRight": "20px",
+					"paddingBottom": "20px",
+					"paddingTop": "20px",
+					"paddingLeft": "20px"
+				}
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1993,7 +1978,7 @@
 			"hidden": false,
 			"nodes": [
 				"rSv7bkuKIm",
-				"Ba5CSSEIuo",
+				"UC7wS3_xbq",
 				"SMPSZfHpvR"
 			],
 			"linkedNodes": {}
@@ -2035,74 +2020,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"Ba5CSSEIuo": {
-			"type": {
-				"resolvedName": "TextInput"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"placeholder": "placeholder",
-				"label": "label",
-				"labelPosition": "top",
-				"iterableChild": true
-			},
-			"displayName": "Text Input",
-			"custom": {},
-			"parent": "0b3V7FdJVf",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"label": "h89pfeYIPf",
-				"input": "NGBM_YVUXa"
-			}
-		},
-		"h89pfeYIPf": {
-			"type": {
-				"resolvedName": "Label"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"moveable": false,
-				"text": "Enter the year",
-				"classNames": [
-					"label"
-				],
-				"deletable": true
-			},
-			"displayName": "Label",
-			"custom": {},
-			"parent": "Ba5CSSEIuo",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"NGBM_YVUXa": {
-			"type": {
-				"resolvedName": "Input"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"deletable": false,
-				"className": "w-full bg-transparent",
-				"type": "text",
-				"classNames": [
-					"input"
-				],
-				"datasource": "year",
-				"dataType": "number",
-				"moveable": false,
-				"placeholder": ""
-			},
-			"displayName": "Input",
-			"custom": {},
-			"parent": "Ba5CSSEIuo",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"SMPSZfHpvR": {
 			"type": {
 				"resolvedName": "StyleBox"
@@ -2139,6 +2056,24 @@
 					"buttonRed"
 				],
 				"events": [
+					{
+						"type": "dialog",
+						"id": "9CKPK3ZWEizj9TsVyuf315",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "GeneratePDF"
+					},
+					{
+						"type": "dialog",
+						"id": "ez1JBLZprGvBLHKmZNm6hP",
+						"events": [
+							"onclick"
+						],
+						"actionType": "open",
+						"targetDialog": "Spinner"
+					},
 					{
 						"type": "method",
 						"dataclass": "Review",
@@ -2179,12 +2114,12 @@
 					},
 					{
 						"type": "dialog",
-						"id": "9CKPK3ZWEizj9TsVyuf315",
+						"id": "vjHjYQAbbv7KWstk9VASzP",
 						"events": [
 							"onclick"
 						],
 						"actionType": "close",
-						"targetDialog": "GeneratePDF"
+						"targetDialog": "Spinner"
 					}
 				],
 				"iconPosition": "left",
@@ -2311,6 +2246,771 @@
 				"A604UJisHt",
 				"Rn5dqmBzxq"
 			],
+			"linkedNodes": {}
+		},
+		"oTVsDFOVM1": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"justifyContent": "space-between",
+					"alignItems": "center",
+					"width": "fit-content"
+				},
+				"classNames": [
+					"input"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "5EmBrmh8Hz",
+			"hidden": false,
+			"nodes": [
+				"QUsM0OpMHv",
+				"XvB6AmkNcA"
+			],
+			"linkedNodes": {}
+		},
+		"XvB6AmkNcA": {
+			"type": {
+				"resolvedName": "Popover"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"position": "bottom-center",
+				"isShown": false,
+				"action": "click",
+				"style": {
+					"minWidth": "48px",
+					"width": "fit-content"
+				},
+				"disabled": false
+			},
+			"displayName": "Popover",
+			"custom": {
+				"states:8S4WGVvLdSyVCxcAKwTc86": {
+					"disabled": true,
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "oTVsDFOVM1",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"PopoverTrigger": "Qn4Qdny_ET",
+				"PopoverContent": "zYC0BnQpCg"
+			}
+		},
+		"Qn4Qdny_ET": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"alignItems": "center",
+					"paddingBottom": "0px",
+					"paddingRight": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"height": "auto",
+					"justifyContent": "flex-end"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "XvB6AmkNcA",
+			"hidden": false,
+			"nodes": [
+				"B9Dt5GsJHj"
+			],
+			"linkedNodes": {}
+		},
+		"B9Dt5GsJHj": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-calendar-plus",
+				"style": {
+					"fontSize": "18px",
+					"display": "flex",
+					"alignItems": "end",
+					"paddingRight": "4px",
+					"paddingBottom": "4px",
+					"paddingTop": "4px",
+					"paddingLeft": "4px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {
+				"states:taPrcGBqkSd1hTtGn6TaPG": {
+					"style": {
+						"display": "flex"
+					}
+				}
+			},
+			"parent": "Qn4Qdny_ET",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"zYC0BnQpCg": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "transparent",
+					"zIndex": "1000",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "XvB6AmkNcA",
+			"hidden": false,
+			"nodes": [
+				"v5AZ8YZDzN"
+			],
+			"linkedNodes": {}
+		},
+		"v5AZ8YZDzN": {
+			"type": {
+				"resolvedName": "YearPicker"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [
+					"box-shadow"
+				],
+				"events": [],
+				"readOnly": false,
+				"style": {
+					"height": "250px",
+					"width": "300px",
+					"borderRadius": "4px",
+					"padding": "8px",
+					"backgroundColor": "white"
+				},
+				"selectedYearColor": "#dd3c4c",
+				"selectedRangeColor": "rgba(34,139,230,.12)",
+				"selectedYearRaduis": "",
+				"selectionModes": "single",
+				"datasource": "year"
+			},
+			"displayName": "YearPicker",
+			"custom": {},
+			"parent": "zYC0BnQpCg",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"bzJQyTevor": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Select the year",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"classNames": [
+					"label"
+				],
+				"style": {
+					"paddingBottom": "6px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "5EmBrmh8Hz",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"5EmBrmh8Hz": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "z3AmdpxsFN",
+			"hidden": false,
+			"nodes": [
+				"bzJQyTevor",
+				"oTVsDFOVM1"
+			],
+			"linkedNodes": {}
+		},
+		"UC7wS3_xbq": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "0b3V7FdJVf",
+			"hidden": false,
+			"nodes": [
+				"ryEc3L6hht",
+				"7vhDltYBK6"
+			],
+			"linkedNodes": {}
+		},
+		"ryEc3L6hht": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Select the year",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"classNames": [
+					"label"
+				],
+				"style": {
+					"paddingBottom": "6px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "UC7wS3_xbq",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"7vhDltYBK6": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "10px",
+					"justifyContent": "space-between",
+					"alignItems": "center",
+					"width": "fit-content"
+				},
+				"classNames": [
+					"input"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "UC7wS3_xbq",
+			"hidden": false,
+			"nodes": [
+				"6KkD0yFPIE",
+				"LKU6BG8mEw"
+			],
+			"linkedNodes": {}
+		},
+		"LKU6BG8mEw": {
+			"type": {
+				"resolvedName": "Popover"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"position": "bottom-center",
+				"isShown": false,
+				"action": "click",
+				"style": {
+					"minWidth": "48px",
+					"width": "fit-content"
+				},
+				"disabled": false
+			},
+			"displayName": "Popover",
+			"custom": {
+				"states:8S4WGVvLdSyVCxcAKwTc86": {
+					"disabled": true,
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "7vhDltYBK6",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"PopoverTrigger": "92oDX1i4oS",
+				"PopoverContent": "bqks8Euzeu"
+			}
+		},
+		"92oDX1i4oS": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"alignItems": "center",
+					"paddingBottom": "0px",
+					"paddingRight": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"height": "auto",
+					"justifyContent": "flex-end"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "LKU6BG8mEw",
+			"hidden": false,
+			"nodes": [
+				"B053p2ayJ5"
+			],
+			"linkedNodes": {}
+		},
+		"B053p2ayJ5": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-calendar-plus",
+				"style": {
+					"fontSize": "18px",
+					"display": "flex",
+					"alignItems": "end",
+					"paddingRight": "4px",
+					"paddingBottom": "4px",
+					"paddingTop": "4px",
+					"paddingLeft": "4px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {
+				"states:taPrcGBqkSd1hTtGn6TaPG": {
+					"style": {
+						"display": "flex"
+					}
+				}
+			},
+			"parent": "92oDX1i4oS",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"bqks8Euzeu": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "transparent",
+					"zIndex": "1000",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "LKU6BG8mEw",
+			"hidden": false,
+			"nodes": [
+				"LcEBCZaQWI"
+			],
+			"linkedNodes": {}
+		},
+		"LcEBCZaQWI": {
+			"type": {
+				"resolvedName": "YearPicker"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [
+					"box-shadow"
+				],
+				"events": [],
+				"readOnly": false,
+				"style": {
+					"height": "250px",
+					"width": "300px",
+					"borderRadius": "4px",
+					"padding": "8px",
+					"backgroundColor": "white"
+				},
+				"selectedYearColor": "#dd3c4c",
+				"selectedRangeColor": "rgba(34,139,230,.12)",
+				"selectedYearRaduis": "",
+				"selectionModes": "single",
+				"datasource": "year"
+			},
+			"displayName": "YearPicker",
+			"custom": {},
+			"parent": "bqks8Euzeu",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"FSUjYhWaw-": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"borderBottomWidth": "1px",
+					"borderBottomColor": "#4f5963",
+					"paddingLeft": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:bPX3VMrYiJc39xcehf72co": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:6wNAvGurxSNXFGXEG95KxK": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:4wunRmkSRifAoquQS9xQKt": {
+					"style": {
+						"display": "block"
+					}
+				},
+				"states:57dwi1rZ7WcaMEofzyVjCb": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:reZtyHD4grjgG7zDu6M14s": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:79hJwfxGNpq4qm2dY6Z4TL": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:dSvcUQJPEGzgsSF2nKxCse": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:ppSZALpZXd8tb1kdr2rrj3": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:eyrqkd31AbHVwrX1GnyuLU": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:m5x3WhPVud8GxY53SFK6d5": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:iGU3dXde9SQyZyFYXV91ot": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"1n0vDUaevg": {
+			"type": {
+				"resolvedName": "Dialog"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"overlay": true,
+				"serverSideRef": "Spinner",
+				"style": {
+					"backgroundColor": "transparent"
+				}
+			},
+			"displayName": "Dialog",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"Dialog": "wkK_B7_pW5"
+			}
+		},
+		"wkK_B7_pW5": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "h-full flex-1",
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "1n0vDUaevg",
+			"hidden": false,
+			"nodes": [
+				"YL0Hsv-_bY"
+			],
+			"linkedNodes": {}
+		},
+		"YL0Hsv-_bY": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"classNames": [
+					"loader"
+				],
+				"style": {
+					"position": "fixed",
+					"display": "block",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"right": "50%",
+					"bottom": "50%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "wkK_B7_pW5",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"QUsM0OpMHv": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "hidden",
+				"iterableChild": true
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "oTVsDFOVM1",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "ASHmxnxB0Y",
+				"input": "qaesxjisKI"
+			}
+		},
+		"ASHmxnxB0Y": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "QUsM0OpMHv",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"qaesxjisKI": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "w-full bg-transparent",
+				"type": "text",
+				"datasource": "year",
+				"dataType": "number",
+				"format": "0",
+				"style": {
+					"borderWidth": "0px",
+					"display": "block",
+					"width": "auto"
+				}
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "QUsM0OpMHv",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"6KkD0yFPIE": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "hidden",
+				"iterableChild": true,
+				"style": {
+					"borderWidth": "0px"
+				}
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "7vhDltYBK6",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "v6c4CBcJcX",
+				"input": "hQmQVvCEiT"
+			}
+		},
+		"v6c4CBcJcX": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "6KkD0yFPIE",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"hQmQVvCEiT": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "w-full bg-transparent",
+				"type": "text",
+				"style": {
+					"borderWidth": "0px"
+				},
+				"datasource": "year",
+				"dataType": "number"
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "6KkD0yFPIE",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}

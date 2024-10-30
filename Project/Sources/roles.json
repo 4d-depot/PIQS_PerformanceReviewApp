@@ -2,6 +2,55 @@
 	"permissions": {
 		"allowed": [
 			{
+				"applyTo": "Review.createReview",
+				"type": "method",
+				"promote": [
+					"createReview"
+				]
+			},
+			{
+				"applyTo": "Skill",
+				"type": "dataclass",
+				"read": [
+					"createReview",
+					"user"
+				],
+				"create": [
+					"createReview"
+				],
+				"describe": [
+					"createReview",
+					"user"
+				],
+				"execute": [
+					"createReview",
+					"user"
+				],
+				"update": [
+					"user"
+				]
+			},
+			{
+				"applyTo": "Review",
+				"type": "dataclass",
+				"create": [
+					"createReview"
+				],
+				"execute": [
+					"createReview",
+					"user"
+				],
+				"read": [
+					"user"
+				],
+				"update": [
+					"user"
+				],
+				"describe": [
+					"user"
+				]
+			},
+			{
 				"applyTo": "ds.authentify",
 				"type": "method",
 				"describe": [
@@ -18,21 +67,21 @@
 				"applyTo": "Review.generatePDF",
 				"type": "method",
 				"promote": [
-					"computeDoc"
+					"generatePDF"
 				]
 			},
 			{
 				"applyTo": "Template",
 				"type": "dataclass",
 				"read": [
-					"computeDoc"
+					"generatePDF"
 				]
 			},
 			{
 				"applyTo": "Departement",
 				"type": "dataclass",
 				"read": [
-					"computeDoc",
+					"generatePDF",
 					"hr"
 				],
 				"describe": [
@@ -84,25 +133,6 @@
 				]
 			},
 			{
-				"applyTo": "Review",
-				"type": "dataclass",
-				"read": [
-					"user"
-				],
-				"update": [
-					"user"
-				],
-				"describe": [
-					"user"
-				],
-				"execute": [
-					"user"
-				],
-				"create": [
-					"hr"
-				]
-			},
-			{
 				"applyTo": "Training",
 				"type": "dataclass",
 				"read": [
@@ -122,28 +152,6 @@
 				],
 				"execute": [
 					"user"
-				]
-			},
-			{
-				"applyTo": "Skill",
-				"type": "dataclass",
-				"read": [
-					"user"
-				],
-				"update": [
-					"user"
-				],
-				"describe": [
-					"user"
-				],
-				"execute": [
-					"user"
-				],
-				"create": [
-					"hr"
-				],
-				"drop": [
-					"hr"
 				]
 			},
 			{
@@ -239,33 +247,18 @@
 				"describe": [
 					"user"
 				]
-			},
-			{
-				"applyTo": "Employee.generateAllPDF",
-				"type": "method",
-				"describe": [
-					"hr"
-				],
-				"execute": [
-					"hr"
-				]
-			},
-			{
-				"applyTo": "Employee.generateAllReview",
-				"type": "method",
-				"describe": [
-					"hr"
-				],
-				"execute": [
-					"hr"
-				]
 			}
 		]
 	},
 	"privileges": [
 		{
+			"id": "w1HrmW82jGx7gt59bJj8ui",
+			"privilege": "createReview",
+			"includes": []
+		},
+		{
 			"id": "fS2VauLFJzbTadoNLJ5CgU",
-			"privilege": "computeDoc",
+			"privilege": "generatePDF",
 			"includes": []
 		},
 		{

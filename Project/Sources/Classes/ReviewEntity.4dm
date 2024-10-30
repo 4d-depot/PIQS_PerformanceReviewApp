@@ -142,7 +142,6 @@ exposed Function get doneTraining() : cs:C1710.TrainingSelection
 	return This:C1470.Trainings.query("ID_TrainingStatus in :1"; [2; 3; 4])
 	
 	//Mark:- ReadWrite or ReadOnly
-	
 exposed Function get isReadOnly() : Boolean
 	
 	var $status : Boolean:=False:C215

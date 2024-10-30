@@ -16,7 +16,10 @@ Function event restrict() : cs:C1710.EmployeeSelection
 	End if 
 	
 	Case of 
-		: (Session:C1714.hasPrivilege("computeDoc"))
+		: (Session:C1714.hasPrivilege("generatePDF"))
+			return This:C1470.all()
+			
+		: (Session:C1714.hasPrivilege("createReview"))
 			return This:C1470.all()
 			
 		: (Session:C1714.hasPrivilege("authentify"))
@@ -36,9 +39,9 @@ Function event restrict() : cs:C1710.EmployeeSelection
 			
 	End case 
 	
-exposed Function loadEmployees($departement : Object) : cs:C1710.EmployeeSelection
+exposed Function loadEmployees($departement : Object; $isActive : Boolean) : cs:C1710.EmployeeSelection
 	If ($departement#Null:C1517)
-		return This:C1470.query("ID_Departement = :1"; $departement.ID)
+		return This:C1470.query("ID_Departement = :1 AND isActive = :2"; $departement.ID; $isActive)
 	Else 
-		return This:C1470.all()
+		return This:C1470.query("isActive = :1"; $isActive)
 	End if 

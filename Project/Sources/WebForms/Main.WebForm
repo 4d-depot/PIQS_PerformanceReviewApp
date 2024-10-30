@@ -357,6 +357,26 @@
 								"type": "string"
 							}
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "hzxC284SDjJUy9NsK6iFer",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -480,6 +500,26 @@
 							"set": {
 								"value": "Manager",
 								"type": "string"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "3YcLoEuP9Ge2oufTmLHTuD",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
 							}
 						}
 					}
@@ -1157,6 +1197,26 @@
 								"type": "string"
 							}
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "e4egsnABakqtgvc6ouigwK",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -1269,6 +1329,26 @@
 								"type": "string"
 							}
 						}
+					},
+					{
+						"type": "simple-action",
+						"id": "exdnowAKyeqpnAxagek2Vb",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
+							}
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -1378,6 +1458,26 @@
 							"set": {
 								"value": "HR",
 								"type": "string"
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "rGZcGhCtPZ8rAB8AvSCuQj",
+						"events": [
+							"onclick"
+						],
+						"action": "set",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "viewPDF",
+							"type": "scalar",
+							"from": "",
+							"namespace": "app",
+							"dataType": "bool",
+							"set": {
+								"value": "false",
+								"type": "bool"
 							}
 						}
 					}

@@ -6,7 +6,7 @@
 			"name": "viewPDF",
 			"value": "",
 			"valueType": "hardCoded",
-			"path": "viewPDF",
+			"path": "app:viewPDF",
 			"dsType": "bool",
 			"op": "istrue"
 		},
@@ -31,7 +31,7 @@
 					"name": "condition",
 					"value": "",
 					"valueType": "hardCoded",
-					"path": "viewPDF",
+					"path": "app:viewPDF",
 					"dsType": "bool",
 					"op": "isfalse"
 				}

@@ -36,6 +36,13 @@
 			"initialValue": "all",
 			"depth": null,
 			"pageSize": 100
+		},
+		{
+			"id": "viewPDF",
+			"type": "scalar",
+			"namespace": "app",
+			"dataType": "bool",
+			"initialValue": false
 		}
 	]
 }

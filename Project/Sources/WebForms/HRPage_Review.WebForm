@@ -3,43 +3,6 @@
 		"v": "1.0",
 		"datasources": [
 			{
-				"id": "employees",
-				"type": "entitysel",
-				"dataclass": "Employee",
-				"initialValue": "all",
-				"depth": null,
-				"pageSize": 100
-			},
-			{
-				"id": "theEmployee",
-				"type": "entity",
-				"dataclass": "Employee",
-				"from": "employees",
-				"namespace": "",
-				"initialValue": "first",
-				"depth": null,
-				"events": [
-					{
-						"type": "simple-action",
-						"id": "9NC64b5H7H9EQc7DH5vTHF",
-						"events": [
-							"onChange"
-						],
-						"action": "copy",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "theEmployee.Reviews",
-							"type": "entitysel",
-							"namespace": "",
-							"from": "",
-							"target": "subReviews",
-							"targetNamespace": "app",
-							"targetType": "entitysel"
-						}
-					}
-				]
-			},
-			{
 				"id": "departements",
 				"type": "entitysel",
 				"dataclass": "Departement",
@@ -59,43 +22,33 @@
 				"events": [
 					{
 						"type": "method",
-						"dataclass": "Employee",
+						"dataclass": "Review",
 						"events": [
 							"onChange"
 						],
-						"id": "aWUNC1K8hcFnDhAhGebntS",
-						"method": "ds.Employee.loadEmployees",
+						"id": "qU6RqUCKFFTvFgF5AyRvXc",
+						"method": "ds.Review.loadReviews",
 						"params": [
 							{
 								"name": "departement",
-								"type": "Object",
+								"type": "cs.DepartementEntity",
 								"datasource": "departement",
-								"id": "aLziU5cz2c47saPFqBuU2U"
+								"id": "71gSticw4fs6tVr3Q7z4vm"
+							},
+							{
+								"name": "year",
+								"type": "Integer",
+								"datasource": "year",
+								"id": "6861YJxHZbAVdepUcznMd7"
 							}
 						],
 						"datasource": "",
 						"returns": {
 							"name": "result",
-							"type": "cs.EmployeeSelection",
-							"datasource": "employees"
+							"type": "Variable",
+							"datasource": "app:subReviews"
 						},
-						"feedback": true,
-						"disabled": false
-					},
-					{
-						"type": "simple-action",
-						"id": "oJf4LZmBWqjyZZx8yR9dVr",
-						"events": [
-							"onChange"
-						],
-						"action": "refresh",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "theEmployee",
-							"type": "entity",
-							"namespace": "",
-							"from": "employees"
-						}
+						"feedback": false
 					}
 				]
 			},
@@ -104,7 +57,38 @@
 				"type": "scalar",
 				"namespace": "",
 				"dataType": "number",
-				"initialValue": "0"
+				"initialValue": "0",
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Review",
+						"events": [
+							"onChange"
+						],
+						"id": "1uRgoZ966TYEt2U8gDySBJ",
+						"method": "ds.Review.loadReviews",
+						"params": [
+							{
+								"name": "departement",
+								"type": "cs.DepartementEntity",
+								"datasource": "departement",
+								"id": "1QVoRxXs1EFDEHDdUX2d5i"
+							},
+							{
+								"name": "year",
+								"type": "Integer",
+								"datasource": "year",
+								"id": "e3zT5WN76tWFmsPMS3ptgL"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable",
+							"datasource": "app:subReviews"
+						}
+					}
+				]
 			}
 		],
 		"styles": [],
@@ -144,24 +128,6 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "tG8N6gTqiiGoHWBqomR7fH",
-						"events": [
-							"onload"
-						],
-						"action": "copy",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "theEmployee.Reviews",
-							"type": "entitysel",
-							"from": "",
-							"namespace": "",
-							"target": "subReviews",
-							"targetNamespace": "app",
-							"targetType": "entitysel"
-						}
-					},
-					{
-						"type": "simple-action",
 						"id": "4BDRwRdQESnkaNLG66SK6f",
 						"events": [
 							"onload"
@@ -177,6 +143,34 @@
 							"target": "year",
 							"targetNamespace": "",
 							"targetType": "number"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "Review",
+						"events": [
+							"onload"
+						],
+						"id": "nHgEzHk5vWeqVoWadxrhBB",
+						"method": "ds.Review.loadReviews",
+						"params": [
+							{
+								"name": "departement",
+								"type": "cs.DepartementEntity",
+								"datasource": "departement",
+								"id": "u7Mqh6y4jPUSB1ph7716aW"
+							},
+							{
+								"name": "year",
+								"type": "Integer",
+								"datasource": "year"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable",
+							"datasource": "app:subReviews"
 						}
 					}
 				],
@@ -226,81 +220,6 @@
 			"nodes": [
 				"9uKyQDClp-"
 			],
-			"linkedNodes": {}
-		},
-		"NkKx7NmRKJ": {
-			"type": {
-				"resolvedName": "DataTable"
-			},
-			"isCanvas": false,
-			"props": {
-				"iterable": true,
-				"classNames": [
-					"DataTable"
-				],
-				"events": [],
-				"style": {
-					"display": "flex",
-					"alignItems": "stretch",
-					"height": "auto",
-					"width": "60%"
-				},
-				"headerHeight": 36,
-				"rowHeight": 30,
-				"datasource": "employees",
-				"columns": [
-					{
-						"title": "Departement",
-						"source": "Departement.Name",
-						"format": "",
-						"width": "auto",
-						"sorting": true,
-						"id": "gbpS2yGRN8K8ZL3BNDXJdP"
-					},
-					{
-						"title": "Firstname",
-						"source": "Firstname",
-						"width": "auto",
-						"sorting": true,
-						"format": "",
-						"dataType": "string",
-						"id": "iCWoS5Z9zX1p1XAEsQy2L8"
-					},
-					{
-						"title": "Lastname",
-						"source": "Lastname",
-						"width": "auto",
-						"sorting": true,
-						"format": "",
-						"dataType": "string",
-						"id": "tbrzzRqdqjprsL7UwBb4hp"
-					},
-					{
-						"title": "Last Date",
-						"source": "lastReview.Date",
-						"width": "auto",
-						"sorting": true,
-						"format": "",
-						"dataType": "date",
-						"id": "3Pkep4GnAfsKxzv7iQAtPk"
-					},
-					{
-						"title": "Last Status",
-						"source": "lastReview.Status",
-						"width": "auto",
-						"sorting": true,
-						"format": "",
-						"id": "qNWyDnbWcgNz1HQLnv7cqZ"
-					}
-				],
-				"currentElement": "theEmployee",
-				"showBorders": true
-			},
-			"displayName": "DataTable",
-			"custom": {},
-			"parent": "zKeDOWK-di",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"FSuKj8nS5s": {
@@ -354,7 +273,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 36
+				"contentHeight": 38
 			},
 			"parent": "FSuKj8nS5s",
 			"hidden": false,
@@ -420,14 +339,38 @@
 				],
 				"events": [],
 				"style": {
-					"width": "50%",
 					"borderStyle": "solid",
-					"height": "auto"
+					"height": "auto",
+					"width": "100%"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
 				"datasource": "app:subReviews",
 				"columns": [
+					{
+						"title": "Departement",
+						"source": "Employee.Departement.Name",
+						"format": "",
+						"width": "auto",
+						"sorting": true,
+						"id": "wEt49vTJ9fNErkaUEpHs6T"
+					},
+					{
+						"title": "Firstname",
+						"source": "Employee.Firstname",
+						"format": "",
+						"width": "auto",
+						"sorting": true,
+						"id": "qbioz7dqsP9UuDRyMU6CK7"
+					},
+					{
+						"title": "Lastname",
+						"source": "Employee.Lastname",
+						"format": "",
+						"width": "auto",
+						"sorting": true,
+						"id": "1MqMZqzhpEVEZgaPThvvqu"
+					},
 					{
 						"title": "Date",
 						"source": "Date",
@@ -560,7 +503,9 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"display": "flex",
+					"gap": "20px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -568,7 +513,8 @@
 			"parent": "9uKyQDClp-",
 			"hidden": false,
 			"nodes": [
-				"FSuKj8nS5s"
+				"FSuKj8nS5s",
+				"Hj7kXTuM2r"
 			],
 			"linkedNodes": {}
 		},
@@ -598,7 +544,6 @@
 			"parent": "9uKyQDClp-",
 			"hidden": false,
 			"nodes": [
-				"NkKx7NmRKJ",
 				"uX5ZzoiAJc",
 				"rOW9xKi-zF"
 			],
@@ -642,6 +587,233 @@
 			"displayName": "Stylebox",
 			"custom": {},
 			"parent": "rOW9xKi-zF",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Hj7kXTuM2r": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "10px",
+					"maxWidth": "300px",
+					"justifyContent": "space-between",
+					"alignItems": "center"
+				},
+				"classNames": [
+					"input"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "yUTsXpNmZr",
+			"hidden": false,
+			"nodes": [
+				"r7WHK-2Hl3",
+				"bOMvQwWtSA"
+			],
+			"linkedNodes": {}
+		},
+		"r7WHK-2Hl3": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "year",
+								"children": [
+									{
+										"text": "Date",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "number",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "year"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "Hj7kXTuM2r",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"bOMvQwWtSA": {
+			"type": {
+				"resolvedName": "Popover"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"position": "bottom-center",
+				"isShown": false,
+				"action": "click",
+				"style": {
+					"minWidth": "48px",
+					"width": "fit-content"
+				},
+				"disabled": false
+			},
+			"displayName": "Popover",
+			"custom": {
+				"states:8S4WGVvLdSyVCxcAKwTc86": {
+					"disabled": true,
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "Hj7kXTuM2r",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"PopoverTrigger": "v9qLeQCgtM",
+				"PopoverContent": "kaZN7tBOm-"
+			}
+		},
+		"v9qLeQCgtM": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"alignItems": "center",
+					"paddingBottom": "0px",
+					"paddingRight": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"height": "auto",
+					"justifyContent": "flex-end"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "bOMvQwWtSA",
+			"hidden": false,
+			"nodes": [
+				"EqlgD8eHcI"
+			],
+			"linkedNodes": {}
+		},
+		"EqlgD8eHcI": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-calendar-plus",
+				"style": {
+					"fontSize": "18px",
+					"display": "flex",
+					"alignItems": "end",
+					"paddingRight": "4px",
+					"paddingBottom": "4px",
+					"paddingTop": "4px",
+					"paddingLeft": "4px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {
+				"states:taPrcGBqkSd1hTtGn6TaPG": {
+					"style": {
+						"display": "flex"
+					}
+				}
+			},
+			"parent": "v9qLeQCgtM",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"kaZN7tBOm-": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "transparent",
+					"zIndex": "1000",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "bOMvQwWtSA",
+			"hidden": false,
+			"nodes": [
+				"gAeEfuzUQz"
+			],
+			"linkedNodes": {}
+		},
+		"gAeEfuzUQz": {
+			"type": {
+				"resolvedName": "YearPicker"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [
+					"box-shadow"
+				],
+				"events": [],
+				"readOnly": false,
+				"style": {
+					"height": "250px",
+					"width": "300px",
+					"borderRadius": "4px",
+					"padding": "8px",
+					"backgroundColor": "white"
+				},
+				"selectedYearColor": "#dd3c4c",
+				"selectedRangeColor": "rgba(34,139,230,.12)",
+				"selectedYearRaduis": "",
+				"selectionModes": "single",
+				"datasource": "year"
+			},
+			"displayName": "YearPicker",
+			"custom": {},
+			"parent": "kaZN7tBOm-",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

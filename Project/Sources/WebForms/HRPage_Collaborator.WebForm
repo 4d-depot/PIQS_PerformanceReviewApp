@@ -71,6 +71,12 @@
 								"type": "Object",
 								"datasource": "departement",
 								"id": "aLziU5cz2c47saPFqBuU2U"
+							},
+							{
+								"name": "isActive",
+								"type": "Boolean",
+								"datasource": "isActive",
+								"id": "nMWEnjcYJhf11E8m1BSB4X"
 							}
 						],
 						"datasource": "",
@@ -88,7 +94,7 @@
 						"events": [
 							"onChange"
 						],
-						"action": "refresh",
+						"action": "create",
 						"actionType": "datasource",
 						"datasource": {
 							"name": "theEmployee",
@@ -98,9 +104,24 @@
 						}
 					}
 				]
+			},
+			{
+				"id": "isActive",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "bool",
+				"initialValue": true
 			}
 		],
-		"styles": [],
+		"styles": [
+			{
+				"name": "switch",
+				"content": ".chakra-switch__track[data-checked] {\nbackground-color: #dd3c4c !important;\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "S5G7bfpmVNv-wzQRxTC3Y"
+			}
+		],
 		"states": [
 			{
 				"label": "Base",
@@ -1323,7 +1344,29 @@
 							"from": "employees",
 							"namespace": ""
 						},
-						"state": {}
+						"state": {},
+						"feedback": {
+							"enabled": true,
+							"messages": {
+								"onSuccess": "Collaborator saved successful.",
+								"onFail": "Collaborator saved failed."
+							}
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "qtrqbRfgmsCPRcH5URwRPg",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "employees",
+							"type": "entitysel",
+							"from": "",
+							"namespace": ""
+						}
 					},
 					{
 						"type": "dialog",
@@ -1486,11 +1529,13 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"flexDirection": "column",
+					"flexDirection": "row",
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"gap": "20px",
+					"alignItems": "center"
 				}
 			},
 			"displayName": "Stylebox",
@@ -1498,7 +1543,8 @@
 			"parent": "FypJvnw6Gs",
 			"hidden": false,
 			"nodes": [
-				"FSuKj8nS5s"
+				"FSuKj8nS5s",
+				"Yj3jTxickW"
 			],
 			"linkedNodes": {}
 		},
@@ -1621,6 +1667,114 @@
 			"displayName": "Text",
 			"custom": {},
 			"parent": "3aDagJG1bk",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Yj3jTxickW": {
+			"type": {
+				"resolvedName": "Checkbox"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"label": "label",
+				"variant": "switch",
+				"labelPosition": "right",
+				"iterableChild": true
+			},
+			"displayName": "CheckBox",
+			"custom": {},
+			"parent": "NWuzlo8HrE",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "zrjpPu4Lca",
+				"CheckboxInput": "y2fh4T72ZL"
+			}
+		},
+		"zrjpPu4Lca": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"htmlfor": "Yj3jTxickW",
+				"text": "Is Active",
+				"classNames": [
+					"label"
+				],
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "Yj3jTxickW",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"y2fh4T72ZL": {
+			"type": {
+				"resolvedName": "CheckboxInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [
+					"switch"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Employee",
+						"events": [
+							"onchange"
+						],
+						"id": "6sfeEefmAeUCcxeZzrnFcZ",
+						"method": "ds.Employee.loadEmployees",
+						"params": [
+							{
+								"name": "departement",
+								"type": "Object",
+								"datasource": "departement",
+								"id": "xtQDtBvnHUqtkG52KJSctd"
+							},
+							{
+								"name": "isActive",
+								"type": "Boolean",
+								"datasource": "isActive",
+								"id": "xjRk8RUbLJwTp1q9BsA7Sw"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.EmployeeSelection",
+							"datasource": "employees"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "iNqAprRgAxt4AQZmYd2UCD",
+						"events": [],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theEmployee",
+							"type": "entity",
+							"namespace": "",
+							"from": "employees"
+						}
+					}
+				],
+				"deletable": false,
+				"datasource": "isActive",
+				"iterableChild": true
+			},
+			"displayName": "Checkbox Input",
+			"custom": {},
+			"parent": "Yj3jTxickW",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

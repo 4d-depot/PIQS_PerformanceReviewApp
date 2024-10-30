@@ -236,7 +236,7 @@
 				"className": "h-full",
 				"role": "tab",
 				"deletable": true,
-				"serverSideRef": "tab_1",
+				"serverSideRef": "tab_Goal",
 				"iterableChild": true,
 				"style": {
 					"height": "100%"
@@ -266,7 +266,7 @@
 				"className": "h-full",
 				"role": "tab",
 				"deletable": true,
-				"serverSideRef": "tab_2",
+				"serverSideRef": "tab_Skill",
 				"iterableChild": true,
 				"style": {},
 				"classNames": []
@@ -417,7 +417,8 @@
 				"deletable": true,
 				"iterableChild": true,
 				"style": {},
-				"classNames": []
+				"classNames": [],
+				"serverSideRef": "tab_Training"
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -447,7 +448,8 @@
 					"flexDirection": "column",
 					"gap": "20px"
 				},
-				"classNames": []
+				"classNames": [],
+				"serverSideRef": "tab_Wish"
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -2638,7 +2640,8 @@
 					"justifyContent": "flex-start",
 					"gap": "20px"
 				},
-				"classNames": []
+				"classNames": [],
+				"serverSideRef": "tab_Comment"
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -3007,7 +3010,8 @@
 					"flexDirection": "column",
 					"gap": "10px",
 					"maxWidth": "300px"
-				}
+				},
+				"serverSideRef": "Date"
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -3033,7 +3037,8 @@
 					"gap": "10px",
 					"alignItems": "start",
 					"maxWidth": "300px"
-				}
+				},
+				"serverSideRef": "Score"
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -3059,7 +3064,8 @@
 					"gap": "10px",
 					"alignItems": "start",
 					"width": "fit-content"
-				}
+				},
+				"serverSideRef": "Status"
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -3658,6 +3664,21 @@
 						"state": {}
 					},
 					{
+						"type": "simple-action",
+						"id": "jvET4CufXtM1SETDka62Ba",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview.doneGoals",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "app"
+						}
+					},
+					{
 						"type": "dialog",
 						"id": "aWKLHTF2JVnoYWo6myYppu",
 						"events": [
@@ -4162,6 +4183,25 @@
 						"state": {}
 					},
 					{
+						"type": "simple-action",
+						"id": "3A2h2pv8hEz5DKoAxiRr4f",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview",
+							"type": "entity",
+							"namespace": "app"
+						},
+						"feedback": {
+							"enabled": true
+						},
+						"state": {},
+						"disabled": false
+					},
+					{
 						"type": "dialog",
 						"id": "jbFqLudU9kVjpJ5CKVceV1",
 						"events": [
@@ -4254,7 +4294,24 @@
 						"feedback": {
 							"enabled": true
 						},
-						"state": {}
+						"state": {},
+						"disabled": false
+					},
+					{
+						"type": "simple-action",
+						"id": "c5z3YNL4sNATKATso46AQR",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview.plannedGoal",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "app"
+						},
+						"disabled": true
 					},
 					{
 						"type": "dialog",
@@ -4827,6 +4884,21 @@
 						"state": {}
 					},
 					{
+						"type": "simple-action",
+						"id": "ixKSegGvADMWGgLQbNhX7f",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "selectedReview.Skills",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "app"
+						}
+					},
+					{
 						"type": "dialog",
 						"id": "mDhe5a3ZFrUJXUAh6F58pS",
 						"events": [
@@ -5384,7 +5456,14 @@
 							"type": "entity",
 							"namespace": ""
 						},
-						"state": {}
+						"state": {},
+						"feedback": {
+							"enabled": true,
+							"messages": {
+								"onSuccess": "Training saved successful.",
+								"onFail": "Training saved failed."
+							}
+						}
 					},
 					{
 						"type": "simple-action",
@@ -5400,7 +5479,7 @@
 							"namespace": "app"
 						},
 						"feedback": {
-							"enabled": true
+							"enabled": false
 						},
 						"state": {}
 					},
@@ -5476,7 +5555,14 @@
 							"type": "entity",
 							"namespace": ""
 						},
-						"state": {}
+						"state": {},
+						"feedback": {
+							"enabled": true,
+							"messages": {
+								"onSuccess": "Training removed successful.",
+								"onFail": "Training removed failed"
+							}
+						}
 					},
 					{
 						"type": "simple-action",
@@ -5492,7 +5578,7 @@
 							"namespace": "app"
 						},
 						"feedback": {
-							"enabled": true
+							"enabled": false
 						},
 						"state": {}
 					},
@@ -5906,7 +5992,11 @@
 							"namespace": ""
 						},
 						"feedback": {
-							"enabled": false
+							"enabled": true,
+							"messages": {
+								"onSuccess": "Training saved successful.",
+								"onFail": "Training saved failed."
+							}
 						},
 						"state": {}
 					},
@@ -6001,7 +6091,11 @@
 							"namespace": ""
 						},
 						"feedback": {
-							"enabled": true
+							"enabled": true,
+							"messages": {
+								"onSuccess": "Training removed successful.",
+								"onFail": "Training removed failed."
+							}
 						},
 						"state": {}
 					},

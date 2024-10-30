@@ -34,7 +34,7 @@
 							"onChange"
 						],
 						"id": "jX1uKd2s2XJ8PZGySxYh2y",
-						"method": "ds.Training.loadPlannedTraining",
+						"method": "ds.Training.loadTraining",
 						"params": [
 							{
 								"name": "Departement",
@@ -43,10 +43,15 @@
 								"id": "65WRvCz4Y7W57cjNvP6P5e"
 							},
 							{
+								"name": "status",
+								"type": "cs.TrainingStatusEntity",
+								"datasource": "TrainingStatusEnt",
+								"id": "tkH9ruGtZgawLZWTKnWXJn"
+							},
+							{
 								"name": "year",
 								"type": "Integer",
-								"datasource": "year",
-								"id": "tkH9ruGtZgawLZWTKnWXJn"
+								"datasource": "year"
 							}
 						],
 						"datasource": "",
@@ -72,7 +77,7 @@
 							"onChange"
 						],
 						"id": "qwVrtamZtPATSWyxTtP97g",
-						"method": "ds.Training.loadPlannedTraining",
+						"method": "ds.Training.loadTraining",
 						"params": [
 							{
 								"name": "Departement",
@@ -81,10 +86,69 @@
 								"id": "65WRvCz4Y7W57cjNvP6P5e"
 							},
 							{
+								"name": "status",
+								"type": "cs.TrainingStatusEntity",
+								"datasource": "TrainingStatusEnt",
+								"id": "tkH9ruGtZgawLZWTKnWXJn"
+							},
+							{
+								"name": "year",
+								"type": "Integer",
+								"datasource": "year"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable",
+							"datasource": "Trainings"
+						}
+					}
+				]
+			},
+			{
+				"id": "TrainingStatus",
+				"type": "entitysel",
+				"dataclass": "TrainingStatus",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "TrainingStatusEnt",
+				"type": "entity",
+				"dataclass": "TrainingStatus",
+				"from": "TrainingStatus",
+				"namespace": "",
+				"initialValue": "",
+				"depth": null,
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Training",
+						"events": [
+							"onChange"
+						],
+						"id": "4xd5UzisCwkdLDt4oKYUBJ",
+						"method": "ds.Training.loadTraining",
+						"params": [
+							{
+								"name": "Departement",
+								"type": "cs.DepartementEntity",
+								"datasource": "Departement",
+								"id": "5qTgyaJSTmRFmqA6x32p1s"
+							},
+							{
+								"name": "status",
+								"type": "cs.TrainingStatusEntity",
+								"datasource": "TrainingStatusEnt",
+								"id": "mjcDWsZsEoBsxJt1ucetTv"
+							},
+							{
 								"name": "year",
 								"type": "Integer",
 								"datasource": "year",
-								"id": "tkH9ruGtZgawLZWTKnWXJn"
+								"id": "6N2fPxLRB3u91cpkdtVLm5"
 							}
 						],
 						"datasource": "",
@@ -125,6 +189,41 @@
 							"target": "year",
 							"targetNamespace": "",
 							"targetType": "number"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "Training",
+						"events": [
+							"onload"
+						],
+						"id": "sE9GkYm5zaoUpJEswA4CCW",
+						"method": "ds.Training.loadTraining",
+						"params": [
+							{
+								"name": "Departement",
+								"type": "cs.DepartementEntity",
+								"datasource": "Departement",
+								"id": "ey3tnYko2gUMh3n7JNGSTK"
+							},
+							{
+								"name": "status",
+								"type": "cs.TrainingStatusEntity",
+								"datasource": "TrainingStatusEnt",
+								"id": "6gAPvXo7bTK2xrE67uzKGN"
+							},
+							{
+								"name": "year",
+								"type": "Integer",
+								"datasource": "year",
+								"id": "fQctPjS2qZeFULyhLgwMGy"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable",
+							"datasource": "Trainings"
 						}
 					}
 				],
@@ -170,6 +269,7 @@
 			"hidden": false,
 			"nodes": [
 				"1SaQG-TwPb",
+				"ipmCbMOOH1",
 				"9DKrMhX2d0"
 			],
 			"linkedNodes": {}
@@ -260,6 +360,7 @@
 						"format": "",
 						"width": "auto",
 						"sorting": true,
+						"disabled": false,
 						"id": "mJ2oByStuvZLKggEoWFEbL"
 					},
 					{
@@ -268,6 +369,7 @@
 						"format": "",
 						"width": "auto",
 						"sorting": true,
+						"disabled": false,
 						"id": "7tTP3N13Dcj8cWpdKRxnFi"
 					},
 					{
@@ -276,7 +378,17 @@
 						"format": "",
 						"width": "auto",
 						"sorting": true,
+						"disabled": false,
 						"id": "4CBickqyLKpMqkGdaiSCng"
+					},
+					{
+						"title": "Date",
+						"source": "Review.Date",
+						"format": "Date abbreviated",
+						"width": "auto",
+						"sorting": true,
+						"dataType": "date",
+						"id": "sMeU2azgUxnSGSXEqMWrgb"
 					},
 					{
 						"title": "Training",
@@ -295,6 +407,14 @@
 						"format": "",
 						"dataType": "string",
 						"id": "asqreJ2dL2UMA7zzs9guCQ"
+					},
+					{
+						"title": "Status",
+						"source": "Status.Name",
+						"format": "",
+						"width": "auto",
+						"sorting": true,
+						"id": "oTzBkJzvFrxUPG54cjbyTt"
 					}
 				],
 				"showBorders": true
@@ -635,6 +755,109 @@
 			"displayName": "YearPicker",
 			"custom": {},
 			"parent": "m8ZSVBnuOL",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ipmCbMOOH1": {
+			"type": {
+				"resolvedName": "SelectBox"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [
+					"selectBox"
+				],
+				"events": [],
+				"template": "{{ length }} items",
+				"rowsNumber": 5,
+				"datasource": "TrainingStatus",
+				"currentElement": "TrainingStatusEnt",
+				"iterator": "$This",
+				"style": {
+					"width": "400px"
+				},
+				"placeholder": "Status"
+			},
+			"displayName": "Select Box",
+			"custom": {},
+			"parent": "pFa96neg6t",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"container": "xWKPewKc80"
+			}
+		},
+		"xWKPewKc80": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "fd-selectbox__container",
+				"isFixedWidth": true,
+				"iterableChild": true,
+				"style": {
+					"paddingRight": "6px",
+					"paddingBottom": "6px",
+					"paddingTop": "6px",
+					"paddingLeft": "6px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"contentHeight": 36
+			},
+			"parent": "ipmCbMOOH1",
+			"hidden": false,
+			"nodes": [
+				"d1XPdqgl54"
+			],
+			"linkedNodes": {}
+		},
+		"d1XPdqgl54": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "$This.Name",
+								"children": [
+									{
+										"text": "Name",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "$This.Name"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "xWKPewKc80",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
