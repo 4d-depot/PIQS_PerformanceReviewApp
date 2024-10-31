@@ -779,7 +779,8 @@
 				],
 				"iconPosition": "left",
 				"style": {
-					"display": "flex"
+					"display": "flex",
+					"height": "35px"
 				}
 			},
 			"displayName": "Button",
@@ -843,7 +844,8 @@
 					"display": "flex",
 					"flexDirection": "row",
 					"justifyContent": "flex-end",
-					"gap": "20px"
+					"gap": "20px",
+					"alignItems": "center"
 				}
 			},
 			"displayName": "Stylebox",
@@ -869,7 +871,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "Review App",
+								"text": "Performance Review",
 								"bold": false,
 								"italic": false,
 								"underlined": false,
@@ -881,8 +883,7 @@
 				"datasource": "",
 				"style": {
 					"fontSize": "18px",
-					"fontWeight": "500",
-					"width": "150px"
+					"fontWeight": "500"
 				}
 			},
 			"displayName": "Text",
@@ -903,8 +904,8 @@
 				"style": {
 					"display": "flex",
 					"gap": "20px",
-					"width": "auto",
-					"alignItems": "center"
+					"alignItems": "center",
+					"maxWidth": "300px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -1013,7 +1014,7 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-left",
-				"isShown": true,
+				"isShown": false,
 				"action": "hover",
 				"style": {
 					"minWidth": "48px",

@@ -1052,11 +1052,23 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "Review App",
+								"text": "Performance ",
 								"bold": false,
 								"italic": false,
 								"underlined": false,
 								"strikethrough": false
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "Review"
 							}
 						]
 					}
@@ -1064,7 +1076,8 @@
 				"datasource": "",
 				"style": {
 					"fontWeight": "500",
-					"width": "auto"
+					"width": "auto",
+					"textAlign": "center"
 				}
 			},
 			"displayName": "Text",

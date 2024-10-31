@@ -1,6 +1,6 @@
 Class extends DataClass
 
-exposed Function loadTraining($Departement : cs:C1710.DepartementEntity; $status : cs:C1710.TrainingStatusEntity; $year : Integer)
+exposed Function loadTraining($Departement : cs:C1710.DepartementEntity; $status : cs:C1710.TrainingStatusEntity; $year : Integer) : cs:C1710.TrainingSelection
 	
 	Case of 
 		: (($Departement=Null:C1517) && ($status=Null:C1517))

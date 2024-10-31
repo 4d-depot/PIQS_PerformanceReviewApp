@@ -28,7 +28,7 @@ Function event restrict() : cs:C1710.ReviewSelection
 			
 	End case 
 	
-exposed Function loadReviews($departement : cs:C1710.DepartementEntity; $year : Integer)
+exposed Function loadReviews($departement : cs:C1710.DepartementEntity; $year : Integer) : cs:C1710.ReviewSelection
 	
 	If ($departement=Null:C1517)
 		return This:C1470.query("Date >= :1 AND Date <= :2"; String:C10($year)+"/01/01"; String:C10($year)+"/12/31")
