@@ -606,7 +606,8 @@
 			"nodes": [
 				"l--1PHQslY",
 				"FSUjYhWaw-",
-				"rKNsS40hki"
+				"rKNsS40hki",
+				"uL70IC0wSv"
 			],
 			"linkedNodes": {}
 		},
@@ -1977,7 +1978,7 @@
 			"parent": "lwjzLhuggu",
 			"hidden": false,
 			"nodes": [
-				"rSv7bkuKIm",
+				"vrRljIdiQv",
 				"UC7wS3_xbq",
 				"SMPSZfHpvR"
 			],
@@ -2015,7 +2016,7 @@
 			},
 			"displayName": "Text",
 			"custom": {},
-			"parent": "0b3V7FdJVf",
+			"parent": "vrRljIdiQv",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
@@ -2914,7 +2915,9 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"moveable": false
+				"moveable": false,
+				"deletable": true,
+				"text": "Label"
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -2940,7 +2943,9 @@
 					"borderWidth": "0px",
 					"display": "block",
 					"width": "auto"
-				}
+				},
+				"moveable": false,
+				"placeholder": ""
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2981,7 +2986,9 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"moveable": false
+				"moveable": false,
+				"deletable": true,
+				"text": "Label"
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -3004,13 +3011,120 @@
 					"borderWidth": "0px"
 				},
 				"datasource": "year",
-				"dataType": "number"
+				"dataType": "number",
+				"moveable": false,
+				"placeholder": ""
 			},
 			"displayName": "Input",
 			"custom": {},
 			"parent": "6KkD0yFPIE",
 			"hidden": false,
 			"nodes": [],
+			"linkedNodes": {}
+		},
+		"uL70IC0wSv": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "ViewPDF : ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "app:viewPDF",
+								"children": [
+									{
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "a"
+									}
+								],
+								"dsType": "bool",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "app:viewPDF",
+				"style": {
+					"color": "#ffffffff"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"AAl1fmuEPw": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "for all documents in Done status",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"textAlign": "center"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "vrRljIdiQv",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"vrRljIdiQv": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "0b3V7FdJVf",
+			"hidden": false,
+			"nodes": [
+				"rSv7bkuKIm",
+				"AAl1fmuEPw"
+			],
 			"linkedNodes": {}
 		}
 	}

@@ -119,25 +119,7 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "ReviewStatus",
-						"events": [
-							"oninit"
-						],
-						"id": "f41UW3UxFHP9kCL5synwFX",
-						"method": "ds.ReviewStatus.loadStatus",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "cs.ReviewStatusSelection",
-							"datasource": "reviewstatuses"
-						},
-						"feedback": true
-					}
-				],
+				"events": [],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
 				"style": {
@@ -268,7 +250,11 @@
 				"deletable": true,
 				"serverSideRef": "tab_Skill",
 				"iterableChild": true,
-				"style": {},
+				"style": {
+					"height": "100%",
+					"display": "block",
+					"flexDirection": "column"
+				},
 				"classNames": []
 			},
 			"displayName": "Stylebox",
@@ -2432,7 +2418,8 @@
 				],
 				"events": [],
 				"style": {
-					"width": "auto"
+					"width": "auto",
+					"height": "400px"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -2605,7 +2592,7 @@
 				"iterableChild": true,
 				"style": {
 					"width": "90%",
-					"height": "100%"
+					"display": "block"
 				}
 			},
 			"displayName": "Stylebox",

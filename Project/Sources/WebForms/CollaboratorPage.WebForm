@@ -28,7 +28,7 @@
 						"events": [
 							"onload"
 						],
-						"action": "reset",
+						"action": "clear",
 						"actionType": "datasource",
 						"datasource": {
 							"name": "selectedReview",

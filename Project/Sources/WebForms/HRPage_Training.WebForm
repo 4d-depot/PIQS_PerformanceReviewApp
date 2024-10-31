@@ -556,54 +556,9 @@
 			"parent": "pFa96neg6t",
 			"hidden": false,
 			"nodes": [
-				"QcPW6zcbVK",
+				"8TRyUjs8O5",
 				"SKesqEJahW"
 			],
-			"linkedNodes": {}
-		},
-		"QcPW6zcbVK": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "year",
-								"children": [
-									{
-										"text": "Date",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"dsType": "number",
-								"format": ""
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "year"
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "9DKrMhX2d0",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"SKesqEJahW": {
@@ -858,6 +813,67 @@
 			"displayName": "Text",
 			"custom": {},
 			"parent": "xWKPewKc80",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"8TRyUjs8O5": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "hidden",
+				"iterableChild": true
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "9DKrMhX2d0",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "BEDTbXSosl",
+				"input": "ASUBS_Eaqb"
+			}
+		},
+		"BEDTbXSosl": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "8TRyUjs8O5",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ASUBS_Eaqb": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "w-full bg-transparent",
+				"type": "number",
+				"style": {
+					"borderWidth": "0px"
+				},
+				"datasource": "year",
+				"dataType": "number"
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "8TRyUjs8O5",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
