@@ -1,4 +1,6 @@
 {
+  "name": "qodly_apexcharts",
+  "version": "1.2.0",
   "scope": "qodly_19d46f3361fe2825fb10",
   "author": {
     "name": "Cyril Limpalaer",

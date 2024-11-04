@@ -36,7 +36,6 @@ exposed Function loadReviews($departement : cs:C1710.DepartementEntity; $year : 
 		return This:C1470.query("Employee.ID_Departement = :1 AND Date >= :2 AND Date <= :3"; $departement.ID; String:C10($year)+"/01/01"; String:C10($year)+"/12/31")
 	End if 
 	
-	
 exposed Function generateAllReview($year : Integer)
 	var $employees : cs:C1710.EmployeeSelection
 	var $employee : cs:C1710.EmployeeEntity
@@ -48,7 +47,6 @@ exposed Function generateAllReview($year : Integer)
 		$review.createReview($employee.ID; $year)
 	End for each 
 	
-	
 exposed Function generateAllPDF($year : Integer)
 	var $reviews : cs:C1710.ReviewSelection
 	var $review : cs:C1710.ReviewEntity
@@ -57,4 +55,5 @@ exposed Function generateAllPDF($year : Integer)
 	For each ($review; $reviews)
 		$review.generatePDF()
 	End for each 
+	
 	

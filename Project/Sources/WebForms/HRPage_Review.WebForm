@@ -615,54 +615,9 @@
 			"parent": "yUTsXpNmZr",
 			"hidden": false,
 			"nodes": [
-				"r7WHK-2Hl3",
+				"UQpdfX3RP5",
 				"bOMvQwWtSA"
 			],
-			"linkedNodes": {}
-		},
-		"r7WHK-2Hl3": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "year",
-								"children": [
-									{
-										"text": "Date",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"dsType": "number",
-								"format": ""
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "year"
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "Hj7kXTuM2r",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"bOMvQwWtSA": {
@@ -814,6 +769,71 @@
 			"displayName": "YearPicker",
 			"custom": {},
 			"parent": "kaZN7tBOm-",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"UQpdfX3RP5": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "hidden",
+				"iterableChild": true
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "Hj7kXTuM2r",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "YJX6kCcEj_",
+				"input": "HRa_Jers-4"
+			}
+		},
+		"YJX6kCcEj_": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"deletable": true,
+				"text": "Label"
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "UQpdfX3RP5",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"HRa_Jers-4": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "w-full bg-transparent",
+				"type": "text",
+				"style": {
+					"borderWidth": "0px"
+				},
+				"datasource": "year",
+				"dataType": "number",
+				"moveable": false,
+				"placeholder": ""
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "UQpdfX3RP5",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

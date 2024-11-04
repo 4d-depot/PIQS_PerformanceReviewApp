@@ -3,67 +3,29 @@
 		"v": "1.0",
 		"datasources": [
 			{
-				"id": "qodlysource",
-				"type": "entitysel",
-				"dataclass": "Employee",
-				"initialValue": "all",
-				"depth": null,
-				"pageSize": 100
+				"id": "graphStatus",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "object",
+				"initialValue": {}
 			},
 			{
-				"id": "entity",
-				"type": "entity",
-				"dataclass": "Employee",
-				"from": "qodlysource",
+				"id": "graphScoreCollaborateur",
+				"type": "scalar",
 				"namespace": "",
-				"initialValue": "first",
-				"depth": null
+				"dataType": "object",
+				"initialValue": {},
+				"name": "graphScoreCollaborateur"
+			},
+			{
+				"id": "graphScoreManager",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "object",
+				"initialValue": {}
 			}
 		],
-		"styles": [
-			{
-				"name": "test",
-				"content": "self {\nmax-width: 100%;\n overflow: hidden;\n text-overflow: ellipsis;\n white-space: nowrap;\n}",
-				"parentId": null,
-				"scope": "local",
-				"id": "inijiiD6dGz0bOtQA4WXY"
-			},
-			{
-				"name": "loader",
-				"content": "self.loader {\n  border: 16px solid #f3f3f3; /* Light grey */\n  border-top: 16px solid #dd3c4c; /* Blue */\n  border-radius: 50%;\n  width: 120px;\n  height: 120px;\n  animation: spin 2s linear infinite;\n}\n\n@keyframes spin {\n  0% { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}",
-				"parentId": null,
-				"scope": "local",
-				"id": "Jc6HjGMuPEb2R_QNpgxES"
-			},
-			{
-				"name": "flip-box",
-				"content": ".flip-box {\n  background-color: transparent;\n  width: 300px;\n  height: 200px;\n  border: 1px solid #f1f1f1;\n  perspective: 1000px;\n}\n\n.flip-box-inner {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  transition: transform 0.8s;\n  transform-style: preserve-3d;\n}\n\n.flip-box:hover .flip-box-inner {\n  transform: rotateY(180deg);\n}\n\n.flip-box-front, .flip-box-back {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.flip-box-front {\n  background-color: grey;\n  color: black;\n}\n\n.flip-box-back {\n  background-color: dodgerblue;\n  color: white;\n  transform: rotateY(180deg);\n}",
-				"parentId": null,
-				"scope": "local",
-				"id": "r4GvYfKcvpKScDnyOAawA"
-			},
-			{
-				"name": "flip-box-inner",
-				"content": "self {\n\n}",
-				"parentId": null,
-				"scope": "local",
-				"id": "aayZZB1IsvjmAztQ3pRR0"
-			},
-			{
-				"name": "flip-box-front",
-				"content": "self {\n\n}",
-				"parentId": null,
-				"scope": "local",
-				"id": "YVgx45PD2LmZh3xCGzhi1"
-			},
-			{
-				"name": "flip-box-back",
-				"content": "self {\n\n}",
-				"parentId": null,
-				"scope": "local",
-				"id": "tRzDRAwiPNOQEki6e8uC8"
-			}
-		]
+		"styles": []
 	},
 	"components": {
 		"ROOT": {
@@ -82,153 +44,250 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"GfdOPY_ICc"
+				"mwKo1sf-fy"
 			],
 			"linkedNodes": {}
 		},
-		"GfdOPY_ICc": {
+		"MnzRCwvEGj": {
+			"type": {
+				"resolvedName": "Pie"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "Qodly Pie Chart name",
+				"classNames": [],
+				"events": [],
+				"legendPosition": "top",
+				"titlePosition": "center",
+				"gradient": false,
+				"displayLabels": true,
+				"style": {
+					"width": "500px"
+				},
+				"datasource": "graphStatus"
+			},
+			"displayName": "Pie",
+			"custom": {},
+			"parent": "mwKo1sf-fy",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"_AqPCMIs8U": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Button",
+				"classNames": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "j8PZ3UD54VUAZ5BZDF7WoT",
+						"events": [
+							"onclick"
+						],
+						"action": "all",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "subReviews",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "app"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "ReviewSelection",
+						"events": [
+							"onclick"
+						],
+						"id": "gfox1LZTsqyCuaRTVFSg5t",
+						"method": "subReviews.dashboardStatus",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Object",
+							"datasource": "graphStatus"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "ReviewSelection",
+						"events": [
+							"onclick"
+						],
+						"id": "2qZ5Q426BnC7hknPS35hSR",
+						"method": "subReviews.dashboardScore",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Object",
+							"datasource": "graphScoreCollaborateur"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "ReviewSelection",
+						"events": [
+							"onclick"
+						],
+						"id": "cWzrR9r6jSV19836Qhubji",
+						"method": "subReviews.dashboardScore2",
+						"params": [],
+						"namespace": "app",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Object",
+							"datasource": "graphScoreManager"
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "mwKo1sf-fy",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "hB6_n1HC-w"
+			}
+		},
+		"hB6_n1HC-w": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "_AqPCMIs8U",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"MtRJKFHddu": {
+			"type": {
+				"resolvedName": "Bar"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"orientation": "vertical",
+				"legendPosition": "hidden",
+				"titlePosition": "center",
+				"stacked": false,
+				"exportable": false,
+				"displayLabels": false,
+				"xAxisTickAmount": 12,
+				"yAxisTickAmount": 5,
+				"style": {
+					"width": "500px",
+					"position": "relative"
+				},
+				"datasource": "graphScoreCollaborateur"
+			},
+			"displayName": "Bar",
+			"custom": {},
+			"parent": "mwKo1sf-fy",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"mwKo1sf-fy": {
 			"type": {
 				"resolvedName": "StyleBox"
 			},
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"iterableChild": true,
-				"classNames": [
-					"flip-box"
-				]
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"W9HnMTaDEP"
+				"_AqPCMIs8U",
+				"MnzRCwvEGj",
+				"gRIPFEr1eO",
+				"MtRJKFHddu",
+				"HbEx_wMEYY"
 			],
 			"linkedNodes": {}
 		},
-		"W9HnMTaDEP": {
+		"gRIPFEr1eO": {
 			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"classNames": [
-					"flip-box-inner"
-				]
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "GfdOPY_ICc",
-			"hidden": false,
-			"nodes": [
-				"VtgM_5Y4Ol",
-				"j77i-4YT0w"
-			],
-			"linkedNodes": {}
-		},
-		"VtgM_5Y4Ol": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"classNames": [
-					"flip-box-back"
-				]
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "W9HnMTaDEP",
-			"hidden": false,
-			"nodes": [
-				"9eIVC5G2Qu"
-			],
-			"linkedNodes": {}
-		},
-		"9eIVC5G2Qu": {
-			"type": {
-				"resolvedName": "Text"
+				"resolvedName": "Line"
 			},
 			"isCanvas": false,
 			"props": {
+				"name": "Qodly Line Chart name",
+				"classNames": [],
 				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "Back",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							}
-						]
-					}
-				],
-				"datasource": ""
+				"legendPosition": "top",
+				"titlePosition": "center",
+				"chartType": "line",
+				"exportable": true,
+				"zoomable": true,
+				"displayLabels": true,
+				"strokeCurve": "straight",
+				"xAxisTickAmount": 12,
+				"yAxisTickAmount": 8,
+				"style": {
+					"width": "500px"
+				},
+				"datasource": "graphScoreCollaborateur"
 			},
-			"displayName": "Text",
+			"displayName": "Line",
 			"custom": {},
-			"parent": "VtgM_5Y4Ol",
+			"parent": "mwKo1sf-fy",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"j77i-4YT0w": {
+		"HbEx_wMEYY": {
 			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"classNames": [
-					"flip-box-front"
-				]
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "W9HnMTaDEP",
-			"hidden": false,
-			"nodes": [
-				"X72UgerQuw"
-			],
-			"linkedNodes": {}
-		},
-		"X72UgerQuw": {
-			"type": {
-				"resolvedName": "Text"
+				"resolvedName": "Line"
 			},
 			"isCanvas": false,
 			"props": {
+				"name": "Qodly Line Chart name",
+				"classNames": [],
 				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "Front",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							}
-						]
-					}
-				],
-				"datasource": ""
+				"legendPosition": "top",
+				"titlePosition": "center",
+				"chartType": "line",
+				"exportable": true,
+				"zoomable": true,
+				"displayLabels": true,
+				"strokeCurve": "straight",
+				"xAxisTickAmount": 12,
+				"yAxisTickAmount": 8,
+				"style": {
+					"width": "500px"
+				},
+				"datasource": "graphScoreManager"
 			},
-			"displayName": "Text",
+			"displayName": "Line",
 			"custom": {},
-			"parent": "j77i-4YT0w",
+			"parent": "mwKo1sf-fy",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

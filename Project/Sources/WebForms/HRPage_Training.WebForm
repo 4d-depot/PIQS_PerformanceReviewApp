@@ -159,6 +159,20 @@
 						}
 					}
 				]
+			},
+			{
+				"id": "filename",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": "training.txt"
+			},
+			{
+				"id": "csv",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": "\"ert\""
 			}
 		],
 		"styles": []
@@ -255,12 +269,13 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"gap": "10px",
+					"gap": "20px",
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
-					"alignItems": "center"
+					"alignItems": "center",
+					"justifyContent": "flex-start"
 				}
 			},
 			"displayName": "Stylebox",
@@ -846,7 +861,9 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"moveable": false
+				"moveable": false,
+				"deletable": true,
+				"text": "Label"
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -869,7 +886,9 @@
 					"borderWidth": "0px"
 				},
 				"datasource": "year",
-				"dataType": "number"
+				"dataType": "number",
+				"moveable": false,
+				"placeholder": ""
 			},
 			"displayName": "Input",
 			"custom": {},

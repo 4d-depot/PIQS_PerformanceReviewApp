@@ -8,6 +8,13 @@
 				"namespace": "",
 				"dataType": "number",
 				"initialValue": "0"
+			},
+			{
+				"id": "qodlysource",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": "Review.pdf"
 			}
 		],
 		"styles": [
@@ -585,7 +592,8 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
-					"justifyContent": "flex-start"
+					"justifyContent": "flex-start",
+					"borderLeftStyle": "solid"
 				}
 			},
 			"displayName": "Stylebox",
@@ -2245,7 +2253,8 @@
 				"r1r7aNbSNp",
 				"tpP1cUVNIc",
 				"A604UJisHt",
-				"Rn5dqmBzxq"
+				"Rn5dqmBzxq",
+				"VpTJ9uHdfR"
 			],
 			"linkedNodes": {}
 		},
@@ -3125,6 +3134,73 @@
 				"rSv7bkuKIm",
 				"AAl1fmuEPw"
 			],
+			"linkedNodes": {}
+		},
+		"VpTJ9uHdfR": {
+			"type": {
+				"resolvedName": "Download"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [
+					"buttonGrey"
+				],
+				"events": [],
+				"iterableChild": true,
+				"label": "Download PDF",
+				"iconPosition": "left",
+				"style": {
+					"display": "flex"
+				},
+				"datasource": "app:selectedReview.DocumentPDF",
+				"currentElement": "qodlysource"
+			},
+			"displayName": "Download",
+			"custom": {
+				"states:7CnGTyNnvXknnvyFhbFa3x": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:4wunRmkSRifAoquQS9xQKt": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:reZtyHD4grjgG7zDu6M14s": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:eyrqkd31AbHVwrX1GnyuLU": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "rKNsS40hki",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "WUgRINNQ9P"
+			}
+		},
+		"WUgRINNQ9P": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-cloud-arrow-down"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "VpTJ9uHdfR",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}
