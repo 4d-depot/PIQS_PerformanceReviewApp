@@ -616,7 +616,9 @@
 					"paddingRight": "0px",
 					"position": "sticky",
 					"top": "0px",
-					"left": "0px"
+					"left": "0px",
+					"zIndex": "1",
+					"paddingBottom": "2px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -1014,7 +1016,7 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-left",
-				"isShown": false,
+				"isShown": true,
 				"action": "hover",
 				"style": {
 					"minWidth": "48px",
@@ -1104,7 +1106,8 @@
 			"props": {
 				"events": [],
 				"style": {
-					"minWidth": "200px"
+					"minWidth": "200px",
+					"zIndex": "2"
 				},
 				"iterableChild": true,
 				"classNames": [

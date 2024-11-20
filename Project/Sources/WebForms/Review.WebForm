@@ -179,7 +179,8 @@
 				],
 				"variant": "line",
 				"style": {
-					"height": "80%"
+					"height": "80%",
+					"justifyContent": "flex-start"
 				}
 			},
 			"displayName": "Tabs",
@@ -221,7 +222,7 @@
 				"serverSideRef": "tab_Goal",
 				"iterableChild": true,
 				"style": {
-					"height": "100%"
+					"height": "auto"
 				},
 				"classNames": []
 			},
@@ -251,7 +252,7 @@
 				"serverSideRef": "tab_Skill",
 				"iterableChild": true,
 				"style": {
-					"height": "100%",
+					"height": "auto",
 					"display": "block",
 					"flexDirection": "column"
 				},
@@ -458,7 +459,9 @@
 				"label": "label",
 				"labelPosition": "top",
 				"iterableChild": true,
-				"style": {}
+				"style": {
+					"height": "50%"
+				}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -499,7 +502,8 @@
 			"props": {
 				"events": [],
 				"style": {
-					"minHeight": "200px"
+					"minHeight": "200px",
+					"height": "100%"
 				},
 				"deletable": false,
 				"className": "w-full bg-transparent",
@@ -536,7 +540,9 @@
 				"label": "label",
 				"labelPosition": "top",
 				"iterableChild": true,
-				"style": {}
+				"style": {
+					"height": "50%"
+				}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -577,6 +583,7 @@
 			"props": {
 				"events": [],
 				"style": {
+					"height": "100%",
 					"minHeight": "200px"
 				},
 				"deletable": false,
@@ -614,7 +621,9 @@
 				"label": "label",
 				"labelPosition": "top",
 				"iterableChild": true,
-				"style": {}
+				"style": {
+					"height": "50%"
+				}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -691,7 +700,10 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "top",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"height": "50%"
+				}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -921,7 +933,7 @@
 						"title": "Session",
 						"source": "Session",
 						"format": "",
-						"width": 150,
+						"width": "auto",
 						"sorting": false,
 						"id": "tSRhMCgfFYYRcKhTVkLhtk"
 					},
@@ -2625,7 +2637,8 @@
 					"display": "flex",
 					"flexDirection": "column",
 					"justifyContent": "flex-start",
-					"gap": "20px"
+					"gap": "20px",
+					"alignItems": "stretch"
 				},
 				"classNames": [],
 				"serverSideRef": "tab_Comment"

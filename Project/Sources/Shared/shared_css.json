@@ -84,7 +84,7 @@
 		},
 		{
 			"name": "selectBox",
-			"content": ".bg-primary-light {\n background-color: #f3bec3 !important;\n}\n\nself.disabled {\n\topacity: 0.90;\n}",
+			"content": "self {\n\tmin-width: 200px;\n\tmax-width: 400px;\n}\n\n.bg-primary-light {\n background-color: #f3bec3 !important;\n}\n\nself.disabled {\n\topacity: 0.90;\n}",
 			"parentId": null,
 			"id": "JNzGU5UCYXykMFWabN4W9"
 		},
@@ -124,6 +124,14 @@
 			"parentId": null,
 			"origin": "xV39DPvnOC",
 			"id": "pU3O0WuhEcfmo1bUsYOwg"
+		},
+		{
+			"name": "date-input",
+			"content": "self {\n  max-width : 200px;\n  border-radius : 4px;\n  border-width : 0.5px;\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "v3jcoMb9B5",
+			"id": "Z_nRoGCJiXCv5ZU9KZF6m"
 		}
 	]
 }

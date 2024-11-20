@@ -36,33 +36,10 @@
 		},
 		{
 			"objects": {
-				"WParea": {
-					"type": "write",
-					"top": 110,
-					"left": 310,
-					"width": 602,
-					"height": 532,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"dataSource": "WParea",
-					"hideFocusRing": true,
-					"scrollbarVertical": "automatic",
-					"scrollbarHorizontal": "automatic",
-					"dpi": 0,
-					"borderStyle": "none",
-					"method": "ObjectMethods/WParea.4dm",
-					"events": [
-						"onLoad",
-						"onLosingFocus",
-						"onGettingFocus",
-						"onSelectionChange",
-						"onAfterEdit"
-					]
-				},
 				"listbox3": {
 					"type": "listbox",
-					"dataSource": "Form:C1466.CurrentSelection",
-					"top": 20,
+					"dataSource": "Form:C1466.listTemplate",
+					"top": 70,
 					"left": 20,
 					"width": 130,
 					"height": 300,
@@ -91,11 +68,23 @@
 						}
 					]
 				},
+				"OpenTemplate": {
+					"type": "button",
+					"text": "Open template",
+					"top": 119,
+					"left": 188,
+					"width": 126,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/OpenTemplate.4dm"
+				},
 				"Button1": {
 					"type": "button",
 					"text": "Create template",
-					"top": 544,
-					"left": 25,
+					"top": 265,
+					"left": 188,
 					"width": 126,
 					"height": 30,
 					"events": [
@@ -105,8 +94,8 @@
 				},
 				"Input": {
 					"type": "input",
-					"left": 25,
-					"top": 512,
+					"left": 188,
+					"top": 233,
 					"width": 189,
 					"height": 17,
 					"placeholder": "Template name",
@@ -115,8 +104,8 @@
 				"Button2": {
 					"type": "button",
 					"text": "Duplicate template",
-					"top": 544,
-					"left": 171,
+					"top": 265,
+					"left": 334,
 					"width": 126,
 					"height": 30,
 					"events": [
@@ -124,27 +113,38 @@
 					],
 					"method": "ObjectMethods/Button2.4dm"
 				},
+				"DeleteTemplate": {
+					"type": "button",
+					"text": "Delete template",
+					"top": 383,
+					"left": 188,
+					"width": 126,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/DeleteTemplate.4dm"
+				},
 				"Button": {
 					"type": "button",
 					"text": "Open",
 					"top": 20,
-					"left": 170,
+					"left": 20,
 					"width": 120,
 					"height": 30,
 					"events": [
 						"onClick"
 					],
-					"icon": "Images/eye.svg",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubSet.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
-					"textAlign": "center",
-					"method": "ObjectMethods/Button.4dm"
+					"textAlign": "center"
 				},
 				"Button3": {
 					"type": "button",
 					"text": "Add",
-					"top": 62,
-					"left": 170,
+					"top": 20,
+					"left": 155,
 					"width": 120,
 					"height": 30,
 					"events": [
@@ -153,14 +153,13 @@
 					"icon": "Images/document.badge.plus2.svg",
 					"iconFrames": 1,
 					"textPlacement": "right",
-					"textAlign": "center",
-					"method": "ObjectMethods/Button3.4dm"
+					"textAlign": "center"
 				},
 				"Button4": {
 					"type": "button",
 					"text": "Duplicate",
-					"top": 104,
-					"left": 170,
+					"top": 20,
+					"left": 289,
 					"width": 120,
 					"height": 30,
 					"events": [
@@ -170,14 +169,13 @@
 					"iconFrames": 1,
 					"textPlacement": "right",
 					"textAlign": "center",
-					"imageHugsTitle": false,
-					"method": "ObjectMethods/Button4.4dm"
+					"imageHugsTitle": false
 				},
 				"Button5": {
 					"type": "button",
 					"text": "Delete",
-					"top": 149,
-					"left": 170,
+					"top": 20,
+					"left": 429,
 					"width": 120,
 					"height": 30,
 					"events": [
@@ -186,55 +184,12 @@
 					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubSet.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
-					"textAlign": "center",
-					"method": "ObjectMethods/Button5.4dm"
-				},
-				"WPtoolbar": {
-					"type": "subform",
-					"top": 20,
-					"left": 310,
-					"width": 602,
-					"height": 90,
-					"sizingX": "grow",
-					"detailForm": "WP_Toolbar",
-					"focusable": false,
-					"deletableInList": false,
-					"doubleClickInRowAction": "editSubrecord",
-					"doubleClickInEmptyAreaAction": "addSubrecord",
-					"selectionMode": "multiple",
-					"printFrame": "variable",
-					"sizingY": "grow"
-				},
-				"SaveTemplate": {
-					"type": "button",
-					"text": "Save template",
-					"top": 76,
-					"left": 952,
-					"width": 140,
-					"height": 39,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/SaveTemplate.4dm",
-					"sizingX": "move"
-				},
-				"Popup Dropdown List": {
-					"type": "dropdown",
-					"left": 952,
-					"top": 20,
-					"width": 167,
-					"height": 28,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.dropFormula",
-					"method": "ObjectMethods/Popup Dropdown List.4dm",
-					"sizingX": "move"
+					"textAlign": "center"
 				}
 			}
 		}
 	],
-	"geometryStamp": 62,
+	"geometryStamp": 19,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -19,18 +19,11 @@
 		],
 		"styles": [
 			{
-				"name": "SizePDF",
-				"content": "self {\n  min-width : 400px;\n\twidth: calc(100vw*0.4) !important;\n\tmin-height: calc(100vh*0.8) !important;\n}",
-				"children": {},
-				"parentId": null,
-				"origin": "GRqHKUWlYH",
-				"id": "Mdr8rCI7T73-6Ky0dLUWd"
-			},
-			{
 				"name": "loader",
 				"content": "self.loader {\n  border: 16px solid #f3f3f3; /* Light grey */\n  border-top: 16px solid #dd3c4c; /* Blue */\n  border-radius: 50%;\n  width: 120px;\n  height: 120px;\n  animation: spin 2s linear infinite;\n}\n\n@keyframes spin {\n  0% { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}",
 				"parentId": null,
-				"id": "Jc6HjGMuPEb2R_QNpgxES"
+				"id": "Jc6HjGMuPEb2R_QNpgxES",
+				"scope": "local"
 			}
 		],
 		"states": [
@@ -581,19 +574,20 @@
 				"style": {
 					"display": "flex",
 					"flexDirection": "column",
-					"gap": "20px",
+					"gap": "30px",
 					"alignItems": "stretch",
 					"flexWrap": "nowrap",
 					"width": "auto",
 					"maxWidth": "300px",
 					"minWidth": "200px",
 					"height": "auto",
-					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px",
+					"paddingRight": "20px",
+					"paddingBottom": "24px",
+					"paddingTop": "24px",
+					"paddingLeft": "20px",
 					"justifyContent": "flex-start",
-					"borderLeftStyle": "solid"
+					"borderLeftStyle": "solid",
+					"backgroundColor": "#f5f5f5ff"
 				}
 			},
 			"displayName": "Stylebox",
@@ -613,8 +607,8 @@
 			"hidden": false,
 			"nodes": [
 				"l--1PHQslY",
-				"FSUjYhWaw-",
 				"rKNsS40hki",
+				"h7te3srNs3",
 				"uL70IC0wSv"
 			],
 			"linkedNodes": {}
@@ -888,7 +882,7 @@
 					}
 				}
 			},
-			"parent": "rKNsS40hki",
+			"parent": "h7te3srNs3",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -1002,7 +996,7 @@
 					}
 				}
 			},
-			"parent": "rKNsS40hki",
+			"parent": "h7te3srNs3",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -1037,8 +1031,10 @@
 				"overlay": true,
 				"serverSideRef": "EditReview",
 				"style": {
-					"width": "100vw",
-					"height": "85vh"
+					"justifyContent": "center",
+					"display": "block",
+					"width": "100%",
+					"height": "90%"
 				}
 			},
 			"displayName": "Dialog",
@@ -1059,7 +1055,9 @@
 				"events": [],
 				"className": "h-full",
 				"iterableChild": true,
-				"classNames": [],
+				"classNames": [
+					"dialog__Dialog"
+				],
 				"style": {
 					"flexDirection": "column",
 					"paddingRight": "10px",
@@ -1111,14 +1109,14 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingRight": "10px",
+					"paddingBottom": "24px",
+					"paddingTop": "24px",
+					"paddingLeft": "0px",
+					"height": "100%",
+					"width": "40vw"
 				},
-				"classNames": [
-					"SizePDF"
-				]
+				"classNames": []
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -1230,8 +1228,7 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px",
-					"gap": "20px"
+					"paddingLeft": "0px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -1260,8 +1257,8 @@
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"yQLT6nKrq3",
-				"GRqHKUWlYH"
+				"GRqHKUWlYH",
+				"yQLT6nKrq3"
 			],
 			"linkedNodes": {}
 		},
@@ -2251,10 +2248,7 @@
 			"hidden": false,
 			"nodes": [
 				"r1r7aNbSNp",
-				"tpP1cUVNIc",
-				"A604UJisHt",
-				"Rn5dqmBzxq",
-				"VpTJ9uHdfR"
+				"tpP1cUVNIc"
 			],
 			"linkedNodes": {}
 		},
@@ -2741,91 +2735,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"FSUjYhWaw-": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"style": {
-					"borderBottomWidth": "1px",
-					"borderBottomColor": "#4f5963",
-					"paddingLeft": "0px",
-					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {
-				"states:7CnGTyNnvXknnvyFhbFa3x": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:bPX3VMrYiJc39xcehf72co": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:6wNAvGurxSNXFGXEG95KxK": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:4wunRmkSRifAoquQS9xQKt": {
-					"style": {
-						"display": "block"
-					}
-				},
-				"states:57dwi1rZ7WcaMEofzyVjCb": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:reZtyHD4grjgG7zDu6M14s": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:79hJwfxGNpq4qm2dY6Z4TL": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:dSvcUQJPEGzgsSF2nKxCse": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:ppSZALpZXd8tb1kdr2rrj3": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:eyrqkd31AbHVwrX1GnyuLU": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:m5x3WhPVud8GxY53SFK6d5": {
-					"style": {
-						"display": "none"
-					}
-				},
-				"states:iGU3dXde9SQyZyFYXV91ot": {
-					"style": {
-						"display": "none"
-					}
-				}
-			},
-			"parent": "yQLT6nKrq3",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"1n0vDUaevg": {
 			"type": {
 				"resolvedName": "Dialog"
@@ -3031,58 +2940,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"uL70IC0wSv": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "ViewPDF : ",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							},
-							{
-								"type": "datasource",
-								"datasource": "app:viewPDF",
-								"children": [
-									{
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false,
-										"text": "a"
-									}
-								],
-								"dsType": "bool",
-								"format": ""
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "app:viewPDF",
-				"style": {
-					"color": "#ffffffff"
-				}
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "yQLT6nKrq3",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"AAl1fmuEPw": {
 			"type": {
 				"resolvedName": "Text"
@@ -3179,7 +3036,7 @@
 					}
 				}
 			},
-			"parent": "rKNsS40hki",
+			"parent": "h7te3srNs3",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -3201,6 +3058,94 @@
 			"parent": "VpTJ9uHdfR",
 			"hidden": false,
 			"nodes": [],
+			"linkedNodes": {}
+		},
+		"uL70IC0wSv": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "ViewPDF : ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "app:viewPDF",
+								"children": [
+									{
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "a"
+									}
+								],
+								"dsType": "bool",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "app:viewPDF",
+				"style": {
+					"color": "transparent"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"h7te3srNs3": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"backgroundColor": "transparent",
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"states:57dwi1rZ7WcaMEofzyVjCb": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "yQLT6nKrq3",
+			"hidden": false,
+			"nodes": [
+				"A604UJisHt",
+				"Rn5dqmBzxq",
+				"VpTJ9uHdfR"
+			],
 			"linkedNodes": {}
 		}
 	}

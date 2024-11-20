@@ -1,0 +1,152 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "Performance Review",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 120,
+					"height": 400,
+					"stroke": "transparent",
+					"fill": "#FFFFFF",
+					"sizingY": "grow"
+				},
+				"Subform": {
+					"type": "subform",
+					"left": 121,
+					"top": 0,
+					"width": 500,
+					"height": 400,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"detailForm": "Departement",
+					"bottom": 400,
+					"dataSource": "Form:C1466.departement"
+				},
+				"btnDepartement": {
+					"type": "radio",
+					"text": "Department",
+					"top": 54,
+					"left": 0,
+					"width": 120,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"radioGroup": "group",
+					"dataSource": "\"Departement\"",
+					"method": "ObjectMethods/btnDepartement.4dm"
+				},
+				"btnCollaborator": {
+					"type": "radio",
+					"text": "Collaborator",
+					"top": 95,
+					"left": 0,
+					"width": 120,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"radioGroup": "group",
+					"dataSource": "\"Collaborator\"",
+					"method": "ObjectMethods/btnCollaborator.4dm"
+				},
+				"btnTemplate": {
+					"type": "radio",
+					"text": "Template",
+					"top": 134,
+					"left": 0,
+					"width": 120,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"radioGroup": "group",
+					"method": "ObjectMethods/btnTemplate.4dm",
+					"dataSource": "\"Template\""
+				},
+				"btnReview": {
+					"type": "radio",
+					"text": "Review",
+					"top": 174,
+					"left": 0,
+					"width": 120,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"radioGroup": "group",
+					"method": "ObjectMethods/btnReview.4dm",
+					"dataSource": "\"Review\""
+				},
+				"Radio Button4": {
+					"type": "radio",
+					"text": "Settings",
+					"top": 374,
+					"left": 0,
+					"width": 120,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"radioGroup": "group",
+					"sizingY": "move"
+				}
+			}
+		}
+	],
+	"geometryStamp": 167,
+	"editor": {
+		"activeView": "View 2",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Subform"
+				]
+			}
+		}
+	},
+	"method": "method.4dm"
+}

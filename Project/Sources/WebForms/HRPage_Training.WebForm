@@ -305,9 +305,7 @@
 				"datasource": "Departements",
 				"currentElement": "Departement",
 				"iterator": "$This",
-				"style": {
-					"width": "400px"
-				},
+				"style": {},
 				"placeholder": "Departement"
 			},
 			"displayName": "Select Box",
@@ -525,10 +523,10 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"paddingRight": "40px",
-					"paddingBottom": "40px",
-					"paddingTop": "40px",
-					"paddingLeft": "40px",
+					"paddingRight": "24px",
+					"paddingBottom": "24px",
+					"paddingTop": "24px",
+					"paddingLeft": "24px",
 					"width": "100%",
 					"height": "100%",
 					"display": "flex",
@@ -558,12 +556,12 @@
 				"style": {
 					"display": "flex",
 					"gap": "10px",
-					"maxWidth": "300px",
 					"justifyContent": "space-between",
 					"alignItems": "center"
 				},
 				"classNames": [
-					"input"
+					"input",
+					"date-input"
 				]
 			},
 			"displayName": "Stylebox",
@@ -745,9 +743,7 @@
 				"datasource": "TrainingStatus",
 				"currentElement": "TrainingStatusEnt",
 				"iterator": "$This",
-				"style": {
-					"width": "400px"
-				},
+				"style": {},
 				"placeholder": "Status"
 			},
 			"displayName": "Select Box",
