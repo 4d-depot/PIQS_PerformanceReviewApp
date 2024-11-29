@@ -42,7 +42,8 @@
 							"name": "result",
 							"type": "cs.ReviewSelection",
 							"datasource": "app:subReviews"
-						}
+						},
+						"feedback": true
 					}
 				]
 			},
@@ -101,7 +102,7 @@
 							"type": "cs.ReviewSelection",
 							"datasource": "app:subReviews"
 						},
-						"feedback": false
+						"feedback": true
 					}
 				]
 			},
@@ -550,7 +551,8 @@
 				"datasource": "year",
 				"dataType": "number",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -761,7 +763,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 39
+				"contentHeight": 38
 			},
 			"parent": "WdGCitcvUT",
 			"hidden": false,
@@ -890,7 +892,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 39
+				"contentHeight": 38
 			},
 			"parent": "JwxZb1uYR1",
 			"hidden": false,

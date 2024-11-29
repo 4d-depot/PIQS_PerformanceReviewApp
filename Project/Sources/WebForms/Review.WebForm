@@ -513,7 +513,8 @@
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {
@@ -594,7 +595,8 @@
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {
@@ -674,7 +676,8 @@
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {
@@ -754,7 +757,8 @@
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {
@@ -3266,7 +3270,8 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "top",
-				"iterableChild": true
+				"iterableChild": true,
+				"disabled": true
 			},
 			"displayName": "Text Input",
 			"custom": {
@@ -3316,10 +3321,11 @@
 				"moveable": false,
 				"placeholder": "",
 				"datasource": "itemGoalDo.Name",
-				"disabled": true,
+				"disabled": false,
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {
@@ -3342,7 +3348,8 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "top",
-				"iterableChild": true
+				"iterableChild": true,
+				"disabled": true
 			},
 			"displayName": "Text Input",
 			"custom": {
@@ -3390,12 +3397,13 @@
 				"className": "w-full bg-transparent",
 				"type": "textArea",
 				"datasource": "itemGoalDo.PerformanceIndicator",
-				"disabled": true,
+				"disabled": false,
 				"moveable": false,
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {
@@ -3470,7 +3478,8 @@
 				"datasource": "itemGoalDo.Comment",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -3977,7 +3986,8 @@
 				"datasource": "itemGoalTodo.Name",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4048,7 +4058,8 @@
 				"datasource": "itemGoalTodo.PerformanceIndicator",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4119,7 +4130,8 @@
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4555,7 +4567,8 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "top",
-				"iterableChild": true
+				"iterableChild": true,
+				"disabled": true
 			},
 			"displayName": "Text Input",
 			"custom": {
@@ -4605,10 +4618,11 @@
 				"moveable": false,
 				"placeholder": "",
 				"datasource": "itemSkill.Group",
-				"disabled": true,
+				"disabled": false,
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {
@@ -4631,7 +4645,8 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "top",
-				"iterableChild": true
+				"iterableChild": true,
+				"disabled": true
 			},
 			"displayName": "Text Input",
 			"custom": {
@@ -4679,12 +4694,13 @@
 				"className": "w-full bg-transparent",
 				"type": "textArea",
 				"datasource": "itemSkill.Name",
-				"disabled": true,
+				"disabled": false,
 				"moveable": false,
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {
@@ -5197,7 +5213,8 @@
 				"type": "textArea",
 				"moveable": false,
 				"placeholder": "",
-				"datasource": "itemTraining.Name"
+				"datasource": "itemTraining.Name",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -5265,7 +5282,8 @@
 				"type": "textArea",
 				"moveable": false,
 				"placeholder": "",
-				"datasource": "itemTraining.ProfessionalValue"
+				"datasource": "itemTraining.ProfessionalValue",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -5865,7 +5883,8 @@
 				"type": "textArea",
 				"moveable": false,
 				"placeholder": "",
-				"datasource": "itemTrainingTodo.Name"
+				"datasource": "itemTrainingTodo.Name",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -5933,7 +5952,8 @@
 				"type": "textArea",
 				"moveable": false,
 				"placeholder": "",
-				"datasource": "itemTrainingTodo.ExpectedResult"
+				"datasource": "itemTrainingTodo.ExpectedResult",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6556,7 +6576,8 @@
 				"type": "textArea",
 				"placeholder": "Organization / duration / date",
 				"datasource": "itemTraining.Session",
-				"moveable": false
+				"moveable": false,
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},

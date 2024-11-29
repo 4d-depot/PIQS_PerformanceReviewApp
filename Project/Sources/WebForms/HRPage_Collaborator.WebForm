@@ -623,7 +623,8 @@
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -690,7 +691,8 @@
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -757,7 +759,8 @@
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1136,7 +1139,8 @@
 				"placeholder": "",
 				"classNames": [
 					"input"
-				]
+				],
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1209,7 +1213,8 @@
 				],
 				"style": {
 					"height": "100%"
-				}
+				},
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},

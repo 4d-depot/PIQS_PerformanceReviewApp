@@ -178,7 +178,8 @@
 				"classNames": [
 					"input"
 				],
-				"style": {}
+				"style": {},
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1242,7 +1243,8 @@
 				"moveable": false,
 				"placeholder": "",
 				"datasource": "password",
-				"dataType": "string"
+				"dataType": "string",
+				"revealPassword": false
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1531,7 +1533,8 @@
 				"moveable": false,
 				"placeholder": "",
 				"datasource": "password",
-				"dataType": "string"
+				"dataType": "string",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},

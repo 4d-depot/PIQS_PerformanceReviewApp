@@ -340,7 +340,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 39
+				"contentHeight": 38
 			},
 			"parent": "FSuKj8nS5s",
 			"hidden": false,
@@ -880,7 +880,8 @@
 				"datasource": "year",
 				"dataType": "number",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -938,7 +939,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 39
+				"contentHeight": 38
 			},
 			"parent": "sij50svwiP",
 			"hidden": false,

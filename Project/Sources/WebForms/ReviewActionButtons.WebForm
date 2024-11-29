@@ -510,7 +510,8 @@
 					]
 				}
 			}
-		]
+		],
+		"defaultStates": []
 	},
 	"components": {
 		"ROOT": {
@@ -2863,7 +2864,8 @@
 					"width": "auto"
 				},
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2931,7 +2933,8 @@
 				"datasource": "year",
 				"dataType": "number",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},

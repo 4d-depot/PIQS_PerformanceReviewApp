@@ -124,72 +124,11 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/DeleteTemplate.4dm"
-				},
-				"Button": {
-					"type": "button",
-					"text": "Open",
-					"top": 20,
-					"left": 20,
-					"width": 120,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubSet.png",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"textAlign": "center"
-				},
-				"Button3": {
-					"type": "button",
-					"text": "Add",
-					"top": 20,
-					"left": 155,
-					"width": 120,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"icon": "Images/document.badge.plus2.svg",
-					"iconFrames": 1,
-					"textPlacement": "right",
-					"textAlign": "center"
-				},
-				"Button4": {
-					"type": "button",
-					"text": "Duplicate",
-					"top": 20,
-					"left": 289,
-					"width": 120,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"icon": "Images/document.on.document.svg",
-					"iconFrames": 1,
-					"textPlacement": "right",
-					"textAlign": "center",
-					"imageHugsTitle": false
-				},
-				"Button5": {
-					"type": "button",
-					"text": "Delete",
-					"top": 20,
-					"left": 429,
-					"width": 120,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubSet.png",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"textAlign": "center"
 				}
 			}
 		}
 	],
-	"geometryStamp": 19,
+	"geometryStamp": 20,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
