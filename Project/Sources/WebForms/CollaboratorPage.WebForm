@@ -54,7 +54,22 @@
 						},
 						"disabled": false,
 						"feedback": {
-							"enabled": true
+							"enabled": false
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "se9FdT7eQJ3mkZwb3VD4SL",
+						"events": [
+							"onload"
+						],
+						"action": "refresh",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "subReviews",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "app"
 						}
 					}
 				],

@@ -54,7 +54,7 @@
 					"height": 400,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"detailForm": "Departement",
+					"detailForm": "Welcome",
 					"bottom": 400,
 					"dataSource": "Form:C1466.departement"
 				},
@@ -68,7 +68,7 @@
 					"events": [
 						"onClick"
 					],
-					"style": "toolbar",
+					"style": "custom",
 					"radioGroup": "group",
 					"dataSource": "\"Departement\"",
 					"method": "ObjectMethods/btnDepartement.4dm"
@@ -83,7 +83,7 @@
 					"events": [
 						"onClick"
 					],
-					"style": "toolbar",
+					"style": "custom",
 					"radioGroup": "group",
 					"dataSource": "\"Collaborator\"",
 					"method": "ObjectMethods/btnCollaborator.4dm"
@@ -98,7 +98,7 @@
 					"events": [
 						"onClick"
 					],
-					"style": "toolbar",
+					"style": "custom",
 					"radioGroup": "group",
 					"method": "ObjectMethods/btnTemplate.4dm",
 					"dataSource": "\"Template\""
@@ -113,7 +113,7 @@
 					"events": [
 						"onClick"
 					],
-					"style": "toolbar",
+					"style": "custom",
 					"radioGroup": "group",
 					"method": "ObjectMethods/btnReview.4dm",
 					"dataSource": "\"Review\""
@@ -121,21 +121,26 @@
 				"Radio Button4": {
 					"type": "radio",
 					"text": "Settings",
-					"top": 374,
+					"top": 372,
 					"left": 0,
 					"width": 120,
 					"height": 26,
 					"events": [
 						"onClick"
 					],
-					"style": "toolbar",
+					"style": "custom",
 					"radioGroup": "group",
-					"sizingY": "move"
+					"sizingY": "move",
+					"icon": "/RESOURCES/Images/gearshape.svg",
+					"textPlacement": "right",
+					"iconFrames": 1,
+					"textAlign": "center",
+					"imageHugsTitle": true
 				}
 			}
 		}
 	],
-	"geometryStamp": 167,
+	"geometryStamp": 181,
 	"editor": {
 		"activeView": "View 2",
 		"defaultView": "View 1",

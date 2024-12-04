@@ -37,17 +37,18 @@
 					"type": "tab",
 					"text": "Tab control",
 					"top": 20,
-					"left": 22,
-					"width": 693,
-					"height": 564,
+					"left": 20,
+					"width": 690,
+					"height": 560,
 					"labels": [
 						"Goals",
 						"Skills",
-						"Trainnings",
+						"Trainings",
 						"Wish",
 						"Comments"
 					],
-					"action": "gotoPage"
+					"action": "gotoPage",
+					"bottom": 580
 				}
 			}
 		},
@@ -55,29 +56,28 @@
 			"objects": {
 				"Input": {
 					"type": "input",
-					"left": 49,
-					"top": 63,
+					"left": 40,
+					"top": 60,
 					"width": 202,
 					"height": 17,
-					"dataSource": "Form:C1466.review.Date"
+					"dataSource": "Form:C1466.review.Date",
+					"enterable": false
 				},
 				"List Box1": {
 					"type": "listbox",
-					"left": 50,
-					"top": 374,
-					"width": 646,
+					"left": 40,
+					"top": 364,
+					"width": 650,
 					"height": 196,
-					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
-						"onSelectionChange"
-					],
+					"events": [],
 					"listboxType": "collection",
 					"dataSource": "Form:C1466.review.plannedGoal",
 					"headerHeight": "1em",
-					"rowHeight": "2em",
 					"hideExtraBlankRows": true,
+					"verticalAlign": "middle",
+					"rowHeightAutoMin": "1em",
+					"rowHeightAutoMax": "1600em",
+					"selectionMode": "single",
 					"columns": [
 						{
 							"header": {
@@ -90,7 +90,8 @@
 							},
 							"dataSource": "This:C1470.Name",
 							"width": 218,
-							"wordwrap": "normal"
+							"wordwrap": "normal",
+							"rowHeightAuto": true
 						},
 						{
 							"header": {
@@ -99,10 +100,12 @@
 							},
 							"name": "Column8",
 							"dataSource": "This:C1470.PerformanceIndicator",
-							"width": 177,
+							"width": 220,
 							"footer": {
 								"name": "Footer8"
-							}
+							},
+							"wordwrap": "normal",
+							"rowHeightAuto": true
 						},
 						{
 							"header": {
@@ -113,25 +116,24 @@
 							"dataSource": "This:C1470.DueDate",
 							"footer": {
 								"name": "Footer9"
-							}
+							},
+							"width": 189
 						}
 					]
 				},
 				"List Box2": {
 					"type": "listbox",
-					"left": 50,
-					"top": 126,
-					"width": 646,
+					"left": 40,
+					"top": 121,
+					"width": 650,
 					"height": 203,
-					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
-						"onSelectionChange"
-					],
+					"events": [],
 					"listboxType": "collection",
 					"dataSource": "Form:C1466.review.doneGoals",
-					"rowHeight": "2em",
+					"verticalAlign": "middle",
+					"rowHeightAutoMin": "1em",
+					"rowHeightAutoMax": "1600em",
+					"selectionMode": "single",
 					"columns": [
 						{
 							"header": {
@@ -144,7 +146,8 @@
 							},
 							"dataSource": "This:C1470.Name",
 							"width": 218,
-							"wordwrap": "normal"
+							"wordwrap": "normal",
+							"rowHeightAuto": true
 						},
 						{
 							"header": {
@@ -166,25 +169,30 @@
 							"dataSource": "This:C1470.Comment",
 							"footer": {
 								"name": "Footer10"
-							}
+							},
+							"rowHeightAuto": true,
+							"wordwrap": "normal",
+							"width": 289
 						}
 					]
 				},
 				"Text2": {
 					"type": "text",
-					"text": "Prochains objectifs",
-					"top": 349,
-					"left": 50,
+					"text": "Next goals",
+					"top": 339,
+					"left": 40,
 					"width": 187,
-					"height": 16
+					"height": 16,
+					"fontWeight": "bold"
 				},
 				"Text3": {
 					"type": "text",
-					"text": "Objectif accomplis",
-					"top": 100,
-					"left": 50,
+					"text": "Achieved goals",
+					"top": 95,
+					"left": 40,
 					"width": 187,
-					"height": 16
+					"height": 16,
+					"fontWeight": "bold"
 				},
 				"Button": {
 					"type": "button",
@@ -204,18 +212,16 @@
 			"objects": {
 				"List Box": {
 					"type": "listbox",
-					"left": 50,
-					"top": 80,
-					"width": 640,
-					"height": 473,
-					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
-						"onSelectionChange"
-					],
+					"left": 40,
+					"top": 60,
+					"width": 650,
+					"height": 500,
+					"events": [],
 					"listboxType": "collection",
 					"dataSource": "Form:C1466.review.Skills",
+					"bottom": 560,
+					"focusable": true,
+					"selectionMode": "none",
 					"columns": [
 						{
 							"header": {
@@ -227,7 +233,8 @@
 								"name": "Footer1"
 							},
 							"width": 217,
-							"dataSource": "This:C1470.SkillGroup.Name"
+							"dataSource": "This:C1470.Group",
+							"wordwrap": "normal"
 						},
 						{
 							"header": {
@@ -239,7 +246,8 @@
 							"dataSource": "This:C1470.Name",
 							"footer": {
 								"name": "Footer2"
-							}
+							},
+							"wordwrap": "normal"
 						},
 						{
 							"header": {
@@ -247,7 +255,7 @@
 								"text": "Score"
 							},
 							"name": "Column3",
-							"width": 92,
+							"width": 130,
 							"dataSource": "This:C1470.ID_Score",
 							"footer": {
 								"name": "Footer3"
@@ -262,19 +270,17 @@
 				"List Box3": {
 					"type": "listbox",
 					"left": 40,
-					"top": 109,
-					"width": 655,
-					"height": 193,
-					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
-						"onSelectionChange"
-					],
+					"top": 89,
+					"width": 650,
+					"height": 210,
+					"events": [],
 					"dataSource": "Form:C1466.review.doneTraining",
 					"listboxType": "collection",
 					"rowHeightAutoMin": "1em",
 					"rowHeightAutoMax": "1600em",
+					"verticalAlign": "middle",
+					"focusable": true,
+					"selectionMode": "none",
 					"columns": [
 						{
 							"header": {
@@ -286,7 +292,8 @@
 								"name": "Footer6"
 							},
 							"dataSource": "This:C1470.Name",
-							"width": 200
+							"width": 200,
+							"wordwrap": "normal"
 						},
 						{
 							"header": {
@@ -298,14 +305,14 @@
 							"footer": {
 								"name": "Footer13"
 							},
-							"width": 328,
-							"wordwrap": "none",
+							"width": 304,
+							"wordwrap": "normal",
 							"rowHeightAuto": true
 						},
 						{
 							"header": {
 								"name": "Header15",
-								"text": "Header15"
+								"text": "Status"
 							},
 							"name": "Column14",
 							"dataSource": "This:C1470.Status.Name",
@@ -318,19 +325,17 @@
 				"List Box4": {
 					"type": "listbox",
 					"left": 40,
-					"top": 366,
-					"width": 655,
-					"height": 193,
-					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
-						"onSelectionChange"
-					],
+					"top": 350,
+					"width": 650,
+					"height": 210,
+					"events": [],
 					"dataSource": "Form:C1466.review.plannedTraining",
 					"listboxType": "collection",
 					"rowHeightAutoMin": "1em",
 					"rowHeightAutoMax": "1600em",
+					"verticalAlign": "middle",
+					"focusable": true,
+					"selectionMode": "none",
 					"columns": [
 						{
 							"header": {
@@ -342,7 +347,8 @@
 								"name": "Footer7"
 							},
 							"dataSource": "This:C1470.Name",
-							"width": 200
+							"width": 200,
+							"wordwrap": "normal"
 						},
 						{
 							"header": {
@@ -354,14 +360,14 @@
 								"name": "Footer14"
 							},
 							"dataSource": "This:C1470.ExpectedResult",
-							"width": 344,
+							"width": 306,
 							"wordwrap": "normal",
 							"rowHeightAuto": true
 						},
 						{
 							"header": {
 								"name": "Header12",
-								"text": "Header12"
+								"text": "Status"
 							},
 							"name": "Column6",
 							"dataSource": "This:C1470.Status.Name",
@@ -373,19 +379,21 @@
 				},
 				"Text4": {
 					"type": "text",
-					"text": "Formations accomplies",
-					"top": 80,
+					"text": "Achieved trainings",
+					"top": 60,
 					"left": 40,
 					"width": 187,
-					"height": 16
+					"height": 16,
+					"fontWeight": "bold"
 				},
 				"Text5": {
 					"type": "text",
-					"text": "Prochaines formations",
-					"top": 338,
+					"text": "Next trainings",
+					"top": 323,
 					"left": 40,
 					"width": 187,
-					"height": 16
+					"height": 16,
+					"fontWeight": "bold"
 				}
 			}
 		},
@@ -393,35 +401,39 @@
 			"objects": {
 				"Input1": {
 					"type": "input",
-					"left": 196,
-					"top": 73,
-					"width": 501,
-					"height": 225,
-					"dataSource": "Form:C1466.review.MobilityWish"
+					"left": 40,
+					"top": 86,
+					"width": 650,
+					"height": 210,
+					"dataSource": "Form:C1466.review.MobilityWish",
+					"enterable": false
 				},
 				"Input2": {
 					"type": "input",
-					"left": 196,
-					"top": 331,
-					"width": 501,
-					"height": 225,
-					"dataSource": "Form:C1466.review.MobilityMotivations"
+					"left": 40,
+					"top": 350,
+					"width": 650,
+					"height": 210,
+					"dataSource": "Form:C1466.review.MobilityMotivations",
+					"enterable": false
 				},
 				"Text6": {
 					"type": "text",
-					"text": "Mobility wish:",
-					"top": 73,
+					"text": "Mobility wish",
+					"top": 60,
 					"left": 40,
 					"width": 136,
-					"height": 16
+					"height": 16,
+					"fontWeight": "bold"
 				},
 				"Text7": {
 					"type": "text",
-					"text": "Mobility motivations:",
-					"top": 331,
+					"text": "Mobility motivations",
+					"top": 323,
 					"left": 40,
 					"width": 136,
-					"height": 16
+					"height": 16,
+					"fontWeight": "bold"
 				}
 			}
 		},
@@ -429,41 +441,45 @@
 			"objects": {
 				"Input3": {
 					"type": "input",
-					"left": 196,
-					"top": 73,
-					"width": 463,
-					"height": 225,
-					"dataSource": "Form:C1466.review.EmployeeComment"
+					"left": 40,
+					"top": 86,
+					"width": 650,
+					"height": 210,
+					"dataSource": "Form:C1466.review.EmployeeComment",
+					"enterable": false
 				},
 				"Input4": {
 					"type": "input",
-					"left": 196,
-					"top": 331,
-					"width": 463,
-					"height": 225,
-					"dataSource": "Form:C1466.review.ManagerComment"
+					"left": 40,
+					"top": 350,
+					"width": 650,
+					"height": 210,
+					"dataSource": "Form:C1466.review.ManagerComment",
+					"enterable": false
 				},
 				"Text": {
 					"type": "text",
-					"text": "Employee Comment:",
-					"top": 73,
+					"text": "Employee Comment",
+					"top": 60,
 					"left": 40,
 					"width": 136,
-					"height": 16
+					"height": 16,
+					"fontWeight": "bold"
 				},
 				"Text1": {
 					"type": "text",
-					"text": "Manager Comment:",
-					"top": 331,
+					"text": "Manager Comment",
+					"top": 323,
 					"left": 40,
 					"width": 136,
-					"height": 16
+					"height": 16,
+					"fontWeight": "bold"
 				}
 			}
 		}
 	],
 	"method": "method.4dm",
-	"geometryStamp": 188,
+	"geometryStamp": 284,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

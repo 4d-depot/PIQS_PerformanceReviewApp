@@ -461,7 +461,6 @@
 			"hidden": false,
 			"nodes": [
 				"v3jcoMb9B5",
-				"WdGCitcvUT",
 				"JwxZb1uYR1"
 			],
 			"linkedNodes": {}
@@ -710,109 +709,6 @@
 			"displayName": "YearPicker",
 			"custom": {},
 			"parent": "iHCZpbw9L3",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"WdGCitcvUT": {
-			"type": {
-				"resolvedName": "SelectBox"
-			},
-			"isCanvas": false,
-			"props": {
-				"iterable": true,
-				"classNames": [
-					"selectBox"
-				],
-				"events": [],
-				"template": "{{ length }} items",
-				"rowsNumber": 5,
-				"datasource": "scores",
-				"iterator": "$This",
-				"placeholder": "Score",
-				"enableSearch": false,
-				"searchAttributes": [],
-				"currentElement": "score",
-				"style": {}
-			},
-			"displayName": "Select Box",
-			"custom": {},
-			"parent": "jWtdo7c0uq",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"container": "kt4j7U-GCq"
-			}
-		},
-		"kt4j7U-GCq": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"className": "fd-selectbox__container",
-				"isFixedWidth": true,
-				"iterableChild": true,
-				"style": {
-					"paddingRight": "6px",
-					"paddingBottom": "6px",
-					"paddingTop": "6px",
-					"paddingLeft": "6px"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {
-				"contentHeight": 38
-			},
-			"parent": "WdGCitcvUT",
-			"hidden": false,
-			"nodes": [
-				"uiCAiJLLfZ"
-			],
-			"linkedNodes": {}
-		},
-		"uiCAiJLLfZ": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "$This.Name",
-								"children": [
-									{
-										"text": "Name",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"dsType": "string",
-								"format": ""
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "$This.Name"
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "kt4j7U-GCq",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

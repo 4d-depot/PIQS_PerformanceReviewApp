@@ -6,7 +6,7 @@
 				"id": "qodlysource",
 				"type": "scalar",
 				"namespace": "",
-				"dataType": "string",
+				"dataType": "object",
 				"initialValue": ""
 			}
 		],
@@ -81,7 +81,7 @@
 					"width": 250,
 					"height": "auto"
 				},
-				"datasource": "qodlysource"
+				"datasource": ""
 			},
 			"displayName": "Image",
 			"custom": {},
@@ -112,7 +112,7 @@
 						"datasource": "",
 						"returns": {
 							"name": "result",
-							"type": "Text",
+							"type": "Object",
 							"datasource": "qodlysource"
 						},
 						"feedback": true
@@ -166,7 +166,7 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "qodlysource",
+								"datasource": "qodlysource.text",
 								"children": [
 									{
 										"text": "Write your text here",
@@ -176,7 +176,6 @@
 										"strikethrough": false
 									}
 								],
-								"dsType": "string",
 								"format": ""
 							},
 							{
@@ -185,7 +184,7 @@
 						]
 					}
 				],
-				"datasource": "qodlysource"
+				"datasource": "qodlysource.text"
 			},
 			"displayName": "Text",
 			"custom": {},

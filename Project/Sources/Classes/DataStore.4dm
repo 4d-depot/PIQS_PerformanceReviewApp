@@ -63,6 +63,12 @@ exposed Function selectRole($role : Text)
 		$obj:=Session:C1714.storage
 	End if 
 	
+	If ($obj.Employee=Null:C1517)
+		Use ($obj)
+			$obj.Employee:=New shared object:C1526
+		End use 
+	End if 
+	
 	Use ($obj.Employee)
 		$obj.Employee.role:=$role
 	End use 

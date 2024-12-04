@@ -16,13 +16,13 @@ Function event restrict() : cs:C1710.EmployeeSelection
 	End if 
 	
 	Case of 
+		: (Session:C1714.hasPrivilege("authentify"))
+			return This:C1470.all()
+			
 		: (Session:C1714.hasPrivilege("generatePDF"))
 			return This:C1470.all()
 			
 		: (Session:C1714.hasPrivilege("createReview"))
-			return This:C1470.all()
-			
-		: (Session:C1714.hasPrivilege("authentify"))
 			return This:C1470.all()
 			
 		: (($obj.Employee.role="HR") && (Session:C1714.hasPrivilege("hr")))

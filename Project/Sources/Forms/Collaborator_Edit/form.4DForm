@@ -178,9 +178,12 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btnSave.4dm"
+					"method": "ObjectMethods/btnSave.4dm",
+					"icon": "/RESOURCES/Images/checkmark.svg",
+					"textPlacement": "right",
+					"textAlign": "center"
 				},
-				"Button1": {
+				"btnCancel": {
 					"type": "button",
 					"text": "Cancel",
 					"top": 448,
@@ -190,13 +193,16 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button1.4dm",
-					"dataSource": "btnCancel"
+					"method": "ObjectMethods/btnCancel.4dm",
+					"icon": "/RESOURCES/Images/cross.svg",
+					"textPlacement": "right",
+					"textAlign": "center",
+					"imageHugsTitle": true
 				}
 			}
 		}
 	],
-	"geometryStamp": 63,
+	"geometryStamp": 71,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

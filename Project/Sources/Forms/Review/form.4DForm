@@ -26,7 +26,7 @@
 				"listbox": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.CurrentDepartement.Employees",
-					"top": 70,
+					"top": 20,
 					"left": 150,
 					"width": 240,
 					"height": 300,
@@ -73,7 +73,7 @@
 				"listbox1": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.CurrentEmployee.Reviews",
-					"top": 70,
+					"top": 20,
 					"left": 400,
 					"width": 143,
 					"height": 300,
@@ -106,7 +106,7 @@
 				"listbox2": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.listDepartement",
-					"top": 70,
+					"top": 20,
 					"left": 20,
 					"width": 120,
 					"height": 300,
@@ -140,55 +140,71 @@
 				"OpenWPDoc": {
 					"type": "button",
 					"text": "Open WP Doc",
-					"top": 23,
-					"left": 456,
+					"top": 98,
+					"left": 563,
 					"width": 189,
 					"height": 27,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/OpenWPDoc.4dm"
+					"method": "ObjectMethods/OpenWPDoc.4dm",
+					"icon": "/RESOURCES/Images/eye.svg",
+					"textPlacement": "right",
+					"textAlign": "center",
+					"imageHugsTitle": false
 				},
 				"GeneratePDF": {
 					"type": "button",
 					"text": "Generate PDF",
-					"top": 23,
-					"left": 673,
+					"top": 138,
+					"left": 563,
 					"width": 189,
 					"height": 27,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/GeneratePDF.4dm"
+					"method": "ObjectMethods/GeneratePDF.4dm",
+					"textPlacement": "right",
+					"textAlign": "center",
+					"imageHugsTitle": false,
+					"icon": "/RESOURCES/Images/pencil.svg"
 				},
 				"CreateReview": {
 					"type": "button",
 					"text": "Create Review",
-					"top": 23,
-					"left": 20,
+					"top": 20,
+					"left": 563,
 					"width": 189,
 					"height": 27,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/CreateReview.4dm"
+					"method": "ObjectMethods/CreateReview.4dm",
+					"icon": "/RESOURCES/Images/add.svg",
+					"textPlacement": "right",
+					"textAlign": "center",
+					"imageHugsTitle": false
 				},
 				"OpenReview": {
 					"type": "button",
 					"text": "Open Review",
-					"top": 23,
-					"left": 240,
+					"top": 59,
+					"left": 563,
 					"width": 189,
 					"height": 27,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/OpenReview.4dm"
+					"method": "ObjectMethods/OpenReview.4dm",
+					"icon": "/RESOURCES/Images/eye.svg",
+					"textPlacement": "right",
+					"textAlign": "center",
+					"imageHugsTitle": false
 				}
 			}
 		}
 	],
-	"geometryStamp": 217,
+	"geometryStamp": 244,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

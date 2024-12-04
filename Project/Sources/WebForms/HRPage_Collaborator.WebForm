@@ -482,7 +482,7 @@
 				"serverSideRef": "EditCollaborator",
 				"closable": false,
 				"style": {
-					"width": "60%"
+					"width": "70%"
 				}
 			},
 			"displayName": "Dialog",

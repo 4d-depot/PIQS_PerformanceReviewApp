@@ -14,16 +14,20 @@ Case of
 				WP SET DATA CONTEXT:C1786(WParea; $context)
 				WP COMPUTE FORMULAS:C1707(WParea)
 				
+				OBJECT SET VISIBLE:C603(*; "dropFormula"; True:C214)
+				OBJECT SET VISIBLE:C603(*; "SaveTemplate"; True:C214)
+				
 				
 			: (Form:C1466.type="Compute")
-				WParea:=WP New:C1317(Form:C1466.review.Document)
+				WParea:=WP New:C1317(Form:C1466.review.Employee.Departement.Template.Template)
 				
 				$context:=Form:C1466.review.createContext()
 				WP SET DATA CONTEXT:C1786(WParea; $context)
 				WP COMPUTE FORMULAS:C1707(WParea)
 				
-			: (Form:C1466.type="Freeze")
-				WParea:=WP New:C1317(Form:C1466.review.DocumentFreeze)
+				OBJECT SET VISIBLE:C603(*; "dropFormula"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "SaveTemplate"; False:C215)
+				
 				
 		End case 
 		

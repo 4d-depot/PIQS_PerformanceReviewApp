@@ -37,10 +37,10 @@
 				"listbox": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.currentSelection",
-					"top": 70,
+					"top": 20,
 					"left": 20,
 					"width": 460,
-					"height": 310,
+					"height": 360,
 					"visibility": "visible",
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -164,59 +164,63 @@
 						}
 					]
 				},
-				"Button": {
+				"btnEdit": {
 					"type": "button",
 					"text": "Edit",
 					"top": 20,
-					"left": 20,
+					"left": 500,
 					"width": 120,
 					"height": 30,
 					"events": [
 						"onClick"
 					],
-					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubSet.png",
-					"iconFrames": 4,
+					"icon": "/RESOURCES/Images/eye.svg",
+					"iconFrames": 1,
 					"textPlacement": "right",
 					"textAlign": "center",
-					"method": "ObjectMethods/Button.4dm",
-					"dataSource": "btnEdit"
+					"method": "ObjectMethods/btnEdit.4dm",
+					"imageHugsTitle": false,
+					"sizingX": "move"
 				},
 				"btnAdd": {
 					"type": "button",
 					"text": "Add",
-					"top": 20,
-					"left": 155,
+					"top": 61,
+					"left": 500,
 					"width": 120,
 					"height": 30,
 					"events": [
 						"onClick"
 					],
-					"icon": "Images/document.badge.plus2.svg",
+					"icon": "/RESOURCES/Images/add.svg",
 					"iconFrames": 1,
 					"textPlacement": "right",
 					"textAlign": "center",
-					"method": "ObjectMethods/btnAdd.4dm"
+					"method": "ObjectMethods/btnAdd.4dm",
+					"imageHugsTitle": false,
+					"sizingX": "move"
 				},
 				"btnDelete": {
 					"type": "button",
 					"text": "Delete",
-					"top": 20,
-					"left": 289,
+					"top": 104,
+					"left": 500,
 					"width": 120,
 					"height": 30,
 					"events": [
 						"onClick"
 					],
-					"icon": "Images/document.on.document.svg",
+					"icon": "/RESOURCES/Images/trash.svg",
 					"iconFrames": 1,
 					"textPlacement": "right",
 					"textAlign": "center",
-					"imageHugsTitle": false
+					"imageHugsTitle": false,
+					"sizingX": "move"
 				}
 			}
 		}
 	],
-	"geometryStamp": 116,
+	"geometryStamp": 146,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

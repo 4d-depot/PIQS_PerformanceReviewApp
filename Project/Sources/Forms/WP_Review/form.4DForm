@@ -86,7 +86,7 @@
 					],
 					"method": "ObjectMethods/SaveTemplate.4dm"
 				},
-				"Popup Dropdown List": {
+				"dropFormula": {
 					"type": "dropdown",
 					"left": 919,
 					"top": 62,
@@ -96,12 +96,12 @@
 						"onClick"
 					],
 					"dataSource": "Form:C1466.dropFormula",
-					"method": "ObjectMethods/Popup Dropdown List.4dm"
+					"method": "ObjectMethods/dropFormula.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 23,
+	"geometryStamp": 24,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

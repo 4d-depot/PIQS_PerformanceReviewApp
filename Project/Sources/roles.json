@@ -2,6 +2,19 @@
 	"permissions": {
 		"allowed": [
 			{
+				"applyTo": "ds.authentify",
+				"type": "method",
+				"describe": [
+					"guest"
+				],
+				"execute": [
+					"guest"
+				],
+				"promote": [
+					"authentify"
+				]
+			},
+			{
 				"applyTo": "Review.createReview",
 				"type": "method",
 				"promote": [
@@ -48,19 +61,6 @@
 				],
 				"describe": [
 					"user"
-				]
-			},
-			{
-				"applyTo": "ds.authentify",
-				"type": "method",
-				"describe": [
-					"guest"
-				],
-				"execute": [
-					"guest"
-				],
-				"promote": [
-					"authentify"
 				]
 			},
 			{
@@ -284,5 +284,6 @@
 			]
 		}
 	],
-	"roles": []
+	"roles": [],
+	"forceLogin": true
 }
