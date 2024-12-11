@@ -64,7 +64,9 @@
 			"hidden": false,
 			"nodes": [
 				"SN7X4oeZkS",
+				"lOgxqFGOXG",
 				"TeewWqAjBt",
+				"biX3hpB9jn",
 				"vzayDApVpt"
 			],
 			"linkedNodes": {}
@@ -81,7 +83,8 @@
 					"width": 250,
 					"height": "auto"
 				},
-				"datasource": ""
+				"datasource": "",
+				"imgSrc": "/$shared/assets/images/fff_aHkJ5H46d9nLeBv3uWJKzX.svg"
 			},
 			"displayName": "Image",
 			"custom": {},
@@ -169,7 +172,47 @@
 								"datasource": "qodlysource.text",
 								"children": [
 									{
-										"text": "Write your text here",
+										"text": "text"
+									}
+								],
+								"format": ""
+							},
+							{
+								"text": " "
+							}
+						]
+					}
+				],
+				"datasource": "qodlysource.text"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "emPZADK_28",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"biX3hpB9jn": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "qodlysource.image",
+								"children": [
+									{
+										"text": "svg",
 										"bold": false,
 										"italic": false,
 										"underlined": false,
@@ -184,9 +227,27 @@
 						]
 					}
 				],
-				"datasource": "qodlysource.text"
+				"datasource": "qodlysource.image"
 			},
 			"displayName": "Text",
+			"custom": {},
+			"parent": "emPZADK_28",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"lOgxqFGOXG": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {},
+				"datasource": "qodlysource.image"
+			},
+			"displayName": "Image",
 			"custom": {},
 			"parent": "emPZADK_28",
 			"hidden": false,

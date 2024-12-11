@@ -4,7 +4,7 @@ var $review : Object
 var $hwd : Integer
 
 If (Form:C1466.CurrentReview=Null:C1517)
-	ALERT:C41("Selectionne une review.")
+	ALERT:C41("Select a review.")
 	
 Else 
 	

@@ -3,22 +3,23 @@ var $template : cs:C1710.TemplateEntity
 var $hwd : Integer
 
 
-If (Form event code:C388=On Load:K2:1)
+If (Form event code:C388=On Clicked:K2:4)
 	
 	If (Form:C1466.CurrentTemplate=Null:C1517)
 		ALERT:C41("Select template.")
 		
 	Else 
 		
+		$newTemplateName:=Request:C163("What's the template's name?")
+		If ($newTemplateName="")
+			$newTemplateName:="New template"
+		End if 
 		$template:=ds:C1482.Template.new()
-		$template.Name:="Form.newTemplateName"
+		$template.Name:=$newTemplateName
 		$template.Template:=Form:C1466.CurrentTemplate.Template
 		$template.save()
 		
-		WParea:=WP New:C1317(Form:C1466.CurrentTemplate.Template)
-		$context:=ds:C1482.Review.get(102).createContext()
-		WP SET DATA CONTEXT:C1786(WParea; $context)
-		WP COMPUTE FORMULAS:C1707(WParea)
+		Form:C1466.CurrentSelection:=ds:C1482.Template.all()
 		
 	End if 
 End if 

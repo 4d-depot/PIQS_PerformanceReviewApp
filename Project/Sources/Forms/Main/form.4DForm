@@ -5,8 +5,8 @@
 	},
 	"windowSizingX": "variable",
 	"windowSizingY": "variable",
-	"windowMinWidth": 0,
-	"windowMinHeight": 0,
+	"windowMinWidth": 880,
+	"windowMinHeight": 400,
 	"windowMaxWidth": 32767,
 	"windowMaxHeight": 32767,
 	"rightMargin": 0,
@@ -43,14 +43,14 @@
 					"width": 120,
 					"height": 400,
 					"stroke": "transparent",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"sizingY": "grow"
 				},
 				"Subform": {
 					"type": "subform",
-					"left": 121,
+					"left": 120,
 					"top": 0,
-					"width": 500,
+					"width": 760,
 					"height": 400,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -58,89 +58,91 @@
 					"bottom": 400,
 					"dataSource": "Form:C1466.departement"
 				},
-				"btnDepartement": {
+				"btnTabDepartement": {
 					"type": "radio",
 					"text": "Department",
-					"top": 54,
+					"top": 0,
 					"left": 0,
 					"width": 120,
-					"height": 26,
+					"height": 40,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"radioGroup": "group",
 					"dataSource": "\"Departement\"",
-					"method": "ObjectMethods/btnDepartement.4dm"
+					"method": "ObjectMethods/btnTabDepartement.4dm"
 				},
-				"btnCollaborator": {
+				"btnTabCollaborator": {
 					"type": "radio",
 					"text": "Collaborator",
-					"top": 95,
+					"top": 40,
 					"left": 0,
 					"width": 120,
-					"height": 26,
+					"height": 40,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"radioGroup": "group",
 					"dataSource": "\"Collaborator\"",
-					"method": "ObjectMethods/btnCollaborator.4dm"
+					"method": "ObjectMethods/btnTabCollaborator.4dm"
 				},
-				"btnTemplate": {
+				"btnTabTemplate": {
 					"type": "radio",
 					"text": "Template",
-					"top": 134,
+					"top": 80,
 					"left": 0,
 					"width": 120,
-					"height": 26,
+					"height": 40,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"radioGroup": "group",
-					"method": "ObjectMethods/btnTemplate.4dm",
+					"method": "ObjectMethods/btnTabTemplate.4dm",
 					"dataSource": "\"Template\""
 				},
-				"btnReview": {
+				"btnTabReview": {
 					"type": "radio",
 					"text": "Review",
-					"top": 174,
+					"top": 120,
 					"left": 0,
 					"width": 120,
-					"height": 26,
+					"height": 40,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"radioGroup": "group",
-					"method": "ObjectMethods/btnReview.4dm",
+					"method": "ObjectMethods/btnTabReview.4dm",
 					"dataSource": "\"Review\""
 				},
-				"Radio Button4": {
+				"btnTabSettings": {
 					"type": "radio",
 					"text": "Settings",
-					"top": 372,
+					"top": 360,
 					"left": 0,
 					"width": 120,
-					"height": 26,
+					"height": 40,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"radioGroup": "group",
 					"sizingY": "move",
-					"icon": "/RESOURCES/Images/gearshape.svg",
+					"icon": "",
 					"textPlacement": "right",
 					"iconFrames": 1,
 					"textAlign": "center",
-					"imageHugsTitle": true
+					"imageHugsTitle": true,
+					"method": "ObjectMethods/btnTabSettings.4dm",
+					"dataSource": "\"Settings\""
 				}
 			}
 		}
 	],
-	"geometryStamp": 181,
+	"geometryStamp": 214,
 	"editor": {
 		"activeView": "View 2",
 		"defaultView": "View 1",

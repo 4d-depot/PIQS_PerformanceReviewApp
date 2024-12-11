@@ -41,7 +41,7 @@
 					"text": "Welcome!\r\rPerformance Review Application",
 					"top": 118,
 					"left": 0,
-					"width": 500,
+					"width": 760,
 					"height": 198,
 					"textAlign": "center",
 					"fontSize": 24,
@@ -50,7 +50,7 @@
 			}
 		}
 	],
-	"geometryStamp": 16,
+	"geometryStamp": 17,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

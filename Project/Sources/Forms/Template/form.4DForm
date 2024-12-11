@@ -68,16 +68,7 @@
 						}
 					]
 				},
-				"Input": {
-					"type": "input",
-					"left": 249,
-					"top": 163,
-					"width": 189,
-					"height": 17,
-					"placeholder": "Template name",
-					"dataSource": "Form:C1466.newTemplateName"
-				},
-				"Button": {
+				"OpenTemplate": {
 					"type": "button",
 					"text": "Open",
 					"top": 20,
@@ -91,13 +82,13 @@
 					"iconFrames": 1,
 					"textPlacement": "right",
 					"textAlign": "center",
-					"method": "ObjectMethods/Button.4dm",
+					"method": "ObjectMethods/OpenTemplate.4dm",
 					"imageHugsTitle": false
 				},
-				"Button3": {
+				"AddTemplate": {
 					"type": "button",
 					"text": "Add",
-					"top": 193,
+					"top": 60,
 					"left": 249,
 					"width": 120,
 					"height": 30,
@@ -108,13 +99,13 @@
 					"iconFrames": 1,
 					"textPlacement": "right",
 					"textAlign": "center",
-					"method": "ObjectMethods/Button3.4dm",
+					"method": "ObjectMethods/AddTemplate.4dm",
 					"imageHugsTitle": false
 				},
-				"Button4": {
+				"DuplicateTemplate": {
 					"type": "button",
 					"text": "Duplicate",
-					"top": 235,
+					"top": 100,
 					"left": 249,
 					"width": 120,
 					"height": 30,
@@ -126,13 +117,13 @@
 					"textPlacement": "right",
 					"textAlign": "center",
 					"imageHugsTitle": false,
-					"method": "ObjectMethods/Button4.4dm"
+					"method": "ObjectMethods/DuplicateTemplate.4dm"
 				},
-				"Button5": {
+				"DeleteTemplate": {
 					"type": "button",
 					"text": "Delete",
-					"top": 61,
-					"left": 249,
+					"top": 180,
+					"left": 250,
 					"width": 120,
 					"height": 30,
 					"events": [
@@ -142,13 +133,13 @@
 					"iconFrames": 1,
 					"textPlacement": "right",
 					"textAlign": "center",
-					"method": "ObjectMethods/Button5.4dm",
+					"method": "ObjectMethods/DeleteTemplate.4dm",
 					"imageHugsTitle": false
 				},
-				"Button1": {
+				"RenameTemplate": {
 					"type": "button",
 					"text": "Rename",
-					"top": 106,
+					"top": 140,
 					"left": 249,
 					"width": 120,
 					"height": 30,
@@ -159,13 +150,13 @@
 					"iconFrames": 1,
 					"textPlacement": "right",
 					"textAlign": "center",
-					"method": "ObjectMethods/Button1.4dm",
+					"method": "ObjectMethods/RenameTemplate.4dm",
 					"imageHugsTitle": false
 				}
 			}
 		}
 	],
-	"geometryStamp": 108,
+	"geometryStamp": 124,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -9,7 +9,8 @@ Else
 	CONFIRM:C162("Are you sure you want to delete the template: "+Form:C1466.CurrentTemplate.Name+"?")
 	If (OK=1)
 		$template:=Form:C1466.CurrentTemplate
-		$template.save()
+		$template.drop()
+		Form:C1466.CurrentSelection:=ds:C1482.Template.all()
 	Else 
 		ALERT:C41("Operation canceled.")
 	End if 

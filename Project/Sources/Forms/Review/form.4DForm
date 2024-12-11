@@ -29,9 +29,9 @@
 					"top": 20,
 					"left": 150,
 					"width": 240,
-					"height": 300,
+					"height": 360,
 					"visibility": "visible",
-					"sizingX": "fixed",
+					"sizingX": "grow",
 					"sizingY": "grow",
 					"headerHeight": "2em",
 					"listboxType": "collection",
@@ -41,12 +41,13 @@
 					"currentItemSource": "Form:C1466.CurrentEmployee",
 					"selectionMode": "single",
 					"hideFocusRing": true,
+					"bottom": 380,
 					"columns": [
 						{
 							"name": "Firstname",
 							"dataSource": "This:C1470.Firstname",
 							"width": 120,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Firstname",
 								"name": "2"
@@ -59,7 +60,7 @@
 							"name": "Lastname",
 							"dataSource": "This:C1470.Lastname",
 							"width": 120,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Lastname",
 								"name": "4"
@@ -76,9 +77,9 @@
 					"top": 20,
 					"left": 400,
 					"width": 143,
-					"height": 300,
+					"height": 360,
 					"visibility": "visible",
-					"sizingX": "fixed",
+					"sizingX": "grow",
 					"sizingY": "grow",
 					"headerHeight": "2em",
 					"listboxType": "collection",
@@ -87,12 +88,13 @@
 					"resizingMode": "legacy",
 					"hideFocusRing": true,
 					"currentItemSource": "Form:C1466.CurrentReview",
+					"bottom": 380,
 					"columns": [
 						{
 							"name": "Date",
 							"dataSource": "This:C1470.Date",
 							"width": 89,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Date",
 								"name": "6"
@@ -109,9 +111,9 @@
 					"top": 20,
 					"left": 20,
 					"width": 120,
-					"height": 300,
+					"height": 360,
 					"visibility": "visible",
-					"sizingX": "fixed",
+					"sizingX": "grow",
 					"sizingY": "grow",
 					"headerHeight": "2em",
 					"listboxType": "collection",
@@ -121,12 +123,13 @@
 					"currentItemSource": "Form:C1466.CurrentDepartement",
 					"selectionMode": "single",
 					"hideFocusRing": true,
+					"bottom": 380,
 					"columns": [
 						{
 							"name": "Name",
 							"dataSource": "This:C1470.Name",
 							"width": 120,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Departement",
 								"name": "Header1"
@@ -140,9 +143,9 @@
 				"OpenWPDoc": {
 					"type": "button",
 					"text": "Open WP Doc",
-					"top": 98,
-					"left": 563,
-					"width": 189,
+					"top": 158,
+					"left": 560,
+					"width": 180,
 					"height": 27,
 					"events": [
 						"onClick"
@@ -151,14 +154,15 @@
 					"icon": "/RESOURCES/Images/eye.svg",
 					"textPlacement": "right",
 					"textAlign": "center",
-					"imageHugsTitle": false
+					"imageHugsTitle": false,
+					"sizingX": "move"
 				},
 				"GeneratePDF": {
 					"type": "button",
 					"text": "Generate PDF",
-					"top": 138,
-					"left": 563,
-					"width": 189,
+					"top": 198,
+					"left": 560,
+					"width": 180,
 					"height": 27,
 					"events": [
 						"onClick"
@@ -167,14 +171,15 @@
 					"textPlacement": "right",
 					"textAlign": "center",
 					"imageHugsTitle": false,
-					"icon": "/RESOURCES/Images/pencil.svg"
+					"icon": "/RESOURCES/Images/pencil.svg",
+					"sizingX": "move"
 				},
 				"CreateReview": {
 					"type": "button",
-					"text": "Create Review",
+					"text": "Create all reviews",
 					"top": 20,
-					"left": 563,
-					"width": 189,
+					"left": 560,
+					"width": 180,
 					"height": 27,
 					"events": [
 						"onClick"
@@ -183,14 +188,15 @@
 					"icon": "/RESOURCES/Images/add.svg",
 					"textPlacement": "right",
 					"textAlign": "center",
-					"imageHugsTitle": false
+					"imageHugsTitle": false,
+					"sizingX": "move"
 				},
 				"OpenReview": {
 					"type": "button",
 					"text": "Open Review",
-					"top": 59,
-					"left": 563,
-					"width": 189,
+					"top": 119,
+					"left": 560,
+					"width": 180,
 					"height": 27,
 					"events": [
 						"onClick"
@@ -199,12 +205,30 @@
 					"icon": "/RESOURCES/Images/eye.svg",
 					"textPlacement": "right",
 					"textAlign": "center",
-					"imageHugsTitle": false
+					"imageHugsTitle": false,
+					"sizingX": "move"
+				},
+				"CreatePDF": {
+					"type": "button",
+					"text": "Create all PDFs",
+					"top": 59,
+					"left": 560,
+					"width": 180,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/CreatePDF.4dm",
+					"icon": "/RESOURCES/Images/add.svg",
+					"textPlacement": "right",
+					"textAlign": "center",
+					"imageHugsTitle": false,
+					"sizingX": "move"
 				}
 			}
 		}
 	],
-	"geometryStamp": 244,
+	"geometryStamp": 270,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

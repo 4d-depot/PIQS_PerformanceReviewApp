@@ -29,6 +29,7 @@ For each ($obj; $collaboratorFile.Departement)
 	$employee.Firstname:=$collaboratorFile.Firstname[$pos]
 	$employee.Job:=$obj.Manager
 	$employee.Description:=$obj.ManagerDescription
+	$employee.ID_Supervisor:=81
 	$employee.ID_Departement:=$departement.ID
 	$employee.Email:=$employee.Firstname+"."+$employee.Lastname+"@company.com"
 	$employee.Password:=Generate password hash:C1533("test")

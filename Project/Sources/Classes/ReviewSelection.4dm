@@ -42,9 +42,14 @@ exposed Function progressStatus() : Object
 	
 	//Folder(fk desktop folder).file("fff.svg").setText($svg)
 	
-	var $xml : Text
-	var $pict : Picture
-	$xml:=DOM Parse XML variable:C720($svg)
-	SVG EXPORT TO PICTURE:C1017($xml; $pict)
-	CONVERT PICTURE:C1002($pict; ".png")
-	return {text: "e"; image: $pict}
+	//var $xml : Text
+	//var $pict : Picture
+	//$xml:=DOM Parse XML variable($svg)
+	//SVG EXPORT TO PICTURE($xml; $pict)
+	//CONVERT PICTURE($pict; ".png")
+	//PICTURE TO BLOB($pict; $blob; ".png")
+	//Folder(fk desktop folder).file("fff.png").setContent($blob)
+	
+	var $o : Object
+	$o:={text: "e"; image: $svg}
+	return $o

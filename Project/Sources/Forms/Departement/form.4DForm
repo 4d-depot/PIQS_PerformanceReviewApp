@@ -42,7 +42,7 @@
 					"top": 70,
 					"left": 20,
 					"width": 240,
-					"height": 310,
+					"height": 260,
 					"visibility": "visible",
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -53,7 +53,7 @@
 					"resizingMode": "legacy",
 					"selectionMode": "single",
 					"currentItemSource": "Form:C1466.currentItem",
-					"bottom": 380,
+					"bottom": 330,
 					"columns": [
 						{
 							"name": "Name",
@@ -90,8 +90,8 @@
 					"type": "listbox",
 					"left": 280,
 					"top": 70,
-					"width": 250,
-					"height": 310,
+					"width": 220,
+					"height": 260,
 					"events": [
 						"onClick",
 						"onHeaderClick",
@@ -106,6 +106,7 @@
 					"scrollbarVertical": "automatic",
 					"sizingY": "grow",
 					"sizingX": "grow",
+					"bottom": 330,
 					"columns": [
 						{
 							"header": {
@@ -117,16 +118,16 @@
 								"name": "Footer1"
 							},
 							"dataSource": "This:C1470.group",
-							"width": 226
+							"width": 200
 						}
 					]
 				},
 				"List Box1": {
 					"type": "listbox",
-					"left": 550,
+					"left": 520,
 					"top": 70,
-					"width": 250,
-					"height": 310,
+					"width": 220,
+					"height": 260,
 					"events": [
 						"onClick",
 						"onHeaderClick",
@@ -142,6 +143,7 @@
 					"scrollbarVertical": "automatic",
 					"sizingY": "grow",
 					"sizingX": "grow",
+					"bottom": 330,
 					"columns": [
 						{
 							"header": {
@@ -153,7 +155,7 @@
 								"name": "Footer2"
 							},
 							"dataSource": "This:C1470.value",
-							"width": 230
+							"width": 200
 						}
 					]
 				},
@@ -175,7 +177,7 @@
 				"btnAddGroup": {
 					"type": "button",
 					"text": "",
-					"top": 400,
+					"top": 350,
 					"left": 280,
 					"width": 30,
 					"height": 30,
@@ -188,7 +190,7 @@
 				"btnDeleteGroup": {
 					"type": "button",
 					"text": "",
-					"top": 400,
+					"top": 350,
 					"left": 323,
 					"width": 30,
 					"height": 30,
@@ -201,8 +203,8 @@
 				"btnAddSkill": {
 					"type": "button",
 					"text": "",
-					"top": 400,
-					"left": 550,
+					"top": 350,
+					"left": 520,
 					"width": 30,
 					"height": 30,
 					"events": [
@@ -214,8 +216,8 @@
 				"btnDeleteSkill": {
 					"type": "button",
 					"text": "",
-					"top": 400,
-					"left": 588,
+					"top": 350,
+					"left": 558,
 					"width": 30,
 					"height": 30,
 					"events": [
@@ -226,21 +228,21 @@
 				},
 				"Splitter": {
 					"type": "splitter",
-					"left": 269,
+					"left": 271,
 					"top": 70,
-					"width": 1,
-					"height": 360,
-					"bottom": 430,
+					"width": 2,
+					"height": 310,
+					"bottom": 380,
 					"borderStyle": "solid",
 					"stroke": "#c0c0c0"
 				},
 				"Splitter1": {
 					"type": "splitter",
-					"left": 539,
+					"left": 510,
 					"top": 70,
-					"width": 1,
-					"height": 360,
-					"bottom": 430,
+					"width": 2,
+					"height": 310,
+					"bottom": 380,
 					"borderStyle": "solid",
 					"stroke": "#c0c0c0"
 				},
@@ -262,7 +264,7 @@
 			}
 		}
 	],
-	"geometryStamp": 319,
+	"geometryStamp": 368,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
