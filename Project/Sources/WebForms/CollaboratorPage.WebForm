@@ -19,7 +19,8 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [
-					"position"
+					"position",
+					"home"
 				],
 				"events": [
 					{
@@ -55,21 +56,6 @@
 						"disabled": false,
 						"feedback": {
 							"enabled": false
-						}
-					},
-					{
-						"type": "simple-action",
-						"id": "se9FdT7eQJ3mkZwb3VD4SL",
-						"events": [
-							"onload"
-						],
-						"action": "refresh",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "subReviews",
-							"type": "entitysel",
-							"from": "",
-							"namespace": "app"
 						}
 					}
 				],
@@ -158,7 +144,8 @@
 					}
 				],
 				"currentElement": "app:selectedReview",
-				"showBorders": true
+				"showBorders": true,
+				"iterableChild": true
 			},
 			"displayName": "DataTable",
 			"custom": {
@@ -194,7 +181,8 @@
 					"paddingLeft": "24px",
 					"backgroundColor": "transparent",
 					"width": "100%",
-					"justifyContent": "space-between"
+					"justifyContent": "space-between",
+					"flexDirection": "column"
 				}
 			},
 			"displayName": "Stylebox",

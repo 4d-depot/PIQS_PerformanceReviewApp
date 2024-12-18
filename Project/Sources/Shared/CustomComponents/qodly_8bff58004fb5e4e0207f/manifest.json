@@ -1,5 +1,7 @@
 {
-  "scope": "qodly_819ff97f01555cb7542b",
+  "name": "qodly_datepicker",
+  "version": "0.1.2",
+  "scope": "qodly_8bff58004fb5e4e0207f",
   "author": {
     "name": "Qodly Team",
     "email": "contact@qodly.com",

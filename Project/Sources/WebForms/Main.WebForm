@@ -101,7 +101,9 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"home"
+				],
 				"events": [],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
@@ -382,8 +384,8 @@
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex",
-					"backgroundColor": "transparent",
-					"fontSize": "18px"
+					"fontSize": "18px",
+					"backgroundColor": "transparent"
 				}
 			},
 			"displayName": "Button",
@@ -527,9 +529,9 @@
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex",
-					"backgroundColor": "transparent",
 					"borderColor": "transparent",
-					"fontSize": "18px"
+					"fontSize": "18px",
+					"backgroundColor": "transparent"
 				}
 			},
 			"displayName": "Button",
@@ -587,7 +589,9 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"flexWrap": "wrap",
+					"alignContent": "flex-start"
 				}
 			},
 			"displayName": "Stylebox",
@@ -645,7 +649,6 @@
 					"paddingRight": "12px",
 					"justifyContent": "space-around",
 					"position": "relative",
-					"backgroundColor": "#ffffffff",
 					"paddingBottom": "12px",
 					"paddingTop": "12px",
 					"paddingLeft": "12px",
@@ -847,7 +850,9 @@
 					"flexDirection": "row",
 					"justifyContent": "flex-end",
 					"gap": "20px",
-					"alignItems": "center"
+					"alignItems": "center",
+					"flexWrap": "wrap",
+					"alignContent": "flex-start"
 				}
 			},
 			"displayName": "Stylebox",
@@ -907,7 +912,8 @@
 					"display": "flex",
 					"gap": "20px",
 					"alignItems": "center",
-					"maxWidth": "300px"
+					"maxWidth": "300px",
+					"flexWrap": "wrap"
 				}
 			},
 			"displayName": "Stylebox",
@@ -1016,7 +1022,7 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-left",
-				"isShown": true,
+				"isShown": false,
 				"action": "hover",
 				"style": {
 					"minWidth": "48px",
@@ -1111,7 +1117,8 @@
 				},
 				"iterableChild": true,
 				"classNames": [
-					"box-shadow"
+					"box-shadow",
+					"home"
 				]
 			},
 			"displayName": "Stylebox",

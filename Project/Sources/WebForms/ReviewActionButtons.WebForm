@@ -520,7 +520,9 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"home"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -587,9 +589,11 @@
 					"paddingTop": "24px",
 					"paddingLeft": "20px",
 					"justifyContent": "flex-start",
-					"borderLeftStyle": "solid",
-					"backgroundColor": "#f5f5f5ff"
-				}
+					"borderLeftStyle": "solid"
+				},
+				"classNames": [
+					"sidebar"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -1026,7 +1030,9 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"home"
+				],
 				"events": [],
 				"overlay": true,
 				"serverSideRef": "EditReview",
@@ -1109,7 +1115,7 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"paddingRight": "10px",
+					"paddingRight": "20px",
 					"paddingBottom": "24px",
 					"paddingTop": "24px",
 					"paddingLeft": "0px",
@@ -1189,29 +1195,8 @@
 			"parent": "42ry7QAnuU",
 			"hidden": false,
 			"nodes": [
-				"YoO9S2TGu8"
+				"rsKk3u1aJX"
 			],
-			"linkedNodes": {}
-		},
-		"YoO9S2TGu8": {
-			"type": {
-				"resolvedName": "PdfViewer"
-			},
-			"isCanvas": false,
-			"props": {
-				"name": "",
-				"classNames": [],
-				"events": [],
-				"datasource": "app:selectedReview.DocumentPDF",
-				"style": {
-					"display": "inline"
-				}
-			},
-			"displayName": "PdfViewer",
-			"custom": {},
-			"parent": "GRqHKUWlYH",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"42ry7QAnuU": {
@@ -1659,7 +1644,9 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"home"
+				],
 				"events": [],
 				"overlay": true,
 				"serverSideRef": "GenerateDoc",
@@ -1939,7 +1926,9 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"home"
+				],
 				"events": [],
 				"overlay": true,
 				"serverSideRef": "GeneratePDF",
@@ -2409,7 +2398,8 @@
 			"props": {
 				"name": "",
 				"classNames": [
-					"box-shadow"
+					"box-shadow",
+					"date-picker"
 				],
 				"events": [],
 				"readOnly": false,
@@ -2417,14 +2407,13 @@
 					"height": "250px",
 					"width": "300px",
 					"borderRadius": "4px",
-					"padding": "8px",
-					"backgroundColor": "white"
+					"padding": "8px"
 				},
-				"selectedYearColor": "#dd3c4c",
-				"selectedRangeColor": "rgba(34,139,230,.12)",
 				"selectedYearRaduis": "",
 				"selectionModes": "single",
-				"datasource": "year"
+				"datasource": "year",
+				"selectedYearColor": "#dd3c4c",
+				"selectedRangeColor": "rgba(34,139,230,.12)"
 			},
 			"displayName": "YearPicker",
 			"custom": {},
@@ -2460,7 +2449,7 @@
 					"label"
 				],
 				"style": {
-					"paddingBottom": "6px"
+					"paddingBottom": "0px"
 				}
 			},
 			"displayName": "Text",
@@ -2481,7 +2470,8 @@
 				"style": {
 					"display": "flex",
 					"flexDirection": "column",
-					"width": "fit-content"
+					"width": "fit-content",
+					"gap": "8px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -2503,7 +2493,10 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"width": "fit-content"
+					"width": "fit-content",
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "8px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -2542,9 +2535,7 @@
 				"classNames": [
 					"label"
 				],
-				"style": {
-					"paddingBottom": "6px"
-				}
+				"style": {}
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -2711,7 +2702,8 @@
 			"props": {
 				"name": "",
 				"classNames": [
-					"box-shadow"
+					"box-shadow",
+					"date-picker"
 				],
 				"events": [],
 				"readOnly": false,
@@ -2719,14 +2711,13 @@
 					"height": "250px",
 					"width": "300px",
 					"borderRadius": "4px",
-					"padding": "8px",
-					"backgroundColor": "white"
+					"padding": "8px"
 				},
 				"selectedYearColor": "#dd3c4c",
-				"selectedRangeColor": "rgba(34,139,230,.12)",
 				"selectedYearRaduis": "",
 				"selectionModes": "single",
-				"datasource": "year"
+				"datasource": "year",
+				"selectedRangeColor": "rgba(34,139,230,.12)"
 			},
 			"displayName": "YearPicker",
 			"custom": {},
@@ -2967,7 +2958,10 @@
 				"datasource": "",
 				"style": {
 					"textAlign": "center"
-				}
+				},
+				"classNames": [
+					"label"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -3096,6 +3090,27 @@
 				"Rn5dqmBzxq",
 				"VpTJ9uHdfR"
 			],
+			"linkedNodes": {}
+		},
+		"rsKk3u1aJX": {
+			"type": {
+				"resolvedName": "PdfViewer"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"datasource": "app:selectedReview.DocumentPDF",
+				"style": {
+					"height": "100%"
+				}
+			},
+			"displayName": "PdfViewer",
+			"custom": {},
+			"parent": "GRqHKUWlYH",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}

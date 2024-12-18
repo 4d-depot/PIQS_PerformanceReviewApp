@@ -184,7 +184,9 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"home"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -275,7 +277,9 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"alignItems": "center",
-					"justifyContent": "flex-start"
+					"justifyContent": "flex-start",
+					"flexWrap": "wrap",
+					"alignContent": "flex-start"
 				}
 			},
 			"displayName": "Stylebox",
@@ -430,7 +434,8 @@
 						"id": "oTzBkJzvFrxUPG54cjbyTt"
 					}
 				],
-				"showBorders": true
+				"showBorders": true,
+				"iterableChild": true
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -584,7 +589,7 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-center",
-				"isShown": false,
+				"isShown": true,
 				"action": "click",
 				"style": {
 					"minWidth": "48px",
@@ -703,7 +708,8 @@
 			"props": {
 				"name": "",
 				"classNames": [
-					"box-shadow"
+					"box-shadow",
+					"date-picker"
 				],
 				"events": [],
 				"readOnly": false,
@@ -711,14 +717,13 @@
 					"height": "250px",
 					"width": "300px",
 					"borderRadius": "4px",
-					"padding": "8px",
-					"backgroundColor": "white"
+					"padding": "8px"
 				},
 				"selectedYearColor": "#dd3c4c",
-				"selectedRangeColor": "rgba(34,139,230,.12)",
 				"selectedYearRaduis": "",
 				"selectionModes": "single",
-				"datasource": "year"
+				"datasource": "year",
+				"selectedRangeColor": "rgba(34,139,230,.12)"
 			},
 			"displayName": "YearPicker",
 			"custom": {},
@@ -884,7 +889,8 @@
 				"datasource": "year",
 				"dataType": "number",
 				"moveable": false,
-				"placeholder": ""
+				"placeholder": "",
+				"revealPassword": true
 			},
 			"displayName": "Input",
 			"custom": {},

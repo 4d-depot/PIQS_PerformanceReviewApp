@@ -46,10 +46,10 @@ exposed Function authentify($email : Text; $password : Text) : Text
 			Web Form:C1735.setMessage("Authentication successfull")
 			
 		Else 
-			Web Form:C1735.setError("Authentication failed: wrong password")
+			Web Form:C1735.setError("Authentication failed")
 		End if 
 	Else 
-		Web Form:C1735.setError("Authentication failed: wrong user")
+		Web Form:C1735.setError("Authentication failed")
 	End if 
 	
 	return $page
@@ -80,3 +80,6 @@ exposed Function getUserInfo : Object
 		return Session:C1714.storage.Employee
 	End if 
 	
+exposed Function privilege() : Text
+	
+	return JSON Stringify:C1217(Session:C1714.getPrivileges())

@@ -25,14 +25,14 @@ Function event restrict() : cs:C1710.EmployeeSelection
 		: (Session:C1714.hasPrivilege("createReview"))
 			return This:C1470.all()
 			
-		: (($obj.Employee.role="HR") && (Session:C1714.hasPrivilege("hr")))
-			return This:C1470.all()
+		: ($obj.Employee.role="Collaborator")
+			return This:C1470.query("ID = :1"; $obj.Employee.ID)
 			
 		: ($obj.Employee.role="Manager")
 			return This:C1470.query("ID_Supervisor = :1"; $obj.Employee.ID)
 			
-		: ($obj.Employee.role="Collaborator")
-			return This:C1470.query("ID = :1"; $obj.Employee.ID)
+		: (($obj.Employee.role="HR") && (Session:C1714.hasPrivilege("hr")))
+			return This:C1470.all()
 			
 		Else 
 			return Null:C1517

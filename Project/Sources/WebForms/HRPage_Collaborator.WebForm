@@ -139,7 +139,9 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"home"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -209,7 +211,7 @@
 					"width": "100%",
 					"height": "100%",
 					"display": "flex",
-					"flexDirection": "column",
+					"flexDirection": "row",
 					"gap": "20px"
 				}
 			},
@@ -218,8 +220,8 @@
 			"parent": "9LJPqicOAd",
 			"hidden": false,
 			"nodes": [
-				"NWuzlo8HrE",
-				"rUjk45YNoj"
+				"rUjk45YNoj",
+				"Aoiru8ludF"
 			],
 			"linkedNodes": {}
 		},
@@ -288,7 +290,8 @@
 					}
 				],
 				"currentElement": "theEmployee",
-				"showBorders": true
+				"showBorders": true,
+				"iterableChild": true
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -316,7 +319,9 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "departement",
-				"style": {}
+				"style": {
+					"borderWidth": "0px"
+				}
 			},
 			"displayName": "Select Box",
 			"custom": {},
@@ -476,7 +481,9 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"home"
+				],
 				"events": [],
 				"overlay": true,
 				"serverSideRef": "EditCollaborator",
@@ -512,7 +519,10 @@
 					"paddingBottom": "20px",
 					"paddingTop": "20px",
 					"paddingLeft": "20px"
-				}
+				},
+				"classNames": [
+					"dialog__Dialog"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -810,7 +820,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"selectBox"
+				],
 				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
@@ -820,7 +832,9 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "theEmployee.Departement",
-				"style": {}
+				"style": {
+					"borderWidth": "0px"
+				}
 			},
 			"displayName": "Select Box",
 			"custom": {},
@@ -1230,7 +1244,8 @@
 			"isCanvas": false,
 			"props": {
 				"classNames": [
-					"label"
+					"label",
+					"dialog__close"
 				],
 				"events": [],
 				"icon": "fa-times",
@@ -1507,18 +1522,20 @@
 					"display": "flex",
 					"flexDirection": "column",
 					"gap": "10px",
-					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px",
+					"paddingRight": "20px",
+					"paddingBottom": "24px",
+					"paddingTop": "24px",
+					"paddingLeft": "20px",
 					"width": "fit-content",
-					"minWidth": "200px",
-					"backgroundColor": "transparent"
-				}
+					"minWidth": "200px"
+				},
+				"classNames": [
+					"sidebar"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "rUjk45YNoj",
+			"parent": "FypJvnw6Gs",
 			"hidden": false,
 			"nodes": [
 				"_0MCZIkdeF",
@@ -1542,12 +1559,14 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"gap": "20px",
-					"alignItems": "center"
+					"alignItems": "center",
+					"flexWrap": "wrap",
+					"alignContent": "flex-start"
 				}
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "FypJvnw6Gs",
+			"parent": "rUjk45YNoj",
 			"hidden": false,
 			"nodes": [
 				"FSuKj8nS5s",
@@ -1566,10 +1585,10 @@
 				"style": {
 					"width": "100%",
 					"height": "100%",
-					"paddingRight": "24px",
-					"paddingBottom": "24px",
-					"paddingTop": "24px",
-					"paddingLeft": "24px"
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
 				},
 				"classNames": [
 					"position"
@@ -1594,15 +1613,15 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"flexDirection": "row",
+					"flexDirection": "column",
 					"width": "100%",
 					"height": "100%",
 					"gap": "20px",
 					"justifyContent": "space-between",
 					"paddingRight": "0px",
-					"paddingBottom": "0px",
-					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingBottom": "24px",
+					"paddingTop": "24px",
+					"paddingLeft": "24px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -1610,8 +1629,8 @@
 			"parent": "FypJvnw6Gs",
 			"hidden": false,
 			"nodes": [
-				"TdxtWbshWc",
-				"Aoiru8ludF"
+				"NWuzlo8HrE",
+				"TdxtWbshWc"
 			],
 			"linkedNodes": {}
 		},
@@ -1855,7 +1874,9 @@
 			"isCanvas": false,
 			"props": {
 				"iterable": true,
-				"classNames": [],
+				"classNames": [
+					"selectBox"
+				],
 				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
@@ -1874,7 +1895,9 @@
 					}
 				],
 				"currentElement": "theEmployee.Supervisor",
-				"style": {}
+				"style": {
+					"borderWidth": "0px"
+				}
 			},
 			"displayName": "Select Box",
 			"custom": {},
@@ -2010,7 +2033,8 @@
 				"EiPqudebhp",
 				"vgX2tSleOh",
 				"mBJ18rBp7x",
-				"ufa6ZwnA-W"
+				"ufa6ZwnA-W",
+				"rDHxX-YAu1"
 			],
 			"linkedNodes": {}
 		},
@@ -2061,6 +2085,72 @@
 				"AOgChkM4ge",
 				"o0syRMEm6T"
 			],
+			"linkedNodes": {}
+		},
+		"rDHxX-YAu1": {
+			"type": {
+				"resolvedName": "Checkbox"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"label": "label",
+				"variant": "switch",
+				"labelPosition": "right",
+				"iterableChild": true,
+				"type": ""
+			},
+			"displayName": "CheckBox",
+			"custom": {},
+			"parent": "AOgChkM4ge",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "K0BCqpjKol",
+				"CheckboxInput": "l6TLeowgRX"
+			}
+		},
+		"K0BCqpjKol": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"htmlfor": "rDHxX-YAu1",
+				"text": "Is Active",
+				"classNames": [
+					"label"
+				],
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "rDHxX-YAu1",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"l6TLeowgRX": {
+			"type": {
+				"resolvedName": "CheckboxInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [
+					"switch"
+				],
+				"events": [],
+				"deletable": false,
+				"datasource": "theEmployee.isActive",
+				"iterableChild": true
+			},
+			"displayName": "Checkbox Input",
+			"custom": {},
+			"parent": "rDHxX-YAu1",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}

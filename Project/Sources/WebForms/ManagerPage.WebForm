@@ -365,7 +365,8 @@
 					}
 				],
 				"currentElement": "app:selectedReview",
-				"showBorders": true
+				"showBorders": true,
+				"iterableChild": true
 			},
 			"displayName": "DataTable",
 			"custom": {
@@ -452,7 +453,9 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"flexWrap": "wrap",
+					"alignContent": "flex-start"
 				}
 			},
 			"displayName": "Stylebox",
@@ -570,7 +573,7 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-center",
-				"isShown": false,
+				"isShown": true,
 				"action": "click",
 				"style": {
 					"minWidth": "48px",
@@ -689,22 +692,17 @@
 			"props": {
 				"name": "",
 				"classNames": [
-					"box-shadow"
+					"box-shadow",
+					"date-picker"
 				],
 				"events": [],
 				"readOnly": false,
-				"style": {
-					"height": "250px",
-					"width": "300px",
-					"borderRadius": "4px",
-					"padding": "8px",
-					"backgroundColor": "white"
-				},
-				"selectedYearColor": "#dd3c4c",
-				"selectedRangeColor": "rgba(34,139,230,.12)",
+				"style": {},
 				"selectedYearRaduis": "",
 				"selectionModes": "single",
-				"datasource": "year"
+				"datasource": "year",
+				"selectedYearColor": "#228be6",
+				"selectedRangeColor": "rgba(34,139,230,.12)"
 			},
 			"displayName": "YearPicker",
 			"custom": {},
@@ -758,7 +756,9 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "reviewStatus",
-				"style": {}
+				"style": {
+					"borderWidth": "0px"
+				}
 			},
 			"displayName": "Select Box",
 			"custom": {},

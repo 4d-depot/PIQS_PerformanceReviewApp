@@ -178,7 +178,9 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"home"
+				],
 				"events": [
 					{
 						"type": "simple-action",
@@ -310,7 +312,9 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "departement",
-				"style": {}
+				"style": {
+					"borderWidth": "0px"
+				}
 			},
 			"displayName": "Select Box",
 			"custom": {},
@@ -340,7 +344,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 39
+				"contentHeight": 38
 			},
 			"parent": "FSuKj8nS5s",
 			"hidden": false,
@@ -466,7 +470,8 @@
 					}
 				],
 				"currentElement": "app:selectedReview",
-				"showBorders": true
+				"showBorders": true,
+				"iterableChild": true
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -572,7 +577,8 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"display": "flex",
-					"gap": "20px"
+					"gap": "20px",
+					"flexWrap": "wrap"
 				}
 			},
 			"displayName": "Stylebox",
@@ -681,7 +687,7 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-center",
-				"isShown": false,
+				"isShown": true,
 				"action": "click",
 				"style": {
 					"minWidth": "48px",
@@ -800,7 +806,8 @@
 			"props": {
 				"name": "",
 				"classNames": [
-					"box-shadow"
+					"box-shadow",
+					"date-picker"
 				],
 				"events": [],
 				"readOnly": false,
@@ -808,14 +815,13 @@
 					"height": "250px",
 					"width": "300px",
 					"borderRadius": "4px",
-					"padding": "8px",
-					"backgroundColor": "white"
+					"padding": "8px"
 				},
 				"selectedYearColor": "#dd3c4c",
-				"selectedRangeColor": "rgba(34,139,230,.12)",
 				"selectedYearRaduis": "",
 				"selectionModes": "single",
-				"datasource": "year"
+				"datasource": "year",
+				"selectedRangeColor": "rgba(34,139,230,.12)"
 			},
 			"displayName": "YearPicker",
 			"custom": {},
@@ -909,7 +915,9 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "reviewStatus",
-				"style": {}
+				"style": {
+					"borderWidth": "0px"
+				}
 			},
 			"displayName": "Select Box",
 			"custom": {},
@@ -939,7 +947,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 39
+				"contentHeight": 36
 			},
 			"parent": "sij50svwiP",
 			"hidden": false,

@@ -247,6 +247,16 @@
 				"describe": [
 					"user"
 				]
+			},
+			{
+				"applyTo": "ds.privilege",
+				"type": "method",
+				"describe": [
+					"user"
+				],
+				"execute": [
+					"user"
+				]
 			}
 		]
 	},

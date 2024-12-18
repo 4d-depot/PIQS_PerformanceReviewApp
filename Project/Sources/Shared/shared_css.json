@@ -2,43 +2,43 @@
 	"classes": [
 		{
 			"name": "buttonRed",
-			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #dd3c4c;\n\tcolor: #dd3c4c;\n\tbackground-color: #FFFFFF;\n\tpadding: 10px;\n\tfont-weight: 600;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #c32232;\n  background-color: #c32232;\n  color: #FFFFFF;\n}",
+			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #dd3c4c;\n\tcolor: #dd3c4c;\n\tbackground-color: #FFFFFF;\n\tpadding: 10px;\n\tfont-weight: 600;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #c32232;\n  background-color: #c32232;\n  color: #FFFFFF;\n}\n\n@media (prefers-color-scheme: dark) {\n  self {\n\tborder-radius: 4px;\n\tborder: 1px solid #ff5252;\n\tcolor: #ff5252;\n\tbackground-color: #1e1e1e; \n\tpadding: 10px;\n\tfont-weight: 600;\n  }\n  \n  self {\n\ttransition-duration: 0.4s;\n  }\n  \n  self:hover {\n\tborder: 1px solid #ff2e2e;\n\tbackground-color: #ff2e2e;\n\tcolor: #1e1e1e;\n  }\n}",
 			"parentId": null,
 			"id": "-t06Ra1r0hdDUV4v8RjyT"
 		},
 		{
 			"name": "buttonBlack",
-			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #212529;\n\tbackground-color: #212529;\n\tcolor: #FFFFFF;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #0b0d0e;\n  background-color: #0b0d0e;\n  color: #FFFFFF;\n}",
+			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #212529;\n\tbackground-color: #212529;\n\tcolor: #FFFFFF;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #0b0d0e;\n  background-color: #0b0d0e;\n  color: #FFFFFF;\n}\n\n@media (prefers-color-scheme: dark) {\n  self {\n    border-radius: 4px;\n    border: 1px solid #212529;\n    background-color: #212529;\n    color: #FFFFFF;\n  }\n  \n  self {\n    transition-duration: 0.4s;\n  }\n  \n  self:hover {\n    border: 1px solid #0b0d0e;\n    background-color: #0b0d0e;\n    color: #FFFFFF;\n  }\n}",
 			"parentId": null,
 			"id": "VGZsvThawf_hU2xm4q45X"
 		},
 		{
 			"name": "backgroundRed",
-			"content": "self {\n  background-color: #dd3c4c;\n\tcolor: #ffffff;\n\tborder-radius: 10px 0 0 10px;\n}",
+			"content": "self {\n\tbackground-color: #dd3c4c;\n\tcolor: #ffffff;\n\tborder-radius: 10px 0 0 10px;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tbackground-color: #c32232;\n\t\tcolor: #ffffff;\n\t\tborder-radius: 10px 0 0 10px;\n\t  }\n}",
 			"parentId": null,
 			"id": "umNirmsABdmhp5eCja7X8"
 		},
 		{
 			"name": "label",
-			"content": "self {\n   color: #717275;\n}\n\nself.disabled {\n\topacity: 1;\n}",
+			"content": "self {\n   color: #717275;\n   background-color: transparent;\n}\n\nself.disabled {\n\topacity: 1;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tcolor: #c0c0c0;\n\t\tbackground-color: transparent;\n\t}\n\n\tself.disabled {\n\t\topacity: 0.5;\n\t}\n}",
 			"parentId": null,
 			"id": "QksB3_uGA9xyqrWMTnS6k"
 		},
 		{
 			"name": "input",
-			"content": "self {\n\tborder: 1px solid #ced4da;\n\t\n\tpadding-right : 6px;\n\tpadding-bottom : 6px;\n\tpadding-top : 6px;\n\tpadding-left : 6px;\n}\n\nself.disabled {\n\topacity: 1 !important;\n}",
+			"content": "self {\n\tborder: 1px solid #ced4da;\n\tpadding-right : 6px;\n\tpadding-bottom : 6px;\n\tpadding-top : 6px;\n\tpadding-left : 6px;\n\tcolor: #000000;\n}\n\nself.disabled {\n\topacity: 0.9 !important;\n\tcolor: #000000;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tborder: 1px solid #717275; \n\t\tpadding-right: 6px;\n\t\tpadding-bottom: 6px;\n\t\tpadding-top: 6px;\n\t\tpadding-left: 6px;\n\t\tbackground-color: #0C0E12;\n\t\tcolor: #c0c0c0;\n\t}\n\n\tself.disabled {\n\t\topacity: 0.9 !important;\n\t\tcolor: #c0c0c0;\n\t}\n}",
 			"parentId": null,
 			"id": "PMO_yDiBMrP0HKYvIFDJb"
 		},
 		{
 			"name": "title",
-			"content": "self {\n   font-size: xx-large;\n}",
+			"content": "self {\n   font-size: xx-large;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n      font-size: xx-large;\n      color: #e1e1e1; /* Texte clair */\n    }\n}",
 			"parentId": null,
 			"id": "OoXaJgMqGstknauQThs-K"
 		},
 		{
 			"name": "DataTable",
-			"content": "self {\n  border-collapse: collapse;\n}\n\nself .header{\n\theight: fit-content !important;\n\tpadding-top: 2px !important;\n\tpadding-bottom: 2px !important;\n}\n\nself .header .header-cell{\n  font-size: 18px;\n  background-color: #4f5963;\n  color:  #FFFFFF;\n \tborder-color: #aaadaf;\n}\n\nself .header .header-cell .headerTruncatedText{\n\twhite-space: normal;\n}\n\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}\n\nself .row.selected {\n  background-color: #f3bec3;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f8f8;\n}",
+			"content": "self {\n  border-collapse: collapse;\n}\n\nself .header{\n\theight: fit-content !important;\n\tpadding-top: 2px !important;\n\tpadding-bottom: 2px !important;\n}\n\nself .header .header-cell {\n\tfont-size: 18px;\n\tbackground-color: #4f5963;\n\tcolor:  #FFFFFF;\n\tborder-color: #aaadaf;\n}\n\nself .header .header-cell .headerTruncatedText{\n\twhite-space: normal;\n}\n\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}\n\nself .row.selected {\n  background-color: #f3bec3;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f8f8;\n}\n\n@media (prefers-color-scheme: dark) {\n  self {\n  \t\tborder-collapse: collapse;\n\t\tcolor: #e0e0e0;\n\t\tborder-color: #555 !important;\n\t}\n\n\tself .header {\n\t\theight: fit-content !important;\n\t\tpadding-top: 2px !important;\n\t\tpadding-bottom: 2px !important;\n\t}\n\n\tself .header .header-cell {\n\t\tfont-size: 18px;\n\t\tbackground-color: #303030; /*#212121;*/\n\t\tcolor: #e0e0e0;\n\t}\n\n\tself .header .header-cell .headerTruncatedText {\n\t\twhite-space: normal;\n\t}\n\n\tself .row > :not([hidden]) ~ :not([hidden]),\n\tself .Grid .innerScrollContainer,\n\tself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n\t\tborder-width: 0;\n\t}\n\n\tself .row.selected {\n\t\tbackground-color: #ff6b73; \n\t\t color: #ffffff;\n\t}\n\n\t/* Odd rows */\n\tself .row-even:not(.selected):not(:hover) {\n\t\tbackground-color: #2C2C2C; \n\t}\n}",
 			"children": {},
 			"parentId": null,
 			"origin": "msZvlSfNvg",
@@ -46,7 +46,7 @@
 		},
 		{
 			"name": "box-shadow",
-			"content": "self {\n  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;\n}",
+			"content": "self {\n  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 4px 0px;\n  }\n}",
 			"children": {},
 			"parentId": null,
 			"origin": "cvbwVC_Juv",
@@ -54,43 +54,43 @@
 		},
 		{
 			"name": "buttonGrey",
-			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #4f5963;\n\tcolor: #4f5963;\n\tbackground-color: #FFFFFF;\n\tpadding: 10px;\n\tfont-weight: 600;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #394047;\n  background-color: #394047;\n  color: #FFFFFF;\n}",
+			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #4f5963;\n\tcolor: #4f5963;\n\tbackground-color: #FFFFFF;\n\tpadding: 10px;\n\tfont-weight: 600;\n\ttransition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #394047;\n  background-color: #394047;\n  color: #FFFFFF;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tborder-radius: 4px;\n\t\tborder: 1px solid #e0e0e0; \n\t\tcolor: #e0e0e0; \n\t\tbackground-color: #1e1e1e; \n\t\tpadding: 10px;\n\t\tfont-weight: 600;\n\t\ttransition-duration: 0.4s;\n\t}\n\n\t/* Hover */\n\tself:hover {\n\t\tborder: 1px solid #e0e0e0;\n\t\tbackground-color: #e0e0e0;\n\t\tcolor: #1e1e1e; \n\t\t\n\t}\n}",
 			"parentId": null,
 			"id": "ENkvv-5LP7JIePtisIzFF"
 		},
 		{
 			"name": "qodly-progress",
-			"content": "self {\n   background-color: #f3bec3;\n}",
+			"content": "self {\n   background-color: #f3bec3;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n      background-color: #c32232; /* Fond sombre adapté */\n    }\n}",
 			"parentId": null,
 			"id": "Sd9vvO3OHzj2IqivZO096"
 		},
 		{
 			"name": "menuBarSelected",
-			"content": "self {\n\tcolor: #dd3c4c;\n\tfont-size: 18px;\n}\n\nself:hover {\n  color: #c32232;\n}",
+			"content": "self {\n\tcolor: #dd3c4c;\n\tfont-size: 18px;\n}\n\nself:hover {\n  color: #c32232;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tcolor: #dd3c4c; /* Couleur rouge pour le texte sélectionné */\n\t\tfont-size: 18px;\n\t  }\n\n\t  self:hover {\n\t\tcolor: #c32232; /* Rouge plus foncé au survol */\n\t  }\n\n}",
 			"parentId": null,
 			"id": "nJ0G_h0RXnAY4VR1RVVK_"
 		},
 		{
 			"name": "menuBar",
-			"content": "self {\n\tcolor: #4f5963;\n\tfont-size:18px;\n\tbackground-color: transparent;\n}\n\nself:hover {\n\tfont-size: 18px;\n\tcolor: #394047;\n}",
+			"content": "self {\n\tcolor: #4f5963;\n\tfont-size:18px;\n\tbackground-color: transparent !important;\n}\n\nself:hover {\n\tfont-size: 18px;\n\tcolor: #394047;\n}\n\n@media (prefers-color-scheme: dark) {\n  self {\n    color: #e0e0e0; \n    font-size: 18px;\n    background-color: transparent !important; \n  }\n\n  self:hover {\n    font-size: 18px;\n    color: #b3b3b3; \n  }\n}",
 			"parentId": null,
 			"id": "Uj9LtZrpQp_bz6xOUq6yk"
 		},
 		{
 			"name": "buttonLogin",
-			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #dd3c4c;\n\tbackground-color: #dd3c4c;\n\tcolor: #FFFFFF;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #c32232;\n  background-color: #c32232;\n  color: #FFFFFF;\n}",
+			"content": "self {\n\tborder-radius: 4px;\n\tborder: 1px solid #dd3c4c;\n\tbackground-color: #dd3c4c;\n\tcolor: #FFFFFF;\n}\n\nself {\n  transition-duration: 0.4s;\n}\n\nself:hover {\n  border: 1px solid #c32232;\n  background-color: #c32232;\n  color: #FFFFFF;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tborder-radius: 4px;\n\t\tborder: 1px solid #c32232;\n\t\tbackground-color: #c32232;\n\t\tcolor: #FFFFFF;\n\t}\n\t\n\tself {\n\t\ttransition-duration: 0.4s;\n\t}\n\t\n\tself:hover {\n\t\tborder: 1px solid #dd3c4c;\n\t\tbackground-color: #dd3c4c;\n\t\tcolor: #FFFFFF;\n\t}\n}",
 			"parentId": null,
 			"id": "Md4KhKp30EbgGiU1x9y7b"
 		},
 		{
 			"name": "selectBox",
-			"content": "self {\n\tmin-width: 200px;\n\tmax-width: 400px;\n}\n\n.bg-primary-light {\n background-color: #f3bec3 !important;\n}\n\nself.disabled {\n\topacity: 0.90;\n}",
+			"content": "self {\n\tmin-width: 200px;\n\tmax-width: 400px;\n}\n\nself .fd-selectbox__wrapper {\n\tborder: 1px solid #717275 !important; \n\tborder-radius : 4px;\n}\n\n.flex.selected { \n\tbackground-color: #f3bec3 !important;\n}\n\nself .disabled {\n\topacity: 0.90;\n}\n\nself .fd-selectbox__container > div:hover{\n\tcolor: rgba(209, 213, 219, 0.4); \n}\n\n@media (prefers-color-scheme: dark) {\n    self {\n        min-width: 200px;\n        max-width: 400px;\n\t\tbackground-color: #0C0E12;\n        color: #c0c0c0;\n    }\n\n\tself .fd-selectbox__wrapper {\n\t\tborder: 1px solid #717275 !important; \n\t\tborder-radius : 4px;\n\t}\n\n\t.flex.selected { \n\t\tbackground-color: #ff6b73 !important;\n\t\tcolor: #ffffff;\n\t\topacity: 1 !important;\n\t}\n\n\t.fd-selectbox__menu_wrapper { \n\t\tbackground-color: #0C0E12 !important;\n        color: #c0c0c0 !important;\n\t}\n\n    self .disabled {\n        opacity: 0.5 !important;\n    }\n}",
 			"parentId": null,
 			"id": "JNzGU5UCYXykMFWabN4W9"
 		},
 		{
 			"name": "tabRedLine",
-			"content": "self button[data-headlessui-state] {\n\tcolor: #717275;\n\tbackground-color: transparent;\n\tborder-color: transparent !important;\n\tfont-size: 16px !important;\n\tfont-weight: 400 !important;\n\tpadding: 10px 10px;\n}\n\nself button[data-headlessui-state=\"selected\"]:after {\n\tbackground-color:  #dd3c4c !important;\n}\n\nself button[data-headlessui-state=\"selected\"] {\n\tcolor:  #dd3c4c !important;\n}",
+			"content": "self button[data-headlessui-state] {\n\tcolor: #717275;\n\tbackground-color: transparent;\n\tborder-color: transparent !important;\n\tfont-size: 16px !important;\n\tfont-weight: 400 !important;\n\tpadding: 10px 10px;\n}\n\nself button[data-headlessui-state=\"selected\"]:after {\n\tbackground-color:  #dd3c4c !important;\n}\n\nself button[data-headlessui-state=\"selected\"] {\n\tcolor:  #dd3c4c !important;\n}\n\n@media (prefers-color-scheme: dark) {\n\t\n\tself button[data-headlessui-state] {\n\t\tcolor: #c0c0c0;\n\t\tbackground-color: transparent;\n\t\tborder-color: transparent !important;\n\t\tfont-size: 16px !important;\n\t\tfont-weight: 400 !important;\n\t\tpadding: 10px 10px;\n\t}\n\n\tself button[data-headlessui-state=\"selected\"]:after {\n\t\tbackground-color:  #ff5252 !important;\n\t}\n\n\tself button[data-headlessui-state=\"selected\"] {\n\t\tcolor:  #ff5252 !important;\n\t}\n}",
 			"parentId": null,
 			"id": "hsMQLjJAxPhWOwDuXGN-k"
 		},
@@ -132,6 +132,54 @@
 			"parentId": null,
 			"origin": "v3jcoMb9B5",
 			"id": "Z_nRoGCJiXCv5ZU9KZF6m"
+		},
+		{
+			"name": "boxShadow2",
+			"content": "self {\n  box-shadow: 5px 10px 18px #888888; \n\tborder-radius: 10px;\n  }\n  \n  @media (prefers-color-scheme: dark) {\n    self {\n      box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.6);\n\t\t\tborder-radius: 10px;\n    }\n\t}",
+			"parentId": null,
+			"id": "gjc67vUwi3n3j9R23DCYT"
+		},
+		{
+			"name": "home",
+			"content": "self {\n\tbackground-color: var(--main-bg-color)!important;\n\tcolor: var(--main-fg-color)!important;\n}",
+			"parentId": null,
+			"id": "Xsmlv5-BIUAM4TTGp9-jM"
+		},
+		{
+			"name": "sidebar",
+			"content": "self {\n  background-color : var(--sidebar-bg-color);\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "yQLT6nKrq3",
+			"id": "9_Crmgsc1I3MmQXRCF9qE"
+		},
+		{
+			"name": "datePcker",
+			"content": "self {\n  height : 250px;\n  width : 300px;\n  border-radius : 4px;\n  padding : 8px;\n  background-color : white;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n    height : 250px;\n    width : 300px;\n    border-radius : 4px;\n    padding : 8px;\n    background-color : #0c0c0c;\n\t}\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "ktaFzbp1eR",
+			"id": "rNJgwjwHpJY54qmIA5PVl"
+		},
+		{
+			"name": "footer",
+			"content": "self {\n  background-color: #f0f0f0;\n  color: #3c3c3c;\n  text-align: center;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tbackground-color: #0c0c0c;\n\t\tcolor: #c8c8c8;\n\t\ttext-align: center;\n\t}\n}",
+			"parentId": null,
+			"id": "PBY04x-7C_y2usKT7T-n1"
+		},
+		{
+			"name": "date-picker",
+			"content": "self {\n  height : 250px;\n  width : 300px;\n  border-radius : 4px;\n  padding : 8px;\n  background-color : white;\n}\n\nself .datePicker-title, .yearPicker-title, .datePicker-leftIcon, .datePicker-rightIcon, .yearPicker-leftIcon, .yearPicker-rightIcon  {\n\tcolor: #000000\n}\n\nself .datePicker-days, .datePicker-weekDay, .yearPicker-years {\n\tcolor: #717275;\n}\n\nself .yearPicker-selectedYear, .datePicker-selectedDay {\n\tcolor: #FFFFFF;\n\tbackground-color: #dd3c4c;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\theight : 250px;\n\t\twidth : 300px;\n\t\tborder-radius : 4px;\n\t\tpadding : 8px;\n\t\tbackground-color : #121212;\n\t  }\n\n\tself .datePicker-title, .yearPicker-title, .datePicker-icon, .yearPicker-leftIcon, .yearPicker-rightIcon  {\n\t\tcolor: #FFFFFF\n\t}\n\t\n\tself .datePicker-days, .datePicker-weekDay, .yearPicker-years {\n\t\t  color: #e0e0e0;\n\t  }\n\t  \n\tself .datePicker-selectedDay, .yearPicker-selectedYear {\n\t\t  color: #FFFFFF;\n\t\t  background-color: #dd3c4c;\n\t  }\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "ktaFzbp1eR",
+			"id": "qmv9yhoudF43zuUkwWgwA"
+		},
+		{
+			"name": "constant-color",
+			"content": ":root {\n\t--main-bg-color: #FFFFFF;\n\t--main-fg-color: #000000;\n\n\t--sidebar-bg-color: #f5f5f5;\n\n\t@media (prefers-color-scheme: dark) {\n\t\t--main-bg-color: #121212;\n\t\t--main-fg-color: #E0E0E0;\n\n\t\t--sidebar-bg-color: #1e1e1e;\n\t}\n}",
+			"parentId": null,
+			"id": "BbpnVW2eNv6vTGu0HPJRX"
 		}
 	]
 }

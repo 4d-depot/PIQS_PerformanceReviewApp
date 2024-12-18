@@ -1,4 +1,6 @@
 {
+  "name": "file_upload",
+  "version": "0.2.1",
   "scope": "qodly_29100b5169c6dd537d9a",
   "author": {
     "name": "Qodly Team",
