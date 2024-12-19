@@ -84,7 +84,7 @@
 		},
 		{
 			"name": "selectBox",
-			"content": "self {\n\tmin-width: 200px;\n\tmax-width: 400px;\n}\n\nself .fd-selectbox__wrapper {\n\tborder: 1px solid #717275 !important; \n\tborder-radius : 4px;\n}\n\n.flex.selected { \n\tbackground-color: #f3bec3 !important;\n}\n\nself .disabled {\n\topacity: 0.90;\n}\n\nself .fd-selectbox__container > div:hover{\n\tcolor: rgba(209, 213, 219, 0.4); \n}\n\n@media (prefers-color-scheme: dark) {\n    self {\n        min-width: 200px;\n        max-width: 400px;\n\t\tbackground-color: #0C0E12;\n        color: #c0c0c0;\n    }\n\n\tself .fd-selectbox__wrapper {\n\t\tborder: 1px solid #717275 !important; \n\t\tborder-radius : 4px;\n\t}\n\n\t.flex.selected { \n\t\tbackground-color: #ff6b73 !important;\n\t\tcolor: #ffffff;\n\t\topacity: 1 !important;\n\t}\n\n\t.fd-selectbox__menu_wrapper { \n\t\tbackground-color: #0C0E12 !important;\n        color: #c0c0c0 !important;\n\t}\n\n    self .disabled {\n        opacity: 0.5 !important;\n    }\n}",
+			"content": "self {\n\tmin-width: 200px;\n\tmax-width: 400px;\n}\n\nself .fd-selectbox__wrapper {\n\tborder: 1px solid rgb(204,204,204) !important; \n\tborder-radius : 4px;\n}\n\n .fd-selectbox__menu_wrapper { \n\tbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;\n}\n\nself .selected { \n\tbackground-color: blue/*#f3bec3*/ !important;\n}\n\nself .fd-selectbox__container > div:hover{\n\tbackground-color: blue !important;\n}\n\nself .disabled {\n\topacity: 0.90;\n}\n\n@media (prefers-color-scheme: dark) {\n    self {\n        min-width: 200px;\n        max-width: 400px;\n\t\tbackground-color: #0C0E12;\n        color: #c0c0c0;\n    }\n\n\tself .fd-selectbox__wrapper {\n\t\tborder: 1px solid #717275 !important; \n\t\tborder-radius : 4px;\n\t}\n\n\t.flex.selected { \n\t\tbackground-color: #c32232 !important;\n\t\tcolor: #ffffff;\n\t\topacity: 1 !important;\n\t}\n\n\t.fd-selectbox__menu_wrapper { \n\t\tbackground-color: #0C0E12 !important;\n        color: #c0c0c0 !important;\n\t\tbox-shadow: rgba(255, 255, 255, 0.1) 0px 1px 4px 0px;\n\t}\n\n    self .disabled {\n        opacity: 0.5 !important;\n    }\n}",
 			"parentId": null,
 			"id": "JNzGU5UCYXykMFWabN4W9"
 		},
@@ -135,7 +135,7 @@
 		},
 		{
 			"name": "boxShadow2",
-			"content": "self {\n  box-shadow: 5px 10px 18px #888888; \n\tborder-radius: 10px;\n  }\n  \n  @media (prefers-color-scheme: dark) {\n    self {\n      box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.6);\n\t\t\tborder-radius: 10px;\n    }\n\t}",
+			"content": "self {\n  box-shadow: 5px 10px 18px #888888; \n\tborder-radius: 10px;\n  }\n  \n  @media (prefers-color-scheme: dark) {\n    self {\n      box-shadow: 5px 10px 18px #1e1e1e;\n\t\t\tborder-radius: 10px;\n    }\n\t}",
 			"parentId": null,
 			"id": "gjc67vUwi3n3j9R23DCYT"
 		},
