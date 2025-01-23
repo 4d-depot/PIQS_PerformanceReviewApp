@@ -14,7 +14,7 @@
 		},
 		{
 			"name": "backgroundRed",
-			"content": "self {\n\tbackground-color: #dd3c4c;\n\tcolor: #ffffff;\n\tborder-radius: 10px 0 0 10px;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tbackground-color: #c32232;\n\t\tcolor: #ffffff;\n\t\tborder-radius: 10px 0 0 10px;\n\t  }\n}",
+			"content": "self {\n\tbackground-color: #dd3c4c;\n\tcolor: #ffffff;\n\tborder-radius: 10px 0 0 10px;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tbackground-color: #c32232;\n\t\tcolor: #ffffff;\n\t\tborder-radius: 10px 0 0 10px;\n\t  }\n}\n\n@media screen and (max-width: 816px) {\n  self {\n    border-radius: 10px 10px 0 0;\n\tmax-width: 100% !important;\n  }\n}",
 			"parentId": null,
 			"id": "umNirmsABdmhp5eCja7X8"
 		},
