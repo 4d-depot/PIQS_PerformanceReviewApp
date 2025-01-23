@@ -20,13 +20,13 @@
 		},
 		{
 			"name": "label",
-			"content": "self {\n   color: #717275;\n   background-color: transparent;\n}\n\nself.disabled {\n\topacity: 1;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tcolor: #c0c0c0;\n\t\tbackground-color: transparent;\n\t}\n\n\tself.disabled {\n\t\topacity: 0.5;\n\t}\n}",
+			"content": "self {\n   color: #717275;\n   background-color: transparent;\n}\n\nself.disabled {\n\topacity: 1;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tcolor: #c0c0c0;\n\t\tbackground-color: transparent;\n\t\t\n\t}\n\n\tself.disabled {\n\t\topacity: 0.5;\n\t}\n}",
 			"parentId": null,
 			"id": "QksB3_uGA9xyqrWMTnS6k"
 		},
 		{
 			"name": "input",
-			"content": "self {\n\tborder: 1px solid #ced4da;\n\tpadding-right : 6px;\n\tpadding-bottom : 6px;\n\tpadding-top : 6px;\n\tpadding-left : 6px;\n\tcolor: #000000;\n}\n\nself.disabled {\n\topacity: 0.9 !important;\n\tcolor: #000000;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tborder: 1px solid #717275; \n\t\tpadding-right: 6px;\n\t\tpadding-bottom: 6px;\n\t\tpadding-top: 6px;\n\t\tpadding-left: 6px;\n\t\tbackground-color: #0C0E12;\n\t\tcolor: #c0c0c0;\n\t}\n\n\tself.disabled {\n\t\topacity: 0.9 !important;\n\t\tcolor: #c0c0c0;\n\t}\n}",
+			"content": "self {\n\tborder: 1px solid #ced4da !important;\n\tpadding-right : 6px;\n\tpadding-bottom : 6px;\n\tpadding-top : 6px;\n\tpadding-left : 6px;\n\tcolor: #000000;\n}\n\nself.disabled {\n\topacity: 0.9 !important;\n\tcolor: #000000;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\tborder: 1px solid #717275; \n\t\tpadding-right: 6px;\n\t\tpadding-bottom: 6px;\n\t\tpadding-top: 6px;\n\t\tpadding-left: 6px;\n\t\tbackground-color: #0C0E12;\n\t\tcolor: #c0c0c0;\n\t}\n\n\tself.disabled {\n\t\topacity: 0.9 !important;\n\t\tcolor: #c0c0c0;\n\t}\n}",
 			"parentId": null,
 			"id": "PMO_yDiBMrP0HKYvIFDJb"
 		},
@@ -84,7 +84,7 @@
 		},
 		{
 			"name": "selectBox",
-			"content": "self {\n\tmin-width: 200px;\n\tmax-width: 400px;\n}\n\nself .fd-selectbox__wrapper {\n\tborder: 1px solid rgb(204,204,204) !important; \n\tborder-radius : 4px;\n}\n\n .fd-selectbox__menu_wrapper { \n\tbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;\n}\n\nself .selected { \n\tbackground-color: blue/*#f3bec3*/ !important;\n}\n\nself .fd-selectbox__container > div:hover{\n\tbackground-color: blue !important;\n}\n\nself .disabled {\n\topacity: 0.90;\n}\n\n@media (prefers-color-scheme: dark) {\n    self {\n        min-width: 200px;\n        max-width: 400px;\n\t\tbackground-color: #0C0E12;\n        color: #c0c0c0;\n    }\n\n\tself .fd-selectbox__wrapper {\n\t\tborder: 1px solid #717275 !important; \n\t\tborder-radius : 4px;\n\t}\n\n\t.flex.selected { \n\t\tbackground-color: #c32232 !important;\n\t\tcolor: #ffffff;\n\t\topacity: 1 !important;\n\t}\n\n\t.fd-selectbox__menu_wrapper { \n\t\tbackground-color: #0C0E12 !important;\n        color: #c0c0c0 !important;\n\t\tbox-shadow: rgba(255, 255, 255, 0.1) 0px 1px 4px 0px;\n\t}\n\n    self .disabled {\n        opacity: 0.5 !important;\n    }\n}",
+			"content": "self {\n\tmin-width: 200px;\n\tmax-width: 400px;\n\tborder: 1px solid #ced4da;\n\tborder-radius: 4px;\n}\n\nself .fd-selectbox__container > div:hover{\n\tbackground-color: blue;\n}\n\nself .disabled {\n\topacity: 0.90;\n}\n\n@media (prefers-color-scheme: dark) {\n    self {\n        min-width: 200px;\n        max-width: 400px;\n\t\tbackground-color: #0C0E12;\n        color: #c0c0c0;\n\t\tborder: 1px solid #717275; \n\t\tborder-radius: 4px;\n    }\n\n\tself .FdVirtualList {\n\t\tbackground-color: #0C0E12;\n        color: #c0c0c0;\n\t}\n\n\t.fd-selectbox__container > div:hover{\n\t\tbackground-color: blue;\n\t\tcolor: #ffffff;\n\t}\n\t\n    self .disabled {\n        opacity: 0.5 !important;\n    }\n\n\ndiv.flex.selected { \n\t\tbackground-color: #c32232;\n\t\tcolor: #ffffff;\n\t}\n}",
 			"parentId": null,
 			"id": "JNzGU5UCYXykMFWabN4W9"
 		},
@@ -177,7 +177,7 @@
 		},
 		{
 			"name": "constant-color",
-			"content": ":root {\n\t--main-bg-color: #FFFFFF;\n\t--main-fg-color: #000000;\n\n\t--sidebar-bg-color: #f5f5f5;\n\n\t@media (prefers-color-scheme: dark) {\n\t\t--main-bg-color: #121212;\n\t\t--main-fg-color: #E0E0E0;\n\n\t\t--sidebar-bg-color: #1e1e1e;\n\t}\n}",
+			"content": ":root {\n\t--main-bg-color: #FFFFFF;\n\t--main-fg-color: #000000;\n\t--sidebar-bg-color: #f5f5f5;\n\n\t--accent-color1: #dd3c4c; \n\t--accent-color2: #c32232;\n\n\t--text-color1: #ffffff;\n\n\t@media (prefers-color-scheme: dark) {\n\t\t--main-bg-color: #121212;\n\t\t--main-fg-color: #E0E0E0;\n\t\t--sidebar-bg-color: #1e1e1e;\n\n\t\t--accent-color1: #c32232; \n\t\t--accent-color2: #dd3c4c;\n\t}\n}",
 			"parentId": null,
 			"id": "BbpnVW2eNv6vTGu0HPJRX"
 		}

@@ -2252,11 +2252,11 @@
 				"style": {
 					"display": "flex",
 					"justifyContent": "space-between",
-					"alignItems": "center",
-					"width": "fit-content"
+					"alignItems": "center"
 				},
 				"classNames": [
-					"input"
+					"input",
+					"date-input"
 				]
 			},
 			"displayName": "Stylebox",
@@ -2282,7 +2282,6 @@
 				"isShown": false,
 				"action": "click",
 				"style": {
-					"minWidth": "48px",
 					"width": "fit-content"
 				},
 				"disabled": false
@@ -2449,7 +2448,9 @@
 					"label"
 				],
 				"style": {
-					"paddingBottom": "0px"
+					"paddingBottom": "0px",
+					"display": "flex",
+					"alignItems": "center"
 				}
 			},
 			"displayName": "Text",
@@ -2469,8 +2470,7 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"flexDirection": "column",
-					"width": "fit-content",
+					"flexDirection": "row",
 					"gap": "8px"
 				}
 			},
@@ -2493,10 +2493,11 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"width": "fit-content",
 					"display": "flex",
-					"flexDirection": "column",
-					"gap": "8px"
+					"flexDirection": "row",
+					"gap": "8px",
+					"justifyContent": "space-between",
+					"alignItems": "center"
 				}
 			},
 			"displayName": "Stylebox",
@@ -2535,7 +2536,9 @@
 				"classNames": [
 					"label"
 				],
-				"style": {}
+				"style": {
+					"display": "flex"
+				}
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -2557,10 +2560,11 @@
 					"gap": "10px",
 					"justifyContent": "space-between",
 					"alignItems": "center",
-					"width": "fit-content"
+					"flexDirection": "row"
 				},
 				"classNames": [
-					"input"
+					"input",
+					"date-input"
 				]
 			},
 			"displayName": "Stylebox",
@@ -2585,10 +2589,7 @@
 				"position": "bottom-center",
 				"isShown": false,
 				"action": "click",
-				"style": {
-					"minWidth": "48px",
-					"width": "fit-content"
-				},
+				"style": {},
 				"disabled": false
 			},
 			"displayName": "Popover",
@@ -2805,7 +2806,10 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "hidden",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"width": "150px"
+				}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -2850,12 +2854,12 @@
 				"format": "0",
 				"style": {
 					"borderWidth": "0px",
-					"display": "block",
-					"width": "auto"
+					"display": "block"
 				},
 				"moveable": false,
 				"placeholder": "",
-				"revealPassword": true
+				"revealPassword": true,
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2876,7 +2880,8 @@
 				"labelPosition": "hidden",
 				"iterableChild": true,
 				"style": {
-					"borderWidth": "0px"
+					"borderWidth": "0px",
+					"width": "150px"
 				}
 			},
 			"displayName": "Text Input",
@@ -2924,7 +2929,8 @@
 				"dataType": "number",
 				"moveable": false,
 				"placeholder": "",
-				"revealPassword": true
+				"revealPassword": true,
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},

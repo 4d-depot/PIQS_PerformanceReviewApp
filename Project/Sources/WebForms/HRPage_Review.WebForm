@@ -344,7 +344,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 38
+				"contentHeight": 36
 			},
 			"parent": "FSuKj8nS5s",
 			"hidden": false,
@@ -663,8 +663,8 @@
 					"alignItems": "center"
 				},
 				"classNames": [
-					"input",
-					"date-input"
+					"date-input",
+					"input"
 				]
 			},
 			"displayName": "Stylebox",
@@ -687,10 +687,9 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-center",
-				"isShown": true,
+				"isShown": false,
 				"action": "click",
 				"style": {
-					"minWidth": "48px",
 					"width": "fit-content"
 				},
 				"disabled": false
@@ -840,7 +839,11 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "hidden",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"width": "150px"
+				}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -880,14 +883,13 @@
 				"deletable": false,
 				"className": "w-full bg-transparent",
 				"type": "text",
-				"style": {
-					"borderWidth": "0px"
-				},
+				"style": {},
 				"datasource": "year",
 				"dataType": "number",
 				"moveable": false,
 				"placeholder": "",
-				"revealPassword": true
+				"revealPassword": true,
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},

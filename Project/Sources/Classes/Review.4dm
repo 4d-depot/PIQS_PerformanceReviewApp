@@ -24,7 +24,7 @@ Function event restrict() : cs:C1710.ReviewSelection
 			return This:C1470.query("ID_Employee = :1"; $obj.Employee.ID).orderBy("Date desc")
 			
 		Else 
-			return Null:C1517
+			return This:C1470.newSelection()
 			
 	End case 
 	
@@ -43,6 +43,8 @@ exposed Function loadReviews($departement : cs:C1710.DepartementEntity; $year : 
 		: (($Departement#Null:C1517) && ($status#Null:C1517))
 			return This:C1470.query("Employee.ID_Departement = :1 AND ID_Status = :2 AND Date >= :3 AND Date <= :4"; $Departement.ID; $status.ID; String:C10($year)+"/01/01"; String:C10($year)+"/12/31")
 			
+		Else 
+			return This:C1470.newSelection()
 	End case 
 	
 exposed Function generateAllReview($year : Integer)

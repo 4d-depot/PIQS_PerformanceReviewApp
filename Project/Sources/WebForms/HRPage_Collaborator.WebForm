@@ -1707,7 +1707,9 @@
 				"label": "label",
 				"variant": "switch",
 				"labelPosition": "right",
-				"iterableChild": true
+				"iterableChild": true,
+				"type": "two-state",
+				"size": "md"
 			},
 			"displayName": "CheckBox",
 			"custom": {},
@@ -2098,7 +2100,8 @@
 				"variant": "switch",
 				"labelPosition": "right",
 				"iterableChild": true,
-				"type": ""
+				"type": "",
+				"size": "md"
 			},
 			"displayName": "CheckBox",
 			"custom": {},

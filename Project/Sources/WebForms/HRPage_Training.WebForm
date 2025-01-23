@@ -309,7 +309,9 @@
 				"datasource": "Departements",
 				"currentElement": "Departement",
 				"iterator": "$This",
-				"style": {},
+				"style": {
+					"borderWidth": "0px"
+				},
 				"placeholder": "Departement"
 			},
 			"displayName": "Select Box",
@@ -560,13 +562,12 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"gap": "10px",
-					"justifyContent": "space-between",
+					"justifyContent": "space-around",
 					"alignItems": "center"
 				},
 				"classNames": [
-					"input",
-					"date-input"
+					"date-input",
+					"input"
 				]
 			},
 			"displayName": "Stylebox",
@@ -589,10 +590,9 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-center",
-				"isShown": true,
+				"isShown": false,
 				"action": "click",
 				"style": {
-					"minWidth": "48px",
 					"width": "fit-content"
 				},
 				"disabled": false
@@ -629,7 +629,8 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"height": "auto",
-					"justifyContent": "flex-end"
+					"justifyContent": "flex-end",
+					"width": "40px"
 				},
 				"iterableChild": true
 			},
@@ -748,7 +749,9 @@
 				"datasource": "TrainingStatus",
 				"currentElement": "TrainingStatusEnt",
 				"iterator": "$This",
-				"style": {},
+				"style": {
+					"borderWidth": "0px"
+				},
 				"placeholder": "Status"
 			},
 			"displayName": "Select Box",
@@ -843,7 +846,10 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "hidden",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"width": "150px"
+				}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -884,13 +890,15 @@
 				"className": "w-full bg-transparent",
 				"type": "number",
 				"style": {
-					"borderWidth": "0px"
+					"width": "inherit",
+					"maxWidth": "140px"
 				},
 				"datasource": "year",
 				"dataType": "number",
 				"moveable": false,
 				"placeholder": "",
-				"revealPassword": true
+				"revealPassword": true,
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},

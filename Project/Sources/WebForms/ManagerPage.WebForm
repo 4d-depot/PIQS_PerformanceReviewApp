@@ -507,7 +507,10 @@
 				"placeholder": "placeholder",
 				"label": "label",
 				"labelPosition": "hidden",
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"width": "150px"
+				}
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -554,7 +557,8 @@
 				"dataType": "number",
 				"moveable": false,
 				"placeholder": "",
-				"revealPassword": true
+				"revealPassword": true,
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -573,10 +577,9 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-center",
-				"isShown": true,
+				"isShown": false,
 				"action": "click",
 				"style": {
-					"minWidth": "48px",
 					"width": "fit-content"
 				},
 				"disabled": false
@@ -788,7 +791,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 38
+				"contentHeight": 40
 			},
 			"parent": "JwxZb1uYR1",
 			"hidden": false,

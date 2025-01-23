@@ -2958,7 +2958,8 @@
 					"alignItems": "center"
 				},
 				"classNames": [
-					"input"
+					"input",
+					"date-input"
 				]
 			},
 			"displayName": "Stylebox",
