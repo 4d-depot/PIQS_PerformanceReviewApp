@@ -309,9 +309,7 @@
 				"datasource": "Departements",
 				"currentElement": "Departement",
 				"iterator": "$This",
-				"style": {
-					"borderWidth": "0px"
-				},
+				"style": {},
 				"placeholder": "Departement"
 			},
 			"displayName": "Select Box",
@@ -749,9 +747,7 @@
 				"datasource": "TrainingStatus",
 				"currentElement": "TrainingStatusEnt",
 				"iterator": "$This",
-				"style": {
-					"borderWidth": "0px"
-				},
+				"style": {},
 				"placeholder": "Status"
 			},
 			"displayName": "Select Box",

@@ -1,24 +1,42 @@
 {
 	"metadata": {
 		"v": "1.0",
-		"datasources": [],
+		"datasources": [
+			{
+				"id": "qodlysource",
+				"type": "entitysel",
+				"dataclass": "ReviewStatus",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "entity",
+				"type": "entity",
+				"dataclass": "ReviewStatus",
+				"from": "qodlysource",
+				"namespace": "",
+				"initialValue": "first",
+				"depth": null
+			}
+		],
 		"styles": []
 	},
 	"components": {
 		"ROOT": {
-			"parent": "",
 			"type": {
 				"resolvedName": "Container"
 			},
 			"isCanvas": true,
 			"props": {
-				"airyMode": false,
-				"className": "bg-white h-full w-full px-6",
 				"classNames": [],
-				"events": []
+				"events": [],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
 			},
 			"displayName": "Page",
 			"custom": {},
+			"parent": "",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

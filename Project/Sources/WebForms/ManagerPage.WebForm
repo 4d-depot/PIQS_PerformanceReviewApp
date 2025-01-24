@@ -43,7 +43,8 @@
 							"type": "cs.ReviewSelection",
 							"datasource": "app:subReviews"
 						},
-						"feedback": true
+						"feedback": true,
+						"disabled": false
 					}
 				]
 			},
@@ -175,7 +176,8 @@
 							"type": "entitysel",
 							"from": "",
 							"namespace": "app"
-						}
+						},
+						"disabled": true
 					},
 					{
 						"type": "simple-action",
@@ -759,9 +761,7 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "reviewStatus",
-				"style": {
-					"borderWidth": "0px"
-				}
+				"style": {}
 			},
 			"displayName": "Select Box",
 			"custom": {},

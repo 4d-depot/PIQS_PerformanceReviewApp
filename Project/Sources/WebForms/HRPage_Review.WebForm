@@ -312,9 +312,7 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "departement",
-				"style": {
-					"borderWidth": "0px"
-				}
+				"style": {}
 			},
 			"displayName": "Select Box",
 			"custom": {},
@@ -344,7 +342,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 36
+				"contentHeight": 40
 			},
 			"parent": "FSuKj8nS5s",
 			"hidden": false,
@@ -917,9 +915,7 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "reviewStatus",
-				"style": {
-					"borderWidth": "0px"
-				}
+				"style": {}
 			},
 			"displayName": "Select Box",
 			"custom": {},

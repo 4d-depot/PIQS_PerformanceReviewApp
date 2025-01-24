@@ -161,7 +161,8 @@
 					"input"
 				],
 				"style": {},
-				"revealPassword": true
+				"revealPassword": true,
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},

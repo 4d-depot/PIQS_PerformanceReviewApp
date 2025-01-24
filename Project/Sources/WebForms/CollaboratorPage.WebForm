@@ -41,7 +41,7 @@
 					},
 					{
 						"type": "simple-action",
-						"id": "11PZPbQiKKV6CXtLrmzQpE",
+						"id": "rwQFHeakGBufz8CMxNZc3K",
 						"events": [
 							"onload"
 						],
@@ -52,10 +52,21 @@
 							"type": "entitysel",
 							"from": "",
 							"namespace": "app"
-						},
-						"disabled": false,
-						"feedback": {
-							"enabled": false
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "7dxZ5FbN2AvVg78ogVTKto",
+						"events": [
+							"oninit"
+						],
+						"action": "all",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "subReviews",
+							"type": "entitysel",
+							"from": "",
+							"namespace": "app"
 						}
 					}
 				],

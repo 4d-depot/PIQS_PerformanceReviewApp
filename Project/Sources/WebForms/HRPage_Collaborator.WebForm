@@ -319,9 +319,7 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "departement",
-				"style": {
-					"borderWidth": "0px"
-				}
+				"style": {}
 			},
 			"displayName": "Select Box",
 			"custom": {},
@@ -832,9 +830,7 @@
 				"enableSearch": false,
 				"searchAttributes": [],
 				"currentElement": "theEmployee.Departement",
-				"style": {
-					"borderWidth": "0px"
-				}
+				"style": {}
 			},
 			"displayName": "Select Box",
 			"custom": {},
@@ -1897,9 +1893,7 @@
 					}
 				],
 				"currentElement": "theEmployee.Supervisor",
-				"style": {
-					"borderWidth": "0px"
-				}
+				"style": {}
 			},
 			"displayName": "Select Box",
 			"custom": {},
