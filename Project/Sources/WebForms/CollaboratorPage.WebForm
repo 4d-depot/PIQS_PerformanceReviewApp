@@ -155,7 +155,7 @@
 					}
 				],
 				"currentElement": "app:selectedReview",
-				"showBorders": true,
+				"showBorders": false,
 				"iterableChild": true
 			},
 			"displayName": "DataTable",

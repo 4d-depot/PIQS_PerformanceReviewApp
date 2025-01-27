@@ -21,7 +21,7 @@
 							{
 								"name": "departement",
 								"type": "cs.DepartementEntity",
-								"datasource": "",
+								"datasource": "departement",
 								"id": "1QVoRxXs1EFDEHDdUX2d5i"
 							},
 							{
@@ -78,11 +78,11 @@
 							{
 								"name": "departement",
 								"type": "cs.DepartementEntity",
-								"datasource": "",
+								"datasource": "departement",
 								"id": "71gSticw4fs6tVr3Q7z4vm",
-								"isHardCoded": true,
+								"isHardCoded": false,
 								"hardCodedType": "object",
-								"hardCodedValue": ""
+								"hardCodedValue": "departement"
 							},
 							{
 								"name": "year",
@@ -103,7 +103,8 @@
 							"type": "cs.ReviewSelection",
 							"datasource": "app:subReviews"
 						},
-						"feedback": true
+						"feedback": true,
+						"disabled": false
 					}
 				]
 			},
@@ -120,6 +121,23 @@
 				"type": "entity",
 				"dataclass": "Score",
 				"from": "scores",
+				"namespace": "",
+				"initialValue": "",
+				"depth": null
+			},
+			{
+				"id": "departements",
+				"type": "entitysel",
+				"dataclass": "Departement",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "departement",
+				"type": "entity",
+				"dataclass": "Departement",
+				"from": "departements",
 				"namespace": "",
 				"initialValue": "",
 				"depth": null
@@ -154,7 +172,7 @@
 						"events": [
 							"onload"
 						],
-						"action": "clear",
+						"action": "reset",
 						"actionType": "datasource",
 						"datasource": {
 							"name": "selectedReview",
@@ -162,22 +180,6 @@
 							"namespace": "app"
 						},
 						"state": {}
-					},
-					{
-						"type": "simple-action",
-						"id": "14a7GxuCyUXErHDpgLVK3M",
-						"events": [
-							"onload"
-						],
-						"action": "all",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "subReviews",
-							"type": "entitysel",
-							"from": "",
-							"namespace": "app"
-						},
-						"disabled": true
 					},
 					{
 						"type": "simple-action",
@@ -197,6 +199,42 @@
 							"targetNamespace": "",
 							"targetType": "number"
 						}
+					},
+					{
+						"type": "method",
+						"dataclass": "Review",
+						"events": [
+							"onload"
+						],
+						"id": "oxFWdTkZoE6r5LV1PqYL9x",
+						"method": "ds.Review.loadReviews",
+						"params": [
+							{
+								"name": "departement",
+								"type": "cs.DepartementEntity",
+								"datasource": "departement",
+								"id": "bMyWJvMvFj47rqTZdQ7FFV"
+							},
+							{
+								"name": "year",
+								"type": "Integer",
+								"datasource": "year",
+								"id": "7LHzQUGcnt1cbkxXXhcJeb"
+							},
+							{
+								"name": "status",
+								"type": "cs.ReviewStatusEntity",
+								"datasource": "reviewStatus",
+								"id": "kSe7kHoSo4NxcBus7jkpNM"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.ReviewSelection",
+							"datasource": "app:subReviews"
+						},
+						"disabled": false
 					}
 				],
 				"airyMode": false,
@@ -367,7 +405,7 @@
 					}
 				],
 				"currentElement": "app:selectedReview",
-				"showBorders": true,
+				"showBorders": false,
 				"iterableChild": true
 			},
 			"displayName": "DataTable",

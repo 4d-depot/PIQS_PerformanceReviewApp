@@ -384,7 +384,7 @@
 					}
 				],
 				"currentElement": "itemGoalTodo",
-				"showBorders": true,
+				"showBorders": false,
 				"iterableChild": true
 			},
 			"displayName": "DataTable",
@@ -840,7 +840,7 @@
 						"id": "jwra9twHBFyWhZbEWWVPcR"
 					}
 				],
-				"showBorders": true,
+				"showBorders": false,
 				"iterableChild": true
 			},
 			"displayName": "DataTable",
@@ -967,7 +967,7 @@
 						"id": "ntkR5K3AZPVbZbQTh19HCG"
 					}
 				],
-				"showBorders": true,
+				"showBorders": false,
 				"iterableChild": true
 			},
 			"displayName": "DataTable",
@@ -1088,7 +1088,7 @@
 					}
 				],
 				"currentElement": "itemTrainingTodo",
-				"showBorders": true,
+				"showBorders": false,
 				"iterableChild": true
 			},
 			"displayName": "DataTable",
@@ -2493,7 +2493,7 @@
 						"id": "efTH75jB3hnHfe4mpJszUa"
 					}
 				],
-				"showBorders": true,
+				"showBorders": false,
 				"iterableChild": true
 			},
 			"displayName": "DataTable",

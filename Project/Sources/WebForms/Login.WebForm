@@ -17,7 +17,15 @@
 				"initialValue": ""
 			}
 		],
-		"styles": [],
+		"styles": [
+			{
+				"name": "backgroundLoginRight",
+				"content": "self {\n    width: 50%;\n   height: 100%;\n  }\n\n@media screen and (max-width: 800px) {\n  self {\n    width: 100%;\n    height: fit-content;\n  }\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "UDPUS37TwKRtjfQcs4k3D"
+			}
+		],
 		"states": [
 			{
 				"label": "Base",
@@ -57,7 +65,7 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"z6SrFKQFJ7",
+				"WQckBN_pNE",
 				"mnXBqJsJ_z"
 			],
 			"linkedNodes": {}
@@ -332,12 +340,11 @@
 					"paddingTop": "24px",
 					"paddingLeft": "24px",
 					"borderBottomRightRadius": "10px",
-					"borderTopRightRadius": "10px",
-					"maxWidth": "50%",
-					"minWidth": "400px"
+					"borderTopRightRadius": "10px"
 				},
 				"classNames": [
-					"home"
+					"home",
+					"backgroundLoginRight"
 				]
 			},
 			"displayName": "Stylebox",
@@ -642,30 +649,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"z6SrFKQFJ7": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"style": {
-					"display": "flex",
-					"justifyContent": "center",
-					"alignItems": "center",
-					"flexWrap": "nowrap"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "ROOT",
-			"hidden": false,
-			"nodes": [
-				"WQckBN_pNE"
-			],
-			"linkedNodes": {}
-		},
 		"Hqogjhe_lX": {
 			"type": {
 				"resolvedName": "StyleBox"
@@ -957,7 +940,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "z6SrFKQFJ7",
+			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
 				"_-s_FljoOW",
@@ -979,14 +962,11 @@
 					"alignItems": "center",
 					"justifyContent": "center",
 					"flexDirection": "column",
-					"flexWrap": "nowrap",
-					"minWidth": "400px",
-					"maxWidth": "50%",
-					"minHeight": "200px"
+					"flexWrap": "nowrap"
 				},
 				"classNames": [
 					"title",
-					"backgroundRed"
+					"backgroundLoginLeft"
 				]
 			},
 			"displayName": "Stylebox",
