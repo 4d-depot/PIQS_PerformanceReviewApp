@@ -20,7 +20,7 @@
 		"styles": [
 			{
 				"name": "backgroundLoginRight",
-				"content": "self {\n    width: 50%;\n   height: 100%;\n  }\n\n@media screen and (max-width: 800px) {\n  self {\n    width: 100%;\n    height: fit-content;\n  }\n}",
+				"content": "self {\n\twidth: 50%;\n\theight: 100%;\n\tborder-radius: 0 10px 10px 0;\n  }\n\n@media screen and (max-width: 800px) {\n  self {\n    width: 100%;\n    height: fit-content;\n\n\t\tborder-radius: 0 0 10px 10px;\n  }\n}",
 				"parentId": null,
 				"scope": "local",
 				"id": "UDPUS37TwKRtjfQcs4k3D"
@@ -170,7 +170,8 @@
 				],
 				"style": {},
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -334,7 +335,6 @@
 					"alignContent": "center",
 					"alignItems": "center",
 					"justifyContent": "flex-start",
-					"borderColor": "transparent",
 					"paddingRight": "24px",
 					"paddingBottom": "24px",
 					"paddingTop": "24px",
@@ -368,7 +368,8 @@
 				"iterableChild": true,
 				"style": {
 					"display": "flex",
-					"alignItems": "end"
+					"alignItems": "end",
+					"paddingTop": "40px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -1157,7 +1158,8 @@
 				"revealPassword": true,
 				"datasource": "password",
 				"dataType": "string",
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},

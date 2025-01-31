@@ -521,7 +521,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {
@@ -604,7 +605,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {
@@ -687,7 +689,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {
@@ -770,7 +773,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {
@@ -2762,7 +2766,7 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-center",
-				"isShown": false,
+				"isShown": true,
 				"action": "click",
 				"style": {
 					"width": "fit-content"
@@ -2859,7 +2863,7 @@
 					"borderRadius": "4px",
 					"padding": "8px"
 				},
-				"selectedDateColor": "#dd3c4c",
+				"selectedDateColor": "#228be6",
 				"selectedDateRaduis": "",
 				"language": "en",
 				"selectionModes": "single",
@@ -3352,7 +3356,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {
@@ -3431,7 +3436,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {
@@ -3508,7 +3514,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4023,7 +4030,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4096,7 +4104,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4169,7 +4178,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4662,7 +4672,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {
@@ -4741,7 +4752,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {
@@ -5264,7 +5276,8 @@
 				"intervals": [],
 				"classNames": [
 					"input"
-				]
+				],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -5337,7 +5350,8 @@
 				"intervals": [],
 				"classNames": [
 					"input"
-				]
+				],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -5948,7 +5962,8 @@
 				"intervals": [],
 				"classNames": [
 					"input"
-				]
+				],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6021,7 +6036,8 @@
 				"intervals": [],
 				"classNames": [
 					"input"
-				]
+				],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6649,7 +6665,8 @@
 				"intervals": [],
 				"classNames": [
 					"input"
-				]
+				],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},

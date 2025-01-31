@@ -591,7 +591,7 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"flexWrap": "wrap",
-					"alignContent": "flex-start"
+					"alignContent": "center"
 				}
 			},
 			"displayName": "Stylebox",
@@ -721,10 +721,11 @@
 				],
 				"datasource": "app:userInfo.name",
 				"style": {
-					"display": "flex",
-					"gap": "40px",
-					"alignItems": "center"
-				}
+					"flexWrap": "nowrap"
+				},
+				"classNames": [
+					"hide-element"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -785,7 +786,8 @@
 				"iconPosition": "left",
 				"style": {
 					"display": "flex",
-					"height": "35px"
+					"height": "35px",
+					"alignItems": "center"
 				}
 			},
 			"displayName": "Button",
@@ -846,14 +848,15 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"display": "flex",
 					"flexDirection": "row",
-					"justifyContent": "flex-end",
+					"display": "flex",
 					"gap": "20px",
-					"alignItems": "center",
-					"flexWrap": "wrap",
-					"alignContent": "flex-start"
-				}
+					"justifyContent": "flex-end",
+					"alignItems": "center"
+				},
+				"classNames": [
+					"width-auto"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -890,8 +893,12 @@
 				"datasource": "",
 				"style": {
 					"fontSize": "18px",
-					"fontWeight": "500"
-				}
+					"fontWeight": "500",
+					"width": "fit-content"
+				},
+				"classNames": [
+					"hide-element"
+				]
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -913,8 +920,12 @@
 					"gap": "20px",
 					"alignItems": "center",
 					"maxWidth": "300px",
-					"flexWrap": "wrap"
-				}
+					"flexWrap": "wrap",
+					"alignContent": "center"
+				},
+				"classNames": [
+					"width-auto"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {},

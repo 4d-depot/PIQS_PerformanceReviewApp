@@ -685,7 +685,7 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-center",
-				"isShown": false,
+				"isShown": true,
 				"action": "click",
 				"style": {
 					"width": "fit-content"
@@ -814,11 +814,11 @@
 					"borderRadius": "4px",
 					"padding": "8px"
 				},
-				"selectedYearColor": "#dd3c4c",
+				"selectedYearColor": "#228be6",
 				"selectedYearRaduis": "",
 				"selectionModes": "single",
 				"datasource": "year",
-				"selectedRangeColor": "rgba(34,139,230,.12)"
+				"selectedRangeColor": ""
 			},
 			"displayName": "YearPicker",
 			"custom": {},
@@ -887,7 +887,8 @@
 				"moveable": false,
 				"placeholder": "",
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},

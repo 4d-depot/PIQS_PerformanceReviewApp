@@ -169,7 +169,7 @@
 		},
 		{
 			"name": "date-picker",
-			"content": "self {\n  height : 250px;\n  width : 300px;\n  border-radius : 4px;\n  padding : 8px;\n  background-color : white;\n}\n\nself .datePicker-title, .yearPicker-title, .datePicker-leftIcon, .datePicker-rightIcon, .yearPicker-leftIcon, .yearPicker-rightIcon  {\n\tcolor: #000000\n}\n\nself .datePicker-days, .datePicker-weekDay, .yearPicker-years {\n\tcolor: #717275;\n}\n\nself .yearPicker-selectedYear, .datePicker-selectedDay {\n\tcolor: #FFFFFF;\n\tbackground-color: #dd3c4c;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\theight : 250px;\n\t\twidth : 300px;\n\t\tborder-radius : 4px;\n\t\tpadding : 8px;\n\t\tbackground-color : #121212;\n\t  }\n\n\tself .datePicker-title, .yearPicker-title, .datePicker-icon, .yearPicker-leftIcon, .yearPicker-rightIcon  {\n\t\tcolor: #FFFFFF\n\t}\n\t\n\tself .datePicker-days, .datePicker-weekDay, .yearPicker-years {\n\t\t  color: #e0e0e0;\n\t  }\n\t  \n\tself .datePicker-selectedDay, .yearPicker-selectedYear {\n\t\t  color: #FFFFFF;\n\t\t  background-color: #dd3c4c;\n\t  }\n}",
+			"content": "self {\n  height : 250px;\n  width : 300px;\n  border-radius : 4px;\n  padding : 8px;\n  background-color : white;\n}\n\nself .datePicker-title, .yearPicker-title, .datePicker-leftIcon, .datePicker-rightIcon, .yearPicker-leftIcon, .yearPicker-rightIcon  {\n\tcolor: #000000\n}\n\nself .datePicker-days, .datePicker-weekDay, .yearPicker-years {\n\tcolor: #717275;\n}\n\nself .yearPicker-selectedYear, .datePicker-selectedDay {\n\tcolor: #1A202C;\n\t/*background-color: #f3bec3;*/\n}\n\nth[style*=\"background-color: rgb(34, 139, 230)\"], td[style*=\"background-color: rgb(34, 139, 230)\"] {\n    background-color: #f3bec3 !important;\n}\n\n@media (prefers-color-scheme: dark) {\n\tself {\n\t\theight : 250px;\n\t\twidth : 300px;\n\t\tborder-radius : 4px;\n\t\tpadding : 8px;\n\t\tbackground-color : #121212;\n\t  }\n\n\tself .datePicker-title, .yearPicker-title, .datePicker-icon, .yearPicker-leftIcon, .yearPicker-rightIcon  {\n\t\tcolor: #FFFFFF\n\t}\n\t\n\tself .datePicker-days, .datePicker-weekDay, .yearPicker-years {\n\t\t  color: #e0e0e0;\n\t  }\n\t  \n\tself .yearPicker-selectedYear, .datePicker-selectedDay {\n\t\t  color: #FFFFFF;\n\t\t  /*background-color: #dd3c4c;*/\n\t  }\n\n\tth[style*=\"background-color: rgb(34, 139, 230)\"], td[style*=\"background-color: rgb(34, 139, 230)\"] {\n    \tbackground-color: #ff6b73 !important;\n\t}\n}",
 			"children": {},
 			"parentId": null,
 			"origin": "ktaFzbp1eR",
@@ -180,6 +180,18 @@
 			"content": ":root {\n\t--main-bg-color: #FFFFFF;\n\t--main-fg-color: #000000;\n\t--sidebar-bg-color: #f5f5f5;\n\n\t--accent-color1: #dd3c4c; \n\t--accent-color2: #c32232;\n\n\t--text-color1: #ffffff;\n\n\t@media (prefers-color-scheme: dark) {\n\t\t--main-bg-color: #121212;\n\t\t--main-fg-color: #E0E0E0;\n\t\t--sidebar-bg-color: #1e1e1e;\n\n\t\t--accent-color1: #c32232; \n\t\t--accent-color2: #dd3c4c;\n\t}\n}",
 			"parentId": null,
 			"id": "BbpnVW2eNv6vTGu0HPJRX"
+		},
+		{
+			"name": "hide-element",
+			"content": "@media screen and (max-width: 800px) {\n\tself {\n\t\tdisplay:none;\n\t}\n}",
+			"parentId": null,
+			"id": "CHLcBxsIfpSzSMYIpq9UK"
+		},
+		{
+			"name": "width-auto",
+			"content": "@media screen and (max-width: 800px) {\n\tself {\n\t\twidth: auto;\n\t}\n}",
+			"parentId": null,
+			"id": "z8nwM5yNu_wvKIKUfhgaa"
 		}
 	]
 }
