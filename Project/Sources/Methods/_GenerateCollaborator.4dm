@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 var $collaboratorFile : Object
 
 $collaboratorFile:=JSON Parse:C1218(File:C1566("/RESOURCES/Dataset/Collaborator.json").getText())

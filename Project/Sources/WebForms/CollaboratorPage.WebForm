@@ -19,7 +19,6 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [
-					"position",
 					"home"
 				],
 				"events": [
@@ -77,7 +76,6 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
-					"backgroundColor": "transparent",
 					"display": "flex",
 					"flexDirection": "row"
 				}
@@ -190,11 +188,11 @@
 					"paddingBottom": "24px",
 					"paddingTop": "24px",
 					"paddingLeft": "24px",
-					"backgroundColor": "transparent",
 					"width": "100%",
 					"justifyContent": "space-between",
 					"flexDirection": "column"
-				}
+				},
+				"classNames": []
 			},
 			"displayName": "Stylebox",
 			"custom": {

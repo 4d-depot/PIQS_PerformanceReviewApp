@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 var $comment : Object:=New object:C1471
 var $goals : Object:=New object:C1471
 var $trainings : Object:=New object:C1471

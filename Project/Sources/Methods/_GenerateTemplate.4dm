@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 
 TRUNCATE TABLE:C1051([Template:9])
 

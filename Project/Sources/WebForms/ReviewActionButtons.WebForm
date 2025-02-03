@@ -2859,7 +2859,8 @@
 				"moveable": false,
 				"placeholder": "",
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2930,7 +2931,8 @@
 				"moveable": false,
 				"placeholder": "",
 				"revealPassword": true,
-				"intervals": []
+				"intervals": [],
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},

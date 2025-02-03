@@ -20,7 +20,15 @@
 				"depth": null
 			}
 		],
-		"styles": []
+		"styles": [
+			{
+				"name": "test1",
+				"content": "self {\n\tbackground-color: var(--accent-color1);\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "KnPkES1g8y52VOZBKW9s0"
+			}
+		]
 	},
 	"components": {
 		"ROOT": {
@@ -29,7 +37,9 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"classNames": [],
+				"classNames": [
+					"constant-color"
+				],
 				"events": [],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6"
@@ -39,96 +49,88 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"jCuRWCgf9l"
+				"ABFLWgpN4E",
+				"j3bUaKjnhe",
+				"9bFdzQ3yXa",
+				"gQAHPZvGS9"
 			],
 			"linkedNodes": {}
 		},
-		"jCuRWCgf9l": {
-			"type": {
-				"resolvedName": "SelectBox"
-			},
-			"isCanvas": false,
-			"props": {
-				"iterable": true,
-				"classNames": [],
-				"events": [],
-				"template": "{{ length }} items",
-				"rowsNumber": 5,
-				"datasource": "qodlysource",
-				"currentElement": "entity"
-			},
-			"displayName": "Select Box",
-			"custom": {},
-			"parent": "ROOT",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"container": "vKV7g93xFM"
-			}
-		},
-		"vKV7g93xFM": {
+		"ABFLWgpN4E": {
 			"type": {
 				"resolvedName": "StyleBox"
 			},
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"className": "fd-selectbox__container",
-				"isFixedWidth": true,
-				"iterableChild": true
+				"iterableChild": true,
+				"style": {
+					"height": "40px"
+				},
+				"classNames": [
+					"test1"
+				]
 			},
 			"displayName": "Stylebox",
-			"custom": {
-				"contentHeight": 40
-			},
-			"parent": "jCuRWCgf9l",
+			"custom": {},
+			"parent": "ROOT",
 			"hidden": false,
-			"nodes": [
-				"KyYouO3c-p"
-			],
+			"nodes": [],
 			"linkedNodes": {}
 		},
-		"KyYouO3c-p": {
+		"j3bUaKjnhe": {
 			"type": {
-				"resolvedName": "Text"
+				"resolvedName": "StyleBox"
 			},
-			"isCanvas": false,
+			"isCanvas": true,
 			"props": {
 				"events": [],
 				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "$This.Name",
-								"children": [
-									{
-										"text": "Name",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"dsType": "string",
-								"format": ""
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "$This.Name"
+				"style": {
+					"height": "40px"
+				}
 			},
-			"displayName": "Text",
+			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "vKV7g93xFM",
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"9bFdzQ3yXa": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"height": "40px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"gQAHPZvGS9": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"height": "40px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

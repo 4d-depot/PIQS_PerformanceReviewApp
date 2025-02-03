@@ -51,7 +51,6 @@
 				"className": "bg-white h-full w-full px-6",
 				"style": {
 					"borderRadius": "0px",
-					"backgroundColor": "transparent",
 					"borderColor": "transparent",
 					"borderStyle": "none",
 					"display": "flex",

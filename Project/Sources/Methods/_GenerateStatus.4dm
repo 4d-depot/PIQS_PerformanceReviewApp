@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 var $obj : Object
 $obj:=JSON Parse:C1218(File:C1566("/RESOURCES/Dataset/Status.json").getText())
 

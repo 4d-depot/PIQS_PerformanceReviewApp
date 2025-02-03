@@ -141,7 +141,7 @@
 		},
 		{
 			"name": "home",
-			"content": "self {\n\tbackground-color: var(--main-bg-color)!important;\n\tcolor: var(--main-fg-color)!important;\n}",
+			"content": "self {\n\tbackground-color: #FFFFFF;\n\tcolor: #000000;\n\n\t@media (prefers-color-scheme: dark) {\n\t\tbackground-color: #121212;\n\t\tcolor: #E0E0E0;\n\t}\n}",
 			"parentId": null,
 			"id": "Xsmlv5-BIUAM4TTGp9-jM"
 		},
@@ -177,7 +177,7 @@
 		},
 		{
 			"name": "constant-color",
-			"content": ":root {\n\t--main-bg-color: #FFFFFF;\n\t--main-fg-color: #000000;\n\t--sidebar-bg-color: #f5f5f5;\n\n\t--accent-color1: #dd3c4c; \n\t--accent-color2: #c32232;\n\n\t--text-color1: #ffffff;\n\n\t@media (prefers-color-scheme: dark) {\n\t\t--main-bg-color: #121212;\n\t\t--main-fg-color: #E0E0E0;\n\t\t--sidebar-bg-color: #1e1e1e;\n\n\t\t--accent-color1: #c32232; \n\t\t--accent-color2: #dd3c4c;\n\t}\n}",
+			"content": ":root {\n\t--main-bg-color: #FFFFFF;\n\t--sidebar-bg-color: #f5f5f5;\n\t--footer-bg-color: #f0f0f0;\n\t--footer-fg-color: #3c3c3c;\n\n\t--accent-color1: #dd3c4c; \n\t--accent-color2: #c32232;\n\n\t--text-color1: #000000;\n\t--text-color2: #4f5963;\n\n\t--selected-color: #1A202C;\n\t--selected-background-color: #f3bec3;\n\n\t@media (prefers-color-scheme: dark) {\n\t\t--main-bg-color: #121212;\n\t\t--sidebar-bg-color: #1e1e1e;\n\t\t--footer-bg-color: #0c0c0c;\n\t\t--footer-fg-color: #c8c8c8;\n\n\t\t--accent-color1: #c32232; \n\t\t--accent-color2: #dd3c4c;\n\n\t\t--text-color1: #E0E0E0;\n\t\t--text-color2: #E0E0E0;\n\n\t\t--selected-color: #FFFFFF;\n\t\t--selected-background-color: #ff6b73;\n\t}\n}",
 			"parentId": null,
 			"id": "BbpnVW2eNv6vTGu0HPJRX"
 		},
