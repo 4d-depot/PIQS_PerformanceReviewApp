@@ -564,8 +564,8 @@
 					"alignItems": "center"
 				},
 				"classNames": [
-					"date-input",
-					"input"
+					"input",
+					"date-input"
 				]
 			},
 			"displayName": "Stylebox",
@@ -887,7 +887,8 @@
 				"type": "number",
 				"style": {
 					"width": "inherit",
-					"maxWidth": "140px"
+					"maxWidth": "140px",
+					"borderWidth": "0px"
 				},
 				"datasource": "year",
 				"dataType": "number",

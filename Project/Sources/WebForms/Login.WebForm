@@ -250,7 +250,7 @@
 			"props": {
 				"text": "Sign in",
 				"classNames": [
-					"buttonLogin"
+					"button-full"
 				],
 				"events": [
 					{
@@ -965,8 +965,8 @@
 					"flexWrap": "nowrap"
 				},
 				"classNames": [
-					"title",
-					"backgroundLoginLeft"
+					"backgroundLoginLeft",
+					"title"
 				]
 			},
 			"displayName": "Stylebox",

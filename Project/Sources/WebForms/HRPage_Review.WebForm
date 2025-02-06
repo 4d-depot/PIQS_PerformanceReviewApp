@@ -342,7 +342,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 38
+				"contentHeight": 40
 			},
 			"parent": "FSuKj8nS5s",
 			"hidden": false,
@@ -685,7 +685,7 @@
 				"classNames": [],
 				"events": [],
 				"position": "bottom-center",
-				"isShown": true,
+				"isShown": false,
 				"action": "click",
 				"style": {
 					"width": "fit-content"
@@ -881,7 +881,9 @@
 				"deletable": false,
 				"className": "w-full bg-transparent",
 				"type": "text",
-				"style": {},
+				"style": {
+					"borderWidth": "0px"
+				},
 				"datasource": "year",
 				"dataType": "number",
 				"moveable": false,

@@ -163,7 +163,7 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [
-					"position"
+					"home"
 				],
 				"events": [
 					{
@@ -355,8 +355,8 @@
 				],
 				"events": [],
 				"style": {
-					"width": "100%",
-					"height": "100%"
+					"height": "100%",
+					"width": "100%"
 				},
 				"headerHeight": 36,
 				"rowHeight": 30,
@@ -830,7 +830,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentHeight": 38
+				"contentHeight": 39
 			},
 			"parent": "JwxZb1uYR1",
 			"hidden": false,

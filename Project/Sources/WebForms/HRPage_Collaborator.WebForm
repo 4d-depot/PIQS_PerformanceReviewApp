@@ -411,7 +411,7 @@
 			"props": {
 				"text": "Create",
 				"classNames": [
-					"buttonRed"
+					"button-action-data"
 				],
 				"events": [
 					{
@@ -1297,7 +1297,7 @@
 			"props": {
 				"text": "Edit",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{
@@ -1349,7 +1349,7 @@
 			"props": {
 				"text": "Save",
 				"classNames": [
-					"buttonRed"
+					"button-action-data"
 				],
 				"events": [
 					{
@@ -1440,7 +1440,7 @@
 			"props": {
 				"text": "Cancel",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{

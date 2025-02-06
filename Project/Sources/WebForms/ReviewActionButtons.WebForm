@@ -20,7 +20,7 @@
 		"styles": [
 			{
 				"name": "loader",
-				"content": "self.loader {\n  border: 16px solid #f3f3f3; /* Light grey */\n  border-top: 16px solid #dd3c4c; /* Blue */\n  border-radius: 50%;\n  width: 120px;\n  height: 120px;\n  animation: spin 2s linear infinite;\n}\n\n@keyframes spin {\n  0% { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}",
+				"content": "self.loader {\n  border: 16px solid #f3f3f3; \n  border-top: 16px solid #dd3c4c; \n  border-radius: 50%;\n  width: 120px;\n  height: 120px;\n  animation: spin 2s linear infinite;\n}\n\n@keyframes spin {\n  0% { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}",
 				"parentId": null,
 				"id": "Jc6HjGMuPEb2R_QNpgxES",
 				"scope": "local"
@@ -625,7 +625,7 @@
 			"props": {
 				"text": "Edit",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{
@@ -698,7 +698,7 @@
 			"props": {
 				"text": "Generate PDF<br>",
 				"classNames": [
-					"buttonRed"
+					"button-action-data"
 				],
 				"events": [
 					{
@@ -804,7 +804,7 @@
 			"props": {
 				"text": "View PDF<br>",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{
@@ -918,7 +918,7 @@
 			"props": {
 				"text": "Hide PDF<br>",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{
@@ -1255,7 +1255,7 @@
 			"props": {
 				"text": "Save<br>",
 				"classNames": [
-					"buttonRed"
+					"button-action-data"
 				],
 				"events": [
 					{
@@ -1392,7 +1392,7 @@
 			"props": {
 				"text": "Cancel",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{
@@ -1534,7 +1534,7 @@
 			"props": {
 				"text": "Create next Reviews",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{
@@ -1590,7 +1590,7 @@
 			"props": {
 				"text": "Generate all PDFs",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{
@@ -1766,7 +1766,7 @@
 			"props": {
 				"text": "Generate",
 				"classNames": [
-					"buttonRed"
+					"button-action-data"
 				],
 				"events": [
 					{
@@ -1875,7 +1875,7 @@
 			"props": {
 				"text": "Cancel",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{
@@ -2048,7 +2048,7 @@
 			"props": {
 				"text": "Generate",
 				"classNames": [
-					"buttonRed"
+					"button-action-data"
 				],
 				"events": [
 					{
@@ -2157,7 +2157,7 @@
 			"props": {
 				"text": "Cancel",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [
 					{
@@ -3005,7 +3005,7 @@
 			"props": {
 				"name": "",
 				"classNames": [
-					"buttonGrey"
+					"button-action"
 				],
 				"events": [],
 				"iterableChild": true,

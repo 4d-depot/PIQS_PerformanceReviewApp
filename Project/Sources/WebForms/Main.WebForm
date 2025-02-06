@@ -742,7 +742,7 @@
 			"props": {
 				"text": "logout",
 				"classNames": [
-					"buttonLogin"
+					"button-full"
 				],
 				"events": [
 					{
@@ -924,7 +924,8 @@
 					"alignContent": "center"
 				},
 				"classNames": [
-					"width-auto"
+					"width-auto",
+					"title"
 				]
 			},
 			"displayName": "Stylebox",
@@ -946,10 +947,12 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"backgroundColor": "rgb(26,32,44)",
 					"position": "relative",
 					"bottom": "0px"
-				}
+				},
+				"classNames": [
+					"footer"
+				]
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -996,7 +999,6 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"color": "#ffffffff",
 					"fontSize": "14px",
 					"textAlign": "center"
 				},
