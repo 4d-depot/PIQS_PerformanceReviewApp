@@ -116,9 +116,10 @@
 		"styles": [
 			{
 				"name": "switch",
-				"content": ".chakra-switch__track[data-checked] {\nbackground-color: #dd3c4c !important;\n}",
+				"content": ".chakra-switch__track[data-checked] {\n\tbackground-color: var(--accent-color1) !important;\n}",
 				"parentId": null,
-				"id": "S5G7bfpmVNv-wzQRxTC3Y"
+				"id": "S5G7bfpmVNv-wzQRxTC3Y",
+				"scope": "local"
 			}
 		],
 		"states": [
