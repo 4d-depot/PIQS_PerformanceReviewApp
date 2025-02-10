@@ -28,12 +28,12 @@ exposed Function authentify($email : Text; $password : Text) : Text
 				$obj.Employee.name:=$employee.Firstname+" "+$employee.Lastname
 				$obj.Employee.role:="Collaborator"
 				$obj.Employee.maxRole:="Collaborator"
+				$obj.Employee.year:=Year of:C25(Current date:C33)
 				$page:=$pageCollaborator
 				
 				If ($employee.ID_Departement=5)
 					Session:C1714.setPrivileges("hr")
 					$obj.Employee.maxRole:="HR"
-					$obj.Employee.year:=Year of:C25(Current date:C33)
 				Else 
 					Session:C1714.setPrivileges("user")
 					If ($employee.Collaborator.length>0)
