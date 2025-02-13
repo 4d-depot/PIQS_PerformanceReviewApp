@@ -1,12 +1,10 @@
 {
+	"forceLogin": true,
 	"permissions": {
 		"allowed": [
 			{
 				"applyTo": "ds.authentify",
 				"type": "method",
-				"describe": [
-					"guest"
-				],
 				"execute": [
 					"guest"
 				],
@@ -31,10 +29,6 @@
 				"create": [
 					"createReview"
 				],
-				"describe": [
-					"createReview",
-					"user"
-				],
 				"execute": [
 					"createReview",
 					"user"
@@ -57,9 +51,6 @@
 					"user"
 				],
 				"update": [
-					"user"
-				],
-				"describe": [
 					"user"
 				]
 			},
@@ -84,9 +75,6 @@
 					"generatePDF",
 					"hr"
 				],
-				"describe": [
-					"hr"
-				],
 				"execute": [
 					"hr"
 				]
@@ -95,29 +83,25 @@
 				"applyTo": "ds",
 				"type": "datastore",
 				"read": [
-					"nobody"
+					"none"
 				],
 				"create": [
-					"nobody"
+					"none"
 				],
 				"update": [
-					"nobody"
+					"none"
 				],
 				"drop": [
-					"nobody"
+					"none"
 				],
 				"execute": [
-					"nobody"
+					"none"
 				]
 			},
 			{
 				"applyTo": "Employee",
 				"type": "dataclass",
 				"read": [
-					"authentify",
-					"user"
-				],
-				"describe": [
 					"authentify",
 					"user"
 				],
@@ -147,9 +131,6 @@
 				"drop": [
 					"user"
 				],
-				"describe": [
-					"user"
-				],
 				"execute": [
 					"user"
 				]
@@ -162,9 +143,6 @@
 				],
 				"update": [
 					"user"
-				],
-				"describe": [
-					"user"
 				]
 			},
 			{
@@ -175,9 +153,6 @@
 				],
 				"update": [
 					"user"
-				],
-				"describe": [
-					"user"
 				]
 			},
 			{
@@ -187,9 +162,6 @@
 					"user"
 				],
 				"update": [
-					"user"
-				],
-				"describe": [
 					"user"
 				],
 				"execute": [
@@ -211,9 +183,6 @@
 				"drop": [
 					"user"
 				],
-				"describe": [
-					"user"
-				],
 				"execute": [
 					"user"
 				]
@@ -221,9 +190,6 @@
 			{
 				"applyTo": "ds.getUserInfo",
 				"type": "method",
-				"describe": [
-					"user"
-				],
 				"execute": [
 					"user"
 				]
@@ -231,9 +197,6 @@
 			{
 				"applyTo": "ds.selectRole",
 				"type": "method",
-				"describe": [
-					"user"
-				],
 				"execute": [
 					"user"
 				]
@@ -243,17 +206,11 @@
 				"type": "dataclass",
 				"read": [
 					"user"
-				],
-				"describe": [
-					"user"
 				]
 			},
 			{
 				"applyTo": "ds.privilege",
 				"type": "method",
-				"describe": [
-					"user"
-				],
 				"execute": [
 					"user"
 				]
@@ -273,7 +230,7 @@
 		},
 		{
 			"id": "2YYEiWzUXb2yySjhzK2WFz",
-			"privilege": "nobody",
+			"privilege": "none",
 			"includes": []
 		},
 		{
@@ -294,6 +251,5 @@
 			]
 		}
 	],
-	"roles": [],
-	"forceLogin": true
+	"roles": []
 }

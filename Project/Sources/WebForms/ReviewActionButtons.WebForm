@@ -10,7 +10,7 @@
 				"initialValue": "0"
 			},
 			{
-				"id": "qodlysource",
+				"id": "fileName",
 				"type": "scalar",
 				"namespace": "",
 				"dataType": "string",
@@ -3015,7 +3015,7 @@
 					"display": "flex"
 				},
 				"datasource": "app:selectedReview.DocumentPDF",
-				"currentElement": "qodlysource"
+				"currentElement": "fileName"
 			},
 			"displayName": "Download",
 			"custom": {

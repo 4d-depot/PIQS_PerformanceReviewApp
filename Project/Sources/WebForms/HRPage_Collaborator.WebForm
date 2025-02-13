@@ -634,7 +634,8 @@
 					"input"
 				],
 				"revealPassword": true,
-				"eyePosition": "right"
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1230,7 +1231,8 @@
 					"height": "100%"
 				},
 				"revealPassword": true,
-				"eyePosition": "right"
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
