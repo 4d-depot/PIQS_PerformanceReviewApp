@@ -25,8 +25,6 @@
 		<field name="MobilityMotivations" uuid="51A27E8D9BE447C1A47D81058AE4975A" type="10" id="7">
 			<field_extra multi_line="false"/>
 		</field>
-		<field name="Document" uuid="3669DD9D63B24C8DA52E6B80454D6525" type="21" blob_switch_size="2147483647" id="8"/>
-		<field name="DocumentFreeze" uuid="041EB043A6D440D082A408C78C5D544B" type="21" blob_switch_size="2147483647" id="9"/>
 		<field name="ID_PreviousReview" uuid="044C7F100270454F88DFFAB326747AB1" type="4" id="10"/>
 		<field name="ID_Status" uuid="C6261F1817544C29AEDAEA27277A0123" type="4" id="11"/>
 		<field name="ID_ScoreGoal" uuid="0334EB21D371405DB9FF99F764BEF170" type="4" id="12"/>

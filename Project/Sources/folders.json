@@ -1,15 +1,51 @@
 {
-	"Default Classes": {},
-	"Default Folder": {
-		"groups": [
-			"Default Classes",
-			"Default Forms",
-			"Default Project Methods",
-			"Default Tables"
+	"Class": {
+		"classes": [
+			"DataStore",
+			"Employee",
+			"EmployeeEntity",
+			"Review",
+			"ReviewEntity",
+			"ReviewSelection",
+			"Training"
 		]
 	},
-	"Default Forms": {},
-	"Default Project Methods": {},
-	"Default Tables": {},
+	"Form": {
+		"forms": [
+			"Collaborator",
+			"Collaborator_Edit",
+			"Departement",
+			"FormReview",
+			"LoginForm",
+			"Review",
+			"Settings",
+			"Template",
+			"Welcome",
+			"WP_Review"
+		]
+	},
+	"GenerateData": {
+		"methods": [
+			"_GenerateCollaborator",
+			"_GenerateReview",
+			"_GenerateStatus",
+			"_GenerateTemplate"
+		]
+	},
+	"Table": {
+		"tables": [
+			"Departement",
+			"Employee",
+			"Goal",
+			"GoalStatus",
+			"Review",
+			"ReviewStatus",
+			"Score",
+			"Skill",
+			"Template",
+			"Training",
+			"TrainingStatus"
+		]
+	},
 	"trash": {}
 }

@@ -10,11 +10,6 @@ Function event restrict() : cs:C1710.EmployeeSelection
 		$obj:=Session:C1714.storage
 	End if 
 	
-	
-	If ($obj.Employee.role=Null:C1517)
-		return Null:C1517
-	End if 
-	
 	Case of 
 		: (Session:C1714.hasPrivilege("authentify"))
 			return This:C1470.all()
@@ -35,11 +30,11 @@ Function event restrict() : cs:C1710.EmployeeSelection
 			return This:C1470.all()
 			
 		Else 
-			return Null:C1517
+			return This:C1470.newSelection()
 			
 	End case 
 	
-exposed Function loadEmployees($departement : Object; $isActive : Boolean) : cs:C1710.EmployeeSelection
+exposed Function loadEmployees($departement : cs:C1710.DepartementEntity; $isActive : Boolean) : cs:C1710.EmployeeSelection
 	If ($departement#Null:C1517)
 		return This:C1470.query("ID_Departement = :1 AND isActive = :2"; $departement.ID; $isActive)
 	Else 

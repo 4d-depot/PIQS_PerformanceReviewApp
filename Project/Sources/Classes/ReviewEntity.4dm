@@ -96,20 +96,11 @@ Function generateDocument()->$doc : Object
 	
 	return $doc
 	
-Function generateFreezeDocument()->$freezeDoc : Object
-	
-	var $obj : Object
-	
-	$freezeDoc:=This:C1470.generateDocument()
-	WP FREEZE FORMULAS:C1708($freezeDoc)
-	
-	return $freezeDoc
-	
 exposed Function generatePDF()
 	var $WPdoc : Object
 	var $blob : 4D:C1709.Blob
 	
-	$WPdoc:=This:C1470.generateFreezeDocument()
+	$WPdoc:=This:C1470.generateDocument()
 	WP EXPORT VARIABLE:C1319($WPdoc; $blob; wk pdf:K81:315)
 	
 	This:C1470.DocumentPDF:=$blob

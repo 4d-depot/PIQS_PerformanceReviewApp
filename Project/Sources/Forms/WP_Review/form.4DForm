@@ -77,10 +77,10 @@
 				"SaveTemplate": {
 					"type": "button",
 					"text": "Save template",
-					"top": 118,
-					"left": 919,
-					"width": 140,
-					"height": 39,
+					"top": 110,
+					"left": 900,
+					"width": 167,
+					"height": 36,
 					"events": [
 						"onClick"
 					],
@@ -88,8 +88,8 @@
 				},
 				"dropFormula": {
 					"type": "dropdown",
-					"left": 919,
-					"top": 62,
+					"left": 900,
+					"top": 57,
 					"width": 167,
 					"height": 28,
 					"events": [
@@ -97,11 +97,19 @@
 					],
 					"dataSource": "Form:C1466.dropFormula",
 					"method": "ObjectMethods/dropFormula.4dm"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Formula:",
+					"top": 29,
+					"left": 900,
+					"width": 121,
+					"height": 16
 				}
 			}
 		}
 	],
-	"geometryStamp": 24,
+	"geometryStamp": 50,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

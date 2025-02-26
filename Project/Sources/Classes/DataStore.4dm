@@ -5,11 +5,15 @@ exposed Function authentify($email : Text; $password : Text) : Text
 	var $pageCollaborator : Text:="CollaboratorPage"
 	var $obj : Object
 	var $employee : cs:C1710.EmployeeEntity
+	var $typeREST:=False:C215
 	
 	If (Session:C1714=Null:C1517)
 		$obj:=Storage:C1525
 	Else 
 		$obj:=Session:C1714.storage
+		If (Session:C1714.info=Null:C1517)
+			$typeREST:=True:C214
+		End if 
 	End if 
 	
 	If ($obj.Employee=Null:C1517)
@@ -43,13 +47,19 @@ exposed Function authentify($email : Text; $password : Text) : Text
 			End use 
 			
 			Session:C1714.setPrivileges("user")
-			Web Form:C1735.setMessage("Authentication successfull")
+			If ($typeREST)
+				Web Form:C1735.setMessage("Authentication successfull")
+			End if 
 			
 		Else 
-			Web Form:C1735.setError("Authentication failed")
+			If ($typeREST)
+				Web Form:C1735.setError("Authentication failed")
+			End if 
 		End if 
 	Else 
-		Web Form:C1735.setError("Authentication failed")
+		If ($typeREST)
+			Web Form:C1735.setError("Authentication failed")
+		End if 
 	End if 
 	
 	return $page
@@ -79,7 +89,3 @@ exposed Function getUserInfo : Object
 	Else 
 		return Session:C1714.storage.Employee
 	End if 
-	
-exposed Function privilege() : Text
-	
-	return JSON Stringify:C1217(Session:C1714.getPrivileges())

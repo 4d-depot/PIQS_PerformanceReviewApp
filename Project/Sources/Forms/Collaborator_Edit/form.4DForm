@@ -181,7 +181,8 @@
 					"method": "ObjectMethods/btnSave.4dm",
 					"icon": "/RESOURCES/Images/checkmark.svg",
 					"textPlacement": "right",
-					"textAlign": "center"
+					"textAlign": "center",
+					"imageHugsTitle": false
 				},
 				"btnCancel": {
 					"type": "button",
@@ -197,7 +198,7 @@
 					"icon": "/RESOURCES/Images/cross.svg",
 					"textPlacement": "right",
 					"textAlign": "center",
-					"imageHugsTitle": true
+					"imageHugsTitle": false
 				}
 			}
 		}
