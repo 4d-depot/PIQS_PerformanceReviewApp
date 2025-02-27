@@ -85,7 +85,7 @@
 							"valueType": "hardCoded",
 							"path": "app:selectedReview.isReadOnly",
 							"dsType": "bool",
-							"op": "istrue",
+							"op": "",
 							"ref": "k4oida2DnM9C7bDQeDeRto"
 						}
 					]

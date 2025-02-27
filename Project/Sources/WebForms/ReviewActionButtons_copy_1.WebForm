@@ -36,11 +36,26 @@
 				"id": "9Ro3HsCSGbj9CDzz1TVP1t",
 				"conditions": {
 					"id": "5DbJf8dYoUGWwWG6Xj2u6X",
-					"type": "reference",
-					"name": "condition",
-					"value": "",
-					"valueType": "hardCoded",
-					"ref": "k4oida2DnM9C7bDQeDeRto"
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "43u1H6LBQ8ALfDW5jfGPDS",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "k4oida2DnM9C7bDQeDeRto"
+						},
+						{
+							"id": "eWWVsHa9nF5wLETiPgZPhh",
+							"type": "reference",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"ref": "5nF59Am5BBHsv6rNcpUKdc"
+						}
+					]
 				}
 			},
 			{
@@ -78,10 +93,14 @@
 					"valueType": "hardCoded",
 					"ref": "dkLJrwXZNcXQfQGUrUXzeh"
 				}
+			},
+			{
+				"label": "None",
+				"id": "vhNfnudHLMCxsiMv7NazWC"
 			}
 		],
 		"defaultStates": [
-			"9Ro3HsCSGbj9CDzz1TVP1t"
+			"vhNfnudHLMCxsiMv7NazWC"
 		]
 	},
 	"components": {
@@ -665,7 +684,13 @@
 				}
 			},
 			"displayName": "Stylebox",
-			"custom": {},
+			"custom": {
+				"states:vhNfnudHLMCxsiMv7NazWC": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [

@@ -31,7 +31,7 @@
 		{
 			"name": "ReviewDate",
 			"formula": "This.data.review.Date"
-		},
+	},
 		{
 			"name": "PreviousReviewDate",
 			"formula": "This.data.previousReviewDate"
