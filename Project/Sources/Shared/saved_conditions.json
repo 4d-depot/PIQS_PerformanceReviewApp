@@ -34,16 +34,6 @@
 					"path": "app:viewPDF",
 					"dsType": "bool",
 					"op": "isfalse"
-				},
-				{
-					"id": "fwqAMTjYYeCdUjnVSe1boM",
-					"type": "datasource",
-					"name": "condition",
-					"value": "",
-					"valueType": "hardCoded",
-					"path": "app:selectedReview",
-					"dsType": "entity",
-					"op": "notnull"
 				}
 			],
 			"name": "selectedWithPDF"

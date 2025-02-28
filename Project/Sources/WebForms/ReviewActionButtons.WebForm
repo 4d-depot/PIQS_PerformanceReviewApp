@@ -110,7 +110,8 @@
 						{
 							"id": "uifvW1yaTvCTKAU2YtajwH",
 							"type": "reference",
-							"ref": "k4oida2DnM9C7bDQeDeRto"
+							"ref": "k4oida2DnM9C7bDQeDeRto",
+							"name": "condition"
 						}
 					]
 				}
@@ -217,7 +218,7 @@
 							"valueType": "hardCoded",
 							"path": "app:selectedReview.isReadOnly",
 							"dsType": "bool",
-							"op": "isfalse",
+							"op": "",
 							"ref": "dkLJrwXZNcXQfQGUrUXzeh"
 						},
 						{
