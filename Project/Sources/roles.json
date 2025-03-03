@@ -207,13 +207,6 @@
 				"read": [
 					"user"
 				]
-			},
-			{
-				"applyTo": "ds.privilege",
-				"type": "method",
-				"execute": [
-					"user"
-				]
 			}
 		]
 	},
