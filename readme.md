@@ -8,11 +8,12 @@ To make our examples practical and concrete, we have developed a typical web app
 - Export to PDF: Convert the generated documents into PDF files for simplified distribution.
 - Display documents: Provide users with the ability to preview documents directly within the application.
 
-[![Youtube link](https://img.youtube.com/vi/zVsKD3OaqUI/0.jpg)](https://youtu.be/uQuBo1HEfrM)
+[![Youtube link](https://i9.ytimg.com/vi_webp/YpiJptfdun0/mqdefault.webp?v=67c5a1cf&sqp=CNDPlr4G&rs=AOn4CLDTpPhfO8vcfCGLzYHpHeHchQQj3A)](https://youtu.be/YpiJptfdun0)
 
-Here is our blog series to follow:
-- 
-- 
+Here is the blog serie to follow:
+
+-  [Master Web Applications with 4D Qodly Pro: A Tutorial Series]()
+-  
 
 ## Installing and Using a 4D Project
 
