@@ -73,13 +73,13 @@ exposed Function createReview($idEmployee : Integer; $year : Integer)
 	
 	//Mark:- Generate document
 	
-Function createContext()->$context : Object
+local Function createContext()->$context : Object
 	$context:=New object:C1471
 	$context.review:=This:C1470
 	$context.previousReviewDate:=This:C1470.previousReview.Date
 	return $context
 	
-Function generateDocument()->$doc : Object
+local Function generateDocument()->$doc : Object
 	var $context : Object
 	var $template : cs:C1710.TemplateEntity
 	
