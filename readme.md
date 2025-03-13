@@ -8,7 +8,7 @@ To make our examples practical and concrete, we have developed a typical web app
 - Export to PDF: Convert the generated documents into PDF files for simplified distribution.
 - Display documents: Provide users with the ability to preview documents directly within the application.
 
-[![Youtube link](https://i9.ytimg.com/vi_webp/YpiJptfdun0/mqdefault.webp?v=67c5a1cf&sqp=CNDPlr4G&rs=AOn4CLDTpPhfO8vcfCGLzYHpHeHchQQj3A)](https://youtu.be/YpiJptfdun0)
+[![Youtube link](https://img.youtube.com/vi/YpiJptfdun0/0.jpg)](https://youtu.be/YpiJptfdun0)
 
 Here is the blog serie to follow:
 
