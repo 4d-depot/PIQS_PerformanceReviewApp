@@ -12,8 +12,7 @@ To make our examples practical and concrete, we have developed a typical web app
 
 Here is the blog serie to follow:
 
--  [Master Web Applications with 4D Qodly Pro: A Tutorial Series]()
--  
+-  [Master Web Applications with 4D Qodly Pro: A Tutorial Series](https://blog.4d.com/master-web-applications-with-4d-qodly-pro-a-tutorial-series/) 
 
 ## Installing and Using a 4D Project
 
