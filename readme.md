@@ -1,4 +1,4 @@
-# Perfomance Review Application
+# Performance Review Application
 
 Welcome to the GitHub repository associated with our tutorial series dedicated to creating high-performance web applications with 4D Qodly Pro and 4D Server. This project is designed as an educational resource to illustrate the concepts and features covered throughout the series.
 
@@ -12,7 +12,8 @@ To make our examples practical and concrete, we have developed a typical web app
 
 Here is the blog serie to follow:
 
--  [Master Web Applications with 4D Qodly Pro: A Tutorial Series](https://blog.4d.com/master-web-applications-with-4d-qodly-pro-a-tutorial-series/) 
+- [Master Web Applications with 4D Qodly Pro: A Tutorial Series](https://blog.4d.com/master-web-applications-with-4d-qodly-pro-a-tutorial-series/)
+- [Integrating User Authentication in Your Qodly Applications](https://blog.4d.com/integrating-user-authentication-in-your-qodly-applications/)
 
 ## Installing and Using a 4D Project
 
