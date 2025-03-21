@@ -14,6 +14,7 @@ Here is the blog serie to follow:
 
 - [Master Web Applications with 4D Qodly Pro: A Tutorial Series](https://blog.4d.com/master-web-applications-with-4d-qodly-pro-a-tutorial-series/)
 - [Integrating User Authentication in Your Qodly Applications](https://blog.4d.com/integrating-user-authentication-in-your-qodly-applications/)
+- [Create an Interactive List of Data with 4D Qodly Pro](https://blog.4d.com/create-an-interactive-list-of-data-with-4d-qodly-pro/)
 
 ## Installing and Using a 4D Project
 
