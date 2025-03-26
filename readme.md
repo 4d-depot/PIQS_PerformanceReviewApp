@@ -15,6 +15,8 @@ Here is the blog serie to follow:
 - [Master Web Applications with 4D Qodly Pro: A Tutorial Series](https://blog.4d.com/master-web-applications-with-4d-qodly-pro-a-tutorial-series/)
 - [Integrating User Authentication in Your Qodly Applications](https://blog.4d.com/integrating-user-authentication-in-your-qodly-applications/)
 - [Create an Interactive List of Data with 4D Qodly Pro](https://blog.4d.com/create-an-interactive-list-of-data-with-4d-qodly-pro/)
+- [Building Dynamic Data Management in Qodly application: Create, Add, Edit, and Delete](https://blog.4d.com/building-dynamic-data-management-in-qodly-application-create-add-edit-and-delete/)
+- [Make your Qodly applications dynamic and interactive with states](https://blog.4d.com/make-your-qodly-applications-dynamic-and-interactive-with-states/)
 
 ## Installing and Using a 4D Project
 
