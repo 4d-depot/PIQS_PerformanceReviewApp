@@ -20,6 +20,9 @@ Function event restrict() : cs:C1710.EmployeeSelection
 		: (Session:C1714.hasPrivilege("createReview"))
 			return This:C1470.all()
 			
+		: (Session:C1714.hasPrivilege("webadmin"))
+			return This:C1470.all()
+			
 		: ($obj.Employee.role="Collaborator")
 			return This:C1470.query("ID = :1"; $obj.Employee.ID)
 			

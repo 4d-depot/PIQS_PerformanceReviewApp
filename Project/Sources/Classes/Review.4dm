@@ -23,6 +23,9 @@ Function event restrict() : cs:C1710.ReviewSelection
 		: ($obj.Employee.role="Collaborator")
 			return This:C1470.query("ID_Employee = :1"; $obj.Employee.ID).orderBy("Date desc")
 			
+		: (Session:C1714.hasPrivilege("webadmin"))
+			return This:C1470.all()
+			
 		Else 
 			return This:C1470.newSelection()
 			
