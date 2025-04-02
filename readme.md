@@ -17,6 +17,8 @@ Here is the blog serie to follow:
 - [Create an Interactive List of Data with 4D Qodly Pro](https://blog.4d.com/create-an-interactive-list-of-data-with-4d-qodly-pro/)
 - [Building Dynamic Data Management in Qodly application: Create, Add, Edit, and Delete](https://blog.4d.com/building-dynamic-data-management-in-qodly-application-create-add-edit-and-delete/)
 - [Make your Qodly applications dynamic and interactive with states](https://blog.4d.com/make-your-qodly-applications-dynamic-and-interactive-with-states/)
+- [Extend your Qodly application with custom components](https://blog.4d.com/extend-your-qodly-application-with-custom-components/)
+- [Creating Dynamic Documents with 4D Write Pro in Qodly application](https://blog.4d.com/creating-dynamic-documents-with-4d-write-pro-in-qodly-application/)
 
 ## Installing and Using a 4D Project
 
