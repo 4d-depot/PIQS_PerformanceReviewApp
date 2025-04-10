@@ -19,6 +19,9 @@ Here is the blog serie to follow:
 - [Make your Qodly applications dynamic and interactive with states](https://blog.4d.com/make-your-qodly-applications-dynamic-and-interactive-with-states/)
 - [Extend your Qodly application with custom components](https://blog.4d.com/extend-your-qodly-application-with-custom-components/)
 - [Creating Dynamic Documents with 4D Write Pro in Qodly application](https://blog.4d.com/creating-dynamic-documents-with-4d-write-pro-in-qodly-application/)
+- [Customize your Qodly interfaces with CSS](https://blog.4d.com/customize-your-qodly-interfaces-with-css/)
+- [Designing an Interactive and Dynamic Menu Bar in Qodly application](https://blog.4d.com/designing-an-interactive-and-dynamic-menu-bar-in-qodly-application/)
+- [Restrict data according to privileges or information saved in session storage](https://blog.4d.com/restrict-data-according-to-privileges-or-information-saved-in-session-storage/)
 
 ## Installing and Using a 4D Project
 
